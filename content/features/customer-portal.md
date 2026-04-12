@@ -3,7 +3,7 @@ title: Customer Portal
 type: feature
 status: draft
 sources: [raw/docs/devrev-docs-scraped.md, raw/docs/ devrev-agent-dump-kb.md]
-related: [[features/knowledge-base]], [[features/brands]], [[entities/ticket]], [[entities/conversation]], [[entities/rev-user]]
+related: ["features/knowledge-base", "features/brands", "entities/ticket", "entities/conversation", "entities/rev-user"]
 last_updated: 2026-04-12
 ---
 

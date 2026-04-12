@@ -3,7 +3,7 @@ title: Parts
 type: feature
 status: draft
 sources: [raw/test-cases/by-feature/fe_parts.jsonl, raw/docs/devrev-developer-docs.md, raw/docs/devrev-docs-scraped.md, raw/docs/devrev-agent-dump-part1.md]
-related: [[entities/part]], [[glossary/trails]], [[features/stock-objects]]
+related: ["entities/part", "glossary/trails", "features/stock-objects"]
 last_updated: 2026-04-12
 ---
 

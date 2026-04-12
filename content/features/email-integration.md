@@ -3,7 +3,7 @@ title: Email Integration
 type: feature
 status: draft
 sources: [raw/docs/devrev-agent-dump-integrations.md]
-related: [[features/airdrop]]
+related: ["features/airdrop"]
 last_updated: 2026-04-12
 ---
 

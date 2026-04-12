@@ -3,7 +3,7 @@ title: Templates
 type: feature
 status: draft
 sources: []
-related: [[features/tickets]], [[features/issues]], [[features/customization]]
+related: ["features/tickets", "features/issues", "features/customization"]
 last_updated: 2026-04-12
 ---
 

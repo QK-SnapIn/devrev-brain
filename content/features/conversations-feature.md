@@ -3,7 +3,7 @@ title: Conversations
 type: feature
 status: stable
 sources: [raw/docs/devrev-docs-tickets-issues-conversations.md, raw/docs/devrev-agent-dump-part2.md, raw/docs/devrev-docs-scraped.md]
-related: [[entities/conversation]], [[features/inbox]], [[features/tickets]], [[features/side-conversations]], [[features/slas]]
+related: ["entities/conversation", "features/inbox", "features/tickets", "features/side-conversations", "features/slas"]
 last_updated: 2026-04-12
 ---
 

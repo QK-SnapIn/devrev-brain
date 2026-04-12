@@ -3,7 +3,7 @@ title: Group
 type: entity
 status: stable
 sources: [raw/docs/devrev-agent-dump-part2.md]
-related: [[features/identity]], [[features/mfz]], [[entities/dev-user]]
+related: ["features/identity", "features/mfz", "entities/dev-user"]
 last_updated: 2026-04-12
 ---
 

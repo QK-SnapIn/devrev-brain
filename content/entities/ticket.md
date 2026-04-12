@@ -3,7 +3,7 @@ title: Ticket
 type: entity
 status: stable
 sources: [raw/docs/devrev-agent-dump-part2.md, raw/docs/devrev-docs-tickets-issues-conversations.md, raw/docs/devrev-agent-dump-part1.md]
-related: [[features/stock-objects]], [[entities/issue]], [[entities/conversation]], [[features/slas]], [[entities/part]]
+related: ["features/stock-objects", "entities/issue", "entities/conversation", "features/slas", "entities/part"]
 last_updated: 2026-04-12
 ---
 

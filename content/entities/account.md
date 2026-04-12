@@ -3,7 +3,7 @@ title: Account
 type: entity
 status: stable
 sources: [raw/docs/devrev-agent-dump-part2.md]
-related: [[features/identity]], [[entities/ticket]], [[entities/rev-user]]
+related: ["features/identity", "entities/ticket", "entities/rev-user"]
 last_updated: 2026-04-12
 ---
 

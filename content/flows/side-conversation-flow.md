@@ -3,7 +3,7 @@ title: "Side Conversation End-to-End Flow"
 type: flow
 status: draft
 sources: ["raw/exports/Side Conversations<>PRD.md"]
-related: [[features/side-conversations]], [[features/conversations]], [[features/stock-objects]]
+related: ["features/side-conversations", "features/conversations", "features/stock-objects"]
 last_updated: 2026-04-12
 ---
 

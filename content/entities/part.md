@@ -3,7 +3,7 @@ title: Part
 type: entity
 status: stable
 sources: [raw/docs/devrev-docs-scraped.md, raw/docs/devrev-agent-dump-part1.md]
-related: [[features/parts]], [[glossary/trails]], [[entities/issue]], [[entities/ticket]], [[entities/enhancement]]
+related: ["features/parts", "glossary/trails", "entities/issue", "entities/ticket", "entities/enhancement"]
 last_updated: 2026-04-12
 ---
 

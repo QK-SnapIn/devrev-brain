@@ -3,7 +3,7 @@ title: Conversational Workflows
 type: feature
 status: draft
 sources: []
-related: [[features/workflows]], [[features/plug-widget]], [[features/agents]]
+related: ["features/workflows", "features/plug-widget", "features/agents"]
 last_updated: 2026-04-12
 ---
 

@@ -3,7 +3,7 @@ title: Updates Feed
 type: feature
 status: draft
 sources: []
-related: [[features/inbox]]
+related: ["features/inbox"]
 last_updated: 2026-04-12
 ---
 

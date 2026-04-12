@@ -3,7 +3,7 @@ title: Incident
 type: glossary
 status: draft
 sources: []
-related: [[entities/incident]], [[features/incidents]]
+related: ["entities/incident", "features/incidents"]
 last_updated: 2026-04-12
 ---
 

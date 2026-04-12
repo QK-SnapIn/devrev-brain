@@ -3,7 +3,7 @@ title: Shadow User
 type: glossary
 status: stable
 sources: [raw/docs/devrev-docs-tickets-issues-conversations.md, raw/docs/devrev-agent-dump-part1.md]
-related: [[entities/dev-user]], [[glossary/airsync]]
+related: ["entities/dev-user", "glossary/airsync"]
 last_updated: 2026-04-12
 ---
 

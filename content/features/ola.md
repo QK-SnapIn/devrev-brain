@@ -3,7 +3,7 @@ title: OLA (Operational-Level Agreement)
 type: feature
 status: draft
 sources: []
-related: [[features/slas]]
+related: ["features/slas"]
 last_updated: 2026-04-12
 ---
 

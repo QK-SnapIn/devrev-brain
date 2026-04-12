@@ -3,7 +3,7 @@ title: Dev User
 type: entity
 status: stable
 sources: [raw/docs/devrev-agent-dump-part2.md]
-related: [[features/identity]], [[entities/group]]
+related: ["features/identity", "entities/group"]
 last_updated: 2026-04-12
 ---
 

@@ -3,7 +3,7 @@ title: Opportunity
 type: entity
 status: draft
 sources: []
-related: [[entities/account]], [[entities/meeting]]
+related: ["entities/account", "entities/meeting"]
 last_updated: 2026-04-12
 ---
 

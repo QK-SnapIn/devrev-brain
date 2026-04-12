@@ -3,7 +3,7 @@ title: Incident
 type: entity
 status: draft
 sources: []
-related: [[entities/ticket]], [[features/incidents]]
+related: ["entities/ticket", "features/incidents"]
 last_updated: 2026-04-12
 ---
 

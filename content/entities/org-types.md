@@ -3,7 +3,7 @@ title: "DevRev Organization Types and Feature Limitations"
 type: entity
 status: draft
 sources: [raw/exports/Org Types and Limitations.md]
-related: [[features/identity]], [[features/agents]], [[features/analytics]], [[features/airdrop]]
+related: ["features/identity", "features/agents", "features/analytics", "features/airdrop"]
 last_updated: 2026-04-12
 ---
 

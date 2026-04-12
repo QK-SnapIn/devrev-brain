@@ -3,7 +3,7 @@ title: OLA
 type: glossary
 status: draft
 sources: []
-related: [[features/ola]], [[features/slas]]
+related: ["features/ola", "features/slas"]
 last_updated: 2026-04-12
 ---
 

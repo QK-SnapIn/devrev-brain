@@ -3,7 +3,7 @@ title: "Workflow Builder"
 type: feature
 status: draft
 sources: [raw/exports/Sample.md, raw/docs/devrev-agent-dump-workflows.md]
-related: [[features/stock-objects]], [[features/agents]], [[flows/workflow-builder-crud]]
+related: ["features/stock-objects", "features/agents", "flows/workflow-builder-crud"]
 last_updated: 2026-04-12
 ---
 

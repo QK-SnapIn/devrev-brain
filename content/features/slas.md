@@ -3,7 +3,7 @@ title: SLAs (Service Level Agreements)
 type: feature
 status: draft
 sources: [raw/test-cases/by-feature/fe_slas.jsonl, raw/docs/devrev-developer-docs.md, raw/docs/devrev-docs-scraped.md, raw/docs/devrev-agent-dump-settings.md]
-related: [[entities/ticket]], [[features/analytics]]
+related: ["entities/ticket", "features/analytics"]
 last_updated: 2026-04-12
 ---
 

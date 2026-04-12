@@ -3,7 +3,7 @@ title: "DevRev Platform Critical Test Coverage & Automation Priority Matrix"
 type: flow
 status: draft
 sources: [raw/exports/DevRev Legacy Critical Flows.md]
-related: [[flows/critical-product-flows]], [[features/identity]], [[features/stock-objects]], [[features/airdrop]], [[features/analytics]]
+related: ["flows/critical-product-flows", "features/identity", "features/stock-objects", "features/airdrop", "features/analytics"]
 last_updated: 2026-04-12
 ---
 

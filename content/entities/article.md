@@ -3,7 +3,7 @@ title: Article
 type: entity
 status: stable
 sources: [raw/docs/devrev-agent-dump-part2.md, raw/docs/ devrev-agent-dump-kb.md]
-related: [[features/knowledge-base]], [[features/agents]]
+related: ["features/knowledge-base", "features/agents"]
 last_updated: 2026-04-12
 ---
 

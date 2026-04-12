@@ -3,7 +3,7 @@ title: Opportunity
 type: glossary
 status: draft
 sources: []
-related: [[entities/opportunity]]
+related: ["entities/opportunity"]
 last_updated: 2026-04-12
 ---
 

@@ -3,7 +3,7 @@ title: CSAT (Customer Satisfaction)
 type: feature
 status: draft
 sources: []
-related: [[features/conversations-feature]], [[features/tickets]], [[features/side-conversations]]
+related: ["features/conversations-feature", "features/tickets", "features/side-conversations"]
 last_updated: 2026-04-12
 ---
 

@@ -3,7 +3,7 @@ title: "Side Conversations"
 type: feature
 status: draft
 sources: ["raw/exports/Side Conversations<>PRD.md"]
-related: [[features/conversations]], [[features/stock-objects]], [[flows/side-conversation-flow]]
+related: ["features/conversations", "features/stock-objects", "flows/side-conversation-flow"]
 last_updated: 2026-04-12
 ---
 

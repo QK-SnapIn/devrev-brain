@@ -3,7 +3,7 @@ title: CSAT
 type: glossary
 status: draft
 sources: []
-related: [[features/csat]]
+related: ["features/csat"]
 last_updated: 2026-04-12
 ---
 

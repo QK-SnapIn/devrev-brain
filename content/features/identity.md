@@ -3,7 +3,7 @@ title: Identity
 type: feature
 status: draft
 sources: [raw/test-cases/by-feature/fe_identity.jsonl, raw/docs/devrev-developer-docs.md, raw/docs/devrev-docs-scraped.md, raw/docs/devrev-agent-dump-settings.md]
-related: [[entities/dev-user]], [[entities/rev-user]], [[entities/group]], [[features/mfz]]
+related: ["entities/dev-user", "entities/rev-user", "entities/group", "features/mfz"]
 last_updated: 2026-04-12
 ---
 

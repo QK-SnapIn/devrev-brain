@@ -3,7 +3,7 @@ title: "Workflow Builder CRUD Operations"
 type: flow
 status: draft
 sources: [raw/exports/Sample.md, raw/docs/devrev-agent-dump-workflows.md]
-related: [[features/workflows]], [[features/stock-objects]]
+related: ["features/workflows", "features/stock-objects"]
 last_updated: 2026-04-12
 ---
 

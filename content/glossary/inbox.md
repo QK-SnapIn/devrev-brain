@@ -3,7 +3,7 @@ title: Inbox
 type: glossary
 status: stable
 sources: [raw/docs/devrev-docs-scraped.md]
-related: [[features/inbox]], [[entities/conversation]]
+related: ["features/inbox", "entities/conversation"]
 last_updated: 2026-04-12
 ---
 

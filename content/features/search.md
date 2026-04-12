@@ -3,7 +3,7 @@ title: Search
 type: feature
 status: draft
 sources: [raw/docs/devrev-docs-scraped.md, raw/docs/devrev-agent-dump-part1.md]
-related: [[features/vistas]]
+related: ["features/vistas"]
 last_updated: 2026-04-12
 ---
 

@@ -3,7 +3,7 @@ title: Knowledge Base
 type: feature
 status: draft
 sources: [raw/test-cases/by-feature/fe_knowledge_base.jsonl, raw/docs/devrev-developer-docs.md, raw/docs/devrev-docs-scraped.md, raw/docs/devrev-agent-dump-kb.md, raw/docs/devrev-agent-dump-settings.md]
-related: [[entities/article]], [[features/customer-portal]], [[glossary/turing]]
+related: ["entities/article", "features/customer-portal", "glossary/turing"]
 last_updated: 2026-04-12
 ---
 

@@ -3,7 +3,7 @@ title: Airdrop
 type: feature
 status: draft
 sources: [raw/test-cases/by-feature/fe_airdrop.jsonl, raw/docs/devrev-developer-docs.md, raw/docs/devrev-agent-dump-integrations.md]
-related: [[features/slack-integration]], [[features/github-integration]], [[features/jira-integration]], [[features/email-integration]]
+related: ["features/slack-integration", "features/github-integration", "features/jira-integration", "features/email-integration"]
 last_updated: 2026-04-12
 ---
 

@@ -3,7 +3,7 @@ title: Issues
 type: feature
 status: stable
 sources: [raw/docs/devrev-docs-tickets-issues-conversations.md, raw/docs/devrev-agent-dump-part2.md]
-related: [[entities/issue]], [[features/stock-objects]], [[features/parts]], [[features/build]], [[flows/critical-product-flows]]
+related: ["entities/issue", "features/stock-objects", "features/parts", "features/build", "flows/critical-product-flows"]
 last_updated: 2026-04-12
 ---
 

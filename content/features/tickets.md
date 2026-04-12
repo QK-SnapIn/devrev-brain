@@ -3,7 +3,7 @@ title: Tickets
 type: feature
 status: stable
 sources: [raw/docs/devrev-docs-tickets-issues-conversations.md, raw/docs/devrev-agent-dump-part2.md]
-related: [[entities/ticket]], [[features/stock-objects]], [[features/slas]], [[features/conversations]], [[flows/critical-product-flows]]
+related: ["entities/ticket", "features/stock-objects", "features/slas", "features/conversations", "flows/critical-product-flows"]
 last_updated: 2026-04-12
 ---
 

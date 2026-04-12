@@ -3,7 +3,7 @@ title: "DevRev Computer Client – Critical User Journeys"
 type: flow
 status: draft
 sources: [raw/exports/DevRev Computer Client – Critical User Journeys.md]
-related: [[features/identity]], [[features/conversations]], [[features/chats]]
+related: ["features/identity", "features/conversations", "features/chats"]
 last_updated: 2026-04-12
 ---
 

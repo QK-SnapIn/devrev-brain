@@ -3,7 +3,7 @@ title: Enhancement
 type: entity
 status: stable
 sources: [raw/docs/devrev-agent-dump-part2.md]
-related: [[features/stock-objects]], [[entities/issue]], [[features/parts]]
+related: ["features/stock-objects", "entities/issue", "features/parts"]
 last_updated: 2026-04-12
 ---
 

@@ -3,7 +3,7 @@ title: PLuG Widget
 type: feature
 status: draft
 sources: []
-related: [[features/conversations-feature]], [[features/agents]], [[features/knowledge-base]], [[features/customer-portal]], [[glossary/plug]]
+related: ["features/conversations-feature", "features/agents", "features/knowledge-base", "features/customer-portal", "glossary/plug"]
 last_updated: 2026-04-12
 docs_url: https://docs.devrev.ai/plug
 ---

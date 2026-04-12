@@ -3,7 +3,7 @@ title: Remote MCP Server
 type: feature
 status: draft
 sources: []
-related: [[features/workflows]], [[features/agents]]
+related: ["features/workflows", "features/agents"]
 last_updated: 2026-04-12
 ---
 

@@ -3,7 +3,7 @@ title: Analytics
 type: feature
 status: draft
 sources: [raw/test-cases/by-feature/fe_analytics.jsonl, raw/docs/devrev-developer-docs.md]
-related: [[features/vistas]]
+related: ["features/vistas"]
 last_updated: 2026-04-12
 docs_url: https://docs.devrev.ai/dashboards/dashboard-creation
 ---

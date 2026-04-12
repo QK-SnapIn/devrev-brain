@@ -3,7 +3,7 @@ title: Meeting
 type: entity
 status: draft
 sources: []
-related: [[entities/opportunity]], [[entities/ticket]]
+related: ["entities/opportunity", "entities/ticket"]
 last_updated: 2026-04-12
 ---
 

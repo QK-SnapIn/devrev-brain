@@ -3,7 +3,7 @@ title: "DevRev Legacy Critical Product Flows"
 type: flow
 status: draft
 sources: [raw/exports/DevRev Legacy Critical Flows.md]
-related: [[features/identity]], [[features/stock-objects]], [[features/airdrop]], [[features/analytics]], [[features/knowledge-base]], [[features/conversations]], [[flows/automation-priority-matrix]]
+related: ["features/identity", "features/stock-objects", "features/airdrop", "features/analytics", "features/knowledge-base", "features/conversations", "flows/automation-priority-matrix"]
 last_updated: 2026-04-12
 ---
 

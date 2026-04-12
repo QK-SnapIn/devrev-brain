@@ -3,7 +3,7 @@ title: Inbox
 type: feature
 status: draft
 sources: [raw/docs/devrev-docs-scraped.md]
-related: [[entities/conversation]], [[features/conversations]], [[glossary/plug]], [[features/slas]], [[features/csat]]
+related: ["entities/conversation", "features/conversations", "glossary/plug", "features/slas", "features/csat"]
 last_updated: 2026-04-12
 docs_url: https://docs.devrev.ai/product/inbox
 ---

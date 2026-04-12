@@ -3,7 +3,7 @@ title: Task
 type: entity
 status: draft
 sources: []
-related: [[entities/issue]], [[entities/ticket]]
+related: ["entities/issue", "entities/ticket"]
 last_updated: 2026-04-12
 ---
 

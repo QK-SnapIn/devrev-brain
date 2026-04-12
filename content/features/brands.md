@@ -3,7 +3,7 @@ title: Brands
 type: feature
 status: draft
 sources: [raw/test-cases/by-feature/fe_brands.jsonl, raw/docs/devrev-developer-docs.md, raw/docs/ devrev-agent-dump-kb.md]
-related: [[features/knowledge-base]], [[features/customer-portal]]
+related: ["features/knowledge-base", "features/customer-portal"]
 last_updated: 2026-04-12
 ---
 

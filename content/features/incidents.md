@@ -3,7 +3,7 @@ title: Incident Management
 type: feature
 status: draft
 sources: []
-related: [[entities/incident]], [[entities/ticket]], [[features/slas]]
+related: ["entities/incident", "entities/ticket", "features/slas"]
 last_updated: 2026-04-12
 ---
 

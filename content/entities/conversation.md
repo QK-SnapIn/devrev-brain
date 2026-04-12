@@ -3,7 +3,7 @@ title: Conversation
 type: entity
 status: stable
 sources: [raw/docs/devrev-agent-dump-part2.md, raw/docs/devrev-docs-tickets-issues-conversations.md, raw/docs/devrev-docs-scraped.md]
-related: [[features/conversations]], [[entities/ticket]], [[features/side-conversations]], [[features/inbox]]
+related: ["features/conversations", "entities/ticket", "features/side-conversations", "features/inbox"]
 last_updated: 2026-04-12
 ---
 

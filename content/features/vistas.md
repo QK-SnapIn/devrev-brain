@@ -3,7 +3,7 @@ title: Vistas
 type: feature
 status: draft
 sources: [raw/docs/devrev-docs-scraped.md]
-related: [[glossary/vista]], [[features/analytics]]
+related: ["glossary/vista", "features/analytics"]
 last_updated: 2026-04-12
 docs_url: https://docs.devrev.ai/product/vistas
 ---
