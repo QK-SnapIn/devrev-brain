@@ -8,8 +8,8 @@ export const sharedPageComponents: SharedLayout = {
   afterBody: [],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/jackyzha0/quartz",
-      "Discord Community": "https://discord.gg/cRFFHYye7t",
+      "DevRev": "https://devrev.ai",
+      "Source": "https://github.com/QK-SnapIn/devrev-brain",
     },
   }),
 }
@@ -41,7 +41,24 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Explorer(),
   ],
   right: [
-    Component.Graph(),
+    Component.Graph({
+      localGraph: {
+        depth: 2,
+        linkDistance: 40,
+        fontSize: 0.7,
+        repelForce: 0.8,
+        scale: 1.2,
+      },
+      globalGraph: {
+        depth: -1,
+        linkDistance: 50,
+        fontSize: 0.6,
+        repelForce: 0.6,
+        centerForce: 0.3,
+        scale: 0.85,
+        focusOnHover: true,
+      },
+    }),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
   ],

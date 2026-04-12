@@ -1,3 +1,52 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+// DevRev Brain custom styles
+
+// Make graph view larger by default
+.graph > #graph-container {
+  min-height: 500px;
+}
+
+// Global graph button should be more visible
+.graph > .graph-outer > button.global-graph-icon {
+  opacity: 1;
+}
+
+// Bigger graph on the index/home page
+body[data-slug="index"] .graph > #graph-container {
+  min-height: 600px;
+}
+
+// Better table styling
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+th {
+  background: var(--lightgray);
+  font-weight: 600;
+  text-align: left;
+  padding: 0.6rem 0.8rem;
+}
+
+td {
+  padding: 0.5rem 0.8rem;
+  border-bottom: 1px solid var(--lightgray);
+}
+
+// Cards-like appearance for the home page sections
+body[data-slug="index"] h2 {
+  margin-top: 2rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 2px solid var(--secondary);
+}
+
+// Subtle separator between sections
+hr {
+  border: none;
+  border-top: 1px solid var(--lightgray);
+  margin: 2rem 0;
+}
