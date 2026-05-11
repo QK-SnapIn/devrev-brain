@@ -2,9 +2,10 @@
 title: SLAs (Service Level Agreements)
 type: feature
 status: draft
-sources: [raw/test-cases/by-feature/fe_slas.jsonl, raw/docs/devrev-developer-docs.md, raw/docs/devrev-docs-scraped.md, raw/docs/devrev-agent-dump-settings.md]
+sources: [raw/test-cases/by-feature/fe_slas.jsonl, raw/docs/devrev-developer-docs.md, raw/docs/devrev-docs-scraped.md, raw/docs/devrev-agent-dump-settings.md, https://support.devrev.ai/en-US/devrev/directories]
 related: ["entities/ticket", "features/analytics"]
-last_updated: 2026-04-12
+last_updated: 2026-05-11
+support_articles: [ART-21867]
 ---
 
 # SLAs (Service Level Agreements)
@@ -121,3 +122,9 @@ See [[features/analytics]] for the full dashboard list.
 ## Open questions
 - [gap] How does `resume_on_restart` affect workflow behavior?
 - [gap] What is the relationship between metric definitions, workflows, and trackers?
+
+## Support documentation
+
+Referenced DevRev support articles synchronized from [support.devrev.ai](https://support.devrev.ai/en-US/devrev/directories):
+
+- [[support-articles/computer-plus-support/service-level-agreements|Service-level agreements]] (ART-21867) — [external](https://support.devrev.ai/en-US/devrev/article/gjimnW9H)

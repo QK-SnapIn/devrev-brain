@@ -2,9 +2,10 @@
 title: Customer Portal
 type: feature
 status: draft
-sources: [raw/docs/devrev-docs-scraped.md, raw/docs/ devrev-agent-dump-kb.md]
+sources: [raw/docs/devrev-docs-scraped.md, raw/docs/ devrev-agent-dump-kb.md, https://support.devrev.ai/en-US/devrev/directories]
 related: ["features/knowledge-base", "features/brands", "entities/ticket", "entities/conversation", "entities/rev-user"]
-last_updated: 2026-04-12
+last_updated: 2026-05-11
+support_articles: [ART-21864, ART-21898, ART-23634, ART-24672, ART-27338]
 ---
 
 # Customer Portal
@@ -157,3 +158,13 @@ All appearance settings are under Settings > Plug & Portal > Portal Settings > A
 ## Open questions
 - [gap] What are the exact mobile app capabilities vs web?
 - [gap] What are the JWT token requirements for custom authentication?
+
+## Support documentation
+
+Referenced DevRev support articles synchronized from [support.devrev.ai](https://support.devrev.ai/en-US/devrev/directories):
+
+- [[support-articles/computer-plus-support/allowlist-domains-for-the-customer-portal|Allowlist domains for the customer portal]] (ART-23634) — [external](https://support.devrev.ai/en-US/devrev/article/6_lYKw2d)
+- [[support-articles/computer-plus-support/customer-portal-setup-and-administration|Customer portal setup and administration]] (ART-21864) — [external](https://support.devrev.ai/en-US/devrev/article/mCD8f9oD)
+- [[support-articles/computer-by-devrev/customer-roles|Customer roles]] (ART-21898) — [external](https://support.devrev.ai/en-US/devrev/article/VR92ky7P)
+- [[support-articles/computer-plus-support/jwt-based-sso-for-the-customer-portal|JWT-based SSO for the customer portal]] (ART-27338) — [external](https://support.devrev.ai/en-US/devrev/article/N3bhguFi)
+- [[support-articles/computer-plus-support/multilanguage-support-for-the-customer-portal-and-plug|Multilanguage support for the customer portal and Plug]] (ART-24672) — [external](https://support.devrev.ai/en-US/devrev/article/UTCG6oLa)

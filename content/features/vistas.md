@@ -2,10 +2,11 @@
 title: Vistas
 type: feature
 status: draft
-sources: [raw/docs/devrev-docs-scraped.md]
+sources: [raw/docs/devrev-docs-scraped.md, https://support.devrev.ai/en-US/devrev/directories]
 related: ["glossary/vista", "features/analytics"]
-last_updated: 2026-04-12
+last_updated: 2026-05-11
 docs_url: https://docs.devrev.ai/product/vistas
+support_articles: [ART-21835]
 ---
 
 # Vistas
@@ -144,3 +145,9 @@ Deletion affects only the view, not underlying records.
 - [gap] What is the maximum number of views a user can create?
 - [gap] What are all the available grouping attributes?
 - [gap] How do Vista reports differ from Dashboard widgets in [[features/analytics]]?
+
+## Support documentation
+
+Referenced DevRev support articles synchronized from [support.devrev.ai](https://support.devrev.ai/en-US/devrev/directories):
+
+- [[support-articles/computer-by-devrev/vistas|Vistas]] (ART-21835) — [external](https://support.devrev.ai/en-US/devrev/article/SZYVVBEk)

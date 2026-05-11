@@ -2,9 +2,10 @@
 title: GitHub Integration
 type: feature
 status: draft
-sources: [raw/docs/devrev-agent-dump-integrations.md]
+sources: [raw/docs/devrev-agent-dump-integrations.md, https://support.devrev.ai/en-US/devrev/directories]
 related: ["features/airdrop"]
-last_updated: 2026-04-12
+last_updated: 2026-05-11
+support_articles: [ART-21980]
 ---
 
 # GitHub Integration
@@ -94,3 +95,9 @@ Supports bidirectional sync of GitHub issues, comments, and labels:
 - [gap] What happens when a PR references issues across multiple DevRev organizations?
 - [gap] How does the autonomous issue creation interact with existing issues?
 - [gap] What is the exact behavior when webhook auto-registration fails?
+
+## Support documentation
+
+Referenced DevRev support articles synchronized from [support.devrev.ai](https://support.devrev.ai/en-US/devrev/directories):
+
+- [[support-articles/snap-ins/github|GitHub]] (ART-21980) — [external](https://support.devrev.ai/en-US/devrev/article/z0oDB6a6)

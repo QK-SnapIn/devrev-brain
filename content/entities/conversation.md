@@ -2,9 +2,10 @@
 title: Conversation
 type: entity
 status: stable
-sources: [raw/docs/devrev-agent-dump-part2.md, raw/docs/devrev-docs-tickets-issues-conversations.md, raw/docs/devrev-docs-scraped.md]
+sources: [raw/docs/devrev-agent-dump-part2.md, raw/docs/devrev-docs-tickets-issues-conversations.md, raw/docs/devrev-docs-scraped.md, https://support.devrev.ai/en-US/devrev/directories]
 related: ["features/conversations", "entities/ticket", "features/side-conversations", "features/inbox"]
-last_updated: 2026-04-12
+last_updated: 2026-05-11
+support_articles: [ART-21838, ART-21907, ART-21908, ART-21909, ART-21932, ART-21933]
 ---
 
 # Conversation
@@ -67,3 +68,14 @@ Conversations can also be initiated through Slack integration.
 
 ## Fields
 Known fields: Members (always present in responses), Display ID, ID (DON format), owned_by, type, stage, tags, part, created date, modified date.
+
+## Support documentation
+
+Referenced DevRev support articles synchronized from [support.devrev.ai](https://support.devrev.ai/en-US/devrev/directories):
+
+- [[support-articles/snap-ins/csat-on-conversation|CSAT on conversation]] (ART-21933) — [external](https://support.devrev.ai/en-US/devrev/article/8hsIAD6w)
+- [[support-articles/computer-plus-support/conversation-insights|Conversation insights]] (ART-21907) — [external](https://support.devrev.ai/en-US/devrev/article/w2gN03E-)
+- [[support-articles/snap-ins/conversation-reminder|Conversation reminder]] (ART-21932) — [external](https://support.devrev.ai/en-US/devrev/article/qJxljjQY)
+- [[support-articles/computer-plus-support/conversation-sla-analytics|Conversation-SLA Analytics]] (ART-21908) — [external](https://support.devrev.ai/en-US/devrev/article/jtM1jwyt)
+- [[support-articles/computer-plus-support/conversation-team-performance|Conversation-Team Performance]] (ART-21909) — [external](https://support.devrev.ai/en-US/devrev/article/2PIYwx9D)
+- [[support-articles/computer-plus-support/conversations-overview|Conversations Overview]] (ART-21838) — [external](https://support.devrev.ai/en-US/devrev/article/C48RPDJK)

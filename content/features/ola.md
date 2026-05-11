@@ -2,9 +2,10 @@
 title: OLA (Operational-Level Agreement)
 type: feature
 status: draft
-sources: []
+sources: [https://support.devrev.ai/en-US/devrev/directories]
 related: ["features/slas"]
-last_updated: 2026-04-12
+last_updated: 2026-05-11
+support_articles: [ART-21868]
 ---
 
 # OLA (Operational-Level Agreement)
@@ -44,3 +45,9 @@ While SLAs define commitments to customers, OLAs define commitments between inte
 - [gap] Can OLA policies be assigned to specific groups or teams?
 - [gap] Workflow triggers for OLA breach events?
 - [gap] Are there additional built-in metrics beyond "Issue Resolution Time"?
+
+## Support documentation
+
+Referenced DevRev support articles synchronized from [support.devrev.ai](https://support.devrev.ai/en-US/devrev/directories):
+
+- [[support-articles/computer-plus-support/operational-level-agreements|Operational-level agreements]] (ART-21868) — [external](https://support.devrev.ai/en-US/devrev/article/ztv-zLpw)

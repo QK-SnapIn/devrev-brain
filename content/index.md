@@ -4,7 +4,7 @@ title: DevRev Brain
 
 # DevRev Product Knowledge Wiki
 
-> **83 pages** of structured product knowledge — features, entities, flows, glossary. Built for QA, engineering, and product teams.
+> **330 pages** of structured product knowledge — features, entities, flows, glossary. Built for QA, engineering, and product teams.
 
 ---
 
@@ -97,6 +97,23 @@ title: DevRev Brain
 | [[glossary/nudge]] | Proactive PLuG widget messages |
 
 ---
+
+
+---
+
+## Support Documentation Mirror
+
+| Category | Articles |
+|---------|---------|
+| [[support-articles/computer-by-devrev/index|Computer by DevRev]] | 109 |
+| [[support-articles/snap-ins/index|Snap-ins]] | 73 |
+| [[support-articles/computer-plus-support/index|Computer+ Support]] | 34 |
+| [[support-articles/computer-plus-build/index|Computer+ Build]] | 8 |
+| [[support-articles/changelog/index|Changelog]] | 7 |
+| [[support-articles/computer-plus-observe/index|Computer+ Observe]] | 5 |
+| [[support-articles/customer-support-agent/index|Customer Support Agent]] | 3 |
+
+Full crawl of [support.devrev.ai](https://support.devrev.ai/en-US/devrev/directories) (239 articles, 22 directories) cross-linked with existing wiki nodes. Entry point: [[support-articles/index]].
 
 ## Browse All
 

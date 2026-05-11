@@ -2,9 +2,10 @@
 title: Customization
 type: feature
 status: draft
-sources: [raw/test-cases/by-feature/fe_customization.jsonl, raw/docs/devrev-developer-docs.md, raw/docs/devrev-docs-scraped.md, raw/docs/devrev-agent-dump-settings.md]
+sources: [raw/test-cases/by-feature/fe_customization.jsonl, raw/docs/devrev-developer-docs.md, raw/docs/devrev-docs-scraped.md, raw/docs/devrev-agent-dump-settings.md, https://support.devrev.ai/en-US/devrev/directories]
 related: ["entities/ticket", "entities/issue"]
-last_updated: 2026-04-12
+last_updated: 2026-05-11
+support_articles: [ART-21854]
 ---
 
 # Customization
@@ -168,3 +169,9 @@ Fields whose values depend on another field's value.
 - [gap] What leaf types support approval configs beyond `issue`?
 - [gap] How does the `condition` field in phases work (what expressions are supported)?
 - [gap] What triggers approval flow execution (automatic on state change or manual)?
+
+## Support documentation
+
+Referenced DevRev support articles synchronized from [support.devrev.ai](https://support.devrev.ai/en-US/devrev/directories):
+
+- [[support-articles/computer-by-devrev/object-customization|Object customization]] (ART-21854) — [external](https://support.devrev.ai/en-US/devrev/article/2it-yKhx)

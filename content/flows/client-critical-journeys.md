@@ -2,9 +2,10 @@
 title: "DevRev Computer Client – Critical User Journeys"
 type: flow
 status: draft
-sources: [raw/exports/DevRev Computer Client – Critical User Journeys.md]
+sources: [raw/exports/DevRev Computer Client – Critical User Journeys.md, https://support.devrev.ai/en-US/devrev/directories]
 related: ["features/identity", "features/conversations", "features/chats"]
-last_updated: 2026-04-12
+last_updated: 2026-05-11
+support_articles: [ART-23982]
 ---
 
 # DevRev Computer Client – Critical User Journeys
@@ -138,3 +139,9 @@ All 15 scenarios pass on every supported platform without crashes, data loss, or
 
 ## API calls involved
 [gap] API endpoints for authentication, messaging, and notifications not yet documented.
+
+## Support documentation
+
+Referenced DevRev support articles synchronized from [support.devrev.ai](https://support.devrev.ai/en-US/devrev/directories):
+
+- [[support-articles/computer-by-devrev/computer|Computer]] (ART-23982) — [external](https://support.devrev.ai/en-US/devrev/article/dI2w0Ngb)

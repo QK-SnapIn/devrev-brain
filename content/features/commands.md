@@ -2,9 +2,10 @@
 title: Commands
 type: feature
 status: draft
-sources: [raw/test-cases/by-feature/fe_commands.jsonl, raw/docs/devrev-developer-docs.md]
+sources: [raw/test-cases/by-feature/fe_commands.jsonl, raw/docs/devrev-developer-docs.md, https://support.devrev.ai/en-US/devrev/directories]
 related: []
-last_updated: 2026-04-12
+last_updated: 2026-05-11
+support_articles: [ART-21866, ART-21930, ART-21937, ART-21952]
 ---
 
 # Commands
@@ -52,3 +53,12 @@ DevRev allows organizations to extend platform functionality through custom comm
 - [gap] How do Rego-based commands differ from workflow commands in execution?
 - [gap] What permissions are required to create vs execute commands?
 - [gap] Are there built-in commands or only user-defined ones?
+
+## Support documentation
+
+Referenced DevRev support articles synchronized from [support.devrev.ai](https://support.devrev.ai/en-US/devrev/directories):
+
+- [[support-articles/snap-ins/csv-commands-uploader|CSV commands uploader]] (ART-21937) — [external](https://support.devrev.ai/en-US/devrev/article/GkwezNs3)
+- [[support-articles/computer-plus-support/commands|Commands]] (ART-21866) — [external](https://support.devrev.ai/en-US/devrev/article/8R9wzoqV)
+- [[support-articles/snap-ins/commands-surface-expander|Commands surface expander]] (ART-21930) — [external](https://support.devrev.ai/en-US/devrev/article/VOY3CHs0)
+- [[support-articles/snap-ins/slash-commands|Slash commands]] (ART-21952) — [external](https://support.devrev.ai/en-US/devrev/article/JhW1DLGe)

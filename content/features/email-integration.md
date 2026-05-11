@@ -2,9 +2,10 @@
 title: Email Integration
 type: feature
 status: draft
-sources: [raw/docs/devrev-agent-dump-integrations.md]
+sources: [raw/docs/devrev-agent-dump-integrations.md, https://support.devrev.ai/en-US/devrev/directories]
 related: ["features/airdrop"]
-last_updated: 2026-04-12
+last_updated: 2026-05-11
+support_articles: [ART-21989]
 ---
 
 # Email Integration
@@ -41,3 +42,9 @@ Customers and internal users communicate via email. This integration routes inbo
 - [gap] Is there a spam/bounce handling mechanism?
 
 **Note:** The source document (`raw/docs/devrev-agent-dump-integrations.md`) mentions Email as an available integration but does not provide detailed configuration or behavior documentation. Most sections above remain as gaps pending a more detailed source.
+
+## Support documentation
+
+Referenced DevRev support articles synchronized from [support.devrev.ai](https://support.devrev.ai/en-US/devrev/directories):
+
+- [[support-articles/snap-ins/sendsafely-integration|SendSafely integration]] (ART-21989) — [external](https://support.devrev.ai/en-US/devrev/article/8hgg5ZKd)

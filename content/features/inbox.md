@@ -2,10 +2,11 @@
 title: Inbox
 type: feature
 status: draft
-sources: [raw/docs/devrev-docs-scraped.md]
+sources: [raw/docs/devrev-docs-scraped.md, https://support.devrev.ai/en-US/devrev/directories]
 related: ["entities/conversation", "features/conversations", "glossary/plug", "features/slas", "features/csat"]
-last_updated: 2026-04-12
+last_updated: 2026-05-11
 docs_url: https://docs.devrev.ai/product/inbox
+support_articles: [ART-21860]
 ---
 
 # Inbox
@@ -79,3 +80,9 @@ Inbox supports multiple notification channels:
 - [gap] Full list of slash commands beyond `/survey`
 - [gap] What are the sorting/filtering options within Inbox?
 - [gap] Can custom Inbox views be created beyond the 3 defaults?
+
+## Support documentation
+
+Referenced DevRev support articles synchronized from [support.devrev.ai](https://support.devrev.ai/en-US/devrev/directories):
+
+- [[support-articles/computer-plus-support/inbox|Inbox]] (ART-21860) — [external](https://support.devrev.ai/en-US/devrev/article/JAwL3wLi)

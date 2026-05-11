@@ -2,7 +2,9 @@
 title: Vista
 type: glossary
 status: stable
-last_updated: 2026-04-12
+last_updated: 2026-05-11
+support_articles: [ART-21899]
+sources: [https://support.devrev.ai/en-US/devrev/directories]
 ---
 
 # Vista
@@ -18,3 +20,9 @@ Configurable list/board views in DevRev. Vistas allow users to create filtered, 
 - Export available via Actions button
 
 See [[features/analytics]] for dashboard capabilities.
+
+## Support documentation
+
+Referenced DevRev support articles synchronized from [support.devrev.ai](https://support.devrev.ai/en-US/devrev/directories):
+
+- [[support-articles/computer-by-devrev/vista-reports|Vista Reports]] (ART-21899) — [external](https://support.devrev.ai/en-US/devrev/article/ZEO1cvTn)
