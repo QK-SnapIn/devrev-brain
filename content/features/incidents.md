@@ -2,9 +2,10 @@
 title: Incident Management
 type: feature
 status: draft
-sources: []
+sources: [https://support.devrev.ai/en-US/devrev/directories]
 related: ["entities/incident", "entities/ticket", "features/slas"]
-last_updated: 2026-04-12
+last_updated: 2026-05-11
+support_articles: [ART-21894]
 ---
 
 # Incident Management
@@ -53,3 +54,9 @@ Enables teams to respond to service disruptions in a structured way, coordinate 
 - [gap] Is this available in all org tiers or specific bundles?
 - [gap] How do incidents relate to SLAs?
 - [gap] Workflow triggers available for incident state changes?
+
+## Support documentation
+
+Referenced DevRev support articles synchronized from [support.devrev.ai](https://support.devrev.ai/en-US/devrev/directories):
+
+- [[support-articles/computer-by-devrev/user-management|User management]] (ART-21894) — [external](https://support.devrev.ai/en-US/devrev/article/uNlA_ZjU)

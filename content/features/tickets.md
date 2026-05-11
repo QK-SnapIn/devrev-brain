@@ -2,9 +2,10 @@
 title: Tickets
 type: feature
 status: stable
-sources: [raw/docs/devrev-docs-tickets-issues-conversations.md, raw/docs/devrev-agent-dump-part2.md]
+sources: [raw/docs/devrev-docs-tickets-issues-conversations.md, raw/docs/devrev-agent-dump-part2.md, https://support.devrev.ai/en-US/devrev/directories]
 related: ["entities/ticket", "features/stock-objects", "features/slas", "features/conversations", "flows/critical-product-flows"]
-last_updated: 2026-04-12
+last_updated: 2026-05-11
+support_articles: [ART-21861]
 ---
 
 # Tickets
@@ -46,3 +47,9 @@ See [[entities/ticket]] for complete field list, stages, priorities, creation fl
 ## Open questions
 - [gap] What are the exact routing rules for auto-assignment?
 - [gap] How does the "Needs response" toggle interact with SLA timers?
+
+## Support documentation
+
+Referenced DevRev support articles synchronized from [support.devrev.ai](https://support.devrev.ai/en-US/devrev/directories):
+
+- [[support-articles/computer-plus-support/tickets|Tickets]] (ART-21861) — [external](https://support.devrev.ai/en-US/devrev/article/WX96DY0b)

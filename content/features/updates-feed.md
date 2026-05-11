@@ -2,9 +2,10 @@
 title: Updates Feed
 type: feature
 status: draft
-sources: []
+sources: [https://support.devrev.ai/en-US/devrev/directories]
 related: ["features/inbox"]
-last_updated: 2026-04-12
+last_updated: 2026-05-11
+support_articles: [ART-21852]
 ---
 
 # Updates Feed
@@ -54,3 +55,9 @@ Gives users a centralized place to see relevant changes to items they own, follo
 - [gap] Can notification preferences be configured per update type?
 - [gap] Is there a "mute" or "unfollow" mechanism (beyond unfollowing a record)?
 - [gap] Does the feed support real-time updates (WebSocket)?
+
+## Support documentation
+
+Referenced DevRev support articles synchronized from [support.devrev.ai](https://support.devrev.ai/en-US/devrev/directories):
+
+- [[support-articles/computer-by-devrev/updates|Updates]] (ART-21852) — [external](https://support.devrev.ai/en-US/devrev/article/knFZaYQO)

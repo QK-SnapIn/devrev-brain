@@ -2,9 +2,10 @@
 title: Issues
 type: feature
 status: stable
-sources: [raw/docs/devrev-docs-tickets-issues-conversations.md, raw/docs/devrev-agent-dump-part2.md]
+sources: [raw/docs/devrev-docs-tickets-issues-conversations.md, raw/docs/devrev-agent-dump-part2.md, https://support.devrev.ai/en-US/devrev/directories]
 related: ["entities/issue", "features/stock-objects", "features/parts", "features/build", "flows/critical-product-flows"]
-last_updated: 2026-04-12
+last_updated: 2026-05-11
+support_articles: [ART-21870]
 ---
 
 # Issues
@@ -48,3 +49,9 @@ See [[entities/issue]] for complete field list, stages, sprint details, hierarch
 ## Open questions
 - [gap] What are the exact auto-transition rules for GitLab and Bitbucket (vs GitHub)?
 - [gap] How does the Smart Sprint snap-in decide which issues to carry forward?
+
+## Support documentation
+
+Referenced DevRev support articles synchronized from [support.devrev.ai](https://support.devrev.ai/en-US/devrev/directories):
+
+- [[support-articles/computer-plus-build/issues|Issues]] (ART-21870) — [external](https://support.devrev.ai/en-US/devrev/article/o81mkSOB)

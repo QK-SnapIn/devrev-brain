@@ -2,9 +2,10 @@
 title: Search
 type: feature
 status: draft
-sources: [raw/docs/devrev-docs-scraped.md, raw/docs/devrev-agent-dump-part1.md]
+sources: [raw/docs/devrev-docs-scraped.md, raw/docs/devrev-agent-dump-part1.md, https://support.devrev.ai/en-US/devrev/directories]
 related: ["features/vistas"]
-last_updated: 2026-04-12
+last_updated: 2026-05-11
+support_articles: [ART-21855, ART-21943]
 ---
 
 # Search
@@ -68,3 +69,10 @@ issue, enhancement, ticket, revu, question_answer, conversation, article, devu, 
 ## Open questions
 - [gap] What are the exact match rules vs fuzzy matching?
 - [gap] Are there search result limits or pagination?
+
+## Support documentation
+
+Referenced DevRev support articles synchronized from [support.devrev.ai](https://support.devrev.ai/en-US/devrev/directories):
+
+- [[support-articles/computer-by-devrev/search|Search]] (ART-21855) — [external](https://support.devrev.ai/en-US/devrev/article/oYn1lc4B)
+- [[support-articles/snap-ins/search-node|Search Node]] (ART-21943) — [external](https://support.devrev.ai/en-US/devrev/article/Nu9tvhiJ)

@@ -2,9 +2,10 @@
 title: Account
 type: entity
 status: stable
-sources: [raw/docs/devrev-agent-dump-part2.md]
+sources: [raw/docs/devrev-agent-dump-part2.md, https://support.devrev.ai/en-US/devrev/directories]
 related: ["features/identity", "entities/ticket", "entities/rev-user"]
-last_updated: 2026-04-12
+last_updated: 2026-05-11
+support_articles: [ART-21879, ART-21882, ART-21921, ART-21923]
 ---
 
 # Account
@@ -47,3 +48,12 @@ An account represents an external customer organization in DevRev. Accounts are 
 - Linked to [[entities/ticket]] objects
 - SLA policies from [[features/slas]]
 - Commerce details for licensing
+
+## Support documentation
+
+Referenced DevRev support articles synchronized from [support.devrev.ai](https://support.devrev.ai/en-US/devrev/directories):
+
+- [[support-articles/computer-plus-support/account|Account]] (ART-21879) — [external](https://support.devrev.ai/en-US/devrev/article/x368dZAr)
+- [[support-articles/computer-plus-support/account-and-contact-import|Account and contact import]] (ART-21882) — [external](https://support.devrev.ai/en-US/devrev/article/Ni6_K6iY)
+- [[support-articles/snap-ins/account-deduplication|Account deduplication]] (ART-21921) — [external](https://support.devrev.ai/en-US/devrev/article/WY9H5fw_)
+- [[support-articles/snap-ins/auto-link-devrev-github-accounts|Auto-link DevRev GitHub accounts]] (ART-21923) — [external](https://support.devrev.ai/en-US/devrev/article/lU6Qkrc-)

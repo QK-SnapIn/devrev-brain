@@ -2,9 +2,10 @@
 title: Build
 type: feature
 status: draft
-sources: [raw/test-cases/by-feature/fe_build.jsonl, raw/docs/devrev-developer-docs.md]
+sources: [raw/test-cases/by-feature/fe_build.jsonl, raw/docs/devrev-developer-docs.md, https://support.devrev.ai/en-US/devrev/directories]
 related: []
-last_updated: 2026-04-12
+last_updated: 2026-05-11
+support_articles: [ART-21828, ART-21875, ART-21876, ART-26061]
 ---
 
 # Build
@@ -47,3 +48,12 @@ Development teams need to track code changes (PRs/MRs) within DevRev to link eng
 - [gap] How do code changes link to work items (issues/tickets)?
 - [gap] What triggers code change creation (webhooks, manual, CI/CD)?
 - [gap] What additional fields are available beyond the basics (labels, reviewers, etc.)?
+
+## Support documentation
+
+Referenced DevRev support articles synchronized from [support.devrev.ai](https://support.devrev.ai/en-US/devrev/directories):
+
+- [[support-articles/computer-by-devrev/build-your-first-ai-agent|Build your first AI agent]] (ART-26061) — [external](https://support.devrev.ai/en-US/devrev/article/ZqvK4VT6)
+- [[support-articles/computer-plus-build/builder-best-practices|Builder best practices]] (ART-21875) — [external](https://support.devrev.ai/en-US/devrev/article/2mQH6ZfC)
+- [[support-articles/computer-plus-build/computer-for-builders-snap-ins|Computer for Builders snap-ins]] (ART-21876) — [external](https://support.devrev.ai/en-US/devrev/article/2SL1-IeT)
+- [[support-articles/computer-plus-build/computer-build-overview|Computer+ Build overview]] (ART-21828) — [external](https://support.devrev.ai/en-US/devrev/article/SFzsiTJK)

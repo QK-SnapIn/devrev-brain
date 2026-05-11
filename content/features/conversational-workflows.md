@@ -2,9 +2,10 @@
 title: Conversational Workflows
 type: feature
 status: draft
-sources: []
+sources: [https://support.devrev.ai/en-US/devrev/directories]
 related: ["features/workflows", "features/plug-widget", "features/agents"]
-last_updated: 2026-04-12
+last_updated: 2026-05-11
+support_articles: [ART-21903]
 ---
 
 # Conversational Workflows
@@ -45,3 +46,9 @@ Standard workflows automate back-office processes (routing, updates, notificatio
 - [gap] Are there limits on the number of user input nodes in a single conversational workflow?
 - [gap] How does versioning work — same semantic versioning as standard workflows?
 - [gap] Can a single conversation trigger both a standard workflow and a conversational workflow?
+
+## Support documentation
+
+Referenced DevRev support articles synchronized from [support.devrev.ai](https://support.devrev.ai/en-US/devrev/directories):
+
+- [[support-articles/computer-by-devrev/conversational-workflows|Conversational workflows]] (ART-21903) — [external](https://support.devrev.ai/en-US/devrev/article/dlr74RiI)

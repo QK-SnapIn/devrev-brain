@@ -2,10 +2,11 @@
 title: Analytics
 type: feature
 status: draft
-sources: [raw/test-cases/by-feature/fe_analytics.jsonl, raw/docs/devrev-developer-docs.md]
+sources: [raw/test-cases/by-feature/fe_analytics.jsonl, raw/docs/devrev-developer-docs.md, https://support.devrev.ai/en-US/devrev/directories]
 related: ["features/vistas"]
-last_updated: 2026-04-12
+last_updated: 2026-05-11
 docs_url: https://docs.devrev.ai/dashboards/dashboard-creation
+support_articles: [ART-21837, ART-21841]
 ---
 
 # Analytics
@@ -89,3 +90,10 @@ Ask questions in natural language via Computer/Search. The system translates to 
 - [gap] How are accelerator nodes used in the analytics pipeline?
 - [gap] What metrics can be ingested via the ingest endpoint?
 - [gap] How does the SSE progress event differ from result event in terms of content?
+
+## Support documentation
+
+Referenced DevRev support articles synchronized from [support.devrev.ai](https://support.devrev.ai/en-US/devrev/directories):
+
+- [[support-articles/computer-plus-observe/session-analytics-overview|Session analytics Overview]] (ART-21841) — [external](https://support.devrev.ai/en-US/devrev/article/izHP1lby)
+- [[support-articles/computer-plus-support/support-analytics-overview|Support analytics Overview]] (ART-21837) — [external](https://support.devrev.ai/en-US/devrev/article/mdhL-0qX)

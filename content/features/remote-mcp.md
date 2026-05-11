@@ -2,9 +2,10 @@
 title: Remote MCP Server
 type: feature
 status: draft
-sources: []
+sources: [https://support.devrev.ai/en-US/devrev/directories]
 related: ["features/workflows", "features/agents"]
-last_updated: 2026-04-12
+last_updated: 2026-05-11
+support_articles: [ART-21859]
 ---
 
 # Remote MCP Server
@@ -40,3 +41,9 @@ Enables external AI tools and agents to interact with DevRev programmatically vi
 - [gap] Are there rate limits specific to MCP server calls?
 - [gap] How are workflow-as-MCP-tool annotations configured in the UI?
 - [gap] What happens when an external MCP server called by a workflow is unreachable?
+
+## Support documentation
+
+Referenced DevRev support articles synchronized from [support.devrev.ai](https://support.devrev.ai/en-US/devrev/directories):
+
+- [[support-articles/computer-by-devrev/remote-mcp-server|Remote MCP server]] (ART-21859) — [external](https://support.devrev.ai/en-US/devrev/article/ZNqaZTsx)

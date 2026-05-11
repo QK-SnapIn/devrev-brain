@@ -2,9 +2,10 @@
 title: Templates
 type: feature
 status: draft
-sources: []
+sources: [https://support.devrev.ai/en-US/devrev/directories]
 related: ["features/tickets", "features/issues", "features/customization"]
-last_updated: 2026-04-12
+last_updated: 2026-05-11
+support_articles: [ART-21856]
 ---
 
 # Templates
@@ -46,3 +47,9 @@ Reduces repetitive data entry and enforces consistency when creating common type
 ## Open questions
 - [gap] How do templates interact with subtypes and custom fields?
 - [gap] Are there system-provided default templates beyond the workflow template library?
+
+## Support documentation
+
+Referenced DevRev support articles synchronized from [support.devrev.ai](https://support.devrev.ai/en-US/devrev/directories):
+
+- [[support-articles/computer-by-devrev/templates|Templates]] (ART-21856) — [external](https://support.devrev.ai/en-US/devrev/article/okzRmK_a)

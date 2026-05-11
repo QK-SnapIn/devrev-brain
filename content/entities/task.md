@@ -2,9 +2,10 @@
 title: Task
 type: entity
 status: draft
-sources: []
+sources: [https://support.devrev.ai/en-US/devrev/directories]
 related: ["entities/issue", "entities/ticket"]
-last_updated: 2026-04-12
+last_updated: 2026-05-11
+support_articles: [ART-21851, ART-21959, ART-26059]
 ---
 
 # Task
@@ -40,3 +41,11 @@ A lightweight work object used for breaking down work into smaller actionable pi
 - [gap] How do tasks differ from sub-issues (child issues)?
 - [gap] Are tasks available in all org tiers?
 - [gap] Can workflows trigger on task state changes?
+
+## Support documentation
+
+Referenced DevRev support articles synchronized from [support.devrev.ai](https://support.devrev.ai/en-US/devrev/directories):
+
+- [[support-articles/computer-by-devrev/agent-studio-task-reference|Agent Studio task reference]] (ART-26059) — [external](https://support.devrev.ai/en-US/devrev/article/H3uk-gXI)
+- [[support-articles/snap-ins/task-tracker|Task tracker]] (ART-21959) — [external](https://support.devrev.ai/en-US/devrev/article/wKEL5T9d)
+- [[support-articles/computer-by-devrev/tasks|Tasks]] (ART-21851) — [external](https://support.devrev.ai/en-US/devrev/article/UR_DDUpg)

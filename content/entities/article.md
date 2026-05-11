@@ -2,9 +2,10 @@
 title: Article
 type: entity
 status: stable
-sources: [raw/docs/devrev-agent-dump-part2.md, raw/docs/ devrev-agent-dump-kb.md]
+sources: [raw/docs/devrev-agent-dump-part2.md, raw/docs/ devrev-agent-dump-kb.md, https://support.devrev.ai/en-US/devrev/directories]
 related: ["features/knowledge-base", "features/agents"]
-last_updated: 2026-04-12
+last_updated: 2026-05-11
+support_articles: [ART-21914, ART-22103]
 ---
 
 # Article
@@ -93,3 +94,10 @@ After filling in article settings, click **Create** for a dropdown with three su
 - **Create** (saves as draft)
 - **Create and submit for review**
 - **Publish**
+
+## Support documentation
+
+Referenced DevRev support articles synchronized from [support.devrev.ai](https://support.devrev.ai/en-US/devrev/directories):
+
+- [[support-articles/computer-plus-support/articles|Articles]] (ART-21914) — [external](https://support.devrev.ai/en-US/devrev/article/CsHTBzn7)
+- [[support-articles/computer-by-devrev/freshdesk-articles|Freshdesk Articles]] (ART-22103) — [external](https://support.devrev.ai/en-US/devrev/article/5eFnYCLs)

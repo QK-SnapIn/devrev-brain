@@ -2,9 +2,10 @@
 title: Identity
 type: feature
 status: draft
-sources: [raw/test-cases/by-feature/fe_identity.jsonl, raw/docs/devrev-developer-docs.md, raw/docs/devrev-docs-scraped.md, raw/docs/devrev-agent-dump-settings.md]
+sources: [raw/test-cases/by-feature/fe_identity.jsonl, raw/docs/devrev-developer-docs.md, raw/docs/devrev-docs-scraped.md, raw/docs/devrev-agent-dump-settings.md, https://support.devrev.ai/en-US/devrev/directories]
 related: ["entities/dev-user", "entities/rev-user", "entities/group", "features/mfz"]
-last_updated: 2026-04-12
+last_updated: 2026-05-11
+support_articles: [ART-21858, ART-21938, ART-23825]
 ---
 
 # Identity
@@ -236,3 +237,11 @@ Users need minimum dashboard access. Operations: Read (view), Create (build), Up
 - [gap] What are the exact permission requirements for each role/access-control operation?
 - [gap] How does the `post-login` hook work and what triggers it?
 - [gap] What are the complete set of environment values beyond "production" and "staging"?
+
+## Support documentation
+
+Referenced DevRev support articles synchronized from [support.devrev.ai](https://support.devrev.ai/en-US/devrev/directories):
+
+- [[support-articles/snap-ins/descope-identity-validation|Descope identity validation]] (ART-21938) — [external](https://support.devrev.ai/en-US/devrev/article/XrGz1dw4)
+- [[support-articles/computer-by-devrev/external-identity-provider-setup|External identity provider setup]] (ART-21858) — [external](https://support.devrev.ai/en-US/devrev/article/zEOt0tAE)
+- [[support-articles/computer-plus-support/federated-identity-provider-setup-for-the-customer-portal|Federated identity provider setup for the customer portal]] (ART-23825) — [external](https://support.devrev.ai/en-US/devrev/article/Tkwo2Ncm)

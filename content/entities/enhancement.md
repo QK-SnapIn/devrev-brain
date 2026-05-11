@@ -2,9 +2,10 @@
 title: Enhancement
 type: entity
 status: stable
-sources: [raw/docs/devrev-agent-dump-part2.md]
+sources: [raw/docs/devrev-agent-dump-part2.md, https://support.devrev.ai/en-US/devrev/directories]
 related: ["features/stock-objects", "entities/issue", "features/parts"]
-last_updated: 2026-04-12
+last_updated: 2026-05-11
+support_articles: [ART-21873]
 ---
 
 # Enhancement
@@ -34,3 +35,9 @@ An enhancement represents a product improvement request or feature idea. Enhance
 - API (`works.create` with enhancement type, or dedicated enhancement endpoints)
 - Workflow action (`UpdateEnhancement`)
 - Airdrop/AirSync import
+
+## Support documentation
+
+Referenced DevRev support articles synchronized from [support.devrev.ai](https://support.devrev.ai/en-US/devrev/directories):
+
+- [[support-articles/computer-plus-build/enhancements|Enhancements]] (ART-21873) — [external](https://support.devrev.ai/en-US/devrev/article/AjBQbI4R)

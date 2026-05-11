@@ -2,9 +2,10 @@
 title: Ticket
 type: entity
 status: stable
-sources: [raw/docs/devrev-agent-dump-part2.md, raw/docs/devrev-docs-tickets-issues-conversations.md, raw/docs/devrev-agent-dump-part1.md]
+sources: [raw/docs/devrev-agent-dump-part2.md, raw/docs/devrev-docs-tickets-issues-conversations.md, raw/docs/devrev-agent-dump-part1.md, https://support.devrev.ai/en-US/devrev/directories]
 related: ["features/stock-objects", "entities/issue", "entities/conversation", "features/slas", "entities/part"]
-last_updated: 2026-04-12
+last_updated: 2026-05-11
+support_articles: [ART-21910, ART-21911, ART-21912, ART-21913, ART-21934, ART-21955, ART-21956, ART-21957, ART-21958, ART-21960, ART-21969, ART-21970]
 ---
 
 # Ticket
@@ -157,3 +158,20 @@ Subtypes allow different field schemas per ticket category.
 - Created from [[entities/conversation]] via conversion.
 - SLA tracked via [[features/slas]].
 - Belongs to [[entities/account]].
+
+## Support documentation
+
+Referenced DevRev support articles synchronized from [support.devrev.ai](https://support.devrev.ai/en-US/devrev/directories):
+
+- [[support-articles/snap-ins/csat-on-ticket|CSAT on ticket]] (ART-21934) — [external](https://support.devrev.ai/en-US/devrev/article/iaG7eVAQ)
+- [[support-articles/computer-plus-support/conversation-to-ticket-conversion|Conversation to ticket conversion]] (ART-21913) — [external](https://support.devrev.ai/en-US/devrev/article/sYVCWaPV)
+- [[support-articles/snap-ins/ticket-age-in-engineering|Ticket age in engineering]] (ART-21955) — [external](https://support.devrev.ai/en-US/devrev/article/9yPfZgdz)
+- [[support-articles/snap-ins/ticket-approval-workflow|Ticket approval workflow]] (ART-21969) — [external](https://support.devrev.ai/en-US/devrev/article/1QEA8_8Z)
+- [[support-articles/snap-ins/ticket-email-notifier|Ticket email notifier]] (ART-21958) — [external](https://support.devrev.ai/en-US/devrev/article/IB-FsSHI)
+- [[support-articles/snap-ins/ticket-immutability|Ticket immutability]] (ART-21957) — [external](https://support.devrev.ai/en-US/devrev/article/8qJ46S4f)
+- [[support-articles/computer-plus-support/ticket-insights|Ticket insights]] (ART-21910) — [external](https://support.devrev.ai/en-US/devrev/article/nrEGeywk)
+- [[support-articles/snap-ins/ticket-issue-field-migrator|Ticket issue field migrator]] (ART-21956) — [external](https://support.devrev.ai/en-US/devrev/article/BtqQCE8C)
+- [[support-articles/snap-ins/ticket-linked-issues-comment-sync|Ticket linked issues comment sync]] (ART-21970) — [external](https://support.devrev.ai/en-US/devrev/article/rS-fxXX9)
+- [[support-articles/snap-ins/ticket-tagger|Ticket tagger]] (ART-21960) — [external](https://support.devrev.ai/en-US/devrev/article/TKQV--P6)
+- [[support-articles/computer-plus-support/ticket-sla-analytics|Ticket-SLA Analytics]] (ART-21911) — [external](https://support.devrev.ai/en-US/devrev/article/P12_dZOD)
+- [[support-articles/computer-plus-support/ticket-team-performance|Ticket-Team Performance]] (ART-21912) — [external](https://support.devrev.ai/en-US/devrev/article/KNuxs2PA)

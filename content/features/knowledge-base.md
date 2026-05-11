@@ -2,9 +2,10 @@
 title: Knowledge Base
 type: feature
 status: draft
-sources: [raw/test-cases/by-feature/fe_knowledge_base.jsonl, raw/docs/devrev-developer-docs.md, raw/docs/devrev-docs-scraped.md, raw/docs/devrev-agent-dump-kb.md, raw/docs/devrev-agent-dump-settings.md]
+sources: [raw/test-cases/by-feature/fe_knowledge_base.jsonl, raw/docs/devrev-developer-docs.md, raw/docs/devrev-docs-scraped.md, raw/docs/devrev-agent-dump-kb.md, raw/docs/devrev-agent-dump-settings.md, https://support.devrev.ai/en-US/devrev/directories]
 related: ["entities/article", "features/customer-portal", "glossary/turing"]
-last_updated: 2026-04-12
+last_updated: 2026-05-11
+support_articles: [ART-21839]
 ---
 
 # Knowledge Base
@@ -248,3 +249,9 @@ Collections are the parent categories (directories) for articles in the customer
 
 ## Open questions
 - [gap] What is the relationship between knowledge.get and articles.get?
+
+## Support documentation
+
+Referenced DevRev support articles synchronized from [support.devrev.ai](https://support.devrev.ai/en-US/devrev/directories):
+
+- [[support-articles/computer-plus-support/knowledge-base-overview|Knowledge base overview]] (ART-21839) — [external](https://support.devrev.ai/en-US/devrev/article/2cg8fV8N)

@@ -2,10 +2,11 @@
 title: PLuG Widget
 type: feature
 status: draft
-sources: []
+sources: [https://support.devrev.ai/en-US/devrev/directories]
 related: ["features/conversations-feature", "features/agents", "features/knowledge-base", "features/customer-portal", "glossary/plug"]
-last_updated: 2026-04-12
+last_updated: 2026-05-11
 docs_url: https://docs.devrev.ai/plug
+support_articles: [ART-21877]
 ---
 
 # PLuG Widget
@@ -86,3 +87,9 @@ PLuG supports three user identity modes:
 - [gap] How does PLuG interact with the Turing agent?
 - [gap] Rate limits or concurrent session limits?
 - [gap] Offline/degraded mode behavior?
+
+## Support documentation
+
+Referenced DevRev support articles synchronized from [support.devrev.ai](https://support.devrev.ai/en-US/devrev/directories):
+
+- [[support-articles/customer-support-agent/plug-widget-customization|Plug widget customization]] (ART-21877) — [external](https://support.devrev.ai/en-US/devrev/article/H86AvWQa)

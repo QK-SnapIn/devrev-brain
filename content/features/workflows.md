@@ -2,9 +2,10 @@
 title: "Workflow Builder"
 type: feature
 status: draft
-sources: [raw/exports/Sample.md, raw/docs/devrev-agent-dump-workflows.md]
+sources: [raw/exports/Sample.md, raw/docs/devrev-agent-dump-workflows.md, https://support.devrev.ai/en-US/devrev/directories]
 related: ["features/stock-objects", "features/agents", "flows/workflow-builder-crud"]
-last_updated: 2026-04-12
+last_updated: 2026-05-11
+support_articles: [ART-21905]
 ---
 
 # Workflow Builder
@@ -286,3 +287,9 @@ See [[features/conversational-workflows]] for full details.
 - [gap] Are there limits on the number of steps in a single workflow?
 - [gap] What happens when a workflow references a deleted ticket or issue?
 - [gap] What are the exact rate limits for workflow execution?
+
+## Support documentation
+
+Referenced DevRev support articles synchronized from [support.devrev.ai](https://support.devrev.ai/en-US/devrev/directories):
+
+- [[support-articles/computer-by-devrev/workflow-nodes|Workflow nodes]] (ART-21905) — [external](https://support.devrev.ai/en-US/devrev/article/Ss4lA3mc)

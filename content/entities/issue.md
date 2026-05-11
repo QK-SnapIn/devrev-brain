@@ -2,9 +2,10 @@
 title: Issue
 type: entity
 status: stable
-sources: [raw/docs/devrev-agent-dump-part2.md, raw/docs/devrev-docs-tickets-issues-conversations.md, raw/docs/devrev-agent-dump-part1.md]
+sources: [raw/docs/devrev-agent-dump-part2.md, raw/docs/devrev-docs-tickets-issues-conversations.md, raw/docs/devrev-agent-dump-part1.md, https://support.devrev.ai/en-US/devrev/directories]
 related: ["features/stock-objects", "entities/ticket", "entities/enhancement", "entities/part"]
-last_updated: 2026-04-12
+last_updated: 2026-05-11
+support_articles: [ART-21949, ART-22020, ART-23026]
 ---
 
 # Issue
@@ -87,3 +88,11 @@ Issues can be linked to [[entities/enhancement]] objects. Enhancements represent
 
 ## List View Filters
 Owner, Group, Severity, Stage, Part, Tags, Priority, Sprint, Created date, Target close date.
+
+## Support documentation
+
+Referenced DevRev support articles synchronized from [support.devrev.ai](https://support.devrev.ai/en-US/devrev/directories):
+
+- [[support-articles/computer-by-devrev/filtering-jira-issues-with-custom-fields---ui-guide|Filtering Jira Issues with Custom Fields - UI Guide]] (ART-23026) — [external](https://support.devrev.ai/en-US/devrev/article/dhtjswOf)
+- [[support-articles/computer-by-devrev/github-issues-airsync|GitHub Issues AirSync]] (ART-22020) — [external](https://support.devrev.ai/en-US/devrev/article/3VLgFAmj)
+- [[support-articles/snap-ins/smart-issue-creator|Smart issue creator]] (ART-21949) — [external](https://support.devrev.ai/en-US/devrev/article/wuF4oquQ)

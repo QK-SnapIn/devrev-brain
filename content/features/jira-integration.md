@@ -2,9 +2,10 @@
 title: Jira Integration
 type: feature
 status: draft
-sources: [raw/docs/devrev-agent-dump-integrations.md]
+sources: [raw/docs/devrev-agent-dump-integrations.md, https://support.devrev.ai/en-US/devrev/directories]
 related: ["features/airdrop"]
-last_updated: 2026-04-12
+last_updated: 2026-05-11
+support_articles: [ART-21986]
 ---
 
 # Jira Integration
@@ -93,3 +94,9 @@ JSM additionally supports: Tickets (mapped from JSM Issues), Private/Public Comm
 - [gap] What is the exact behavior for Jira Data Center-specific nuances?
 - [gap] How are Jira workflows mapped to DevRev stage transition diagrams?
 - [gap] What happens when a Jira issue type has no corresponding DevRev type?
+
+## Support documentation
+
+Referenced DevRev support articles synchronized from [support.devrev.ai](https://support.devrev.ai/en-US/devrev/directories):
+
+- [[support-articles/snap-ins/tracxn-integration|Tracxn Integration]] (ART-21986) — [external](https://support.devrev.ai/en-US/devrev/article/_stkZdzG)
