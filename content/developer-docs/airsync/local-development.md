@@ -1,0 +1,95 @@
+---
+title: Local development
+type: developer-doc
+status: stable
+source: developer.devrev.ai
+category: airsync
+source_url: https://developer.devrev.ai/airsync/local-development
+last_updated: 2026-05-11
+summary: "For easier development you can run your AirSync snap-in locally and receive logs directly in your console."
+---
+
+# Local development
+
+Development Guide
+
+# Local development
+
+For easier development you can run your AirSync snap-in locally and receive logs directly in your console.
+
+## [Prerequisites](#prerequisites)
+
+* [devrev-cli](https://developer.devrev.ai/snapin-development/references/cli-install) (version 4.7 or higher)
+* [chef-cli](https://github.com/devrev/adaas-chef-cli)
+* [jq](https://stedolan.github.io/jq)
+* [nodejs](https://nodejs.org/en/download/package-manager) (version 18.x.x+ or higher)
+* [ngrok](https://ngrok.com)
+
+## [Run the template](#run-the-template)
+
+DevRev offers a starter AirSync snap-in template that is ready for immediate use and testing.
+
+1. Create a new repository.
+   * Create a new repository from this template by clicking the **Use this template** button in the upper right corner and then **Create a new repository**.
+   * Ensure the repository name starts with `airdrop-` (for example, `airdrop-asana-snap-in`).
+2. Open the project in your IDE and authenticate to your DevRev organization using the DevRev CLI.
+
+   ```
+   devrev profiles authenticate --org <your DevRev organization slug>
+   ```
+3. Install the snap-in dependencies from the `code` directory:
+
+   ```
+   npm ci
+   ```
+4. Start the snap-in development server from the `code` directory:
+
+   ```
+   npm run test:server -- local
+   ```
+
+   This will start the snap-in server on `http://localhost:8000`.
+5. Start the ngrok tunnel in a separate terminal window:
+
+   ```
+   ngrok http 8000
+   ```
+
+   This will create a tunnel to your local server.
+   The ngrok forwarding URL will be displayed in the terminal window.
+6. Copy the ngrok forwarding URL and create a new snap-in version and snap-in package using the DevRev CLI:
+
+   ```
+   devrev snap_in_version create-one  --manifest ./manifest.yaml --create-package --testing-url <ngrok forwarding URL>
+   ```
+7. Create a snap-in draft using the DevRev CLI:
+
+   ```
+   devrev snap_in draft
+   ```
+8. After the snap-in draft is created, install the snap-in:
+
+   ```
+   devrev snap_in activate
+   ```
+
+# [Initial sync](#initial-sync)
+
+Now that you have a running snap-in, you can start an import.
+Go to DevRev app and click **AirSyncs** > **Start AirSync** > **Your snap-in**.
+
+1. Starting an import begins with establishing a connection to the external system. The AirSync snap-in prompts for specific information needed to create this connection. Afterwards, the snap-in verifies that the connection is successful and you should see a success message.
+2. Once the connection is established, the snap-in collects information from the external system about the data unit to be exported. This phase is called *external sync units extraction*. An external sync unit is the data unit from the external system to be imported to DevRev. At this point, the DevRev app prompts the user to select an external sync unit from the list.
+3. The snap-in then extracts data from the external system.
+4. Afterwards, the DevRev app requests the mapping of data from the external system to DevRev. The user can decide which fields from each system should match.
+5. Once mapping is complete, the snap-in saves the data to DevRev.
+6. Finally, the snap-in streams any possible attachments from the external system to DevRev.
+
+The process described above is called the **initial sync**. In all subsequent syncs, the first two steps are skipped.
+
+The snap-in constantly communicates with the AirSync platform, which manages its behavior. When an action occurs in the DevRev app, AirSync sends a message to the snap-in with details about the event. The snap-in performs an action based on the event type. For example, when a user starts a new import for the first time, AirSync instructs the snap-in to perform an external sync unit extraction. The snap-in carries out the task and sends back available sync units to the AirSync platform.
+
+Last updated on
+
+## Source
+- DevRev developer docs: [Local development](https://developer.devrev.ai/airsync/local-development)

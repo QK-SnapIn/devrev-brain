@@ -1,0 +1,234 @@
+---
+title: Methods
+type: developer-doc
+status: stable
+source: developer.devrev.ai
+category: sdks
+source_url: https://developer.devrev.ai/sdks/web/methods
+last_updated: 2026-05-11
+summary: "The Plug SDK is a robust tool designed to elevate your website or application by enhancing our widget’s capabilities."
+---
+
+# Methods
+
+PLuG Web SDK
+
+# Methods
+
+The Plug SDK is a robust tool designed to elevate your website or application by enhancing our widget’s capabilities. With our SDK, you can integrate our feature-rich widget, creating a dynamic and personalized user experience.
+
+## [Initialize SDK](#initialize-sdk)
+
+To get started with the Plug SDK on your website, call the `init()` method. This method is essential for enabling the SDK’s functionality, including session recording, the chat widget, and the search agent. Initialization is required before you can perform any other actions using the Plug SDK.
+
+```
+useEffect(() => {
+    window.plugSDK.init({
+      app_id: <your_unique_app_id>,
+    });
+  }, []);
+```
+
+The `init()` method can accept multiple inputs, which are explained below:
+
+| Input parameter | Description | Values |
+| --- | --- | --- |
+| `app_id` | The unique identifier for your Plug SDK. This parameter is required. | String |
+| `disable_plug_chat_window` | The chat widget is enabled by default. Use this option if you want to disable the chat widget. | Boolean (True or False) |
+| `enable_default_launcher` | Show/hide the default Plug widget launcher. | Boolean (True or False) |
+| `session_recording_key` | Identifies your session recording account and is required to enable the SDK session recording features. | String |
+| `enable_session_recording` | Instructs the widget to determine whether to start the session recording. | Boolean (True or False) |
+| `session_token` | Identifies the user interacting with your app. | String |
+| `primary_text_color` | The color of the launcher, button text for new tickets and conversations, conversation user text, and more. It must be a valid hex color code, such as `#f0f0f0`. | String |
+| `session_recording_options` | Options for recording observability sessions. | Refer to [Session recording options](https://support.devrev.ai/devrev/article/ART-21918) |
+| `accent_color` | The accent color of the Plug affects the launcher, new ticket and conversation buttons, conversation user text, and more. | String |
+| `custom_launcher_selector` | A CSS selector string is used to match the element to which the widget will be attached. You can also set this selector from the Plug settings on app.devrev.ai. If both sources are set, this value will be considered the definitive source. | Boolean (True or False) |
+| `spacing` | Padding from the launcher: This padding can also be set in the Plug settings on app.devrev.ai. If a value is specified in both places, this value will be considered the definitive source. Bottom: Padding from the bottom of the launcher. Side: Spacing from the sides of the launcher | object `{bottom: string; side: string;}` |
+| `theme` | The color scheme for the launcher and widget. | `light` or `dark` |
+| `widget_alignment` | The Plug widget can be positioned on either the left or right side of the launcher. You can also adjust the widget alignment through the Plug settings at app.devrev.ai. If alignment settings are configured in both places, the value from app.devrev.ai will override the launcher setting. | left or right |
+
+When React is in Strict mode, you may receive a warning about `window.plugSDK.init()` being called multiple times. These warnings do not affect the widget's installation or functionality.
+
+## [Toggle widget theme](#toggle-widget-theme)
+
+The toggle theme method lets you dynamically adjust the Plug SDK’s theme, even after the widget has been initialized. This feature allows for real-time theme changes based on your users' preferences.
+
+The method accepts the input options: `light` and `dark`.
+
+```
+window.plugSDK.toggleTheme('light | dark');
+```
+
+Calling `toggleTheme()` switches between the current themes. Specifying a theme as a parameter allows you to toggle directly to that specific theme.
+
+The theme specified in this method takes precedence over the theme configured in the Plug settings in your DevRev app.
+
+## [Toggle widget](#toggle-widget)
+
+The `toggleWidget` method allows you to control the visibility of the Plug chat widget.
+
+Passing `true` opens the chat widget.
+
+Passing `false` closes the chat widget.
+
+```
+window.plugSDK.toggleWidget(true);
+```
+
+## [Check widget status](#check-widget-status)
+
+Use `isWidgetOpen` to determine whether your chat widget is currently open or closed.
+
+```
+window.plugSDK.isWidgetOpen
+```
+
+This returns `true` if the chat widget is open and `false` if it is closed.
+
+## [Take action from Plug chat events](#take-action-from-plug-chat-events)
+
+This method allows you to listen for events from the Plug widget. Below are the available values for `PAYLOAD_TYPE`.
+
+* `ON_PLUG_WIDGET_CLOSED`: Triggered when the Plug widget is closed.
+* `ON_PLUG_WIDGET_OPENED`: Triggered when the Plug widget is opened.
+* `ON_PLUG_WIDGET_READY`: Triggered when the Plug widget is ready.
+* `ON_PLUG_WIDGET_UNREAD_COUNT_CHANGE`: Triggered when the user receives a new message. You can also track the number of unread messages and display them to the user.
+* `ON_CONVERSATION_START`: Indicates that the user has started a new conversation.
+* `ON_SEARCH_AGENT_QUERY`: Indicates that a new search query has been made in the Plug search agent.
+* `ON_OBSERVABILITY_READY`: Triggered when the session analytics capabilities of Plug are initialized.
+
+```
+useEffect(() => {
+  window.plugSDK.onEvent((payload) => {
+    if (payload.type === PAYLOAD_TYPE) {
+      //Your logic goes here
+    }
+  });
+}, []);
+```
+
+## [Start conversation](#start-conversation)
+
+The `startConversationContent` method opens the Plug widget directly to the conversation creation view. It replicates the action of clicking the **Send us a message** button, launching the widget to the conversation initiation screen.
+
+This method also accepts an optional input parameter to pre-fill a message on the conversation creation screen, providing your users with a prompt to start a conversation with your team.
+
+```
+plugSDK.toggleWidget(true, 'create_conversation', {
+	startConversationContent: 'Hi',
+});
+```
+
+## [Shutdown](#shutdown)
+
+The `shutdown()` method is used to end the current user session in the Plug widget. It allows you to clear users' conversations and tickets when they log out of your application.
+
+```
+await window.plugSDK.shutdown();
+```
+
+After calling the `shutdown()` method, you can use the `init()` method to reinitialize the Plug widget on your website if you want to display it again in the logged-out version of your application.
+
+Once the `shutdown()` method is called, all other widget functionalities, such as session recording and Nudges, will also be stopped. You will need to reinitialize the widget to reactivate these features.
+
+## [Initialize the search agent](#initialize-the-search-agent)
+
+Calling the `initSearchAgent()` method sets up the Plug search agent on your website. This initialization is required before performing any other actions with the Plug widget SDK.
+
+```
+useEffect(() => {
+  window.plugSDK.init({
+    app_id: '<your_unique_app_id>',
+    disable_plug_chat_window: true,
+});
+
+  window.plugSDK.onEvent((payload) => {
+    if (payload.type === 'ON_PLUG_WIDGET_READY') {
+      window.plugSDK.initSearchAgent();
+    }
+  });
+}, []);
+```
+
+## [Toggle search agent](#toggle-search-agent)
+
+The `toggleSearchAgent` method allows you to control the visibility of the search agent.
+
+If no input is provided, the method toggles the search bar: opening it if it's closed, and closing it if it's open.
+
+```
+window.plugSDK.toggleSearchAgent(true);
+```
+
+## [Check Search Agent status](#check-search-agent-status)
+
+Use `isSearchAgentOpen` to determine whether the search agent is currently open or closed.
+
+```
+window.plugSDK.isSearchAgentOpen
+```
+
+This returns `true` if the search agent is open and `false` if it is closed.
+
+## [Prefill search query in search agent](#prefill-search-query-in-search-agent)
+
+Use the `prefillSearchQuery` method to prefill a search query when opening and initializing the search agent.
+
+```
+window.plugSDK.prefillSearchQuery("search_query");
+```
+
+## [Add session properties](#add-session-properties)
+
+The `addSessionProperties` method is used to add properties to the session in the form of a key-value map.
+
+```
+window.plugSDK.addSessionProperties({
+	city: 'Bengaluru',
+	region: 'us-east'
+});
+```
+
+## [Get session details](#get-session-details)
+
+You can use the `getSessionDetails` method to fetch the session ID and tab ID of currently ongoing session. These details can then be passed across different domains to maintain the journey as a single, continuous session. For more details on how to fetch the session ID and tab ID, and pass them across different domains for a seamless journey, refer to [Cross-domain session tracking](https://support.devrev.ai/devrev/article/ART-21920).
+
+```
+const { sessionId, tabId } = window.plugSDK.getSessionDetails();
+```
+
+## [Track events](#track-events)
+
+To track user events using Plug, utilize the `trackEvent` method available in the Plug SDK. This method automatically links the event to the active user profile within the widget. For more details on user identification within the Plug widget, refer to [Identify your users with Plug](https://developer.devrev.ai/sdks/web/user-identity).
+
+```
+window.plugSDK.trackEvent(event_name, properties)
+```
+
+Sample code:
+
+```
+// Sample code for the trackEvent method:
+var properties = {
+"name" : "John Doe",
+"plan" : "Starter",
+"payment_method" : "Credit Card",
+"expiry_date" : "2024-12-12"
+}
+window.plugSDK.trackEvent("signed_up",properties)
+```
+
+To learn more about tracking events, visit [Track events](/sdks/web/track-events).
+
+## [Restart session recording](#restart-session-recording)
+
+The `restartSessionRecording` method is used to restart session recording.
+
+```
+window.plugSDK.restartSessionRecording();
+```
+
+Last updated on
+
+## Source
+- DevRev developer docs: [Methods](https://developer.devrev.ai/sdks/web/methods)

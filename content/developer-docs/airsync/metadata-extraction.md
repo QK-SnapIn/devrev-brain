@@ -1,0 +1,549 @@
+---
+title: Metadata extraction
+type: developer-doc
+status: stable
+source: developer.devrev.ai
+category: airsync
+source_url: https://developer.devrev.ai/airsync/metadata-extraction
+last_updated: 2026-05-11
+summary: "During the metadata extraction phase, the snap-in must provide an externaldomainmetadata.json file to AirSync."
+---
+
+# Metadata extraction
+
+Development Guide
+
+# Metadata extraction
+
+During the metadata extraction phase, the snap-in must provide an
+`external_domain_metadata.json` file to AirSync.
+This file provides a structured way of describing the external system's domain model,
+including its domain entities, types, relationships, and other metadata.
+
+You can check which object types for AirSync DevRev supports [here](https://developer.devrev.ai/airsync/supported-object-types).
+
+## [Triggering event](#triggering-event)
+
+AirSync initiates the metadata extraction by starting the snap-in with a message with an event
+of type `START_EXTRACTING_METADATA`.
+
+The snap-in must respond to AirSync with a message with an event of type `METADATA_EXTRACTION_DONE`
+when done, or `METADATA_EXTRACTION_ERROR` in case of an error.
+
+## [Implementation](#implementation)
+
+Metadata extraction should be implemented in the [metadata-extraction.ts](https://github.com/devrev/airdrop-template/blob/main/code/src/functions/extraction/workers/metadata-extraction.ts) file.
+
+```
+import { ExtractorEventType, processTask } from "@devrev/ts-adaas";
+import staticExternalDomainMetadata from "../../external-system/external_domain_metadata.json";
+
+const repos = [{ itemType: "external_domain_metadata" }];
+
+processTask({
+  task: async ({ adapter }) => {
+    adapter.initializeRepos(repos);
+    const externalDomainMetadata = { ...staticExternalDomainMetadata };
+    await adapter
+      .getRepo("external_domain_metadata")
+      ?.push([externalDomainMetadata]);
+    await adapter.emit(ExtractorEventType.MetadataExtractionDone);
+  },
+  onTimeout: async ({ adapter }) => {
+    await adapter.emit(ExtractorEventType.MetadataExtractionError, {
+      error: { message: "Failed to extract metadata. Lambda timeout." },
+    });
+  },
+});
+```
+
+The snap-in must always emit a single message.
+
+## [Validating metadata](#validating-metadata)
+
+The extraction function of the snap-in must provide a valid metadata file.
+DevRev provides a JSON schema and a CLI tool [chef-cli](https://github.com/devrev/adaas-chef-cli)
+to validate the proposed schema.
+
+To check the metadata for internal consistency, you should use the following command after every step:
+
+```
+chef-cli validate-metadata < external_domain_metadata.json
+```
+
+This outputs any problems there may be with the metadata file.
+
+The detailed format of this metadata is defined by the
+`external_domain_metadata_schema.json` file. The file is available as part of
+the chef-cli package. There, you can also find an example of a metadata file
+(`metadata.json`).
+
+The transformation can be crafted and finalized further using the chef-cli to ensure extracted
+data is mapped consistently to the DevRev domain model.
+
+## [Getting started with infer-metadata](#getting-started-with-infer-metadata)
+
+The chef-cli provides a helpful command to generate initial domain metadata from example data:
+
+```
+chef-cli infer-metadata example_data_directory > metadata.json
+```
+
+To get good results with this approach:
+
+1. Collect example data from the external system and place them in a directory. Each file should:
+
+   * Contain the same type of records, named after their type.
+   * Have `.json` or `.jsonl` extension, for example `issues.json`.
+   * Contain either a single JSON array of objects, or newline-separated objects.
+2. Run the `infer-metadata` command targeting this directory.
+3. Inspect the generated metadata, particularly field types and the suggestions the tool generates.
+
+For best results:
+
+* Provide 10-100 examples of each record type (but not more than 1000).
+* Ensure logically distinct fields are separate keys at the top level.
+* Use referentially consistent example data if possible.
+* Make sure IDs are strings, not numbers.
+
+This generated metadata serves as a starting point that needs further
+refinement. It can be used to prototype initial domain mappings (by running a
+sync with it) and to generate example normalized data, but it's important to
+understand that it's only an initial guess. The metadata must be carefully
+reviewed and refined to ensure accuracy and proper representation of your
+external system's data model.
+
+## [Craft the metadata declaration](#craft-the-metadata-declaration)
+
+Since crafting metadata declaration in the form of an `external_domain_metadata.json` file can be a
+tedious process, a step-by-step approach is useful for understanding the metadata declarations and
+as a checklist to declare the metadata for an extraction from a specific external system.
+
+Metadata declarations include both *static declarations*, formulated by deduction and comparison of
+external domain system and DevRev domain system, and *dynamic declarations* that are obtained during
+a snap-in run from external system APIs (since they are configurable in the external system and can
+be changed by the end user at any time, such as mandatory fields or custom fields).
+
+### [Declare the extracted record types](#declare-the-extracted-record-types)
+
+*Record types* are the types of records that have a well-defined schema you extract from or load
+to the external system, a domain object in the external system.
+
+If the snap-in is extracting issues and comments, a good starting point to declare record types
+in `external_domain_metadata.json` would be:
+
+```
+{
+  "record_types": {
+    "issues": {},
+    "comments": {}
+  }
+}
+```
+
+Although the declaration of record types is arbitrary, they must match the `item_type`
+field in the artifacts you will upload.
+
+### [Declare the custom record types](#declare-the-custom-record-types)
+
+If the external system supports custom types, or custom variants of some base record type,
+and you want to airdrop those too, you have to declare them in the metadata at runtime.
+That is, the extractor will use APIs of the external system to dynamically discover what
+custom record types exist.
+
+The output of this process might look like this:
+
+```
+{
+"record_types": {
+    "issues_stock_epic": {},
+    "issues_custom2321": {},
+    "issues_custom2322": {},
+    "comments": {}
+  }
+}
+```
+
+### [Provide human-readable names to external record types](#provide-human-readable-names-to-external-record-types)
+
+Define human-readable names for the record types defined in your metadata file.
+
+```
+{
+  "record_types":{
+    "issues_stock_epic":{
+      "name":"Epic"
+    },
+    "issues_custom2321":{
+      "name":"Incident report"
+    },
+    "issues_custom2322":{
+      "name":"Problem"
+    },
+    "comments":{
+      "name":"Comment"
+    }
+  }
+}
+```
+
+### [Categorize external record types](#categorize-external-record-types)
+
+The metadata allows each external record type to be annotated with one category.
+The category key can be an arbitrary string, but it must match the categories declared under
+`record_type_categories`.
+
+Categories of external record types simplify mappings so that a mapping can be applied to a
+whole category of record types.
+Categories also provide a way how custom record types can be mapped.
+
+If the external system allows records to change the record type within the category,
+while still preserving identity, this can be defined by the `are_record_type_conversions_possible`
+field in the `record_type_categories` section. For example, if an issue can be moved to
+become a problem in the external system.
+
+```
+{
+  "record_types":{
+    "issues_stock_epic":{
+      "name":"Epic",
+      "category":"issue"
+    },
+    "issues_custom2321":{
+      "name":"Incident report",
+      "category":"issue"
+    },
+    "issues_custom2322":{
+      "name":"Problem",
+      "category":"issue"
+    },
+    "comments":{
+      "name":"Comment"
+    }
+  },
+  "record_type_categories":{
+    "issue":{
+      "are_record_type_conversions_possible":true
+    }
+  }
+}
+```
+
+### [Mark record types as loadable](#mark-record-types-as-loadable)
+
+The record types that will be used in a 2-way sync must be marked with `is_loadable`.
+This will allow AirSync to load the record types to the external system.
+
+```
+{
+  "record_types":{
+    "issues_stock_epic":{
+      "name":"Epic",
+      "category":"issue",
+      "is_loadable": true
+    },
+    "issues_custom2321":{
+      "name":"Incident report",
+      "category":"issue"
+    },
+    "issues_custom2322":{
+      "name":"Problem",
+      "category":"issue"
+    },
+    "comments":{
+      "name":"Comment",
+      "is_loadable": true
+    }
+  }
+}
+```
+
+### [Declare fields for each record type](#declare-fields-for-each-record-type)
+
+Fields' keys must match what is actually found in the extracted data in the artifacts.
+Note that field keys are case-sensitive.
+
+The supported types are:
+
+* `bool`
+* `int`
+* `float`
+* `text`: Interpreted as plain text.
+* `rich_text`: Formatted text with mentions and images. See the [rich text section](/airsync/data-model/rich-text-fields) for more details.
+* `reference`: IDs referring to another record. References have to declare what they can refer
+  to, which can be one or more record types (`#record:`) or categories (`#category:`).
+* `typed_reference`: Like `reference`, but requires each referenced ID in the extracted data to include its record type. Use this when a field can point to multiple record types and the type must be determined per-record at extraction time (for example, an `assignee` field that can reference either a `user` or a `team`).
+* `enum`: A string from a predefined set of values with the optional human-readable names for each value.
+* `date`
+* `timestamp`
+* `struct`
+* `permission`: Used in article `shared_with` field. See the [permissions section](/airsync/data-model/permissions) for more details.
+* `record_type_privilege`: Used to map record-type level permissions. See the [permissions section](/airsync/data-model/permissions) for more details.
+* `field_type_privilege`: Used to map field-level permissions. See the [permissions section](/airsync/data-model/permissions) for more details.
+* `conditional_privilege`: Used to map conditional permissions. See the [permissions section](/airsync/data-model/permissions) for more details.
+
+Refer to the metadata schema file (`external_domain_metadata_schema.json`) to help choose the appropriate type for your fields.
+
+If the external system supports custom fields, the set of custom fields in each record type
+you wish to extract must be declared too.
+
+Enum fields' set of possible values can often be customizable.
+A good practice is to retrieve the set of possible values for all enum fields from the external
+system's APIs in each sync run. You can mark specific enum values as deprecated using the `is_deprecated` property.
+
+**`ID` (primary key) of the record, `created_date`, and `modified_date` must not be declared.**
+
+Example:
+
+```
+{
+  "schema_version": "v0.2.0",
+  "record_types": {
+    "issues_stock_epic": {
+      "name": "Epic",
+      "category": "issue",
+      "fields": {
+        "actual_close_date": {
+          "name": "Closed at",
+          "type": "timestamp"
+        },
+        "owner": {
+          "is_required": true,
+          "type": "reference",
+          "reference": {
+            "refers_to": {
+              "#record:user": {}
+            }
+          }
+        },
+        "creator": {
+          "is_required": true,
+          "type": "reference",
+          "reference": {
+            "refers_to": {
+              "#record:user": {}
+            }
+          }
+        },
+        "priority": {
+          "name": "Priority",
+          "is_required": true,
+          "type": "enum",
+          "enum": {
+            "values": [
+              {
+                "key": "P-0",
+                "name": "Super important"
+              },
+              {
+                "key": "P-1"
+              },
+              {
+                "key": "P-2",
+                "is_deprecated": true
+              }
+            ]
+          }
+        },
+        "target_close_date": {
+          "type": "date"
+        },
+        "headline": {
+          "name": "Headline",
+          "is_required": true,
+          "type": "text"
+        }
+      }
+    }
+  }
+}
+```
+
+### [Declare arrays](#declare-arrays)
+
+If the field is an array in the extracted data, it is still typed with one of the supported types.
+Lists must be marked as a `collection`.
+
+```
+{
+  "name": "Assignees",
+  "is_required": true,
+  "type": "reference",
+  "reference": {
+    "refers_to": {
+      "#category:agents": {}
+    }
+  },
+  "collection": {
+    "max_length": 5
+  }
+}
+```
+
+Some references have the role of parent or child.
+This means that the child record doesn't make sense without its parent, for example a comment
+attached to a ticket.
+Assigning a `reference_type` helps AirSync correctly handle such fields in case the end-user
+decides to filter some of the parent records out.
+
+### [Define field attributes](#define-field-attributes)
+
+External system fields that shouldn't be mapped in reverse should be marked as `is_read_only`.
+Depending on their purpose, you can also mark fields as `is_indexed`, `is_identifier`,
+`is_write_only`, etc. By default, these are set to false. You can find the full list of supported
+field attributes and their descriptions in the `external_domain_metadata_schema.json`.
+
+### [Configure state transitions](#configure-state-transitions)
+
+If an external record type has some concept of states, between which only certain transitions are
+possible (for example, to move to the `resolved` status, an issue first has to be `in_testing`), you
+can declare these in the metadata too.
+
+This allows creation of a matching *stage diagram* (a collection of stages and their permitted
+transitions) in DevRev, which enables a much simpler import and a closer preservation of the external
+data than mapping to DevRev's built-in stages.
+
+This is especially important for two-way sync, as setting the transitions correctly ensures that
+the transitions a record undergoes in DevRev can be replicated in the external system.
+
+To declare this in the metadata, make sure the status is represented as an enum field, and then
+declare the allowed transitions (which you might have to retrieve from an API at runtime, if they
+are also customized):
+
+```
+{
+  "fields": {
+    "status": {
+      "name": "Status",
+      "is_required": true,
+      "type": "enum",
+      "enum": {
+        "values": [
+          {
+            "key": "detected",
+            "name": "Detected"
+          },
+          {
+            "key": "mitigated",
+            "name": "Mitigated"
+          },
+          {
+            "key": "rca_ready",
+            "name": "RCA Ready"
+          },
+          {
+            "key": "archived",
+            "name": "Archived"
+          }
+        ]
+      }
+    }
+  },
+  "stage_diagram": {
+    "controlling_field": "status",
+    "starting_stage": "detected",
+    "all_transitions_allowed": false,
+    "stages": {
+      "detected": {
+        "transitions_to": ["mitigated", "archived", "rca_ready"],
+        "state": "new"
+      },
+      "mitigated": {
+        "transitions_to": ["archived", "detected"],
+        "state": "work_in_progress"
+      },
+      "rca_ready": {
+        "transitions_to": ["archived"],
+        "state": "work_in_progress"
+      },
+      "archived": {
+        "transitions_to": [],
+        "state": "completed"
+      }
+    },
+    "states": {
+      "new": {
+        "name": "New"
+      },
+      "work_in_progress": {
+        "name": "Work in Progress"
+      },
+      "completed": {
+        "name": "Completed",
+        "is_end_state": true
+      }
+    }
+  }
+}
+```
+
+In the above example:
+
+* The status field is the controlling field of the stage diagram.
+  + Setting `all_transitions_allowed` to `true` creates a diagram where all the defined stages can transition to each other, even if a status field has no explicit transitions.
+* External systems may categorize statuses (like Jira's status categories), which can be included in the diagram metadata (`states` in the example).
+* The `starting_stage` defines the initial stage for new object instances. This data should always be provided if available, otherwise the starting stage is selected alphabetically.
+* The order and human-readable name are taken from the enum values defined on the controlling field.
+  + Default DevRev states (`open`, `in_progress`, and `closed`) are used when the `states` field is not provided.
+
+### [Declare custom link types](#declare-custom-link-types)
+
+External record types that represent links between other record types can be imported as ***custom links***, which means that each declared link type will be recreated in DevRev with the same names. This allows closer preservation of the original data without the need to map the links to DevRev's predefined link types.
+
+To achieve this, the external record type needs to have an enum field defined that represents the link types and you need to declare a special field called `link_naming_data` in the record type.
+
+```
+{
+  "fields": {
+    "type": {
+      "name": "Link Type",
+      "is_required": true,
+      "type": "enum",
+      "enum": {
+        "values": [
+          {
+            "key": "1",
+            "name": "Parent Of"
+          },
+          {
+            "key": "2",
+            "name": "Related"
+          },
+          {
+            "key": "3",
+            "name": "Blocks"
+          }
+        ]
+      }
+    }
+  },
+  "link_naming_data": {
+    "link_type_field": "type",
+    "link_direction_names": {
+      "1": {
+        "forward_name": "Parent of",
+        "backward_name": "Child of"
+      },
+      "2": {
+        "forward_name": "Relates To",
+        "backward_name": "Relates To"
+      },
+      "3": {
+        "forward_name": "Blocks",
+        "backward_name": "Is Blocked By"
+      }
+    }
+  }
+}
+```
+
+In the above example:
+
+* The external *type* field is declared as the `link_type_field`.
+* The `link_direction_names` provide a mapping of each value in the `link_type_field` to their directional names. `forward_name` and `backward_name` can be the same, but both are required.
+* The human-readable name of the link type is taken from the enum values defined on the `link_type_field`. The linkable object types in DevRev are defined based on the mappings of the `source_id` and `target_id` [fields](https://developer.devrev.ai/airsync/supported-object-types#custom_link#).
+
+Last updated on
+
+## Source
+- DevRev developer docs: [Metadata extraction](https://developer.devrev.ai/airsync/metadata-extraction)

@@ -1,0 +1,82 @@
+---
+title: Mapping reasons
+type: developer-doc
+status: stable
+source: developer.devrev.ai
+category: airsync
+source_url: https://developer.devrev.ai/airsync/data-model/mapping-reasons
+last_updated: 2026-05-11
+summary: "AirSync uses transformation methods to map data from one data model to another."
+---
+
+# Mapping reasons
+
+Data model
+
+# Mapping reasons
+
+AirSync uses transformation methods to map data from one data model to another.
+These methods operate at the individual field level, transforming data field-by-field rather than entire records at once.
+Each transformation method has specific requirements regarding the field types and data formats it can work with.
+If the source data field does not meet these requirements for a particular transformation method, that mapping option is not available for selection during the mapping configuration process.
+
+There are several reasons why some mappings might be unavailable:
+
+1. A common reason is mismatch of types. For example, if a DevRev field is expected to be `rich_text`,
+   but the field is set as `text` mapping to some fields is unavailable.
+   Refer to the [supported types](/airsync/metadata-extraction#declare-fields-for-each-record-type)
+   section and the general DevRev documentation for more information.
+2. Only references can be mapped to references. Ensure that source system fields are correctly
+   mapped to reference fields in DevRev.
+3. Support for the `struct` type is limited. Marking a field as a struct in the metadata schema will
+   make it unavailable for mapping outside of using the custom jq transformation method.
+   Refer to the [metadata tips](https://developer.devrev.ai/airsync/faq#metadata-extraction) for more information.
+4. Links are supported only on works and conversations.
+
+## [Transformation methods](#transformation-methods)
+
+The following tables outline the available transformation methods categorized by their applicable field types:
+
+### [Custom fields transformation methods](#custom-fields-transformation-methods)
+
+| Method | Description | Requirements |
+| --- | --- | --- |
+| `make_constrained_simple_value` | Propagates validation constraints from the external system and enforces those in DevRev | - |
+| `make_enum` | Produces an enum field | External field must be of type enum |
+| `make_uenum` | Produces an enum field | External field must be of type enum |
+| `reference_custom_field` | Produces a reference field | External field must be of type reference |
+
+### [Metadata extraction transformation methods](#metadata-extraction-transformation-methods)
+
+| Method | Description | Requirements |
+| --- | --- | --- |
+| `make_custom_stages` | Makes custom stages | Requires stage diagram data in the domain metadata |
+| `map_enum` | Produces an enum field | External field must be of type enum |
+| `map_roles` | Maps permission roles from external to DevRev format | - |
+| `use_as_array_value` | Produces an array field | External field must be a scalar (single-value) |
+| `use_devrev_record` | Enables use of a fixed reference to something in DevRev | DON should be of the right type |
+| `use_directly` | Identity operator that returns exactly the input | External field must be of the same type as the DevRev field; if external field is an array, internal field must also be an array |
+| `use_fixed_value` | Produces a fixed value in DevRev | Only available for boolean or enum DevRev fields |
+
+### [Custom and stock fields transformation methods](#custom-and-stock-fields-transformation-methods)
+
+| Method | Description | Requirements |
+| --- | --- | --- |
+| `use_rich_text` | Produces a rich text field | External field must be of type `rich_text` |
+
+### [Constructed custom fields transformation methods](#constructed-custom-fields-transformation-methods)
+
+| Method | Description | Requirements |
+| --- | --- | --- |
+| `construct_text_field` | Produces a text field | External field must be of type text |
+
+### [Universal transformation method](#universal-transformation-method)
+
+| Method | Description | Requirements |
+| --- | --- | --- |
+| `use_raw_jq` | Enables the use of `jq` to transform data | Can be used on all fields, but should be used sparingly, only if no other transformation method is available |
+
+Last updated on
+
+## Source
+- DevRev developer docs: [Mapping reasons](https://developer.devrev.ai/airsync/data-model/mapping-reasons)
