@@ -140,7 +140,7 @@ Syncing of translations has certain **limitations**:
 
 ## AirSync Zendesk scope and limitations
 
-The following is a list of AirSync Zendesk scopes and limitations to keep in mind when performing a Zendesk AirSync. In addition to these Zendesk-specific limitations, there are also some generic [AirSync scopes and limitations]([[support-articles/computer-by-devrev/airsync-overview|AirSync overview]]#airsync-scope-and-limitations).
+The following is a list of AirSync Zendesk scopes and limitations to keep in mind when performing a Zendesk AirSync. In addition to these Zendesk-specific limitations, there are also some generic [[support-articles/computer-by-devrev/airsync-overview#airsync-scope-and-limitations|AirSync scopes and limitations]].
 
 ### Comments
 

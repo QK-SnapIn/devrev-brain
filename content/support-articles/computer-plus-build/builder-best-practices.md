@@ -19,7 +19,7 @@ related: ['features/build']
 
 * Install [Linear](https://devrev.ai/marketplace/linear-adaas) and [Jira import](https://devrev.ai/marketplace/jira) snap-ins to migrate and sync all your data to DevRev.
 * Integrate with [[support-articles/snap-ins/github|GitHub]] to connect events to your issues, automatically track your work, import issues, and notify reviewers regarding stale PRs.
-* Onboard your team on DevRev by [inviting]([[support-articles/computer-by-devrev/groups|Groups]]#inviting-users-to-groups) users, adding them to groups, and providing users appropriate [[support-articles/computer-by-devrev/access-control-overview|authorization]] to perform specific actions.
+* Onboard your team on DevRev by [[support-articles/computer-by-devrev/groups#inviting-users-to-groups|inviting]] users, adding them to groups, and providing users appropriate [[support-articles/computer-by-devrev/access-control-overview|authorization]] to perform specific actions.
 * Update your customer details on DevRev for effective customer management.
 * [[support-articles/customer-support-agent/plug-widget-customization|Customize Plug]] to reflect your brand identity.
 * Install [Slash commands](https://marketplace.devrev.ai/slash-commands-snapin) to access specific actions quickly and use Computer to perform the functions.
@@ -27,7 +27,7 @@ related: ['features/build']
 
 ## Manage development work
 
-* [Create issues]([[support-articles/computer-plus-build/issues|Issues]]#create-an-issue) for your developers to work on.
+* [[support-articles/computer-plus-build/issues#create-an-issue|Create issues]] for your developers to work on.
 * Capture significant changes to your product by creating [[support-articles/computer-plus-build/enhancements|enhancements]] and keep track of them in the [[support-articles/computer-plus-build/roadmap|roadmap]].
 
 ## Create releases
@@ -42,7 +42,7 @@ related: ['features/build']
 
 ## Plan your work
 
-* Set up [Trails]([[support-articles/computer-by-devrev/parts-trails|Parts & trails]]#trails), a hierarchical structure of your products, capabilities, and features as perceived by your customers.
+* Set up [[support-articles/computer-by-devrev/parts-trails#trails|Trails]], a hierarchical structure of your products, capabilities, and features as perceived by your customers.
 * You can create [[support-articles/computer-plus-build/sprint-mode|sprint boards]] in the following ways:
 
   + Go to **Work > Sprint Boards** on the left nav to view and create the sprint boards by clicking **+ Sprint board**.

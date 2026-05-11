@@ -46,7 +46,7 @@ You can associate Bitbucket commits, branches, and pull requests with the issues
 
 You can associate commits with their corresponding issue by either of these methods:
 
-* Including one or more [issue IDs]([[support-articles/snap-ins/github|GitHub]]#work-formats) anywhere in the commit message.
+* Including one or more [[support-articles/snap-ins/github#work-formats|issue IDs]] anywhere in the commit message.
 
   + Example: `Fix: paging issue (issue:123)`
   + Example: `Disable routing table ISS-123 and default to zero ISS-231`

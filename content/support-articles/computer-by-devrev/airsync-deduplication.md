@@ -19,7 +19,7 @@ related: ['glossary/airsync']
 
 When migrating data, ensuring the accuracy and consistency of the data is paramount. This section describes how AirSync handles potential duplicates and the processes that can be used to clean up duplicates.
 
-[Users]([[support-articles/computer-by-devrev/core-concepts|Core concepts]]#identity) are team members, specifically, they're considered members of the DevRev organization. Examples of AirSync-created users include engineers working on imported Jira issues, support agents who own imported Zendesk tickets, and account owners for imported HubSpot accounts.
+[[support-articles/computer-by-devrev/core-concepts#identity|Users]] are team members, specifically, they're considered members of the DevRev organization. Examples of AirSync-created users include engineers working on imported Jira issues, support agents who own imported Zendesk tickets, and account owners for imported HubSpot accounts.
 
 When importing external users, the email address is used as a means of deduplication.
 

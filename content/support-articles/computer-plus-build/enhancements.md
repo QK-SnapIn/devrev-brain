@@ -15,7 +15,7 @@ related: ['entities/enhancement']
 
 # Enhancements
 
-A product is a combination of [customer parts]([[support-articles/computer-by-devrev/parts-trails|Parts & trails]]#rev-parts) and [builder parts]([[support-articles/computer-by-devrev/parts-trails|Parts & trails]]#dev-parts). Changes to a part could be in the form of addition, deprecation, or transformation. While the changes are a set of tasks or work for the build teams involved, the outcome of relevance is either a new part, an existing part that's deprecated, or an existing part that's improved or expanded. In the latter case, the enhancement record merges with the part on which this activity is based.
+A product is a combination of [[support-articles/computer-by-devrev/parts-trails#rev-parts|customer parts]] and [[support-articles/computer-by-devrev/parts-trails#dev-parts|builder parts]]. Changes to a part could be in the form of addition, deprecation, or transformation. While the changes are a set of tasks or work for the build teams involved, the outcome of relevance is either a new part, an existing part that's deprecated, or an existing part that's improved or expanded. In the latter case, the enhancement record merges with the part on which this activity is based.
 
 Enhancements may be used to track higher-level groups of user stories or to bundle related work together. This usage of "enhancement" is similar to "epic" in other build approaches. You can perform filtering by stage and add stage attributes for enhancements.
 
