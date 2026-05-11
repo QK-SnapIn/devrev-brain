@@ -4,7 +4,7 @@ title: DevRev Brain
 
 # DevRev Product Knowledge Wiki
 
-> **330 pages** of structured product knowledge — features, entities, flows, glossary. Built for QA, engineering, and product teams.
+> **459 pages** of structured product knowledge — features, entities, flows, glossary. Built for QA, engineering, and product teams.
 
 ---
 
@@ -114,6 +114,22 @@ title: DevRev Brain
 | [[support-articles/customer-support-agent/index|Customer Support Agent]] | 3 |
 
 Full crawl of [support.devrev.ai](https://support.devrev.ai/en-US/devrev/directories) (239 articles, 22 directories) cross-linked with existing wiki nodes. Entry point: [[support-articles/index]].
+
+
+---
+
+## Developer Documentation Mirror
+
+| Category | Pages |
+|---|---|
+| [[developer-docs/snapin-development/index|Snap-in development]] | 33 |
+| [[developer-docs/sdks/index|SDKs]] | 29 |
+| [[developer-docs/airsync/index|AirSync (for developers)]] | 25 |
+| [[developer-docs/changelog/index|Developer changelog]] | 9 |
+| [[developer-docs/about/index|About]] | 6 |
+| [[developer-docs/guides/index|Guides]] | 4 |
+
+Curated mirror of [developer.devrev.ai](https://developer.devrev.ai/) (107 pages, 6 categories) — skips the auto-generated API reference. Entry point: [[developer-docs/index]].
 
 ## Browse All
 
