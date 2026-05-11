@@ -10,18 +10,19 @@ top_category: Computer+ Support
 wiki_match: features/accounts
 match_score: 0.625
 last_updated: 2026-05-11
+summary: "Contacts in DevRev identify your customers which are a crucial part of the DevRev offering and ecosystem."
 ---
 
 # Contacts
 
-Contacts in DevRev identify your customers which are a crucial part of the DevRev offering and ecosystem. Conversations on DevRev rely on customer identity to capture information about the customer initiating the conversation. Similarly, tickets on DevRev can capture who the ticket was reported by (or reported for).
+Contacts in DevRev identify your customers which are a crucial [[entities/part|part]] of the DevRev offering and ecosystem. [[features/conversations-feature|Conversations]] on DevRev rely on customer [[features/identity|identity]] to capture information about the customer initiating the [[entities/conversation|conversation]]. Similarly, [[features/tickets|tickets]] on DevRev can capture who the [[entities/ticket|ticket]] was reported by (or reported for).
 
 ## Concepts
 
 Customer identity in DevRev includes the following important constructs:
 
-* **External User/contact**: Your end user or customer or users associated with organization Accounts or Workspaces.
-* **Account/workspace**: Any logical grouping that an external user is part of. It could represent a customer account for your B2B product (for example Stripe as a customer of Slack) or a workspace in your software product (such as a Slack workspace).
+* **External User/contact**: Your end user or customer or users associated with organization [[features/accounts|Accounts]] or Workspaces.
+* **[[entities/account|Account]]/workspace**: Any logical grouping that an external user is part of. It could represent a customer account for your B2B product (for example Stripe as a customer of Slack) or a workspace in your software product (such as a Slack workspace).
 
 ## Create a new customer contact
 
@@ -29,7 +30,7 @@ Customer identity in DevRev includes the following important constructs:
 2. Fill in the following fields as **Add Display Name, Description, Domains, Tags, Tiers**.
 3. Click **Create**.
 
-While creating new customer records, be sure to specify the **External Reference** so customer information coming from other channels (like Plug, email, and WhatsApp) can be matched to the right customer record.
+While creating new customer records, be sure to specify the **External Reference** so customer information coming from other channels (like [[glossary/plug|Plug]], email, and WhatsApp) can be matched to the right customer record.
 
 ![Creating a new customer](don:core:dvrv-us-1:devo/0:artifact/4100323)
 
@@ -66,13 +67,13 @@ These are the stock attributes that come with DevRev:
 * **Customer**: Account or workspace this contact is associated with.
 * **Tags**: Tags are used to categorize contacts.
 
-These attributes can be effectively used in filters and **Group** conditions across various vistas in DevRev to track specific work, capacity, and more.
+These attributes can be effectively used in filters and **[[entities/group|Group]]** conditions across various [[features/vistas|vistas]] in DevRev to track specific work, capacity, and more.
 
-You can add custom attributes to opportunities to track additional information. For more information on custom attributes, see [[support-articles/computer-by-devrev/object-customization|object customization]].
+You can add custom attributes to [[entities/opportunity|opportunities]] to track additional information. For more information on custom attributes, see [[support-articles/computer-by-devrev/object-customization|object customization]].
 
 ### External reference
 
-While ingesting customer identity into DevRev, customer information coming across channels must be matched to the same record.For example, a customer record created by you using APIs should get resolved and matched when the same customer engages with you on the Plug widget for a support interaction.
+While ingesting customer identity into DevRev, customer information coming across channels must be matched to the same record.For example, a customer record created by you using APIs should get resolved and matched when the same customer engages with you on the [[features/plug-widget|Plug widget]] for a support interaction.
 
 This is achieved by using the *external reference* provided by you when creating customer identity.
 
@@ -81,7 +82,7 @@ A unique identifier for an end user from your primary customer record. The syste
 
 For ingestion channels where providing an external reference isn't possible, the system relies on custom logic to identify and match incoming customer identity.
 
-Example: The Slack and Email integration uses a combination of the customer `email` and workspace `domain_name` values. WhatsApp uses the WhatsApp number and associated name.
+Example: The Slack and [[features/email-integration|Email integration]] uses a combination of the customer `email` and workspace `domain_name` values. WhatsApp uses the WhatsApp number and associated name.
 
 ### Identity ingestion
 
@@ -95,4 +96,4 @@ Workspace and external user information provided as part of the [Plug integratio
 Integrating these channels automatically brings customer identity to DevRev.
 
 ## Source
-- DevRev support article [Contacts](https://support.devrev.ai/en-US/devrev/article/V75TgHpU) (ART-21881)
+- DevRev support [[entities/article|article]] [Contacts](https://support.devrev.ai/en-US/devrev/article/V75TgHpU) (ART-21881)

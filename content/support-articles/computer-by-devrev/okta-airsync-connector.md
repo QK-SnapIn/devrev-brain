@@ -11,23 +11,24 @@ wiki_match: glossary/airsync
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['glossary/airsync']
+summary: "The Okta AirSync connector syncs identity and access management (IAM) data from your Okta organization into DevRev."
 ---
 
 # Okta AirSync Connector
 
 # Okta AirSync Connector
 
-The Okta AirSync connector syncs identity and access management (IAM) data from your Okta organization into DevRev. This connector helps you centralize your identity data, track user access patterns, and maintain visibility into your organization's security posture.
+The Okta [[glossary/airsync|AirSync]] connector syncs [[features/identity|identity]] and access management (IAM) data from your Okta organization into DevRev. This connector helps you centralize your identity data, track user access patterns, and maintain visibility into your organization's security posture.
 
 ## Overview
 
-The Okta connector imports users, groups, applications, access policies, devices, and audit logs from Okta into DevRev. It supports both initial full synchronization and incremental updates, ensuring your DevRev data stays current with minimal API overhead.
+The Okta connector imports users, [[entities/group|groups]], applications, access policies, devices, and audit logs from Okta into DevRev. It supports both initial full synchronization and incremental updates, ensuring your DevRev data stays current with minimal API overhead.
 
 ### What This Connector Does
 
 * **Imports identity data** from Okta into DevRev as external records
 * **Syncs user profiles** including standard and custom attributes
-* **Tracks group memberships** and administrative role assignments
+* **Tracks [[entities/group|group]] memberships** and administrative role assignments
 * **Monitors application access** including user and group assignments
 * **Captures security policies** for sign-on, MFA, and password requirements
 * **Imports audit logs** for compliance and security monitoring
@@ -89,14 +90,14 @@ For entities without incremental support, the connector performs a full sync eac
 
 ### Shadow User Filtering
 
-Users with `status = "shadow"` are automatically excluded. Shadow users are incomplete placeholder accounts created during automated provisioning and do not represent real users.
+Users with `status = "shadow"` are automatically excluded. Shadow users are incomplete placeholder [[features/accounts|accounts]] created during automated provisioning and do not represent real users.
 
 ## Prerequisites
 
 Before installing the connector, ensure you have:
 
 1. **Okta Administrator Access**: You need permissions to create API tokens
-2. **DevRev Account**: An active DevRev organization with AirSync enabled
+2. **DevRev [[entities/account|Account]]**: An active DevRev organization with AirSync enabled
 3. **DevRev Admin Role Permissions**:
 
    * Grant **full privileges** for all **custom objects** in DevRev, including subtypes
@@ -149,7 +150,7 @@ Before connecting to Okta, ensure your DevRev admin role has the necessary permi
 
 1. Log in to your **DevRev account**
 2. Navigate to **Settings → Integrations**
-3. Search for **Okta** in the connector marketplace
+3. [[features/search|Search]] for **Okta** in the connector marketplace
 4. Click **Install** on the Okta AirSync connector
 5. The connector is now added to your DevRev organization
 
@@ -295,7 +296,7 @@ If an incremental sync filter fails (HTTP 400):
 
 1. **Start with a recent log date**: Set the System Log Start Date to 7-14 days ago for your first sync
 2. **Test the connection**: Always use the Test Connection feature before saving
-3. **Monitor the first sync**: Watch the initial sync closely to identify any permission issues
+3. **Monitor the first sync**: Watch the initial sync closely to identify any permission [[features/issues|issues]]
 4. **Review skipped entities**: Check the sync logs for any entities that were skipped due to permissions
 
 ### Ongoing Operations
@@ -438,7 +439,7 @@ For issues with the Okta AirSync connector:
 
 1. **Check sync logs**: Review the Sync History tab for error messages and warnings
 2. **Review documentation**: Consult this guide and the troubleshooting section
-3. **Contact DevRev Support**: Open a support ticket in DevRev with:
+3. **Contact DevRev Support**: Open a support [[entities/ticket|ticket]] in DevRev with:
 
    * Connection name
    * Sync timestamp
@@ -477,4 +478,4 @@ For issues with Okta API tokens or permissions, contact Okta Support.
 - [[glossary/airsync]]
 
 ## Source
-- DevRev support article [Okta AirSync Connector](https://support.devrev.ai/en-US/devrev/article/mKHCupBE) (ART-27918)
+- DevRev support [[entities/article|article]] [Okta AirSync Connector](https://support.devrev.ai/en-US/devrev/article/mKHCupBE) (ART-27918)

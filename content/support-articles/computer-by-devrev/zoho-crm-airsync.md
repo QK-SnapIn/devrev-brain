@@ -11,11 +11,12 @@ wiki_match: glossary/airsync
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['glossary/airsync']
+summary: "The Zoho CRM AirSync snap-in simplifies migration from Zoho CRM to DevRev, supporting both one-time imports and ongoing syncs."
 ---
 
 # Zoho CRM AirSync
 
-The Zoho CRM AirSync snap-in simplifies migration from Zoho CRM to DevRev, supporting both one-time imports and ongoing syncs.
+The Zoho CRM [[glossary/airsync|AirSync]] snap-in simplifies migration from Zoho CRM to DevRev, supporting both one-time imports and ongoing syncs.
 
 ## Supported objects
 
@@ -24,13 +25,13 @@ The following is a list of Zoho CRM objects and their corresponding DevRev equiv
 | Zoho CRM Object | DevRev Object | Sync to DevRev | Sync to Zoho |
 | --- | --- | --- | --- |
 | Users | DevUser | ✅ | ❌ |
-| Accounts | Account | ✅ | ❌ |
+| [[features/accounts|Accounts]] | [[entities/account|Account]] | ✅ | ❌ |
 | Contacts | Contact | ✅ | ❌ |
 | Leads | Contact | ✅ | ❌ |
-| Deals | Opportunity | ✅ | ❌ |
-| Cases | Tickets | ✅ | ❌ |
-| Tasks | Task | ✅ | ❌ |
-| Calls | Meeting | ✅ | ❌ |
+| Deals | [[glossary/opportunity|Opportunity]] | ✅ | ❌ |
+| Cases | [[features/tickets|Tickets]] | ✅ | ❌ |
+| [[entities/task|Tasks]] | [[entities/task|Task]] | ✅ | ❌ |
+| Calls | [[entities/meeting|Meeting]] | ✅ | ❌ |
 | Events | Meeting | ✅ | ❌ |
 | Products | Products | ✅ | ❌ |
 | Campaigns | Custom Object | ✅ | ❌ |
@@ -43,18 +44,18 @@ The following is a list of Zoho CRM objects and their corresponding DevRev equiv
 | Appointments Rescheduled History | Custom Object | ✅ | ❌ |
 | Services | Custom Object | ✅ | ❌ |
 | Custom Module | Custom Object | ✅ | ❌ |
-| Solution | Articles | ✅ | ❌ |
+| Solution | [[entities/article|Articles]] | ✅ | ❌ |
 | Emails | DM | ❌ | ❌ |
 
 ## Importing from Zoho CRM
 
 1. Log in to DevRev.
-2. Navigate to **[Settings > Integrations > Snap-ins](https://app.devrev.ai/?setting=snap-ins)**, search for **Zoho CRM** under **All Snap-ins**.
+2. Navigate to **[Settings > Integrations > Snap-ins](https://app.devrev.ai/?setting=snap-ins)**, [[features/search|search]] for **Zoho CRM** under **All Snap-ins**.
 3. Click **Add and Install Snap-in**.
 4. Navigate to **[Settings > Integrations > Airsync](https://app.devrev.ai/?setting=airsyncs)** in the left-navigation.
 5. Click **Airsync** in the top right corner and select **Zoho CRM**.
 6. Create a new connection to authenticate with your Zoho CRM workspace, or use an existing active connection if you already have one.
-7. Once the connection is established, select the Zoho CRM you want to import and specify the DevRev part to be used for any imported work. This initiates a bulk import of the selected sync.
+7. Once the connection is established, select the Zoho CRM you want to import and specify the DevRev [[entities/part|part]] to be used for any imported work. This initiates a bulk import of the selected sync.
 8. DevRev makes an effort to automatically map the fields from Zoho CRM to the corresponding fields in DevRev. However, you may be prompted to manually map certain fields if needed.
 
 ## Create Zoho CRM Connection
@@ -120,4 +121,4 @@ Check the URL when you open Zoho CRM in your browser:
 - [[glossary/airsync]]
 
 ## Source
-- DevRev support article [Zoho CRM AirSync](https://support.devrev.ai/en-US/devrev/article/cM_UNxOV) (ART-22479)
+- DevRev support [[entities/article|article]] [Zoho CRM AirSync](https://support.devrev.ai/en-US/devrev/article/cM_UNxOV) (ART-22479)

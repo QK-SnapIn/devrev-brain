@@ -11,23 +11,24 @@ wiki_match: features/plug-widget
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['features/plug-widget']
+summary: "There are three ways to customize the PLuG widget."
 ---
 
 # Plug widget customization
 
 # PLuG widget customization [UPDATE]
 
-> **Article to update:** https://developer.devrev.ai/sdks/plug/customize (article/21877)
+> **[[entities/article|Article]] to update:** https://developer.devrev.ai/sdks/[[glossary/plug|plug]]/customize (article/21877)
 
 ---
 
 # PLuG widget customization
 
-There are three ways to customize the PLuG widget. They can be combined: SDK values take priority over dashboard settings, and CSS overrides both.
+There are three ways to customize the [[features/plug-widget|PLuG widget]]. They can be combined: SDK values take priority over dashboard settings, and CSS overrides both.
 
 1. **Dashboard settings** — No-code configuration in DevRev Settings.
 2. **SDK initialization** — Programmatic options passed to `plugSDK.init()`.
-3. **CSS customization** — Full brand styling via a custom stylesheet.
+3. **CSS [[features/customization|customization]]** — Full brand styling via a custom stylesheet.
 
 ---
 
@@ -65,9 +66,9 @@ Go to **Settings > PLuG & Portal > PLuG Chat**.
 | Welcome message | Heading shown when the widget opens (max 50 characters). Configured here, not via SDK. |
 | Welcome subtitle | Supporting text below the welcome heading. |
 | Quick links | Predefined action buttons on the home screen. |
-| Show search | Display the search bar on the home screen. |
-| Show conversations | Display the conversations list on the home screen. |
-| Show tickets | Display the tickets list on the home screen. |
+| Show [[features/search|search]] | Display the search bar on the home screen. |
+| Show [[features/conversations-feature|conversations]] | Display the conversations list on the home screen. |
+| Show [[features/tickets|tickets]] | Display the tickets list on the home screen. |
 
 ### Conversations tab
 
@@ -127,7 +128,7 @@ window.plugSDK.init({
 | `spacing.side` | string | `'0px'` | Distance between the widget and launcher icon. |
 | `disable_plug_chat_window` | boolean | `false` | Set to `true` to disable chat and use search only. |
 | `session_token` | string | — | Backend-generated token to identify logged-in users. |
-| `enable_session_recording` | boolean | `false` | Enable session recording for analytics. |
+| `enable_session_recording` | boolean | `false` | Enable session recording for [[features/analytics|analytics]]. |
 | `session_recording_key` | string | — | Key for session recording integration. |
 | `send_button_disable_duration` | number (ms) | `5000` | How long the send button stays disabled while the CX Agent is responding. Set to `0` to disable. See [One message at a time](https://#one-message-at-a-time). |
 
@@ -167,7 +168,7 @@ The `snapkit__` class system covers all PLuG surfaces:
 * Chat bubbles (user and agent messages, citations, timestamps)
 * Input area (compose bar, send button, attachments, emoji picker)
 * Search widget (search bar, results list, AI answer panel)
-* Ticket form (fields, labels, submit button)
+* [[entities/ticket|Ticket]] form (fields, labels, submit button)
 * Footer ("Powered by DevRev" branding)
 * Light and dark mode variants
 
@@ -184,7 +185,7 @@ Details about all supported are here - <https://app.devrev.ai/devrev/settings/kn
 
 ## Multi-language support
 
-PLuG supports four languages for the widget UI and knowledge base.
+PLuG supports four languages for the widget UI and [[features/knowledge-base|knowledge base]].
 
 **Supported languages:** English (`en`), Spanish (`es`), Dutch (`nl`), Portuguese (`pt`).
 
@@ -197,7 +198,7 @@ PLuG supports four languages for the widget UI and knowledge base.
 **What you must translate manually:**
 
 * Welcome message text and any custom card copy.
-* Knowledge base articles and collections. Draft and publish per language from **Settings > Knowledge Base > Articles**.
+* Knowledge base [[entities/article|articles]] and collections. Draft and publish per language from **Settings > Knowledge Base > Articles**.
 
 Configure the default language at **Settings > PLuG & Portal > PLuG Chat > Language & Region**.
 
@@ -209,7 +210,7 @@ When enabled, PLuG prevents users from sending a second message while the CX Age
 
 **How it works:**
 
-PLuG cannot always know upfront whether the conversation will go to a CX Agent or a human. So:
+PLuG cannot always know upfront whether the [[entities/conversation|conversation]] will go to a CX Agent or a human. So:
 
 * On the **first message**, the send button is blocked for up to 5 seconds while PLuG waits to learn who is responding.
 * If the response comes from a **CX Agent**, blocking becomes intelligent. The button stays disabled only while the agent is actively streaming, then re-enables automatically.

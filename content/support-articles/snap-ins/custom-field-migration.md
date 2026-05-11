@@ -10,11 +10,12 @@ top_category: Snap-ins
 wiki_match: features/customization
 match_score: 0.686
 last_updated: 2026-05-11
+summary: "The Custom field migration snap-in is designed to facilitate the seamless migration of custom field values across various DevRev objects, including accounts, issues, tickets, opportunities, incidents, and contacts."
 ---
 
 # Custom field migration
 
-The Custom field migration snap-in is designed to facilitate the seamless migration of custom field values across various DevRev objects, including accounts, issues, tickets, opportunities, incidents, and contacts. It efficiently processes data in batches, transferring values from a specified source field to a target field while managing state through cursors for reliable execution.
+The Custom field migration snap-in is designed to facilitate the seamless migration of custom field values across various DevRev objects, including [[features/accounts|accounts]], [[features/issues|issues]], [[features/tickets|tickets]], [[entities/opportunity|opportunities]], [[features/incidents|incidents]], and contacts. It efficiently processes data in batches, transferring values from a specified source field to a target field while managing state through cursors for reliable execution.
 
 ## Installation
 
@@ -35,4 +36,4 @@ The Custom field migration snap-in is designed to facilitate the seamless migrat
 Once the migration starts, you will receive a message in the snap-in **Discussion** section notifying you of its initiation. The progress is updated after every 75 updates. When the migration is completed, you will receive another message in the snap-in **Discussion** section. If there are any failed items, you can re-enter the command to update them.
 
 ## Source
-- DevRev support article [Custom field migration](https://support.devrev.ai/en-US/devrev/article/Oj8u-g0z) (ART-21965)
+- DevRev support [[entities/article|article]] [Custom field migration](https://support.devrev.ai/en-US/devrev/article/Oj8u-g0z) (ART-21965)

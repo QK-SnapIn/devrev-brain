@@ -10,6 +10,7 @@ top_category: Computer by DevRev
 wiki_match: features/search
 match_score: 0.429
 last_updated: 2026-05-11
+summary: "A customer organization, including its name, address, industry, domain, and website address."
 ---
 
 # Glossary
@@ -18,13 +19,13 @@ last_updated: 2026-05-11
 
 A customer organization, including its name, address, industry, domain, and website address.
 
-Terms related to account: customer, workspace
+Terms related to [[entities/account|account]]: customer, workspace
 
 Read more about account: [ART-21830](https://support.devrev.ai/devrev/article/ART-21830)
 
 ### Agent Studio
 
-A platform for building, deploying, and managing AI agents.
+A platform for building, deploying, and managing [[features/agents|AI agents]].
 
 Read more about Agent Studio: <https://devrev.ai/agent-studio>
 
@@ -32,7 +33,7 @@ Read more about Agent Studio: <https://devrev.ai/agent-studio>
 
 The bidirectional sync engine that connects to your existing tools and keeps data updated in both those tools and Computer.
 
-Terms related to AirSync: snap-in
+Terms related to [[glossary/airsync|AirSync]]: snap-in
 
 Read more about AirSync: <https://marketplace.devrev.ai/Import>
 
@@ -48,7 +49,7 @@ Read more about capability: [[support-articles/computer-by-devrev/parts-trails|A
 
 ### Computer
 
-Computer is your AI teammate built for working together. It unifies all your data, works alongside teams to handle repetitive tasks, and takes action across your work apps. Computer delivers Team Intelligence--not  just answers, but active help that eliminates stupid work so you can focus on what matters.
+Computer is your AI teammate built for working together. It unifies all your data, works alongside teams to handle repetitive [[entities/task|tasks]], and takes action across your work apps. Computer delivers Team Intelligence--not  just answers, but active help that eliminates stupid work so you can focus on what matters.
 
 Terms related to Computer: Computer Apps
 
@@ -78,7 +79,7 @@ Read more about Computer for Growth Teams: [ART-21830](https://support.devrev.ai
 
 ### Computer for Support Teams
 
-The app for customer support ticket management.
+The app for customer support [[entities/ticket|ticket]] management.
 
 Terms related to Computer for Support Teams: Computer Apps
 
@@ -86,7 +87,7 @@ Read more about Computer for Support Teams: [[support-articles/computer-plus-bui
 
 ### Computer for User Insights
 
-The app for user session analytics.
+The app for user session [[features/analytics|analytics]].
 
 Terms related to Computer for User Insights: Computer Apps
 
@@ -96,7 +97,7 @@ Read more about Computer for User Insights: [[support-articles/computer-plus-obs
 
 The app for customer experience.
 
-Terms related to Computer for Your Customers: Computer Apps, Plug
+Terms related to Computer for Your Customers: Computer Apps, [[glossary/plug|Plug]]
 
 Read more about Computer for Your Customers: <https://devrev.ai/for-customers>
 
@@ -112,7 +113,7 @@ Read more about connection: [[support-articles/computer-by-devrev/airsync-overvi
 
 ### contact
 
-Individual prospects or users associated with an organization's workspaces or accounts.
+Individual prospects or users associated with an organization's workspaces or [[features/accounts|accounts]].
 
 Contacts can be associated with an account or workspace, but not always.
 
@@ -124,7 +125,7 @@ Read more about contact: [ART-21830](https://support.devrev.ai/devrev/article/AR
 
 An interaction between the builder and consumer that may be escalated to a ticket.
 
-Terms related to conversation: ticket
+Terms related to [[entities/conversation|conversation]]: ticket
 
 Read more about conversation: [[support-articles/computer-by-devrev/apps|ART-21848]]
 
@@ -136,7 +137,7 @@ Read more about customer: [[support-articles/computer-plus-support/contacts|ART-
 
 ### DevRev
 
-DevRev is an AI company building the future of work through Computer, an AI teammate that unifies data, connects teams, and enables agentic workflows across an organization.
+DevRev is an AI company building the future of work through Computer, an AI teammate that unifies data, connects teams, and enables agentic [[features/workflows|workflows]] across an organization.
 
 DevRev’s mission is to unlock team potential by enabling seamless human-AI collaboration that makes work more connected, creative, and human.
 
@@ -146,15 +147,15 @@ Read more about DevRev: <https://devrev.ai/>
 
 Interactions between employees and customers, encompassing communications across various channels and touchpoints.
 
-DevRev links accounts, contacts, and employees to engagements. Additionally, they can be linked to opportunities if they are relevant to a specific opportunity.
+DevRev links accounts, contacts, and employees to engagements. Additionally, they can be linked to [[entities/opportunity|opportunities]] if they are relevant to a specific [[glossary/opportunity|opportunity]].
 
 Read more about engagement: [ART-21830](https://support.devrev.ai/devrev/article/ART-21830)
 
 ### enhancement
 
-A change to a part in the form of addition, deprecation, or transformation.
+A change to a [[entities/part|part]] in the form of addition, deprecation, or transformation.
 
-Terms related to enhancement: part
+Terms related to [[entities/enhancement|enhancement]]: part
 
 Read more about enhancement: [[support-articles/computer-plus-build/enhancements|ART-21873]]
 
@@ -172,15 +173,15 @@ Read more about feature: [[support-articles/computer-by-devrev/parts-trails|ART-
 
 The mechanism to ensure that internal users (devs) get access to the correct data and have a personalized experience and to ensure that an organization can accurately maintain a system of record for their leads, customers, and users.
 
-Read more about identity: [[support-articles/computer-by-devrev/core-concepts|ART-21847]]
+Read more about [[features/identity|identity]]: [[support-articles/computer-by-devrev/core-concepts|ART-21847]]
 
 ### issue
 
 A work item created by the builder or maintainer of a part or by automation.
 
-Autonomous issues are created by automation.
+Autonomous [[features/issues|issues]] are created by automation.
 
-Terms related to issue: ticket, part
+Terms related to [[entities/issue|issue]]: ticket, part
 
 Read more about issue: [[support-articles/computer-plus-build/computer-build-overview|ART-21828]]
 
@@ -192,9 +193,9 @@ Read more about Marketplace: <https://marketplace.devrev.ai/>
 
 ### Memory
 
-An ontology at the heart of DevRev that defines connections among product parts and people.
+An ontology at the heart of DevRev that defines connections among product [[features/parts|parts]] and people.
 
-Examples of uses of the DevRev knowledge graph are creating product enhancements from customer issues and generating enhancement release notes from linked documents.
+Examples of uses of the DevRev knowledge graph are creating product [[entities/enhancement|enhancements]] from customer issues and generating enhancement release notes from linked documents.
 
 Terms related to Memory: part, trail
 
@@ -246,13 +247,13 @@ Read more about snap-in: <https://marketplace.devrev.ai/>
 
 A work item that requires an owner and a single action to be performed.
 
-Terms related to task: issue, ticket
+Terms related to [[entities/task|task]]: issue, ticket
 
 Read more about task: [[support-articles/computer-by-devrev/core-concepts|ART-21847]]
 
 ### Team Intelligence
 
-An outcome of humans and machines working together to solve bigger problems, build better products, and make customers happier.
+An outcome of humans and machines working together to solve bigger problems, [[features/build|build]] better products, and make customers happier.
 
 Read more about Team Intelligence: <https://devrev.ai/blog/the-journey-to-team-intelligence>
 
@@ -286,7 +287,7 @@ Read more about user: [[support-articles/computer-by-devrev/core-concepts|ART-21
 
 A list of objects in DevRev that you can sort, categorize, and share.
 
-Read more about vista: [[support-articles/computer-by-devrev/vistas|ART-21835]]
+Read more about [[glossary/vista|vista]]: [[support-articles/computer-by-devrev/vistas|ART-21835]]
 
 ### workflow
 
@@ -303,4 +304,4 @@ The customer of a product or service.
 Read more about workspace: [[support-articles/computer-plus-support/contacts|ART-21881]]
 
 ## Source
-- DevRev support article [Glossary](https://support.devrev.ai/en-US/devrev/article/SvHD-UNB) (ART-16784)
+- DevRev support [[entities/article|article]] [Glossary](https://support.devrev.ai/en-US/devrev/article/SvHD-UNB) (ART-16784)

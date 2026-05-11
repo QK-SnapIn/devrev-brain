@@ -11,6 +11,7 @@ wiki_match: features/build
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['features/build']
+summary: "Add-on modules for DevRev, called snap-ins, are available on the Marketplace."
 ---
 
 # Computer for Builders snap-ins
@@ -20,8 +21,8 @@ Add-on modules for DevRev, called snap-ins, are available on the [Marketplace](h
 Snap-ins are of the following types:
 
 * **Integrations** let you connect DevRev with existing systems such as Slack and Jira.
-* **Automations** perform tasks within DevRev based on events, like responding to customer conversations and linking tickets and issues.
-* **AirSync** helps you bring data from external sources to DevRev and keep them in sync.
+* **Automations** perform [[entities/task|tasks]] within DevRev based on events, like responding to customer [[features/conversations-feature|conversations]] and linking [[features/tickets|tickets]] and [[features/issues|issues]].
+* **[[glossary/airsync|AirSync]]** helps you bring data from external sources to DevRev and keep them in sync.
 
 While numerous snap-ins are available and more are in development, you can create your own using [DevRev APIs](https://developer.devrev.ai/).
 
@@ -45,4 +46,4 @@ While numerous snap-ins are available and more are in development, you can creat
 - [[features/build]]
 
 ## Source
-- DevRev support article [Computer for Builders snap-ins](https://support.devrev.ai/en-US/devrev/article/2SL1-IeT) (ART-21876)
+- DevRev support [[entities/article|article]] [Computer for Builders snap-ins](https://support.devrev.ai/en-US/devrev/article/2SL1-IeT) (ART-21876)

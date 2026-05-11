@@ -10,11 +10,12 @@ top_category: Snap-ins
 wiki_match: features/commerce
 match_score: 0.632
 last_updated: 2026-05-11
+summary: "Converge support and build by bringing together conversations, tickets, and issues."
 ---
 
 # Convergence
 
-Converge support and build by bringing together conversations, tickets, and issues.
+Converge support and [[features/build|build]] by bringing together [[features/conversations-feature|conversations]], [[features/tickets|tickets]], and [[features/issues|issues]].
 
 Once the convergence snap-in is installed, tickets and issues automatically change states when related tickets and issues do. These state changes are visible in the **Discussions** and **Events** tabs of tickets and issues.
 
@@ -22,19 +23,19 @@ Once the convergence snap-in is installed, tickets and issues automatically chan
 
 ## Workflows
 
-The workflows present in the Convergence snap-in do the following tasks for you automatically:
+The [[features/workflows|workflows]] present in the Convergence snap-in do the following [[entities/task|tasks]] for you automatically:
 
-* Ticket owners are added to the watchers list of the enhancement on which the ticket was created.
+* [[entities/ticket|Ticket]] owners are added to the watchers list of the [[entities/enhancement|enhancement]] on which the ticket was created.
 * If the enhancement is in-progress state and there are no issues linked to it, post a message in the enhancement timeline.
 * Post message to enhancement timeline if not issues have been linked.
 * Post message to enhancement timeline if issues are in *Triage* stage.
 * Post in enhancement timeline if enhancement is *Prioritized* but no issues are linked.
 * Post to ticket's timeline mentioning its owners when it is moved to *Product Assist* stage.
 * Post to linked ticket's timelines when enhancement changes stage.
-* Notify target close date to ticket, issue, tasks, opportunity and enhancement owners.
+* Notify target close date to ticket, [[entities/issue|issue]], tasks, [[glossary/opportunity|opportunity]] and enhancement owners.
 * Notify enhancement owners for linking PRD and design docs.
-* Post a message on part timeline tagging part owners when a new ticket is linked to that part.
-* Post in the linked conversation when a ticket is closed or reopened.
+* Post a message on [[entities/part|part]] timeline tagging part owners when a new ticket is linked to that part.
+* Post in the linked [[entities/conversation|conversation]] when a ticket is closed or reopened.
 * Post in the linked conversation when a ticket is linked.
 * Post in child issue timeline when parent issue is closed.
 * Post in parent issue timeline when child issue is closed.
@@ -58,4 +59,4 @@ The Convergence snap-in is installed automatically in new workspaces.
 While the defaults aim at balance, your environment may call for other settings. You can change the snap-in settings at any time under **Settings** > **Snap-ins**.
 
 ## Source
-- DevRev support article [Convergence](https://support.devrev.ai/en-US/devrev/article/qR1VuAs7) (ART-21931)
+- DevRev support [[entities/article|article]] [Convergence](https://support.devrev.ai/en-US/devrev/article/qR1VuAs7) (ART-21931)

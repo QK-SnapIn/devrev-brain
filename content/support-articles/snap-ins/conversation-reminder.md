@@ -11,11 +11,12 @@ wiki_match: entities/conversation
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['entities/conversation']
+summary: "The Conversation Reminder Snap-in is designed to automatically send a notification to the customer who initiated the conversation if it remains in \"Waiting on User\" stage for an extended period, as defined in the configured time settings."
 ---
 
 # Conversation reminder
 
-The Conversation Reminder Snap-in is designed to automatically send a
+The [[entities/conversation|Conversation]] Reminder Snap-in is designed to automatically send a
 notification to the customer who initiated the conversation if it remains in
 "Waiting on User" stage for an extended period, as defined in the configured
 time settings. The notification message sent to the customer can be customized
@@ -37,4 +38,4 @@ For more information, refer to the [Conversation Reminder snap-in](https://marke
 - [[entities/conversation]]
 
 ## Source
-- DevRev support article [Conversation reminder](https://support.devrev.ai/en-US/devrev/article/qJxljjQY) (ART-21932)
+- DevRev support [[entities/article|article]] [Conversation reminder](https://support.devrev.ai/en-US/devrev/article/qJxljjQY) (ART-21932)

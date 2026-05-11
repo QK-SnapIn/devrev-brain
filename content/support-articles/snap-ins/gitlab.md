@@ -10,16 +10,17 @@ top_category: Snap-ins
 wiki_match: glossary/vista
 match_score: 0.545
 last_updated: 2026-05-11
+summary: "Bring your code to the center of your decision-making with GitLab and DevRev."
 ---
 
 # GitLab
 
-Bring your code to the center of your decision-making with GitLab and DevRev. The GitLab integration allows users to onboard to DevRev and automate day-to-day activities, eliminating tedious manual tasks.
+Bring your code to the center of your decision-making with GitLab and DevRev. The GitLab integration allows users to onboard to DevRev and automate day-to-day activities, eliminating tedious manual [[entities/task|tasks]].
 
-* Work automation: Connect GitLab events to your DevRev issues.
-* Magic Commands: Update DevRev issues without leaving your IDE.
-* Autotrack work: Automatically track your work in DevRev even without creating an issue ahead of time.
-* PR Task Creation: Create DevRev tasks for PR reviewers.
+* Work automation: Connect GitLab events to your DevRev [[features/issues|issues]].
+* Magic [[features/commands|Commands]]: Update DevRev issues without leaving your IDE.
+* Autotrack work: Automatically track your work in DevRev even without creating an [[entities/issue|issue]] ahead of time.
+* PR [[entities/task|Task]] Creation: Create DevRev tasks for PR reviewers.
 * PR Reminders: Automatically remind PR reviewers when a PR goes stale.
 
 For more information, refer to the
@@ -128,12 +129,12 @@ Fixes various formatting issues.
 
 ## Automatic work detection
 
-DevRev can automatically track your coding activity, even if you don't explicitly associate it with an issue. When you create a new branch or PR, and the branch or PR isn't explicitly associated with an issue, DevRev creates an issue for you. This is called this an autonomous issue or autonomous work item. DevRev tries to fill in the details for you but you can rename the issue in DevRev, or mark it as belonging to a different, existing issue.
+DevRev can automatically track your coding activity, even if you [[glossary/don|don]]'t explicitly associate it with an issue. When you create a new branch or PR, and the branch or PR isn't explicitly associated with an issue, DevRev creates an issue for you. This is called this an autonomous issue or autonomous work item. DevRev tries to fill in the details for you but you can rename the issue in DevRev, or mark it as belonging to a different, existing issue.
 
 To make use of this feature, go to **Configurations** > **Track Autonomous work**.
 
 * You can keep it turned off if you choose to explicitly create issues and link your GitLab activity or you can enable it either for PR creation or branch creation event.
-* Select the default part under **Default part for autonomous issues** as a default Part ID if you enable **Track autonomous work**. Autonomous issues originating from GitLab are attributed to a default part. You can configure the default part while setting up your snap-in. Every issue in DevRev must have a part attribution.
+* Select the default [[entities/part|part]] under **Default part for autonomous issues** as a default Part ID if you enable **Track autonomous work**. Autonomous issues originating from GitLab are attributed to a default part. You can configure the default part while setting up your snap-in. Every issue in DevRev must have a part attribution.
 
 ### Autonomous work lifecycle
 
@@ -146,7 +147,7 @@ DevRev can help you keep track of your issues while they're in the PR process. W
 To make use of this feature, the following conditions must be met:
 
 1. Create task for PR reviewers is enabled under **My Settings** and toggle on **Enable for me**.
-2. Each developer that wants to use this feature links their GitLab account by going to **Settings** > **Account** > **External Identities** and **Link GitLab Account**.
+2. Each developer that wants to use this feature links their GitLab [[entities/account|account]] by going to **Settings** > **Account** > **External Identities** and **Link GitLab Account**.
 
 ## PR reminders
 
@@ -158,4 +159,4 @@ To make use of this feature, the following conditions must be met:
 2. (Optional) Set the **Days before sending PR reminders**.
 
 ## Source
-- DevRev support article [GitLab](https://support.devrev.ai/en-US/devrev/article/AbCZhzgN) (ART-21981)
+- DevRev support [[entities/article|article]] [GitLab](https://support.devrev.ai/en-US/devrev/article/AbCZhzgN) (ART-21981)

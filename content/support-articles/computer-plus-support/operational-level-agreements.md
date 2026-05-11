@@ -11,17 +11,18 @@ wiki_match: features/ola
 match_score: 0.912
 last_updated: 2026-05-11
 related: ['features/ola']
+summary: "An operational-level agreement (OLA) is an internal contract that defines the service-level targets expected from different teams within your organization."
 ---
 
 # Operational-level agreements
 
-An operational-level agreement (OLA) is an internal contract that defines the service-level targets expected from different teams within your organization. OLAs are customer-account-agnostic and are usually created to ensure that internal stakeholders have their own targets, which in turn helps meet the customer [[support-articles/computer-plus-support/service-level-agreements|SLAs]].
+An operational-level agreement ([[glossary/ola|OLA]]) is an internal contract that defines the service-level targets expected from different teams within your organization. OLAs are customer-account-agnostic and are usually created to ensure that internal stakeholders have their own targets, which in turn helps meet the customer [[support-articles/computer-plus-support/service-level-agreements|SLAs]].
 
 ## OLA targets
 
 ### Filter issues by next OLA target
 
-To filter issues based on OLA compliance, use the **Next OLA Target** filter:
+To filter [[features/issues|issues]] based on OLA compliance, use the **Next OLA Target** filter:
 
 * **All**: Filters all issues that have an OLA applied. It does not include issues that had an OLA metric applied in the past and have since completed.
 * **Breached Since**:
@@ -39,7 +40,7 @@ To filter issues based on OLA compliance, use the **Next OLA Target** filter:
 
 ### Track OLAs on issues
 
-In the issues view, the **Next OLA Target** column displays the OLA targets for each issue. If there are two active metrics, the one closest to breaching is shown as the **Next OLA Target**. Negative values (for example, `-10m`) indicate how much time has passed since a metric was breached.
+In the issues view, the **Next OLA Target** column displays the OLA targets for each [[entities/issue|issue]]. If there are two active metrics, the one closest to breaching is shown as the **Next OLA Target**. Negative values (for example, `-10m`) indicate how much time has passed since a metric was breached.
 
 OLA metrics can be in the following stages:
 
@@ -80,7 +81,7 @@ Admins and users with OLA policy permissions can create, publish, or manage OLAs
 
    * **Subtype**: filter by issue subtype (e.g., bug, feature request).
    * **Severity**: filter by severity level.
-   * **Part**: filter by the associated part.
+   * **[[entities/part|Part]]**: filter by the associated part.
    * **Tags**: filter by one or more tags applied to the issue.
 
    Available metrics depend on which snap-ins are installed. **Issue Resolution Time** is provided by the [OLA metrics for issues](https://marketplace.devrev.ai/ola-metric-on-issues) snap-in, and **Acknowledgment/First Response Time** is provided by the [Acknowledgment Metric on Issues](https://marketplace.devrev.ai/acknowledgement-metric-on-issues) snap-in. If a snap-in is not yet installed, DevRev prompts you to install it.
@@ -122,4 +123,4 @@ You can specify which issue stages trigger the OLA metric timer to *start*, *pau
 - [[features/ola]]
 
 ## Source
-- DevRev support article [Operational-level agreements](https://support.devrev.ai/en-US/devrev/article/ztv-zLpw) (ART-21868)
+- DevRev support [[entities/article|article]] [Operational-level agreements](https://support.devrev.ai/en-US/devrev/article/ztv-zLpw) (ART-21868)

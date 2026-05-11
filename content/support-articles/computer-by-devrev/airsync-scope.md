@@ -11,11 +11,12 @@ wiki_match: glossary/airsync
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['glossary/airsync']
+summary: "AirSync does its best to bring over as much data as possible as accurately as possible but there are some constraints due to data model or platform differences."
 ---
 
 # AirSync scope
 
-AirSync does its best to bring over as much data as possible as accurately as possible but there are some constraints due to data model or platform differences.
+[[glossary/airsync|AirSync]] does its best to bring over as much data as possible as accurately as possible but there are some constraints due to data model or platform differences.
 The following is a list of AirSync scopes and exclusions to keep in mind when performing an AirSync. These are generic restrictions that apply to all AirSync sources.
 
 ## Attachments
@@ -34,11 +35,11 @@ Links
 
 * Parent/child relationships deeper than 3 levels are not created in DevRev.
 * Links from external systems are mapped to the closest equivalent in DevRev.
-* Links with no plausible DevRev equivalent are dropped, such as links between tickets.
+* Links with no plausible DevRev equivalent are dropped, such as links between [[features/tickets|tickets]].
 
 Contacts
 
-* DevRev does not support contacts in multiple accounts. Contacts imported that belong to multiple accounts are only created under one account in DevRev, the relationship to other accounts is dropped.
+* DevRev does not support contacts in multiple [[features/accounts|accounts]]. Contacts imported that belong to multiple accounts are only created under one [[entities/account|account]] in DevRev, the relationship to other accounts is dropped.
 * Contact changes of Account in an external system are not reflected in DevRev after the initial sync.
 * Contacts have an external reference that may be populated by email or source ID. This is an internal mapping and may not show up in the Mappings page.
 
@@ -53,7 +54,7 @@ Creation and Modified dates of synced items will not match those of the source. 
 
 ## Deletion
 
-Deletion of synced items is not propagated. This includes works (issues or tickets), accounts, users, links, and other types. When an item is deleted (either in DevRev or at the source) and that item exists at the other end, it will not be deleted but no further updates to it will be made.
+Deletion of synced items is not propagated. This includes works ([[features/issues|issues]] or tickets), accounts, users, links, and other types. When an item is deleted (either in DevRev or at the source) and that item exists at the other end, it will not be deleted but no further updates to it will be made.
 
 ## References
 
@@ -71,4 +72,4 @@ If an item is intentionally omitted from a sync and later updated to qualify for
 - [[glossary/airsync]]
 
 ## Source
-- DevRev support article [AirSync scope](https://support.devrev.ai/en-US/devrev/article/Sxa3jlbn) (ART-21892)
+- DevRev support [[entities/article|article]] [AirSync scope](https://support.devrev.ai/en-US/devrev/article/Sxa3jlbn) (ART-21892)

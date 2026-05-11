@@ -10,11 +10,12 @@ top_category: Snap-ins
 wiki_match: entities/task
 match_score: 0.5
 last_updated: 2026-05-11
+summary: "Qase integration helps foster collaboration between product development which uses DevRev Build and QA engineers on Qase who write tests and file defects for test case failures."
 ---
 
 # Qase
 
-Qase integration helps foster collaboration between product development which uses DevRev Build and QA engineers on Qase who write tests and file defects for test case failures.
+Qase integration helps foster collaboration between product development which uses DevRev [[features/build|Build]] and QA engineers on Qase who write tests and file defects for test case failures.
 
 * PMs and engineers can understand feature testing and know if there are any missing pieces while developing the feature.
 * Provides updates on test cases that failed and why they failed.
@@ -38,11 +39,11 @@ For more information, refer to the [Qase snap-in](https://marketplace.devrev.ai/
 
 Before you begin:
 
-* Create a Qase API token in your account profile.
+* Create a Qase API token in your [[entities/account|account]] profile.
 * Create a Qase project. Obtain the project code from the browser URL (e.g., `https://app.qase.io/project/DEMO`, where `DEMO` is the project code).
 
 1. Use an existing active connection or create a new connection of snap-in-secret workspace. Add the Qase API token to the snap-in configuration under the connection settings.
-2. Add the project code and the part to which the Qase defect is linked in **Configuration**.
+2. Add the project code and the [[entities/part|part]] to which the Qase defect is linked in **Configuration**.
 
 ## Configure Qase to connect to DevRev
 
@@ -56,13 +57,13 @@ Before you begin:
 
 ## Usage
 
-Once the configuration is complete, you can seamlessly link and manage Qase test cases, test runs, and defects within DevRev issues.
+Once the configuration is complete, you can seamlessly link and manage Qase test cases, test runs, and defects within DevRev [[features/issues|issues]].
 
 ### Link DevRev issues with Qase test cases
 
 Use the `/link_test_cases` command in the **Discussion** tab. You can either:
 
-1. Directly search for specific test cases.
+1. Directly [[features/search|search]] for specific test cases.
 
    ```
    /link_test_cases [search keyword]
@@ -77,7 +78,7 @@ Use the `/link_test_cases` command in the **Discussion** tab. You can either:
 
    This will display a random list of test cases in the dropdown.
 3. Use the **search box** to find test cases by their **Qase title** or **keywords**, then click **Search** to list the related test cases.
-4. Select the relevant test cases, then click **Submit** to link them to the DevRev issue.
+4. Select the relevant test cases, then click **Submit** to link them to the DevRev [[entities/issue|issue]].
 
 If a test case is selected from the dropdown and another search is performed, the previously selected test case will not be linked, even after submission.
 
@@ -100,4 +101,4 @@ If a test case is selected from the dropdown and another search is performed, th
 2. Verify that a new **defect issue** is automatically created in **DevRev** as a child of the mentioned issue.
 
 ## Source
-- DevRev support article [Qase](https://support.devrev.ai/en-US/devrev/article/GhJNjSzF) (ART-21985)
+- DevRev support [[entities/article|article]] [Qase](https://support.devrev.ai/en-US/devrev/article/GhJNjSzF) (ART-21985)

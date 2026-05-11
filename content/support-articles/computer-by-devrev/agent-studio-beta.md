@@ -10,15 +10,16 @@ top_category: Computer by DevRev
 wiki_match: features/stock-objects
 match_score: 0.467
 last_updated: 2026-05-11
+summary: "Agent Studio is Computer interface for building, testing, and monitoring AI agents."
 ---
 
 # Agent Studio (Beta)
 
-Agent Studio is in beta. Functionality described in this article reflects the current beta release.
+Agent Studio is in beta. Functionality described in this [[entities/article|article]] reflects the current beta release.
 
-Agent Studio is [Computer](https://app.devrev.ai) interface for building, testing, and monitoring AI agents. An AI agent is an automated assistant that can understand natural language, search your workspace's knowledge, and take actions on behalf of users.
+Agent Studio is [Computer](https://app.devrev.ai) interface for building, testing, and monitoring [[features/agents|AI agents]]. An AI agent is an automated assistant that can understand natural language, [[features/search|search]] your workspace's knowledge, and take actions on behalf of users.
 
-Unlike simple chatbots that follow rigid scripts, agents in Agent Studio are goal-driven. You define what the agent should accomplish and how it should behave, and the agent uses its configured knowledge and skills to determine the best way to respond to each interaction.
+Unlike simple chatbots that follow rigid scripts, [[features/agents|agents]] in Agent Studio are goal-driven. You define what the agent should accomplish and how it should behave, and the agent uses its configured knowledge and skills to determine the best way to respond to each interaction.
 
 To access Agent Studio, go to [**Agent Studio**](https://app.devrev.ai/agent-studio) in the DevRev app.
 
@@ -28,17 +29,17 @@ Agent Studio is organized around three phases that form a continuous improvement
 
 ![agent-lifecycle.png](https://app.devrev.ai/api/gateway/internal/artifacts.download?id=don:core:dvrv-us-1:devo/0:artifact/12351744&key=2d806031578000a45e22ac590e9a5d7dd700c5acfbbd6ba39a50be38134a81f8)
 
-**Build**
+**[[features/build|Build]]**
 
-The Build phase is where you define your agent's identity and capabilities. You set a goal, attach knowledge sources and skills, establish guardrails, and write detailed instructions. This is the creative, configuration-heavy phase.
+The Build phase is where you define your agent's [[features/identity|identity]] and capabilities. You set a goal, attach knowledge sources and skills, establish guardrails, and write detailed instructions. This is the creative, configuration-heavy phase.
 
 **Test**
 
-The Test phase lets you validate your agent before putting it in front of real users. You can have ad-hoc conversations through the Playground, or run structured bulk tests against datasets of pre-defined inputs and expected outputs. Testing catches issues early and gives you confidence before publishing.
+The Test phase lets you validate your agent before putting it in front of real users. You can have ad-hoc [[features/conversations-feature|conversations]] through the Playground, or run structured bulk tests against datasets of pre-defined inputs and expected outputs. Testing catches [[features/issues|issues]] early and gives you confidence before publishing.
 
 **Observe**
 
-The Observe phase provides visibility into how your agent performs in the real world. Analytics dashboards show aggregate metrics, while session traces let you drill into individual conversations to understand exactly what the agent did and why. Observations from this phase drive the next round of improvements back in Build.
+The Observe phase provides visibility into how your agent performs in the real world. [[features/analytics|Analytics]] dashboards show aggregate metrics, while session traces let you drill into individual conversations to understand exactly what the agent did and why. Observations from this phase drive the next round of improvements back in Build.
 
 ## Agent configuration
 
@@ -48,29 +49,29 @@ An agent's configuration is built from five distinct elements that work together
 
 The goal is a high-level statement of purpose that answers the question "What is this agent for?" The goal orients the agent's behavior across all interactions. A well-written goal is specific enough to guide decisions but broad enough to handle varied requests.
 
-**For example:** Help customers troubleshoot product issues by searching the knowledge base, and escalate to a human agent when the issue cannot be resolved.
+**For example:** Help customers troubleshoot product issues by searching the [[features/knowledge-base|knowledge base]], and escalate to a human agent when the [[entities/issue|issue]] cannot be resolved.
 
 ### Knowledge
 
-Knowledge sources tell the agent what it knows. When a user asks a question, the agent searches the configured knowledge sources to find relevant information. You select which DevRev object types the agent can search — articles, tickets, conversations, and more.
+Knowledge sources tell the agent what it knows. When a user asks a question, the agent searches the configured knowledge sources to find relevant information. You select which DevRev object types the agent can search — [[entities/article|articles]], [[features/tickets|tickets]], conversations, and more.
 
 The agent does not memorize your data. Instead, it searches knowledge sources in real time, which means it always works with the latest information available.
 
 ### Skills
 
-Skills tell the agent what it can do. Without skills, an agent can only answer questions. With skills, it can take action, creating tickets, updating issues, sending messages, or running custom workflows.
+Skills tell the agent what it can do. Without skills, an agent can only answer questions. With skills, it can take action, creating tickets, updating issues, sending messages, or running custom [[features/workflows|workflows]].
 
 There are three types of skills:
 
-* **Tools**: Built-in DevRev actions with configurable parameters. Each operation has input fields that the agent can auto-fill based on conversation context, or that you can set to fixed values.
-* **NL Skills**: Natural Language Skills that act as sub-agents with their own plan-based reasoning. An NL Skill receives a natural-language objective, decomposes it into steps, and executes those steps autonomously. Use NL Skills when the task requires multi-step reasoning or dynamic decision-making that goes beyond a single tool call.
+* **Tools**: Built-in DevRev actions with configurable parameters. Each operation has input fields that the agent can auto-fill based on [[entities/conversation|conversation]] context, or that you can set to fixed values.
+* **NL Skills**: Natural Language Skills that act as sub-agents with their own plan-based reasoning. An NL Skill receives a natural-language objective, decomposes it into steps, and executes those steps autonomously. Use NL Skills when the [[entities/task|task]] requires multi-step reasoning or dynamic decision-making that goes beyond a single tool call.
 * **Workflows**: Custom automation sequences built in DevRev. These represent more complex multi-step processes that follow a predetermined sequence of actions.
 
 When the agent determines that an action is needed, it selects the most appropriate skill, fills in the required parameters, and executes it.
 
 Skills run under the **Execute as User** permission model: the agent performs actions with the permissions of the user it is acting on behalf of, ensuring that existing access controls are respected.
 
-Agents can also connect to external systems through the **Model Context Protocol (MCP)**, extending their capabilities beyond built-in DevRev actions.
+Agents can also connect to external systems through the **Model Context Protocol ([[glossary/mcp|MCP]])**, extending their capabilities beyond built-in DevRev actions.
 
 ### Guardrails
 
@@ -79,7 +80,7 @@ Guardrails define the agent's boundaries — what it must or must not do. They a
 The guardrail type available is `topic_boundary`, which constrains the agent to respond only within defined topics. For example:
 
 * Never disclose internal employee information.
-* Always verify the customer's identity before making account changes.
+* Always verify the customer's identity before making [[entities/account|account]] changes.
 * Do not process refunds over $500 without escalating to a manager.
 
 Guardrails are evaluated on every interaction. Guardrail configuration is API-only; you create and manage guardrails through the DevRev API rather than the Agent Studio UI.
@@ -154,8 +155,8 @@ Session traces are invaluable for debugging unexpected behavior. When a user rep
 
 Agent Studio supports two access levels for agents:
 
-* **Internal agents** — Intended for internal teams, assisting employees with internal workflows, knowledge retrieval, and operational tasks. Internal agents are coming soon.
-* **Customer experience agents** — Designed for customer-facing interactions. These agents interact directly with your customers through support channels. Supported channels: Slack, WhatsApp, Plug Chat, and Email.
+* **Internal agents** — Intended for internal teams, assisting employees with internal workflows, knowledge retrieval, and operational [[entities/task|tasks]]. Internal agents are coming soon.
+* **Customer experience agents** — Designed for customer-facing interactions. These agents interact directly with your customers through support channels. Supported channels: Slack, WhatsApp, [[glossary/plug|Plug]] Chat, and Email.
 
 The access level determines the agent's scope of visibility and the channels it can operate in. Choose the appropriate type when creating a new agent based on who interacts with it.
 

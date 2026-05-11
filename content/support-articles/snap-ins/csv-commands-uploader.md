@@ -11,21 +11,22 @@ wiki_match: features/commands
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['features/commands']
+summary: "The CSV commands uploader is a snap-in designed to streamline the process of creating commands for work items in bulk through a CSV file."
 ---
 
 # CSV commands uploader
 
-The CSV commands uploader is a snap-in designed to streamline the process of creating commands for work items in bulk through a CSV file. It efficiently handles commands while providing dynamic error handling and detailed tracking. With comprehensive status reporting, users receive a clear breakdown of successful and failed operations, including row numbers, error reasons, and the display name of command.
+The CSV [[features/commands|commands]] uploader is a snap-in designed to streamline the process of creating commands for work items in bulk through a CSV file. It efficiently handles commands while providing dynamic error handling and detailed tracking. With comprehensive status reporting, users receive a clear breakdown of successful and failed operations, including row numbers, error reasons, and the display name of command.
 
 ## Feature
 
-* **Access Control**: Ensures only authorized users from the group selected in the snap-in configuration can run the snap-in.
+* **Access Control**: Ensures only authorized users from the [[entities/group|group]] selected in the snap-in configuration can run the snap-in.
 
 ## CSV requirements
 
 * The **Display\_name** of the command is the only mandatory column.
 * For the **Owned\_by**, **Reported\_by,** and **Contact** columns, provide the email of the person to be assigned as the owner or reporter of the work item. If the CSV lists multiple owners, only the first will be set as the owner.
-* For the **Applies to Part**, **Stage**, **Account**, **Developed with Parts**, and **Tags** columns, provide the part name, stage name, account name, part name, and tag name respectively as it is present in the UI, ensuring case sensitivity.
+* For the **Applies to [[entities/part|Part]]**, **Stage**, **[[entities/account|Account]]**, **Developed with [[features/parts|Parts]]**, and **Tags** columns, provide the part name, stage name, account name, part name, and tag name respectively as it is present in the UI, ensuring case sensitivity.
 * For **Date** and **Timestamp** related fields, provide the date and timestamp in the format *YYYY/MM/DD*.
 * The `tnt__` prefix in some columns indicates custom fields from the tenant fragment.
 * The `ctype__` prefix in some columns represents custom type fields from the custom type fragment. Users can fill these fields when selecting a subtype for a work item. If certain ctype\_\_ fields are mandatory for a specific subtype, they must be filled.
@@ -57,4 +58,4 @@ The following validations are done while updating or creating a work item in Dev
 - [[features/commands]]
 
 ## Source
-- DevRev support article [CSV commands uploader](https://support.devrev.ai/en-US/devrev/article/GkwezNs3) (ART-21937)
+- DevRev support [[entities/article|article]] [CSV commands uploader](https://support.devrev.ai/en-US/devrev/article/GkwezNs3) (ART-21937)

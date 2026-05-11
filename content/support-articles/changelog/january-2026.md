@@ -10,6 +10,7 @@ top_category: Changelog
 wiki_match: features/analytics
 match_score: 0.381
 last_updated: 2026-05-11
+summary: "Your analytics dashboards now display data in your local timezone, making it easier to read and work with times that match your location."
 ---
 
 # January 2026
@@ -18,7 +19,7 @@ last_updated: 2026-05-11
 
 ### **Local timezone display for dashboards**
 
-Your analytics dashboards now display data in your local timezone, making it easier to read and work with times that match your location.
+Your [[features/analytics|analytics]] dashboards now display data in your local timezone, making it easier to read and work with times that match your location.
 
 **What's new**
 
@@ -51,7 +52,7 @@ We've made exporting data from dashboards and widgets easier and more useful. He
 
 * Export failures now show clearer error messages to help you troubleshoot.
 
-![paper-list-document-link.svg](https://app.devrev.ai/api/gateway/internal/artifacts.download?id=don:core:dvrv-us-1:devo/0:artifact/8937271&key=7a657f8e9aa29dea274017c575a012444d851aa3d69d8c35e3167737919ab08f) For more information about *Knowledge Graph*, refer to the following article: [Computer by DevRev](https:///devrev/settings/knowledge-base/articles/ART-21845)
+![paper-list-document-link.svg](https://app.devrev.ai/api/gateway/internal/artifacts.download?id=don:core:dvrv-us-1:devo/0:artifact/8937271&key=7a657f8e9aa29dea274017c575a012444d851aa3d69d8c35e3167737919ab08f) For more information about *Knowledge Graph*, refer to the following [[entities/article|article]]: [Computer by DevRev](https:///devrev/settings/knowledge-base/articles/ART-21845)
 
 # Build App
 
@@ -63,41 +64,41 @@ We've made exporting data from dashboards and widgets easier and more useful. He
 
 # Channels
 
-* Enhanced the logic to hide previous email history in ticket replies.
-* Introduced the ability to download Contact Control Panel (CCP) logs directly from error messages encountered during telephony calls. This feature enables quick access to logs for efficient issue analysis.
-* Enhanced Slack messaging to use internal article links for internal channels and external links for external channels, helping users quickly access the appropriate articles.
+* Enhanced the logic to hide previous email history in [[entities/ticket|ticket]] replies.
+* Introduced the ability to download Contact Control Panel (CCP) logs directly from error messages encountered during telephony calls. This feature enables quick access to logs for efficient [[entities/issue|issue]] analysis.
+* Enhanced Slack messaging to use internal article links for internal channels and external links for external channels, helping users quickly access the appropriate [[entities/article|articles]].
 
 ![paper-list-document-link.svg](https://app.devrev.ai/api/gateway/internal/artifacts.download?id=don:core:dvrv-us-1:devo/0:artifact/8849444&key=8eae7a3a6ea1c9291e6f5ffcd1e64f222a0a0c07220bc2d146bbbb4d483c7024) For more information about *Channels*, refer to the following article: [[support-articles/computer-plus-support/computer-support|Computer for Support Teams]]
 
 # Knowledge Graph
 
-We're excited to introduce a new framework for search benchmarking at DevRev:
+We're excited to introduce a new framework for [[features/search|search]] benchmarking at DevRev:
 
-* **Automated dataset generation**: Golden datasets for search tasks can now be generated automatically, cutting annotation time by 90%.
+* **Automated dataset generation**: Golden datasets for search [[entities/task|tasks]] can now be generated automatically, cutting annotation time by 90%.
 * **Search evaluation framework**: Standardizes benchmarking for any search system, including DevRev Search, using Recall@K and Precision@K metrics.
 * **Public DevRev dataset**: The DevRev articles search dataset is now publicly available for community use and benchmarking.
 * **Model evaluation and leaderboard**: Six top embedding models from the MTEB leaderboard have been evaluated and ranked on a public leaderboard.
 * **Best open source model identification**: Identifies the best open-source embedding model, achieving a ≥5% improvement in Recall@50 over DevRev Search, for use in the next reindexing.
 
-These enhancements reduce benchmarking effort by over 90%, accelerate search improvements, and provide transparent, reproducible results for internal and community use.
+These [[entities/enhancement|enhancements]] reduce benchmarking effort by over 90%, accelerate search improvements, and provide transparent, reproducible results for internal and community use.
 
 ![paper-list-document-link.svg](https://app.devrev.ai/api/gateway/internal/artifacts.download?id=don:core:dvrv-us-1:devo/0:artifact/8849437&key=dca7a854505b9ed6904f3d27d2d0d4d3fe2a8b90676d91b31f6c42485196d076) For more information about *Knowledge Graph*, refer to the following article: [Computer by DevRev](https://support.devrev.ai/devrev/article/ART-21845)
 
 # Skill and Workflow Builder
 
-* Introduces a centralized node that replaces deeply nested if/else chains, helping you design complex workflows with clearer logic and easier readability.
+* Introduces a centralized node that replaces deeply nested if/else chains, helping you design complex [[features/workflows|workflows]] with clearer logic and easier readability.
 * Allows multiple execution paths to run in parallel from a single trigger, keeping related automation assembled in one workflow and improving structure, hygiene, and maintainability.
 
-![paper-list-document-link.svg](https://app.devrev.ai/api/gateway/internal/artifacts.download?id=don:core:dvrv-us-1:devo/0:artifact/8849435&key=ed2faa5dc96490181c5fb035eb874e41cecd9d29e3956e6ec8d2dfe8cf8b4990) For more information about *Skill and Workflow Builder*, refer to the following article: [Computer by DevRev](https:///devrev/settings/knowledge-base/articles/ART-21845)
+![paper-list-document-link.svg](https://app.devrev.ai/api/gateway/internal/artifacts.download?id=don:core:dvrv-us-1:devo/0:artifact/8849435&key=ed2faa5dc96490181c5fb035eb874e41cecd9d29e3956e6ec8d2dfe8cf8b4990) For more information about *Skill and [[features/workflows|Workflow Builder]]*, refer to the following article: [Computer by DevRev](https:///devrev/settings/knowledge-base/articles/ART-21845)
 
 # Support App
 
 * Introduced banner functionality that applies across all portal pages, allowing customers to display important updates or notifications as a header banner, visible to users regardless of their location on the portal.
-* When a new organization is created, several default Snap-ins are automatically installed to streamline initial setup and improve operational efficiency. These include Assign Parts to Conversations, Ticket Tagger, Duplicate Email Tickets Tagger, Work Duration, CSAT, Automatic Customer Reply, Spam Shield, and more.
+* When a new organization is created, several default Snap-ins are automatically installed to streamline initial setup and improve operational efficiency. These include Assign [[features/parts|Parts]] to [[features/conversations-feature|Conversations]], Ticket Tagger, Duplicate Email [[features/tickets|Tickets]] Tagger, Work Duration, [[glossary/csat|CSAT]], Automatic Customer Reply, Spam Shield, and more.
 * Stock dashboard improvements:
 
   + Added extra filters to all stock dashboards, such as Tier, Severity, Spam.
-  + Introduced new widgets including CSAT Dispatched vs. Received, Internal vs. External Tickets Created, Internal vs. External vs. Total Comments per User, and Average CSAT by SLA Status.
+  + Introduced new widgets including CSAT Dispatched vs. Received, Internal vs. External Tickets Created, Internal vs. External vs. Total Comments per User, and Average CSAT by [[features/slas|SLA]] Status.
 
 ![paper-list-document-link.svg](https://app.devrev.ai/api/gateway/internal/artifacts.download?id=don:core:dvrv-us-1:devo/0:artifact/8849378&key=d301b6bbeaed0a535543f9c4e89eb07e56a9b39068924e8e82b840c6296b2390) For more information about *Support App*, refer to the following article: [[support-articles/computer-plus-support/computer-support|Computer for Support Teams]]
 

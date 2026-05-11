@@ -11,6 +11,7 @@ wiki_match: glossary/airsync
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['glossary/airsync']
+summary: "Import your test cases, test runs, and test results from BrowserStack to DevRev."
 ---
 
 # BrowserStack AirSync
@@ -34,16 +35,16 @@ The following is a list of BrowserStack objects and their corresponding DevRev e
 
 Follow the steps below to import from BrowserStack:
 
-1. In **Marketplace**, search for **BrowserStack** under the **Import** category
+1. In **Marketplace**, [[features/search|search]] for **BrowserStack** under the **Import** category
    and select it.
 2. In the snap-in config modal, click **Install** then go to **Integrations** >
    **Imports** in your settings left nav.
 3. Click the **Import** button and select the BrowserStack tile in the **Start
    import** window.
-4. Create a new connection to your BrowserStack account or use an existing one.To create the connection, you'll need to enter a **Subdomain**. This field is mandatory for AirSync to group imports from the same source system.It is recommended to use the instance of the BrowserStack workspace you want
+4. Create a new connection to your BrowserStack [[entities/account|account]] or use an existing one.To create the connection, you'll need to enter a **Subdomain**. This field is mandatory for [[glossary/airsync|AirSync]] to [[entities/group|group]] imports from the same source system.It is recommended to use the instance of the BrowserStack workspace you want
    to import as the value of **Subdomain**.
 5. Once the connection is established, select the BrowserStack project you want to
-   import, and specify the DevRev part that should be used for any imported work.
+   import, and specify the DevRev [[entities/part|part]] that should be used for any imported work.
    This initiates a bulk import of the selected site.
 6. Click **Map fields** in the import row and configure filters, object mapping, or field
    mapping as necessary.While DevRev attempts to automatically map fields, you may be prompted to manually
@@ -57,4 +58,4 @@ while a workspace with hundreds of thousands of items may take a few days.
 - [[glossary/airsync]]
 
 ## Source
-- DevRev support article [BrowserStack AirSync](https://support.devrev.ai/en-US/devrev/article/QktEkl3h) (ART-22024)
+- DevRev support [[entities/article|article]] [BrowserStack AirSync](https://support.devrev.ai/en-US/devrev/article/QktEkl3h) (ART-22024)

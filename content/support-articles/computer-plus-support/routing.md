@@ -10,11 +10,12 @@ top_category: Computer+ Support
 wiki_match: glossary/turing
 match_score: 0.615
 last_updated: 2026-05-11
+summary: "Routing refers to the process of identifying and assigning the appropriate team or individuals to manage a conversation or support ticket."
 ---
 
 # Routing
 
-Routing refers to the process of identifying and assigning the appropriate team or individuals to manage a conversation or support ticket. This ensures that inquiries are directed to the most suitable group for prompt and effective resolution. Users can design workflows tailored to various scenarios; the example below illustrates a basic routing use case.
+Routing refers to the process of identifying and assigning the appropriate team or individuals to manage a [[entities/conversation|conversation]] or support [[entities/ticket|ticket]]. This ensures that inquiries are directed to the most suitable [[entities/group|group]] for prompt and effective resolution. Users can design [[features/workflows|workflows]] tailored to various scenarios; the example below illustrates a basic routing use case.
 
 |  |  |
 | --- | --- |
@@ -26,7 +27,7 @@ Routing refers to the process of identifying and assigning the appropriate team 
 |  | Group > Output > ID |
 |  | Owned by > Set: Pick user > Output > User |
 
-Orgs can set up pull-based routing by updating the group instead of the user ID in the workflow illustrated above and create a vista for the tickets using the selected group filter.
+Orgs can set up pull-based routing by updating the group instead of the user ID in the workflow illustrated above and create a [[glossary/vista|vista]] for the [[features/tickets|tickets]] using the selected group filter.
 The following example illustrates spam ticket handling configuration:
 
 |  |  |
@@ -49,7 +50,7 @@ The following example illustrates spam ticket handling configuration:
 ## Additional routing scenarios
 
 * Ticket routing based on customer inquiry keywords.
-* Group-specific routing based on customer account assignments.
+* Group-specific routing based on customer [[entities/account|account]] assignments.
 * Assignment routing based on severity and subtype.
 * Custom field and tag-based routing.
 * First responder ticket assignment.
@@ -70,4 +71,4 @@ The following example illustrates spam ticket handling configuration:
 * All notification preferences are manageable through [**Settings** > **Notifications**](https://app.devrev.ai/?setting=user-preferences), including system, agent, and snap-in notifications.
 
 ## Source
-- DevRev support article [Routing](https://support.devrev.ai/en-US/devrev/article/wDr8m54F) (ART-21862)
+- DevRev support [[entities/article|article]] [Routing](https://support.devrev.ai/en-US/devrev/article/wDr8m54F) (ART-21862)

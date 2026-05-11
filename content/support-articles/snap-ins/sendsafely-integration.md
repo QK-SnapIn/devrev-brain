@@ -11,11 +11,12 @@ wiki_match: features/email-integration
 match_score: 0.769
 last_updated: 2026-05-11
 related: ['features/email-integration']
+summary: "The SendSafely integration enables secure file sharing."
 ---
 
 # SendSafely integration
 
-The SendSafely integration enables secure file sharing. This integration allows both agents and customers to upload files to SendSafely dropzones efficiently. Recipients are notified about file uploads within DevRev. It also offers managing the files and recipients from within the **Discussion** tab.
+The SendSafely integration enables secure file sharing. This integration allows both [[features/agents|agents]] and customers to upload files to SendSafely dropzones efficiently. Recipients are notified about file uploads within DevRev. It also offers managing the files and recipients from within the **Discussion** tab.
 
 For more information, refer to the [SendSafely snap-in](https://marketplace.devrev.ai/sendsafely-integration) on the DevRev marketplace.
 
@@ -37,7 +38,7 @@ For more information, refer to the [SendSafely snap-in](https://marketplace.devr
 
    b. Click **Explore Marketplace**.
 
-   c. Search for **SendSafely Integration** and click **Install** next to the SendSafely Integration snap-in.
+   c. [[features/search|Search]] for **SendSafely Integration** and click **Install** next to the SendSafely Integration snap-in.
 
 ## Configure the snap-in
 
@@ -46,7 +47,7 @@ For more information, refer to the [SendSafely snap-in](https://marketplace.devr
    a. Enter the default message for the `Send file upload` surface.
 
    b. Enter the default message for the `Request file upload` surface.
-2. For different dropzones per group:
+2. For different dropzones per [[entities/group|group]]:
 
    a. Add the group name or group ID.
 
@@ -71,4 +72,4 @@ For more information, refer to the [SendSafely snap-in](https://marketplace.devr
 - [[features/email-integration]]
 
 ## Source
-- DevRev support article [SendSafely integration](https://support.devrev.ai/en-US/devrev/article/8hgg5ZKd) (ART-21989)
+- DevRev support [[entities/article|article]] [SendSafely integration](https://support.devrev.ai/en-US/devrev/article/8hgg5ZKd) (ART-21989)

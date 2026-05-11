@@ -10,21 +10,22 @@ top_category: Computer+ Support
 wiki_match: features/issues
 match_score: 0.421
 last_updated: 2026-05-11
+summary: "Organization Schedules establish the operating hours and availability rules applied across your organization."
 ---
 
 # Org Schedules
 
 Organization Schedules establish the operating hours and availability rules applied across your organization. They serve as the foundation for determining when your organization is open, reachable for support, and functioning within defined service boundaries.
 
-These schedules have a direct effect on how tickets are processed, how SLAs are tracked, how automations behave, and how customers are informed about availability.
+These schedules have a direct effect on how [[features/tickets|tickets]] are processed, how [[features/slas|SLAs]] are tracked, how automations behave, and how customers are informed about availability.
 
 ## Organization Schedules Controls
 
 **Business hours**
 
-Business hours define your organization's official hours of operation, for example, Monday through Friday from 9:00 AM to 6:00 PM, with weekends excluded. This configuration governs whether an incoming ticket falls within or outside of active business hours.
+Business hours define your organization's official hours of operation, for example, Monday through Friday from 9:00 AM to 6:00 PM, with weekends excluded. This configuration governs whether an incoming [[entities/ticket|ticket]] falls within or outside of active business hours.
 
-**SLA calculations**
+**[[features/slas|SLA]] calculations**
 
 Organization Schedules determine how SLA timers are measured and applied. Specifically, they control when response time tracking begins, when timers are paused due to off-hours periods, and when a ticket is flagged as overdue.
 
@@ -32,11 +33,11 @@ For example, if a ticket arrives at 7:00 PM and business hours close at 6:00 PM,
 
 **Holiday rules**
 
-Organizations can define exceptions to their standard schedule to account for public holidays, company wide closures, or periods of reduced operation. These holiday rules take precedence over the default schedule and automatically adjust SLA calculations and availability indicators accordingly.
+Organizations can define exceptions to their standard schedule to [[entities/account|account]] for public holidays, company wide closures, or periods of reduced operation. These holiday rules take precedence over the default schedule and automatically adjust SLA calculations and availability indicators accordingly.
 
 **Routing and automation**
 
-Organization Schedules can also drive automated workflows that respond to off-hours activity. This includes sending after hours reply messages, triggering escalation procedures, routing requests to on-call teams etc.. Together, these rules help ensure that any requests received outside of business hours are managed in a consistent and appropriate manner.
+Organization Schedules can also drive automated [[features/workflows|workflows]] that respond to off-hours activity. This includes sending after hours reply messages, triggering escalation procedures, routing requests to on-call teams etc.. Together, these rules help ensure that any requests received outside of business hours are managed in a consistent and appropriate manner.
 
 ## Create a Org Schedule
 
@@ -90,4 +91,4 @@ Once updates are complete, save the changes to apply them.
 2. For SLAs, when a ticket’s policy is updated, the latest version of the organization schedule associated with that policy will be applied.
 
 ## Source
-- DevRev support article [Org Schedules](https://support.devrev.ai/en-US/devrev/article/N2JScs7f) (ART-25289)
+- DevRev support [[entities/article|article]] [Org Schedules](https://support.devrev.ai/en-US/devrev/article/N2JScs7f) (ART-25289)

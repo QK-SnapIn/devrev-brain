@@ -11,6 +11,7 @@ wiki_match: log
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['log']
+summary: "Audit logs help your organization understand who accessed what in DevRev, and when."
 ---
 
 # Audit logs
@@ -28,7 +29,7 @@ Audit logs capture all DevRev API calls, separated per workspace and partitioned
 
 ## Who can request exports
 
-Only organization administrators who are members of the Admins group can initiate audit log exports.
+Only organization administrators who are members of the Admins [[entities/group|group]] can initiate audit log exports.
 
 ## Request an export from the UI
 
@@ -53,7 +54,7 @@ For programmatic exports, call the audit log export endpoint documented in the A
 
 ## Troubleshooting
 
-* **Issue**: No notification is received after requesting an audit log export.
+* **[[entities/issue|Issue]]**: No notification is received after requesting an audit log export.
 
   **Solution**: Verify that DevRev Bot notifications are not muted. Go to your notification settings and ensure the DevRev Bot channel is enabled. Organizations on the Computer SKU may not receive export notifications because the notification service blocks them; contact DevRev support if this applies to your workspace.
 * **Issue**: The download link has expired.
@@ -64,4 +65,4 @@ For programmatic exports, call the audit log export endpoint documented in the A
 - [[log]]
 
 ## Source
-- DevRev support article [Audit logs](https://support.devrev.ai/en-US/devrev/article/_PyPN5SD) (ART-30929)
+- DevRev support [[entities/article|article]] [Audit logs](https://support.devrev.ai/en-US/devrev/article/_PyPN5SD) (ART-30929)

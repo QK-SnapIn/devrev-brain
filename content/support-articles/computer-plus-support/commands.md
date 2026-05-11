@@ -11,11 +11,12 @@ wiki_match: features/commands
 match_score: 1.0
 last_updated: 2026-05-11
 related: ['features/commands']
+summary: "If your teams repeatedly type the same replies and perform the same actions, commands (also called macros) can unlock significant productivity gains."
 ---
 
 # Commands
 
-If your teams repeatedly type the same replies and perform the same actions, commands (also called macros) can unlock significant productivity gains. Commands help frontline teams such as support agents manage high volumes of customer queries by providing standard responses and actions in a single click. This reduces response time, maintains consistent communication quality, and improves overall customer satisfaction.
+If your teams repeatedly type the same replies and perform the same actions, [[features/commands|commands]] (also called macros) can unlock significant productivity gains. Commands help frontline teams such as support [[features/agents|agents]] manage high volumes of customer queries by providing standard responses and actions in a single click. This reduces response time, maintains consistent communication quality, and improves overall customer satisfaction.
 
 A command is a single-click shortcut that sends a predefined response, executes one or more actions (such as updating a field), or both. Responses can be directed to customers or internal colleagues. They can be personalized with placeholder variables that are dynamically resolved based on the record to which the command is applied.
 
@@ -31,11 +32,11 @@ Minimize manual mistakes by standardizing responses and actions across the team.
 
 **Automated actions**
 
-Enhance saved responses with automated actions for owner or group reassignment, stage updates, tag management, and other field updates, streamlining your workflow.
+Enhance saved responses with automated actions for owner or [[entities/group|group]] reassignment, stage updates, tag management, and other field updates, streamlining your workflow.
 
 **Team-specific commands**
 
-Use the **Available to** field to control whether a command is available to all users or only to specific groups, tailoring commands to different team needs.
+Use the **Available to** field to control whether a command is available to all users or only to specific [[entities/group|groups]], tailoring commands to different team needs.
 
 **Flexible access control**
 
@@ -46,11 +47,11 @@ Control who can create and update commands. Admins have this ability by default,
 1. Go to [**Settings** > **Commands**](https://app.devrev.ai/?setting=commands) and click **+ Command**.
 2. Enter a **Name** for the command and select a **Surface** to specify which object types the command is available on. Supported surfaces include:
 
-   * Tickets
-   * Conversations
-   * Issues
-   * Opportunities
-   * Accounts
+   * [[features/tickets|Tickets]]
+   * [[features/conversations-feature|Conversations]]
+   * [[features/issues|Issues]]
+   * [[entities/opportunity|Opportunities]]
+   * [[features/accounts|Accounts]]
    * Customers
    > 💡 **Tip**: If you need commands on additional surfaces beyond the defaults, install the [Commands surface expander](https://support.devrev.ai/devrev/article/ART-20847) snap-in.
 3. Set the **Status** of the command:
@@ -64,7 +65,7 @@ Control who can create and update commands. Admins have this ability by default,
 
    Common placeholder variables include:
 
-   * `{{ticket.display_id}}`: The ticket's display ID.
+   * `{{ticket.display_id}}`: The [[entities/ticket|ticket]]'s display ID.
    * `{{ticket.title}}`: The ticket's title.
    * `{{owner.display_name}}`: The display name of the current owner.
    * `{{creator.display_name}}`: The display name of the ticket creator.
@@ -74,7 +75,7 @@ Control who can create and update commands. Admins have this ability by default,
    The available placeholder variables depend on the surface you selected. When you edit the response template, the editor displays the supported variables for that record type.
 
    ![placeholder](don:core:dvrv-us-1:devo/0:artifact/4100096)
-5. Configure predefined **actions** that the command executes. For example, assign a different owner or group, move a ticket or conversation to a different stage, or add or remove tags. For user-type fields, select *Current User* to assign the field to whoever runs the command. For example, a support agent can use a command that sets themselves as the ticket owner when the action specifies the owner field as *Current User*.
+5. Configure predefined **actions** that the command executes. For example, assign a different owner or group, move a ticket or [[entities/conversation|conversation]] to a different stage, or add or remove tags. For user-type fields, select *Current User* to assign the field to whoever runs the command. For example, a support agent can use a command that sets themselves as the ticket owner when the action specifies the owner field as *Current User*.
 6. Optionally, set the **Available to** field to restrict the command to one or more specific groups. If you leave **Available to** blank, the command is available to all users in the workspace.
 7. Click **Save** to create the command.
 
@@ -101,9 +102,9 @@ By default, only admins can create, update, delete, and view all commands in the
 
 ## Best practices
 
-Start by creating a few essential commands and gradually expand based on the most frequent query types and tasks your team handles. The goal is to make the support process as streamlined as possible for both your team and your customers.
+Start by creating a few essential commands and gradually expand based on the most frequent query types and [[entities/task|tasks]] your team handles. The goal is to make the support process as streamlined as possible for both your team and your customers.
 
-To help users discover commands quickly, choose names that are easy to remember and follow a consistent structure for categorization and search. If you have common themes or categories, standardize a naming convention for your teams.
+To help users discover commands quickly, choose names that are easy to remember and follow a consistent structure for categorization and [[features/search|search]]. If you have common themes or categories, standardize a naming convention for your teams.
 
 One possible convention is `Category-Subcategory-Specific command subject`. For example:
 
@@ -115,4 +116,4 @@ One possible convention is `Category-Subcategory-Specific command subject`. For 
 - [[features/commands]]
 
 ## Source
-- DevRev support article [Commands](https://support.devrev.ai/en-US/devrev/article/8R9wzoqV) (ART-21866)
+- DevRev support [[entities/article|article]] [Commands](https://support.devrev.ai/en-US/devrev/article/8R9wzoqV) (ART-21866)

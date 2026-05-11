@@ -10,6 +10,7 @@ top_category: Computer by DevRev
 wiki_match: features/conversations
 match_score: 0.467
 last_updated: 2026-05-11
+summary: "Computer is designed to be your primary AI teammate, capable of searching, synthesizing, and creating content based on your organization\"s data."
 ---
 
 # Core capabilities
@@ -18,17 +19,17 @@ Computer is designed to be your primary AI teammate, capable of searching, synth
 
 # Find information
 
-Computer provides a unified search across all your connected work applications. You no longer need to switch between multiple tabs or tools.
+Computer provides a unified [[features/search|search]] across all your connected work applications. You no longer need to switch between multiple tabs or tools.
 
 ## How it works
 
-Performs keyword and semantic searches across your connected applications, such as Slack, Jira, and Notion, as well as DevRev objects like tickets and accounts.
+Performs keyword and semantic searches across your connected applications, such as Slack, Jira, and Notion, as well as DevRev objects like [[features/tickets|tickets]] and [[features/accounts|accounts]].
 
 Example prompts:
 
 * Find the latest PRD for the mobile app project.
 * Which tickets are related to the installation package problem?
-* Who is the primary contact for the Acme account?
+* Who is the primary contact for the Acme [[entities/account|account]]?
 
 # Answers and summarization
 
@@ -41,14 +42,14 @@ Analyzes long comment threads, documentation, and external web sources to genera
 ## Information sources
 
 * Connected apps: Notion, Google Drive, SharePoint, Slack, and Microsoft Teams.
-* DevRev system of record (SoR): Tickets, issues, opportunities, and accounts.
+* DevRev system of record (SoR): Tickets, [[features/issues|issues]], [[entities/opportunity|opportunities]], and accounts.
 * Web search: Real-time information from the internet, such as industry trends or competitor news.
 
 Example prompts
 
-* Summarize the last 10 comments on ticket TKT-1410.
+* Summarize the last 10 comments on [[entities/ticket|ticket]] TKT-1410.
 * What are the common themes across our recent support escalations?
-* Give me an account summary for the Neo Group.
+* Give me an account summary for the Neo [[entities/group|Group]].
 
 # Co-creation
 
@@ -66,7 +67,7 @@ Example prompts
 
 # File Upload
 
-You can bring external data directly into a conversation for immediate analysis.
+You can bring external data directly into a [[entities/conversation|conversation]] for immediate analysis.
 
 * Supported file types: PDF, TXT, and CSV.
 * How to upload: Drag and drop files directly into the chat interface or use the attachment icon in the message bar.
@@ -115,11 +116,11 @@ Example prompts
 
 # Conversational Analytics (text to SQL)
 
-Conversational Analytics transforms your natural language questions into SQL queries behind the scenes, allowing you to instantly analyze your data without writing code or building custom reports. Computer intelligently queries your organization's data including tickets, opportunities, accounts, issues, and even custom objects and fields, to provide accurate analytical insights.
+Conversational [[features/analytics|Analytics]] transforms your natural language questions into SQL queries behind the scenes, allowing you to instantly analyze your data without writing code or building custom reports. Computer intelligently queries your organization's data including tickets, opportunities, accounts, issues, and even custom objects and fields, to provide accurate analytical insights.
 
 ## How it works
 
-* **Multi-object queries**: Analyze data that spans multiple object types, such as opportunities linked to tickets or issues connected to enhancements
+* **Multi-object queries**: Analyze data that spans multiple object types, such as opportunities linked to tickets or issues connected to [[entities/enhancement|enhancements]]
 * **Graph traversal**: Navigate complex relationships between objects, including parent-child hierarchies, linked entities, and dependencies
 * **Aggregations and analytics**: Get counts, distributions, breakdowns, and summaries across your data with grouping and filtering
 * **Custom object support**: Query your organization's custom objects and custom fields with the same ease as standard DevRev objects
@@ -139,7 +140,7 @@ Enable the **Needs Approval** setting when configuring actions under **Settings*
 
 Example prompts
 
-* Please create an issue for me to track the launch for login features
+* Please create an [[entities/issue|issue]] for me to track the launch for login features
 * Please update the owner of TKT-123 to John
 
 # Customize Computer
@@ -151,4 +152,4 @@ You can add actions that integrate with DevRev by going to the Customize Compute
 ![img10.png](https://app.devrev.ai/api/gateway/internal/artifacts.download?id=don:core:dvrv-us-1:devo/0:artifact/9179124&key=3d729686b2689152acbaeebbd98c489d7307340a42fb09217a2beec6e7582968)
 
 ## Source
-- DevRev support article [Core capabilities](https://support.devrev.ai/en-US/devrev/article/7sw49sh0) (ART-24048)
+- DevRev support [[entities/article|article]] [Core capabilities](https://support.devrev.ai/en-US/devrev/article/7sw49sh0) (ART-24048)

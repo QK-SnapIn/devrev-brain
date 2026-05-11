@@ -10,13 +10,14 @@ top_category: Computer by DevRev
 wiki_match: features/accounts
 match_score: 0.556
 last_updated: 2026-05-11
+summary: "Connectors link Computer to external apps, tools, and services your team already uses."
 ---
 
 # Connectors
 
-Connectors link Computer to external apps, tools, and services your team already uses. By linking these tools, Computer can access your files, calendars, messages, and project data, enabling it to assist you with tasks across multiple platforms.
+Connectors link Computer to external apps, tools, and services your team already uses. By linking these tools, Computer can access your files, calendars, messages, and project data, enabling it to assist you with [[entities/task|tasks]] across multiple platforms.
 
-For example, connecting Google Drive lets Computer search and reference your documents. Connecting Google Calendar allows it to check your schedule and help with meeting coordination. Connecting tools like Jira or GitHub enables Computer to stay informed about your projects and development work.
+For example, connecting Google Drive lets Computer [[features/search|search]] and reference your documents. Connecting Google Calendar allows it to check your schedule and help with [[entities/meeting|meeting]] coordination. Connecting tools like Jira or GitHub enables Computer to stay informed about your projects and development work.
 
 The more connectors you add, the more context Computer has, enhancing its effectiveness as your AI teammate.
 
@@ -33,4 +34,4 @@ The connector will appear in your list and begin syncing. You can monitor the sy
 For more information about connectors, refer to the [Marketplace](https://marketplace.devrev.ai/Customer%20Support).
 
 ## Source
-- DevRev support article [Connectors](https://support.devrev.ai/en-US/devrev/article/ouNIb8zh) (ART-23985)
+- DevRev support [[entities/article|article]] [Connectors](https://support.devrev.ai/en-US/devrev/article/ouNIb8zh) (ART-23985)

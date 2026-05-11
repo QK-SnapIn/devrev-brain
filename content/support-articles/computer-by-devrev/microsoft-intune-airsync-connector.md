@@ -11,17 +11,18 @@ wiki_match: glossary/airsync
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['glossary/airsync']
+summary: "The Microsoft Intune AirSync connector imports your Intune endpoint management data into DevRev."
 ---
 
 # Microsoft Intune AirSync connector
 
-The Microsoft Intune AirSync connector imports your Intune endpoint management data into DevRev. It syncs managed devices, compliance policies, device configurations, and enrollment configurations so your team has full hardware lifecycle visibility — directly inside DevRev.
+The Microsoft Intune [[glossary/airsync|AirSync]] connector imports your Intune endpoint management data into DevRev. It syncs managed devices, compliance policies, device configurations, and enrollment configurations so your team has full hardware lifecycle visibility — directly inside DevRev.
 
 Use this connector to:
 
-* View device inventory, compliance status, and encryption state alongside support tickets
-* Look up which policies and configurations apply to a device or group
-* Track device provisioning, reassignment, and decommissioning workflows
+* View device inventory, compliance status, and encryption state alongside support [[features/tickets|tickets]]
+* Look up which policies and configurations apply to a device or [[entities/group|group]]
+* Track device provisioning, reassignment, and decommissioning [[features/workflows|workflows]]
 * Answer fleet-wide questions like "How many devices are noncompliant?" without switching to the Intune portal
 
 ## What gets synced
@@ -59,7 +60,7 @@ Compliance policies define the rules a device must meet (e.g., require encryptio
 | --- | --- | --- |
 | Display Name | Title / Name | The name of the compliance policy |
 | Description | Notes | Administrator description of the policy |
-| Assigned Groups | Assigned Group IDs | Which Azure AD groups this policy targets |
+| Assigned [[entities/group|Groups]] | Assigned Group IDs | Which Azure AD groups this policy targets |
 | Policy Rules | Class Attributes | Platform-specific compliance rules (e.g., password required, encryption required) |
 | Scheduled Actions | Class Attributes | Automated responses when a device becomes noncompliant (e.g., block access after 72 hours) |
 
@@ -122,7 +123,7 @@ Before you install the connector, make sure the following requirements are met.
 
 1. Go to your DevRev organization settings.
 2. Navigate to **Marketplace** or **Snap-ins**.
-3. Search for **Intune Sync** and select it.
+3. [[features/search|Search]] for **Intune Sync** and select it.
 4. Click **Install**.
 
 ## Configuration
@@ -215,7 +216,7 @@ Each compliance policy and configuration profile includes the Azure AD group IDs
 
 ### Monitor incremental sync results
 
-After each sync, review the AirSync run summary in DevRev. It shows how many records were created, updated, or errored. A sudden spike in errors may indicate a permissions change or API issue on the Intune side.
+After each sync, review the AirSync run summary in DevRev. It shows how many records were created, updated, or errored. A sudden spike in errors may indicate a permissions change or API [[entities/issue|issue]] on the Intune side.
 
 ## Troubleshooting
 
@@ -257,4 +258,4 @@ After each sync, review the AirSync run summary in DevRev. It shows how many rec
 - [[glossary/airsync]]
 
 ## Source
-- DevRev support article [Microsoft Intune AirSync connector](https://support.devrev.ai/en-US/devrev/article/sWtjszWM) (ART-32873)
+- DevRev support [[entities/article|article]] [Microsoft Intune AirSync connector](https://support.devrev.ai/en-US/devrev/article/sWtjszWM) (ART-32873)

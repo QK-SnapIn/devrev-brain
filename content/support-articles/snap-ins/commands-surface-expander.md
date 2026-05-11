@@ -11,11 +11,12 @@ wiki_match: features/commands
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['features/commands']
+summary: "The Commands surface expander snap-in is an automation tool designed to expand commands availability across DevRev surfaces."
 ---
 
 # Commands surface expander
 
-The **Commands surface expander** snap-in is an automation tool designed to
+The **[[features/commands|Commands]] surface expander** snap-in is an automation tool designed to
 expand commands availability across DevRev surfaces.
 
 ## Configuration
@@ -30,7 +31,7 @@ Follow these steps to set up the Commands Surface Expander:
    * **Customer Chat Surfaces**: Select surfaces where the commands should be
      available in the "Customer messages".
    * **Discussions Surfaces**: Select surfaces where the commands should be
-     available in internal chats.
+     available in internal [[features/chats|chats]].
 3. Click **Save**.
 4. Click **Install** to activate the snap-in.
 
@@ -47,4 +48,4 @@ To update commands surfaces:
 - [[features/commands]]
 
 ## Source
-- DevRev support article [Commands surface expander](https://support.devrev.ai/en-US/devrev/article/VOY3CHs0) (ART-21930)
+- DevRev support [[entities/article|article]] [Commands surface expander](https://support.devrev.ai/en-US/devrev/article/VOY3CHs0) (ART-21930)

@@ -11,11 +11,12 @@ wiki_match: glossary/airsync
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['glossary/airsync']
+summary: "The Jira Service Management AirSync simplifies migration from Jira Service Management to DevRev, supporting both one-time imports and ongoing syncs."
 ---
 
 # Jira Service Management AirSync
 
-The Jira Service Management AirSync simplifies migration from Jira Service
+The Jira Service Management [[glossary/airsync|AirSync]] simplifies migration from Jira Service
 Management to DevRev, supporting both one-time imports and ongoing syncs.
 
 For more information, refer to the
@@ -31,20 +32,20 @@ for import/sync to DevRev from Jira Service Management.
 |  |  |  |
 | --- | --- | --- |
 | Jira Object | DevRev Object | Sync to DevRev |
-| Issue | Ticket | ✅ |
+| [[entities/issue|Issue]] | [[entities/ticket|Ticket]] | ✅ |
 | Private Comment on Issue | Internal Comment on Ticket | ✅ |
 | Public Comment on Issue | Customer Comment on Ticket | ✅ |
 | Label on Issue | Tag on Ticket | ✅ |
-| Link between Issues | Link between Tickets | ✅ |
+| Link between [[features/issues|Issues]] | Link between [[features/tickets|Tickets]] | ✅ |
 | Attachment on Issue | Attachment on Ticket | ✅ |
 | Status Category/States of Issue | State/Stage of Ticket | ✅ |
 | Workflow of Issue | Stage Transition Diagram of Ticket | ✅ |
 | User | DevUser | ✅ |
 | Customer | Customer | ✅ |
-| Organization | Account | ✅ |
+| Organization | [[entities/account|Account]] | ✅ |
 | App User | SysUser | ✅ |
 | Sprint | Sprint | ❌ |
-| Filter | Vista | ❌ |
+| Filter | [[glossary/vista|Vista]] | ❌ |
 | Automation | Snap-in | ❌ |
 
 ## Migrate from Jira Service Management to DevRev
@@ -103,7 +104,7 @@ fields to corresponding fields in DevRev, but it may prompt you on how you want
 to map certain fields.
 
 Typically Jira Service Management projects contain multiple types: epics,
-stories, bugs, and tasks are common; you can configure which types to import
+stories, bugs, and [[entities/task|tasks]] are common; you can configure which types to import
 from Jira Service Management.
 
 ### Sync from Jira Service Management to DevRev
@@ -172,7 +173,7 @@ In addition to these Jira-specific limitations, there are also some generic
   organizations are linked to a Jira Service Management issue, the DevRev ticket
   is only linked to the first of them.
 * Customers in DevRev can only belong to a single account, so if a customer is a
-  part of multiple organizations in Jira Service Management, he will only be
+  [[entities/part|part]] of multiple organizations in Jira Service Management, he will only be
   linked to one of them in DevRev.
 
 ### Connection
@@ -187,4 +188,4 @@ In addition to these Jira-specific limitations, there are also some generic
 - [[glossary/airsync]]
 
 ## Source
-- DevRev support article [Jira Service Management AirSync](https://support.devrev.ai/en-US/devrev/article/IBvW-Z2E) (ART-22023)
+- DevRev support [[entities/article|article]] [Jira Service Management AirSync](https://support.devrev.ai/en-US/devrev/article/IBvW-Z2E) (ART-22023)

@@ -11,24 +11,25 @@ wiki_match: features/commands
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['features/commands']
+summary: "The Slash commands snap-in helps you with tasks that are taking up your time and increasing your workload."
 ---
 
 # Slash commands
 
-The [Slash commands snap-in](https://marketplace.devrev.ai/marketplace/slash-commands) helps you with tasks that are taking up your time and increasing your workload.
-By using the Slash commands snap-in, you gain direct access to the capabilities of Computer within any text field. This integrates into your workflow, regardless of whether you're engaged in customer support interactions or immersed in building projects.
+The [Slash commands snap-in](https://marketplace.devrev.ai/marketplace/slash-commands) helps you with [[entities/task|tasks]] that are taking up your time and increasing your workload.
+By using the Slash [[features/commands|commands]] snap-in, you gain direct access to the capabilities of Computer within any text field. This integrates into your workflow, regardless of whether you're engaged in customer support interactions or immersed in building projects.
 
 ## Commands
 
 Slash commands are available through text fields such as:
 
-* **Inbox** > **Conversation** > **Customer chat/Discussions**
-* **Tickets** > **Customer chat/Discussions**
-* **Issues** > **Discussions**
+* **[[features/inbox|Inbox]]** > **[[entities/conversation|Conversation]]** > **Customer chat/Discussions**
+* **[[features/tickets|Tickets]]** > **Customer chat/Discussions**
+* **[[features/issues|Issues]]** > **Discussions**
 
 ![slash commands](don:core:dvrv-us-1:devo/0:artifact/4100739)
 
-Entering `/` in a text field allows you to execute commands, revealing a comprehensive list of available options. Respond to customers or participate in discussions, all without the need to exit your ongoing conversations.
+Entering `/` in a text field allows you to execute commands, revealing a comprehensive list of available options. Respond to customers or participate in discussions, all without the need to exit your ongoing [[features/conversations-feature|conversations]].
 
 ### Remind
 
@@ -53,16 +54,16 @@ Using the summarize command, you can sum up the entire conversation. It applies 
 * Conversation
 * Tickets
 * Issues
-* Part
+* [[entities/part|Part]]
 * Workspace
 * Customer
-* Account
+* [[entities/account|Account]]
 
 Sample response:
 
 **Summary:**
 
-* Rahul from DummyOrg is having difficulty installing the Plug Widget.
+* Rahul from DummyOrg is having difficulty installing the [[features/plug-widget|Plug Widget]].
 * Rohan suggests checking the setup instructions.
 * When this doesn't work, Rohan asks for more information on the error.
 * Rahul shares a recording of the error.
@@ -70,7 +71,7 @@ Sample response:
 
 ### Clone
 
-Using the clone command, a copy of the selected issue or ticket is created. All attributes of the issue/ticket are copied, along with [CLONE] prefixed to the title. It also comments on:
+Using the clone command, a copy of the selected [[entities/issue|issue]] or [[entities/ticket|ticket]] is created. All attributes of the issue/ticket are copied, along with [CLONE] prefixed to the title. It also comments on:
 
 * Source issue/ticket. For example, "ISS-0123 was cloned and ISS-0123 was created."
 * Cloned issue/ticket. For example, "TKT was cloned from TKT-0123."
@@ -83,4 +84,4 @@ The Slash commands snap-in is installed automatically in new workspaces.
 - [[features/commands]]
 
 ## Source
-- DevRev support article [Slash commands](https://support.devrev.ai/en-US/devrev/article/JhW1DLGe) (ART-21952)
+- DevRev support [[entities/article|article]] [Slash commands](https://support.devrev.ai/en-US/devrev/article/JhW1DLGe) (ART-21952)

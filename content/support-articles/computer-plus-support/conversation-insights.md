@@ -11,17 +11,18 @@ wiki_match: entities/conversation
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['entities/conversation']
+summary: "The percentage of conversations resolved."
 ---
 
 # Conversation insights
 
 * **Resolution rate**
 
-  The percentage of conversations resolved.
-* **SLA compliance rate**
+  The percentage of [[features/conversations-feature|conversations]] resolved.
+* **[[features/slas|SLA]] compliance rate**
 
   The percentage of conversations where the SLA was met out of all conversations where the SLA was applied.
-* **Average CSAT score**
+* **Average [[glossary/csat|CSAT]] score**
 
   The average customer satisfaction score for conversations.
 * **Average first response time**
@@ -33,13 +34,13 @@ related: ['entities/conversation']
 * **Active conversations per customer**
 
   The number of conversations per customer that are Open or In Progress.
-* **Active conversations per part**
+* **Active conversations per [[entities/part|part]]**
 
   The number of conversations per part that are Open or In Progress.
 
 ## Conversation distribution
 
-* **Conversations linked to tickets**
+* **Conversations linked to [[features/tickets|tickets]]**
 
   The percentage of tickets linked to conversations against standalone tickets.
 * **Conversations created vs. closed**
@@ -65,4 +66,4 @@ related: ['entities/conversation']
 - [[entities/conversation]]
 
 ## Source
-- DevRev support article [Conversation insights](https://support.devrev.ai/en-US/devrev/article/w2gN03E-) (ART-21907)
+- DevRev support [[entities/article|article]] [Conversation insights](https://support.devrev.ai/en-US/devrev/article/w2gN03E-) (ART-21907)

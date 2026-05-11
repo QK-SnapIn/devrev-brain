@@ -11,13 +11,14 @@ wiki_match: glossary/airsync
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['glossary/airsync']
+summary: "The Workday AirSync connector imports your HR data from Workday into DevRev, making it available for search, linking, and collaboration alongside your product and engineering workflows."
 ---
 
 # Workday AirSync Connector
 
 # Workday AirSync Connector
 
-The Workday AirSync connector imports your HR data from Workday into DevRev, making it available for search, linking, and collaboration alongside your product and engineering workflows. This connector performs a one-way sync — data flows from Workday into DevRev only.
+The Workday [[glossary/airsync|AirSync]] connector imports your HR data from Workday into DevRev, making it available for [[features/search|search]], linking, and collaboration alongside your product and engineering [[features/workflows|workflows]]. This connector performs a one-way sync — data flows from Workday into DevRev only.
 
 ---
 
@@ -35,16 +36,16 @@ The connector fetches the following entity types from Workday:
 
 | Entity | Description |
 | --- | --- |
-| **Workers** | All active and inactive workers from your Workday tenant. Each worker is created as a DevRev user identity with name and email. |
-| **Worker Profiles** | Extended HR record for each worker, including job title, department, manager, location, hire date, compensation group, and personal details. |
-| **Candidates** | Job candidates from Workday Recruiting, created as DevRev rev-user identities. |
+| **Workers** | All active and inactive workers from your Workday tenant. Each worker is created as a DevRev user [[features/identity|identity]] with name and email. |
+| **Worker Profiles** | Extended HR record for each worker, including job title, department, manager, location, hire date, compensation [[entities/group|group]], and personal details. |
+| **Candidates** | Job candidates from Workday Recruiting, created as DevRev [[entities/rev-user|rev-user]] identities. |
 | **Candidate Profiles** | Extended profile for each candidate with application details and recruiting-specific fields. |
 
 ### Organization
 
 | Entity | Description |
 | --- | --- |
-| **Organizations** | Workday organizations (Supervisory, Cost Center, Region, Company), mapped to DevRev groups. |
+| **Organizations** | Workday organizations (Supervisory, Cost Center, Region, Company), mapped to DevRev [[entities/group|groups]]. |
 | **Organization Members** | Membership records that link workers to their organizations, preserving your org chart structure. |
 
 ### HR Modules
@@ -68,7 +69,7 @@ The connector fetches the following entity types from Workday:
 
 Before you install the connector, make sure you have:
 
-* A DevRev account with permission to install snap-ins
+* A DevRev [[entities/account|account]] with permission to install snap-ins
 * A Workday bearer token issued by your Workday tenant administrator
 * Access to the Workday REST API for your tenant
 
@@ -241,4 +242,4 @@ Workers and Candidates use a **dual-object pattern**: one object holds the DevRe
 - [[glossary/airsync]]
 
 ## Source
-- DevRev support article [Workday AirSync Connector](https://support.devrev.ai/en-US/devrev/article/G3qXTXDm) (ART-30224)
+- DevRev support [[entities/article|article]] [Workday AirSync Connector](https://support.devrev.ai/en-US/devrev/article/G3qXTXDm) (ART-30224)

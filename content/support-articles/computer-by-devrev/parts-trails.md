@@ -11,13 +11,14 @@ wiki_match: entities/part
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['entities/part']
+summary: "A part is a component of a product or service that has a lifecycle (creation, operation, evolution, deprecation), and can be recursively made of smaller parts."
 ---
 
 # Parts & trails
 
-A *part* is a component of a product or service that has a lifecycle (creation, operation, evolution, deprecation), and can be recursively made of smaller parts. Events and work items must be related to parts. In general, parts are the core objects that almost all other objects are linked to, which helps enforce the notion of tying everything back to the product or service.
+A *[[entities/part|part]]* is a component of a product or service that has a lifecycle (creation, operation, evolution, deprecation), and can be recursively made of smaller [[features/parts|parts]]. Events and work items must be related to parts. In general, parts are the core objects that almost all other objects are linked to, which helps enforce the notion of tying everything back to the product or service.
 
-*Trails* is an extensible interface that allows you to view and manage your part hierarchy and related items. Think of it like a graph canvas that's rendering linkages among items—including tickets, issues, and articles—making them easier to navigate and summarize. Trails is Computer's Memory: the ontology at the heart of DevRev that defines connections among product parts and people.
+*[[glossary/trails|Trails]]* is an extensible interface that allows you to view and manage your part hierarchy and related items. Think of it like a graph canvas that's rendering linkages among items—including [[features/tickets|tickets]], [[features/issues|issues]], and [[entities/article|articles]]—making them easier to navigate and summarize. Trails is Computer's Memory: the ontology at the heart of DevRev that defines connections among product parts and people.
 
 The following image shows an example of DevRev's **Trails** view.
 
@@ -51,7 +52,7 @@ Products typically have the following characteristics:
 
 * Are a unit of profit and loss (P&L)
 * Are where customers (internal or external) are onboarded
-* Provide the basis for identity
+* Provide the basis for [[features/identity|identity]]
 * May have a notion of billing/chargeback (which can be done at this level or further down the stack)
 
 Services may have the following additional characteristics:
@@ -125,7 +126,7 @@ Example runnables:
 
 Example DevRev runnables:
 
-* Wisp (search)
+* Wisp ([[features/search|search]])
 * Codex (work SOR)
 * Partiql (parts SOR)
 
@@ -135,7 +136,7 @@ A linkable is a unit of functionality that's designed to be part of a system or 
 
 Components typically have the following characteristics:
 
-* Linkable items are commonly used as libraries or binary artifacts.
+* Linkable items are commonly used as libraries or binary [[features/artifacts|artifacts]].
 * Not commonly exposed to the consumer (but can be).
 * Are intended to be used as part of larger services, not on their own.
 
@@ -186,14 +187,14 @@ If you have parent parts and children parts under it then:
 
 Linking parts isn't only limited to capability, feature, or runnable. You can link the following parts:
 
-* **Enhancement:** A change to a part in the form of addition, deprecation, or transformation.
+* **[[entities/enhancement|Enhancement]]:** A change to a part in the form of addition, deprecation, or transformation.
 * **Top contributors:** Top 10 owners with issues in the closed/resolved stage for any part in the hierarchy.
 * **Top supporters:** Top 10 owners with tickets in the closed stage for any part in the hierarchy.
 * **Top customers:** Top 10 workspaces with the most number of tickets for any part in the hierarchy.
 
 ## Attributes
 
-Products have attributes that can be used to filter and group issues in various views.
+Products have attributes that can be used to filter and [[entities/group|group]] issues in various views.
 You can find all the stock attributes listed in [**Settings** > **Object customization** > **Product** > **Stock fields**](https://app.devrev.ai/?setting=object-customization?type=product).
 These are the stock attributes which come with DevRev:
 
@@ -205,7 +206,7 @@ These are the stock attributes which come with DevRev:
   + **In Progress**: *UX design*, *In development*, *In testing*
   + **Deployed**: *Limited availability*, *General availability*
   + **Inactive**: *Deprecated*, *Won't do*
-* **Created by**: The user who created the issue.
+* **Created by**: The user who created the [[entities/issue|issue]].
 * **Created date**: The date the issue was created.
 * **Modified date**: The date the issue was last modified.
 * **Modified by**: The user who last modified the issue.
@@ -219,7 +220,7 @@ You can add custom attributes to issues to track additional information. For mor
 
 ## Subtypes
 
-You can create subtypes of issues to categorize them further. For example, you can create subtypes for bugs, features, and tasks. Subtypes can be used to filter issues in various views.
+You can create subtypes of issues to categorize them further. For example, you can create subtypes for bugs, features, and [[entities/task|tasks]]. Subtypes can be used to filter issues in various views.
 A subtype inherits all the attributes of its parent issue type. You can add custom attributes to a subtype.
 To know how to create subtypes and add custom attributes to them, see [[support-articles/computer-by-devrev/object-customization|object customization]].
 
@@ -227,4 +228,4 @@ To know how to create subtypes and add custom attributes to them, see [[support-
 - [[entities/part]]
 
 ## Source
-- DevRev support article [Parts & trails](https://support.devrev.ai/en-US/devrev/article/_SsC0kTo) (ART-21849)
+- DevRev support [[entities/article|article]] [Parts & trails](https://support.devrev.ai/en-US/devrev/article/_SsC0kTo) (ART-21849)

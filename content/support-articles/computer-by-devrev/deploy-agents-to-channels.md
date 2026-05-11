@@ -10,6 +10,7 @@ top_category: Computer by DevRev
 wiki_match: glossary/mcp
 match_score: 0.431
 last_updated: 2026-05-11
+summary: "You\"ve built an agent, tested it, and published a version."
 ---
 
 # Deploy agents to channels
@@ -21,7 +22,7 @@ You've built an agent, tested it, and published a version. Now what? Your agent 
 In Agent Studio, **publishing** and **deploying** are two separate steps:
 
 * **Publishing** makes a version of your agent's configuration active.
-* **Deploying** connects that published agent to a channel — Plug chat, email, Slack, or WhatsApp — so real users can interact with it.
+* **Deploying** connects that published agent to a channel — [[glossary/plug|Plug]] chat, email, Slack, or WhatsApp — so real users can interact with it.
 
 Publishing prepares the agent; deploying opens the door.
 
@@ -29,24 +30,24 @@ Publishing prepares the agent; deploying opens the door.
 
 ### Channels must be active
 
-Before your agent can receive messages from a channel, that channel must be set up and creating conversations in DevRev. The deployment workflow reacts to events like "Conversation Started." If no conversations are being created from a channel, the agent has nothing to respond to.
+Before your agent can receive messages from a channel, that channel must be set up and creating [[features/conversations-feature|conversations]] in DevRev. The deployment workflow reacts to events like "[[entities/conversation|Conversation]] Started." If no conversations are being created from a channel, the agent has nothing to respond to.
 
 Make sure the channels you want to deploy on are active:
 
-* **Plug**: Plug must be enabled and the Plug widget installed on your website or app. Configure this in [Settings > Plug & Portal](https://app.devrev.ai/?setting=portal-settings%2Fconfiguration).
+* **Plug**: Plug must be enabled and the [[features/plug-widget|Plug widget]] installed on your website or app. Configure this in [Settings > Plug & Portal](https://app.devrev.ai/?setting=portal-settings%2Fconfiguration).
 * **Email**: The Email snap-in must be installed and configured with your support email address. Install it from the DevRev Marketplace.
 * **Slack**: The Slack snap-in must be installed and connected to your Slack workspace. Install it from the DevRev Marketplace.
-* **WhatsApp**: The WhatsApp snap-in must be installed and configured with your WhatsApp Business account. Install it from the DevRev Marketplace.
+* **WhatsApp**: The WhatsApp snap-in must be installed and configured with your WhatsApp Business [[entities/account|account]]. Install it from the DevRev Marketplace.
 
 Once a channel is active, it automatically creates Conversation objects in DevRev when users reach out. Those conversations are what your deployment workflow's trigger listens for.
 
-If your agent isn't responding, first verify that conversations are actually being created from the channel. Navigate to the Conversations list in DevRev and confirm that incoming messages appear. If they don't, the channel setup is the issue, not the agent.
+If your agent isn't responding, first verify that conversations are actually being created from the channel. Navigate to the Conversations list in DevRev and confirm that incoming messages appear. If they [[glossary/don|don]]'t, the channel setup is the [[entities/issue|issue]], not the agent.
 
 ## How deployment works
 
 ### Workflow model
 
-Deployment in DevRev is driven by **workflows**, not by a simple on/off toggle. A deployment workflow has two parts:
+Deployment in DevRev is driven by **[[features/workflows|workflows]]**, not by a simple on/off toggle. A deployment workflow has two [[features/parts|parts]]:
 
 ```
   TRIGGER                    TALK TO AGENT
@@ -54,7 +55,7 @@ Deployment in DevRev is driven by **workflows**, not by a simple on/off toggle. 
    happens…"        ──────►   this agent…"
 ```
 
-1. A **trigger** fires when something happens — a customer starts a conversation, or a ticket is created.
+1. A **trigger** fires when something happens — a customer starts a conversation, or a [[entities/ticket|ticket]] is created.
 2. The **Talk to Agent** node receives that event and hands it to your agent, which then responds.
 
 ### Quick setup vs. manual setup
@@ -67,7 +68,7 @@ Agent Studio provides a **Configure** button that creates a ready-made deploymen
 
 **Manual setup**
 
-You can build a deployment workflow from scratch in the [Workflows editor](https://app.devrev.ai/?view=workflows). This gives you full control: add conditions, route to different agents, or combine the Talk to Agent node with other actions.
+You can [[features/build|build]] a deployment workflow from scratch in the [Workflows editor](https://app.devrev.ai/?view=workflows). This gives you full control: add conditions, route to different [[features/agents|agents]], or combine the Talk to Agent node with other actions.
 
 Both approaches create the same kind of workflow. The Configure button saves you the manual steps, and you can customize the predefined template afterward.
 
@@ -85,7 +86,7 @@ Choose Talk to Agent for standard deployment scenarios where the agent owns the 
 A simple "deploy" toggle would work for basic cases, but workflows provide capabilities that a toggle cannot:
 
 * **Conditional routing**: Route VIP customers to a premium agent and everyone else to a standard agent.
-* **Multi-step flows**: Create a ticket before handing the conversation to an agent, or send a CSAT survey after the agent exits the conversation.
+* **Multi-step flows**: Create a ticket before handing the conversation to an agent, or send a [[glossary/csat|CSAT]] survey after the agent exits the conversation.
 * **Channel-specific behavior**: Deploy the same agent on Plug with external visibility and on DMs with internal visibility.
 * **Gradual rollout**: Start with one channel, observe, then expand.
 
@@ -286,7 +287,7 @@ When you publish a new agent version, all new conversations automatically use th
 
 ## Common pitfalls
 
-The issues below are the most frequently encountered deployment problems.
+The [[features/issues|issues]] below are the most frequently encountered deployment problems.
 
 * **Issue**: Agent responds twice to every message.
 
@@ -311,4 +312,4 @@ The issues below are the most frequently encountered deployment problems.
   **Solution**: Updates to a deployment workflow (changed visibility, added quick replies, switched agents) apply to new conversations only. Conversations already in progress continue with their original configuration.
 
 ## Source
-- DevRev support article [Deploy agents to channels](https://support.devrev.ai/en-US/devrev/article/XPm1n5YA) (ART-26062)
+- DevRev support [[entities/article|article]] [Deploy agents to channels](https://support.devrev.ai/en-US/devrev/article/XPm1n5YA) (ART-26062)

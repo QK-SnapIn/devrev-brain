@@ -10,6 +10,7 @@ top_category: Computer by DevRev
 wiki_match: features/csat
 match_score: 0.667
 last_updated: 2026-05-11
+summary: "At DevRev, our commitment is to streamline collaboration and ensure that the teams and their customers are always in the loop."
 ---
 
 # Customer email notifications
@@ -20,7 +21,7 @@ The email senders and subject lines are subject to change based on organizationa
 
 ## White-label customer email notifications
 
-Organizations can personalize their email notifications by choosing a customized sender address and by incorporating their own logo, creating a more branded and professional appearance. Moreover, if customers reply to these notification emails, their responses will automatically be added to the relevant ticket or conversation, ensuring seamless and continuous communication.
+Organizations can personalize their email notifications by choosing a customized sender address and by incorporating their own logo, creating a more branded and professional appearance. Moreover, if customers reply to these notification emails, their responses will automatically be added to the relevant [[entities/ticket|ticket]] or [[entities/conversation|conversation]], ensuring seamless and continuous communication.
 
 By default, notifications are sent from [notifications@devrev.ai](mailto:notifications@devrev.ai). However, this setting can be overridden to use the organization’s primary email address as the sender, or notifications can be turned off entirely.
 
@@ -56,13 +57,13 @@ This email is only sent to the organizations with [Convergence snap-in](https://
 * **Sender**: `{Company_Name}` [support@yourdomain.com](mailto:support@yourdomain.com)
 * **Subject**:
   - For ticket: "[`{Company_Name}`] Update on TKT-XXX - Ticket Title""`<customer email subject>`"
-  - For conversations: “Update on your Conversation with `{Company_Name}`"
+  - For [[features/conversations-feature|conversations]]: “Update on your Conversation with `{Company_Name}`"
 
 This email is only sent to organizations that have installed [Convergence snap-in](https://docs.devrev.ai/automations/converge).
 
 ## CSAT survey for conversation/ticket
 
-* **Trigger**: A CSAT survey is sent for a conversation or ticket.
+* **Trigger**: A [[glossary/csat|CSAT]] survey is sent for a conversation or ticket.
 * **Action**: The system sends out a notification with the ticket/conversation number and CSAT form.
 * **Sender**: DevRev [no-reply@devrev.ai](mailto:no-reply@devrev.ai)
 * **Subject**: "CSAT for TKT-XXX"
@@ -88,4 +89,4 @@ This email is only sent to organizations that have installed [Auto-reply snap-in
 This email is only sent to organizations that have installed [Auto-reply snap-in](https://docs.devrev.ai/automations/auto-reply).
 
 ## Source
-- DevRev support article [Customer email notifications](https://support.devrev.ai/en-US/devrev/article/bdTvezeR) (ART-21853)
+- DevRev support [[entities/article|article]] [Customer email notifications](https://support.devrev.ai/en-US/devrev/article/bdTvezeR) (ART-21853)

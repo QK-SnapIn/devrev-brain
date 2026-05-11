@@ -10,6 +10,7 @@ top_category: Snap-ins
 wiki_match: glossary/ola
 match_score: 0.444
 last_updated: 2026-05-11
+summary: "With the aim of having a single source of truth for all customer problems, DevRev has integrated with Exotel so as to record the customer support requests raised via phone."
 ---
 
 # Exotel
@@ -20,7 +21,7 @@ For more information, refer to the [Exotel snap-in](https://marketplace.devrev.a
 
 ## Prerequisites
 
-1. Sign up for an Exotel account.
+1. Sign up for an Exotel [[entities/account|account]].
 2. Verify your account through phone or email.
 3. Get your account KYC verified.
 4. Purchase ExoPhone.
@@ -40,4 +41,4 @@ When merging duplicate contacts, set the Exotel-created contact as
 primary to retain call records
 
 ## Source
-- DevRev support article [Exotel](https://support.devrev.ai/en-US/devrev/article/e71SC9Cp) (ART-21977)
+- DevRev support [[entities/article|article]] [Exotel](https://support.devrev.ai/en-US/devrev/article/e71SC9Cp) (ART-21977)

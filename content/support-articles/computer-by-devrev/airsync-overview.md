@@ -11,17 +11,18 @@ wiki_match: glossary/airsync
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['glossary/airsync']
+summary: "AirSync imports and synchronizes data between Computer and external platforms."
 ---
 
 # AirSync overview
 
-AirSync imports and synchronizes data between Computer and external platforms. You can perform a one-time import, set up a one-way sync from an external source to Computer, or establish a two-way sync that keeps both systems updated. AirSync preserves context, relationships, and permissions for every record, unifying structured and unstructured data into Computer's [[support-articles/computer-by-devrev/airsync-scope|Memory]].
+[[glossary/airsync|AirSync]] imports and synchronizes data between Computer and external platforms. You can perform a one-time import, set up a one-way sync from an external source to Computer, or establish a two-way sync that keeps both systems updated. AirSync preserves context, relationships, and permissions for every record, unifying structured and unstructured data into Computer's [[support-articles/computer-by-devrev/airsync-scope|Memory]].
 
-AirSync supports near-real-time, bidirectional synchronization through periodic sync runs (by default, once per hour). By connecting tickets, conversations, product backlogs, documents, and more, AirSync consolidates scattered information into a single source of truth for both your teams and AI agents.
+AirSync supports near-real-time, bidirectional synchronization through periodic sync runs (by default, once per hour). By connecting [[features/tickets|tickets]], [[features/conversations-feature|conversations]], product backlogs, documents, and more, AirSync consolidates scattered information into a single source of truth for both your teams and [[features/agents|AI agents]].
 
 For details on what AirSync does and does not synchronize, including attachment size limits and schema change behavior, see [[support-articles/computer-by-devrev/airsync-scope|AirSync scope and limitations]].
 
-> 📝 **Note**: AirSync was previously known as *DevRev Airdrop*. If you encounter references to "Airdrop" elsewhere, they refer to this same feature.
+> 📝 **Note**: AirSync was previously known as *DevRev [[glossary/airdrop|Airdrop]]*. If you encounter references to "Airdrop" elsewhere, they refer to this same feature.
 
 ## AirSync features
 
@@ -42,7 +43,7 @@ For a full list of supported connectors, browse the AirSync category in the [Dev
 
 ### Set up a new AirSync
 
-> 📝 **Note**: Use an administrator account on the external source to ensure all necessary permissions are available.
+> 📝 **Note**: Use an administrator [[entities/account|account]] on the external source to ensure all necessary permissions are available.
 
 Whether you want to perform only a one-time import or set up an ongoing sync, performing an initial import is required.
 
@@ -107,7 +108,7 @@ After an import, you can view the sync status of imported items. The sync status
 
 * **Succeeded**: The import was successful, and the record is in sync with the external source.
 * **Modified**: Minor modifications were made to the record after sync, but no constraints were violated.
-* **Staged**: Data model constraints were violated and the record requires attention before it can fully sync. For example, a contact is linked to an account that does not exist in DevRev, or a required field mapping is missing. Review staged records and resolve the constraint issue to move them to a synced state.
+* **Staged**: Data model constraints were violated and the record requires attention before it can fully sync. For example, a contact is linked to an account that does not exist in DevRev, or a required field mapping is missing. Review staged records and resolve the constraint [[entities/issue|issue]] to move them to a synced state.
 * **Failed**: The record was not synced due to an error.
 
 **Other sync metadata**
@@ -125,10 +126,10 @@ AirSynced items display an icon at the top of the record, next to the display ID
 * Sync date
 * A link back to this item in the external source
 
-You can identify imported items by the identifier next to the display ID in the vista view without opening the record. Sync filters are also available in vista view. AirSynced records may also have a custom tag applied that can be used for filtering.
+You can identify imported items by the identifier next to the display ID in the [[glossary/vista|vista]] view without opening the record. Sync filters are also available in vista view. AirSynced records may also have a custom tag applied that can be used for filtering.
 
 ## Related wiki nodes
 - [[glossary/airsync]]
 
 ## Source
-- DevRev support article [AirSync overview](https://support.devrev.ai/en-US/devrev/article/i96Xvth5) (ART-21842)
+- DevRev support [[entities/article|article]] [AirSync overview](https://support.devrev.ai/en-US/devrev/article/i96Xvth5) (ART-21842)

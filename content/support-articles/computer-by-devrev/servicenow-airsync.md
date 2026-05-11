@@ -11,11 +11,12 @@ wiki_match: glossary/airsync
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['glossary/airsync']
+summary: "DevRev\"s ServiceNow import allows you to perform a sync from ServiceNow to DevRev."
 ---
 
 # ServiceNow AirSync
 
-DevRev's ServiceNow import allows you to perform a sync from ServiceNow to DevRev. The ServiceNow AirSync focuses on [ITSM](https://www.servicenow.com/products/itsm.html) and [CSM](https://www.servicenow.com/products/customer-service-management.html) products of ServiceNow.
+DevRev's ServiceNow import allows you to perform a sync from ServiceNow to DevRev. The ServiceNow [[glossary/airsync|AirSync]] focuses on [ITSM](https://www.servicenow.com/products/itsm.html) and [CSM](https://www.servicenow.com/products/customer-service-management.html) products of ServiceNow.
 
 ## Supported objects
 
@@ -25,26 +26,26 @@ equivalent.
 |  |  |  |  |
 | --- | --- | --- | --- |
 | ServiceNow Object | DevRev Object | Sync to DevRev | Sync to ServiceNow |
-| Task (\* all subtype of task) | Ticket | ✅ | ✅ |
-| Incident | Incident | ✅ | ✅ |
+| [[entities/task|Task]] (\* all subtype of task) | [[entities/ticket|Ticket]] | ✅ | ✅ |
+| [[glossary/incident|Incident]] | Incident | ✅ | ✅ |
 | Incident Task | Incident | ✅ | ✅ |
 | Comments | Comment on Ticket | ✅ | ✅ |
 | Attachments | Attachment on Ticket | ✅ | ✅ |
-| Account | Account | ✅ | ❌ |
+| [[entities/account|Account]] | Account | ✅ | ❌ |
 | Contact | RevUser | ✅ | ❌ |
 | Consumer | RevUser | ✅ | ❌ |
 | RevUser | RevUser | ✅ | ❌ |
 | Agent | DevUser | ✅ | ❌ |
 
-All subtypes of task are imported as tickets. The task table in ServiceNow can be extended to create custom table types.
+All subtypes of task are imported as [[features/tickets|tickets]]. The task table in ServiceNow can be extended to create custom table types.
 
 Below is a list of common task subtypes that are supported for import. The format shown is **ServiceNow Label / DevRev Subtype Name (servicenow\_table\_name)**,
 
-where the first part is how it appears in ServiceNow, the second part is how it will appear in DevRev, and the table name in parentheses is the ServiceNow database table name\*:
+where the first [[entities/part|part]] is how it appears in ServiceNow, the second part is how it will appear in DevRev, and the table name in parentheses is the ServiceNow database table name\*:
 
 * Problems (problem)
 * Request Subtasks/Sn Creatorstudio Child Task (sn\_creatorstudio\_child\_task)
-* Tasks/Sn customerservice Task (sn\_customerservice\_task)
+* [[entities/task|Tasks]]/Sn customerservice Task (sn\_customerservice\_task)
 * Asset Tasks (asset\_task)
 * Requests/Sc Request (sc\_request)
 * Catalog Tasks/Sc Task (sc\_task)
@@ -88,7 +89,7 @@ where the first part is how it appears in ServiceNow, the second part is how it 
 * Recommended Field Remediations/Recommended Field Remediation (recommended\_field\_remediation)
 * Standard Change Proposals (std\_change\_proposal)
 * CMDB Data Management Task Control/CMDB Data Management Task (cmdb\_data\_management\_task)
-* Group approvals/Sysapproval Group (sysapproval\_group)
+* [[entities/group|Group]] approvals/Sysapproval Group (sysapproval\_group)
 * Chat Queue Entries/Chat Queue Entry (chat\_queue\_entry)
 
 To ease the transition from ServiceNow ITSM/CSM to DevRev, you can choose to  
@@ -204,7 +205,7 @@ A ServiceNow import is highly configurable, and the configurations for a specifi
 
 * What type of work to create in DevRev?
 
-  + You have the option to import ServiceNow objects as DevRev tickets and as DevRev incidents.
+  + You have the option to import ServiceNow objects as DevRev tickets and as DevRev [[features/incidents|incidents]].
 * What ServiceNow types to import?
 
   + ServiceNow contains various types of objects. All are subtypes of Tasks or Incidents type.
@@ -287,7 +288,7 @@ If permissions are denied for any of these tables, the import will fail.
 
 **Required for data import:**
 
-For all other tables you wish to import (incidents, tasks, accounts, etc.), the user must have read access or that data will not be imported.
+For all other tables you wish to import (incidents, tasks, [[features/accounts|accounts]], etc.), the user must have read access or that data will not be imported.
 
 ServiceNow is highly customizable and is it possible to add which role should have access to which table. If you create a new role only for extraction and add permission to read mandatory tables, then you can import data without admin permissions.
 
@@ -384,4 +385,4 @@ To delete an import and all the content it created, go to [**Settings** > **Inte
 - [[glossary/airsync]]
 
 ## Source
-- DevRev support article [ServiceNow AirSync](https://support.devrev.ai/en-US/devrev/article/GujEKqBQ) (ART-22008)
+- DevRev support [[entities/article|article]] [ServiceNow AirSync](https://support.devrev.ai/en-US/devrev/article/GujEKqBQ) (ART-22008)

@@ -11,25 +11,26 @@ wiki_match: features/incidents
 match_score: 0.706
 last_updated: 2026-05-11
 related: ['features/incidents']
+summary: "User groups contain your internal team members – the people inside your organization who build, support, and sell your product."
 ---
 
 # User management
 
-User groups contain your internal team members – the people inside your organization who build, support, and sell your product. They control what your internal team can do; that is, permissions for accessing and acting on objects like tickets, issues, and parts within the DevRev app.
+User [[entities/group|groups]] contain your internal team members – the people inside your organization who [[features/build|build]], support, and sell your product. They control what your internal team can do; that is, permissions for accessing and acting on objects like [[features/tickets|tickets]], [[features/issues|issues]], and [[features/parts|parts]] within the DevRev app.
 
 ## Default user groups
 
 The following are the default user groups in a workspace:
 
 * **Admins:** All workspace admins.
-* **All Users:** A dynamic group containing all users in the workspace. Because this group is dynamic, its membership is managed automatically and cannot be manually edited.
+* **All Users:** A dynamic [[entities/group|group]] containing all users in the workspace. Because this group is dynamic, its membership is managed automatically and cannot be manually edited.
 * **Platform Users:** All internal members of the workspace. Any new member is added to this group by default.
-* **Support:** All members of the support team, which may include customer success and sales. Only members of this group receive updates about conversations in the Plug inbox.
-* **Agent and Automations Admin:** This group includes privileges to manage agents, workflows, snap-ins, commands, and related automation resources.
+* **Support:** All members of the support team, which may include customer success and sales. Only members of this group receive updates about [[features/conversations-feature|conversations]] in the [[glossary/plug|Plug]] [[features/inbox|inbox]].
+* **Agent and Automations Admin:** This group includes privileges to manage [[features/agents|agents]], [[features/workflows|workflows]], snap-ins, [[features/commands|commands]], and related automation resources.
 
 ## Dynamic and static groups
 
-Admins can add or remove members from any static group. A dynamic group determines membership automatically based on rules and expressions rather than manual assignment. Members are added or removed as they meet or stop meeting the defined criteria. You cannot manually edit the member list of a dynamic group.
+Admins can add or remove members from any static group. A dynamic group determines membership automatically based on rules and expressions rather than manual assignment. Members are added or removed as they meet or stop [[entities/meeting|meeting]] the defined criteria. You cannot manually edit the member list of a dynamic group.
 
 For a detailed explanation of how dynamic groups work, including expression syntax and use cases, see [[support-articles/computer-by-devrev/groups|Groups]].
 
@@ -66,7 +67,7 @@ The name, type, and description of default groups cannot be edited. However, you
 
 Only admins can invite users to the workspace. If you are not an admin, the **Invite** button is not displayed.
 
-For organizations using SSO or identity provider (IDP) provisioning, users can be provisioned automatically without manual invitation. Contact your workspace admin for details on configuring IDP-based provisioning.
+For organizations using SSO or [[features/identity|identity]] provider (IDP) provisioning, users can be provisioned automatically without manual invitation. Contact your workspace admin for details on configuring IDP-based provisioning.
 
 ### Invite users to the workspace
 
@@ -89,4 +90,4 @@ After sending invitations, you can review their status and take further action f
 - [[features/incidents]]
 
 ## Source
-- DevRev support article [User management](https://support.devrev.ai/en-US/devrev/article/uNlA_ZjU) (ART-21894)
+- DevRev support [[entities/article|article]] [User management](https://support.devrev.ai/en-US/devrev/article/uNlA_ZjU) (ART-21894)

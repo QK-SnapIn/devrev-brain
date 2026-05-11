@@ -11,15 +11,16 @@ wiki_match: features/remote-mcp
 match_score: 1.0
 last_updated: 2026-05-11
 related: ['features/remote-mcp']
+summary: "As an agent-first platform, DevRev provides a remote MCP server for work with agentic platforms such as Claude desktop and Cursor."
 ---
 
 # Remote MCP server
 
-As an agent-first platform, DevRev provides a remote MCP server for work with agentic platforms such as Claude desktop and Cursor.
+As an agent-first platform, DevRev provides a [[features/remote-mcp|remote MCP server]] for work with agentic platforms such as Claude desktop and Cursor.
 
-The DevRev remote MCP server is available at `https://api.devrev.ai/mcp/v1`.
+The DevRev [[features/remote-mcp|remote MCP]] server is available at `https://api.devrev.ai/mcp/v1`.
 
-The MCP server currently supports two modes of authentication: **OAuth** or DevRev-generated **PAT**.
+The [[glossary/mcp|MCP]] server currently supports two modes of authentication: **OAuth** or DevRev-generated **PAT**.
 
 Most MCP clients (such as the Claude desktop) automatically use OAuth when connecting to the server, so no configuration is required.
 
@@ -50,7 +51,7 @@ Installing a DevRev connector to Claude requires **Admin** permissions. You must
 
 OAuth authentication is available only in **Claude** (both the desktop and web apps).
 
-1. In the Claude app, navigate to **Settings > Connectors**, then click **Browse connectors** and search for **DevRev**.
+1. In the Claude app, navigate to **Settings > Connectors**, then click **Browse connectors** and [[features/search|search]] for **DevRev**.
 
 ![image.png](https://app.devrev.ai/api/gateway/internal/artifacts.download?id=don:core:dvrv-us-1:devo/0:artifact/9316211&key=3653f2d3d7e23e3742f85034947d129fcd4cf776f31681db5ad3579db5a5317a)2. Select **DevRev** from the results and click **Add to your team**. The DevRev connector will appear in the list of available connectors. Click **Connect** to begin the setup process. A new browser tab opens, prompting you to enter your organization’s **slug**.
 
@@ -206,4 +207,4 @@ Cursor only allows OAuth for a curated list of MCP servers. Until DevRev is list
 - [[features/remote-mcp]]
 
 ## Source
-- DevRev support article [Remote MCP server](https://support.devrev.ai/en-US/devrev/article/ZNqaZTsx) (ART-21859)
+- DevRev support [[entities/article|article]] [Remote MCP server](https://support.devrev.ai/en-US/devrev/article/ZNqaZTsx) (ART-21859)

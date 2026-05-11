@@ -11,11 +11,12 @@ wiki_match: glossary/airsync
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['glossary/airsync']
+summary: "The Azure Boards AirSync simplifies migration from Azure Boards to DevRev, supporting both one-time imports and ongoing syncs."
 ---
 
 # Azure Boards AirSync
 
-The Azure Boards AirSync simplifies migration from Azure Boards to DevRev, supporting both one-time imports and ongoing syncs.
+The Azure Boards [[glossary/airsync|AirSync]] simplifies migration from Azure Boards to DevRev, supporting both one-time imports and ongoing syncs.
 
 ### Configure the Azure Boards Connection
 
@@ -31,19 +32,19 @@ The following is a list of Azure Boards objects and their corresponding DevRev e
 
 | Azure Boards Object | DevRev Object | Sync to DevRev | Sync to Azure Boards |
 | --- | --- | --- | --- |
-| Work Item | Issue/Ticket | ✅ | ✅ |
+| Work Item | [[entities/issue|Issue]]/[[entities/ticket|Ticket]] | ✅ | ✅ |
 | Comment on Work Item | Comments on Issue/Ticket | ✅ | ✅ |
 | Tag on Work Item | Tags on Issue/Ticket | ✅ | ✅ |
 | Attachment on Work Item | Attachment on Issue/Ticket | ✅ | ✅ |
 | User | DevUser | ✅ | ❌ |
 | Stage on Work Item | State/Stage on Issue/Ticket | ✅ | ✅ |
-| Filter | Vista | ❌ | ❌ |
+| Filter | [[glossary/vista|Vista]] | ❌ | ❌ |
 | Extensions | Snap-in | ❌ | ❌ |
 
 ### Import from Azure Boards
 
 1. Log in to DevRev.
-2. Go to **Settings** and search for **Integrations**.
+2. Go to **Settings** and [[features/search|search]] for **Integrations**.
 3. In the snap-in config, click on **All Snap-ins**, search for **Azure Boards**, Click **Add** and **Install Snap-in**.
 4. Go to **Settings > Airsync** in the left-navigation.
 5. Click **Airsync** in top right corner and select the **Azure Boards**.
@@ -54,10 +55,10 @@ The following is a list of Azure Boards objects and their corresponding DevRev e
    * Select **Azure Boards**.
    * Select the connection you just created. Click on **Next**.
    * On the next screen the list of projects will be displayed. Choose the project you wish to import.
-   * Specify the **DevRev part** where the imported content should reside, then click on **Start**. This will trigger a bulk import of the selected content.
+   * Specify the **DevRev [[entities/part|part]]** where the imported content should reside, then click on **Start**. This will trigger a bulk import of the selected content.
 8. DevRev makes an effort to automatically map the fields from Azure Boards to the corresponding fields in DevRev. However, you may be prompted to manually map certain fields if needed.
 
-> The duration of the import depends on the size of the Azure Boards account and the data being imported. It can take seconds for an account with only a few dozen work items to a few hours for an account with tens of thousands of items with many attachments. DevRev honors the Azure Boards API rate limits and back-off and resumes automatically.
+> The duration of the import depends on the size of the Azure Boards [[entities/account|account]] and the data being imported. It can take seconds for an account with only a few dozen work items to a few hours for an account with tens of thousands of items with many attachments. DevRev honors the Azure Boards API rate limits and back-off and resumes automatically.
 
 ### Creating an Azure Boards Connection
 
@@ -80,7 +81,7 @@ The following is a list of Azure Boards objects and their corresponding DevRev e
 
 ## Limitations
 
-* Links between Issues and Tickets, and between Tickets, are not supported.
+* Links between [[features/issues|Issues]] and [[features/tickets|Tickets]], and between Tickets, are not supported.
 * Deep hierarchies (multiple levels of linked work items) are not supported.
 * If a work item has a missing or invalid priority or severity value, a default value will be assigned to the corresponding issue or ticket in DevRev.
 * Some work item stages may require manual mapping if they are of different project type or having custom stages.
@@ -193,7 +194,7 @@ Select the frequency:
 
 ### Delete import
 
-> ⚠️ This deletes any content created by the import, including users and articles.
+> ⚠️ This deletes any content created by the import, including users and [[entities/article|articles]].
 
 An import and all the content it creates can be deleted from DevRev. This can be useful when running POCs or to change the configuration used during the import. Once an import has been deleted, all the content it created gets deleted, even if they were modified in DevRev. It's possible to import the project again after its deletion.
 
@@ -207,4 +208,4 @@ Using the Sync from DevRev to Azure Boards feature, it's possible to sync DevRev
 - [[glossary/airsync]]
 
 ## Source
-- DevRev support article [Azure Boards AirSync](https://support.devrev.ai/en-US/devrev/article/pIFPpCr4) (ART-22017)
+- DevRev support [[entities/article|article]] [Azure Boards AirSync](https://support.devrev.ai/en-US/devrev/article/pIFPpCr4) (ART-22017)

@@ -10,12 +10,13 @@ top_category: Snap-ins
 wiki_match: glossary/shadow-user
 match_score: 0.467
 last_updated: 2026-05-11
+summary: "The StageFlow Automator is a custom snap-in that allows you to configure custom stages between tickets and issues/enhancements."
 ---
 
 # StageFlow Automator
 
-The StageFlow Automator is a custom snap-in that allows you to configure custom stages between tickets and issues/enhancements. You can also configure the stage transition whenever a message is given by a customer or a support team member.
-It also sends notifications to the ticket owner based on its stage changes.
+The StageFlow Automator is a custom snap-in that allows you to configure custom stages between [[features/tickets|tickets]] and [[features/issues|issues]]/[[entities/enhancement|enhancements]]. You can also configure the stage transition whenever a message is given by a customer or a support team member.
+It also sends notifications to the [[entities/ticket|ticket]] owner based on its stage changes.
 
 For more information, refer to the
 [StageFlow Automator snap-in](https://marketplace.devrev.ai/custom-covergence) on the DevRev marketplace.
@@ -27,7 +28,7 @@ For more information, refer to the
 
 ## Configuration
 
-You need to create a mapping between the tickets and issues/enhancement stages so that when the stage of an issue changes then the changes are also reflected accordingly in issues/enhancements.
+You need to create a mapping between the tickets and issues/[[entities/enhancement|enhancement]] stages so that when the stage of an [[entities/issue|issue]] changes then the changes are also reflected accordingly in issues/enhancements.
 
 1. Create the mapping in the CSV file in the format given below. The CSV file should contain the following columns:
 
@@ -53,4 +54,4 @@ Custom stages and subtypes are organization-specific.
 4. Go to **Issues** or **Roadmap** and make updates. The tickets that were linked to the issue or enhancement reflect the changes you configured in the CSV file, notifying the ticket owner.
 
 ## Source
-- DevRev support article [StageFlow Automator](https://support.devrev.ai/en-US/devrev/article/dkZfjJqW) (ART-21948)
+- DevRev support [[entities/article|article]] [StageFlow Automator](https://support.devrev.ai/en-US/devrev/article/dkZfjJqW) (ART-21948)

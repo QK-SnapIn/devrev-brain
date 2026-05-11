@@ -10,11 +10,12 @@ top_category: Computer by DevRev
 wiki_match: features/csat
 match_score: 0.407
 last_updated: 2026-05-11
+summary: "The SAP SuccessFactors connector for DevRev (powered by Airdrop) syncs your HR data from SAP SuccessFactors into DevRev."
 ---
 
 # SAP SuccessFactors Connector
 
-The SAP SuccessFactors connector for DevRev (powered by Airdrop) syncs your HR data from SAP SuccessFactors into DevRev. It brings employee profiles, organizational units, and company data into DevRev so you can build workflows, reports, and automations on top of your people data.
+The SAP SuccessFactors connector for DevRev (powered by [[glossary/airdrop|Airdrop]]) syncs your HR data from SAP SuccessFactors into DevRev. It brings employee profiles, organizational units, and company data into DevRev so you can [[features/build|build]] [[features/workflows|workflows]], reports, and automations on top of your people data.
 
 ---
 
@@ -32,7 +33,7 @@ The connector syncs four types of objects into DevRev:
 
 ### Users
 
-Active SuccessFactors user accounts are mapped to DevRev native user objects.
+Active SuccessFactors user [[features/accounts|accounts]] are mapped to DevRev native user objects.
 
 | Field | Description |
 | --- | --- |
@@ -62,7 +63,7 @@ Employee profiles are the richest entity. The connector consolidates data from m
 | Employment end date | Employment end date (for terminated employees) |
 | Status | Active or terminated |
 
-> **Note:** The connector includes terminated employees in the sync. If an employee no longer has an active user account in SuccessFactors, their profile is still synced using employment records as the source of truth.
+> **Note:** The connector includes terminated employees in the sync. If an employee no longer has an active user [[entities/account|account]] in SuccessFactors, their profile is still synced using employment records as the source of truth.
 
 ### Companies
 
@@ -81,7 +82,7 @@ Company records are synced along with their primary location data.
 
 Organizational units represent the hierarchy of your organization. Four sub-types are synced and labeled with a `unit_type` field:
 
-* **Department** — teams and functional groups
+* **Department** — teams and functional [[entities/group|groups]]
 * **Division** — business divisions
 * **Business Unit** — top-level business units
 * **Cost Center** — financial cost centers
@@ -200,4 +201,4 @@ If a sync run exceeds the time limit, the connector saves its progress and DevRe
 This connector uses the **OData V2 API** for SAP SuccessFactors. It is compatible with both production instances and sandbox environments on the SAP Business Accelerator Hub.
 
 ## Source
-- DevRev support article [SAP SuccessFactors Connector](https://support.devrev.ai/en-US/devrev/article/aU5kKfE7) (ART-30228)
+- DevRev support [[entities/article|article]] [SAP SuccessFactors Connector](https://support.devrev.ai/en-US/devrev/article/aU5kKfE7) (ART-30228)

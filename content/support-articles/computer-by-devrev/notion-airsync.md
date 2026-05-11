@@ -11,11 +11,12 @@ wiki_match: glossary/airsync
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['glossary/airsync']
+summary: "The Notion AirSync simplifies migration from Notion to DevRev, supporting both one-time imports and ongoing syncs."
 ---
 
 # Notion AirSync
 
-The Notion AirSync simplifies migration from Notion to DevRev, supporting both
+The Notion [[glossary/airsync|AirSync]] simplifies migration from Notion to DevRev, supporting both
 one-time imports and ongoing syncs.
 
 ## Supported objects
@@ -26,7 +27,7 @@ Notion to DevRev.
 
 | **Notion Object** | **DevRev Object** | **Sync to DevRev** |
 | --- | --- | --- |
-| Page | Article | ✅ |
+| Page | [[entities/article|Article]] | ✅ |
 | User | DevUser | ✅ |
 | Database (collection of pages) | Article (Single) | ✅ |
 
@@ -34,17 +35,17 @@ Notion to DevRev.
 
 Follow these steps to install the Notion AirSync snap-in:
 
-1. In the **Snap-in Config Modal**, search for **Notion** under **All snap-ins**.
+1. In the **Snap-in Config Modal**, [[features/search|search]] for **Notion** under **All snap-ins**.
 2. Click **Add** and **Install snap-in**.
 3. Go to **[Settings](https://app.devrev.ai/?setting=airsyncs)**[ > ](https://app.devrev.ai/?setting=airsyncs)**[Integrations](https://app.devrev.ai/?setting=airsyncs)**[ > ](https://app.devrev.ai/?setting=airsyncs)**[AirSyncs](https://app.devrev.ai/?setting=airsyncs)** in the left-hand navigation.
 4. Click **AirSync** in the top-right corner and select **Notion**.
-5. Create a new connection to your Notion account or use an existing one. See Choose a Connection Type
+5. Create a new connection to your Notion [[entities/account|account]] or use an existing one. See Choose a Connection Type
 6. Once the connection is established:
    a. In DevRev, go to **[Settings](https://app.devrev.ai/?setting=airsyncs)**[ > ](https://app.devrev.ai/?setting=airsyncs)**[Integrations](https://app.devrev.ai/?setting=airsyncs)**[ > ](https://app.devrev.ai/?setting=airsyncs)**[AirSyncs](https://app.devrev.ai/?setting=airsyncs)**, then click **AirSync** in the top-right corner.
    b. Select **Notion**.
    c. Select the connection you just created. Click **Next**.
    d. On the next screen, select **Notion workspace**.
-   e. Specify the **DevRev part** where the imported content should reside. This triggers a bulk import of the selected content.
+   e. Specify the **DevRev [[entities/part|part]]** where the imported content should reside. This triggers a bulk import of the selected content.
 
 DevRev automatically maps Notion properties to corresponding fields. You may be prompted for manual mapping in some cases.
 
@@ -68,7 +69,7 @@ Update the access manually:
 
 1. Go to **Notion Home**.
 2. Click **Settings** (bottom-left panel).
-3. Under **Accounts > Connections**, find the DevRev integration.
+3. Under **[[features/accounts|Accounts]] > Connections**, find the DevRev integration.
 4. Click the menu (•••) > **Access selected pages**.
 5. Select additional pages and **Save**.
 

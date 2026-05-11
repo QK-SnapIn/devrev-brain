@@ -10,16 +10,17 @@ top_category: Snap-ins
 wiki_match: entities/ticket
 match_score: 0.667
 last_updated: 2026-05-11
+summary: "Bring your code to the center of your decision-making with Bitbucket and DevRev."
 ---
 
 # Bitbucket
 
-Bring your code to the center of your decision-making with Bitbucket and DevRev. The Bitbucket integration allows Bitbucket users to onboard to DevRev and automate day-to-day activities, removing the need for tedious manual tasks.
+Bring your code to the center of your decision-making with Bitbucket and DevRev. The Bitbucket integration allows Bitbucket users to onboard to DevRev and automate day-to-day activities, removing the need for tedious manual [[entities/task|tasks]].
 
-* **Work automation**: Connect Bitbucket events to your DevRev issues.
-* **Magic commands**: Update DevRev issues without leaving your IDE.
-* **Autotrack work**: Automatically track your work in DevRev even without creating an issue ahead of time.
-* **PR task creation**: Create DevRev tasks for PR reviewers.
+* **Work automation**: Connect Bitbucket events to your DevRev [[features/issues|issues]].
+* **Magic [[features/commands|commands]]**: Update DevRev issues without leaving your IDE.
+* **Autotrack work**: Automatically track your work in DevRev even without creating an [[entities/issue|issue]] ahead of time.
+* **PR [[entities/task|task]] creation**: Create DevRev tasks for PR reviewers.
 * **PR reminders**: Automatically remind PR reviewers when a PR goes stale.
 
 For more information, refer to the [Bitbucket for DevRev snap-in](https://marketplace.devrev.ai/bitbucket) on the DevRev marketplace.
@@ -127,12 +128,12 @@ Fixes various formatting issues.
 
 ## Automatic work detection
 
-DevRev can automatically track your coding activity, even if you don't explicitly associate it with an issue. When you create a new branch or PR, and the branch or PR isn't explicitly associated with an issue, DevRev creates an issue for you. We call this an autonomous issue or autonomous work item. DevRev tries to fill in the details for you but you can rename the issue in DevRev, or mark it as belonging to a different, existing issue.
+DevRev can automatically track your coding activity, even if you [[glossary/don|don]]'t explicitly associate it with an issue. When you create a new branch or PR, and the branch or PR isn't explicitly associated with an issue, DevRev creates an issue for you. We call this an autonomous issue or autonomous work item. DevRev tries to fill in the details for you but you can rename the issue in DevRev, or mark it as belonging to a different, existing issue.
 
 To make use of this feature, go to **Configurations** > **Track Autonomous work**.
 
 * You can keep it disabled if you choose to explicitly create issues and link your Bitbucket activity or you can enable it either for PR creation or branch creation event.
-* Select the default part under **Default part for autonomous issues** as a default Part ID if you enable **Track autonomous work**. Autonomous issues originating from BitBucket will be attributed to a default part. You can configure the default part while setting up your snap-in. Every issue in DevRev must have a part attribution.
+* Select the default [[entities/part|part]] under **Default part for autonomous issues** as a default Part ID if you enable **Track autonomous work**. Autonomous issues originating from BitBucket will be attributed to a default part. You can configure the default part while setting up your snap-in. Every issue in DevRev must have a part attribution.
 
 ### Autonomous work lifecycle
 
@@ -145,7 +146,7 @@ DevRev can help you keep track of your issues while they're in the PR process. W
 To make use of this feature, the following conditions must be met:
 
 1. Create task for PR reviewers is enabled under **My Settings** and toggle on **Enable for me**.
-2. Each developer that wants to use this feature has to link their Bitbucket account by going to **Settings** > **Account** > **External Identities** and **Link Bitbucket Account**.
+2. Each developer that wants to use this feature has to link their Bitbucket [[entities/account|account]] by going to **Settings** > **Account** > **External Identities** and **Link Bitbucket Account**.
 
 ## PR reminders
 
@@ -157,4 +158,4 @@ To make use of this feature, the following conditions must be met:
 2. (Optional) Set the **Days before sending PR reminders**.
 
 ## Source
-- DevRev support article [Bitbucket](https://support.devrev.ai/en-US/devrev/article/86lhlMKY) (ART-21972)
+- DevRev support [[entities/article|article]] [Bitbucket](https://support.devrev.ai/en-US/devrev/article/86lhlMKY) (ART-21972)

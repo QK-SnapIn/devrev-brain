@@ -10,17 +10,18 @@ top_category: Snap-ins
 wiki_match: glossary/trails
 match_score: 0.5
 last_updated: 2026-05-11
+summary: "To establish a single source of truth for all customer issues, DevRev has integrated with Twilio to capture support requests made via phone."
 ---
 
 # Twilio SMS
 
-To establish a single source of truth for all customer issues, DevRev has integrated with Twilio to capture support requests made via phone. Customers can now share their concerns by sending an SMS to the designated Twilio support number. Each SMS automatically creates a support conversation and caller identity, allowing the support team to maintain complete context around the customer's issue.
+To establish a single source of truth for all customer [[features/issues|issues]], DevRev has integrated with Twilio to capture support requests made via phone. Customers can now share their concerns by sending an SMS to the designated Twilio support number. Each SMS automatically creates a support [[entities/conversation|conversation]] and caller [[features/identity|identity]], allowing the support team to maintain complete context around the customer's [[entities/issue|issue]].
 
 ## Prerequisites
 
 Before installing the Twilio SMS snap-in, ensure you have the following:
 
-1. A Twilio account.
+1. A Twilio [[entities/account|account]].
 2. Twilio account SID and the authentication token.
 
    These details can be found on the [Twilio Console](https://console.twilio.com/) dashboard under **Account Info**.
@@ -44,7 +45,7 @@ Follow these steps to ensure that the customer SMS received via Twilio are synce
    In the Configurations tab, fill in the following details:
 
    * **Twilio Phone number**: The phone number to send the reply back to the contact via Twilio from DevRev Conversation.
-   * **Default Part**: Select the default part that will be assigned to the conversation that is created by SMS received on the configured phone number.
+   * **Default [[entities/part|Part]]**: Select the default part that will be assigned to the conversation that is created by SMS received on the configured phone number.
 4. **Configure Twilio webhook**  
    After configuring, an Instruction Page will appear. Follow the steps below:
 
@@ -63,4 +64,4 @@ Once the Snap-in configuration is complete, any user who sends an SMS to the con
 * Editing existing comments is not supported and will not be reflected in Twilio.
 
 ## Source
-- DevRev support article [Twilio SMS](https://support.devrev.ai/en-US/devrev/article/ILdKGQ7j) (ART-22934)
+- DevRev support [[entities/article|article]] [Twilio SMS](https://support.devrev.ai/en-US/devrev/article/ILdKGQ7j) (ART-22934)

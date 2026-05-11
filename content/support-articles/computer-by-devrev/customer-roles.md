@@ -11,6 +11,7 @@ wiki_match: features/customer-portal
 match_score: 0.759
 last_updated: 2026-05-11
 related: ['features/customer-portal']
+summary: "Customer roles are used to manage the access and permissions of customers (contacts) in an organization."
 ---
 
 # Customer roles
@@ -22,7 +23,7 @@ Customer roles are used to manage the access and permissions of customers (conta
 1. Go to [**Settings** > **Customer Management** > **Roles**](https://app.devrev.ai?setting=customer-roles),
    select **+ Create new**.
 2. Enter the role name and description.
-3. Select an object, such as **Ticket** or **Inbox**, to assign permissions.
+3. Select an object, such as **[[entities/ticket|Ticket]]** or **[[features/inbox|Inbox]]**, to assign permissions.
 4. To restrict permissions, select **+ Add condition** and create a custom
    condition.
 5. To apply privileges to all subtypes of the object, select **Apply to all
@@ -52,10 +53,10 @@ Customer roles are used to manage the access and permissions of customers (conta
 1. Go to [**Settings** > **Customer Management** > **Roles**](https://app.devrev.ai?setting=customer-roles),
    select the role to assign.
 2. Select **Assign role**.
-3. To assign the role to a customer group:
+3. To assign the role to a customer [[entities/group|group]]:
 
-   1. Select **+ Groups**.
-   2. Search for and select the groups.
+   1. Select **+ [[entities/group|Groups]]**.
+   2. [[features/search|Search]] for and select the groups.
    3. Select **Assign role**.
 4. To assign the role to a customer:
 
@@ -71,4 +72,4 @@ You cannot assign a role to the **All customers** group.
 - [[features/customer-portal]]
 
 ## Source
-- DevRev support article [Customer roles](https://support.devrev.ai/en-US/devrev/article/VR92ky7P) (ART-21898)
+- DevRev support [[entities/article|article]] [Customer roles](https://support.devrev.ai/en-US/devrev/article/VR92ky7P) (ART-21898)

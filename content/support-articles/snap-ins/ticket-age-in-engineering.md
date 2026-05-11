@@ -11,11 +11,12 @@ wiki_match: entities/ticket
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['entities/ticket']
+summary: "Ticket age in engineering offers the ability to track how much time tickets spend on engineering, measured by ticket time spent on engineering stages."
 ---
 
 # Ticket age in engineering
 
-[Ticket age in engineering](https://devrev.ai/marketplace/ticket-age-in-engineering) offers the ability to track how much time tickets spend on engineering, measured by ticket time spent on engineering stages.
+[Ticket age in engineering](https://devrev.ai/marketplace/ticket-age-in-engineering) offers the ability to track how much time [[features/tickets|tickets]] spend on engineering, measured by [[entities/ticket|ticket]] time spent on engineering stages.
 
 The snap-in adds a new attribute to tickets which automatically calculates the
 time spent on engineering for that ticket. There can be multiple engineering
@@ -40,4 +41,4 @@ or days.
 - [[entities/ticket]]
 
 ## Source
-- DevRev support article [Ticket age in engineering](https://support.devrev.ai/en-US/devrev/article/9yPfZgdz) (ART-21955)
+- DevRev support [[entities/article|article]] [Ticket age in engineering](https://support.devrev.ai/en-US/devrev/article/9yPfZgdz) (ART-21955)

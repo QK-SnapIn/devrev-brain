@@ -11,11 +11,12 @@ wiki_match: features/customer-portal
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['features/customer-portal']
+summary: "The DevRev customer portal requires specific domains to be reachable from end-user networks."
 ---
 
 # Allowlist domains for the customer portal
 
-The DevRev customer portal requires specific domains to be reachable from end-user networks. If users access the portal from behind a VPN, firewall, proxy, or other network security layer, share the domain list below with your IT or network team so they can add the entries to the organization's allowlist.
+The DevRev [[features/customer-portal|customer portal]] requires specific domains to be reachable from end-user networks. If users access the portal from behind a VPN, firewall, proxy, or other network security layer, share the domain list below with your IT or network team so they can add the entries to the organization's allowlist.
 
 ## Prerequisites
 
@@ -61,7 +62,7 @@ DevRev documents domain-based allowlisting only. Static IP addresses and specifi
 
 ## Plug widget embedding
 
-The domain list above covers the customer portal hosted by DevRev. If you embed the Plug chat widget on your own website, your site's Content Security Policy (CSP) headers must also permit connections to the domains listed above—particularly `plug-platform.devrev.ai`, `api.devrev.ai`, and the relevant regional WebSocket endpoint (`dvrv-*-wss.devrev.ai`). Add these origins to the `connect-src` and `frame-src` directives in your CSP.
+The domain list above covers the customer portal hosted by DevRev. If you embed the [[glossary/plug|Plug]] chat widget on your own website, your site's Content Security Policy (CSP) headers must also permit connections to the domains listed above—particularly `plug-platform.devrev.ai`, `api.devrev.ai`, and the relevant regional WebSocket endpoint (`dvrv-*-wss.devrev.ai`). Add these origins to the `connect-src` and `frame-src` directives in your CSP.
 
 ## Email OTP delivery
 
@@ -69,12 +70,12 @@ If the portal uses email-based one-time passwords (OTP) for authentication, ensu
 
 ## Troubleshooting
 
-* **Issue**: Users cannot access the portal or see a blank page after the domains have been allowlisted.
+* **[[entities/issue|Issue]]**: Users cannot access the portal or see a blank page after the domains have been allowlisted.
 
-  **Solution**: Verify that all domains in the list above—including both `.devrev.ai` and `.devrev.com` entries—are allowlisted. Some proxies and VPNs cache DNS or maintain separate allowlists per policy group. Clear the DNS cache, confirm the rules apply to the affected user group, and retry. If the issue persists, contact DevRev Support with the list of domains you have allowlisted and any error messages or network traces.
+  **Solution**: Verify that all domains in the list above—including both `.devrev.ai` and `.devrev.com` entries—are allowlisted. Some proxies and VPNs cache DNS or maintain separate allowlists per policy [[entities/group|group]]. Clear the DNS cache, confirm the rules apply to the affected user group, and retry. If the issue persists, contact DevRev Support with the list of domains you have allowlisted and any error messages or network traces.
 * **Issue**: The Plug support chat widget does not load on your website.
 
-  **Solution**: Ensure your site's CSP headers include the DevRev domains in `connect-src` and `frame-src` as described in the Plug widget embedding section above. Use your browser's developer console to check for blocked requests.
+  **Solution**: Ensure your site's CSP headers include the DevRev domains in `connect-src` and `frame-src` as described in the [[features/plug-widget|Plug widget]] embedding section above. Use your browser's developer console to check for blocked requests.
 * **Issue**: Users do not receive OTP emails required to log in to the portal.
 
   **Solution**: Check your email server's quarantine and spam filters for blocked messages from DevRev.
@@ -90,4 +91,4 @@ Provide the full domain list to your IT or network team and verify portal access
 - [[features/customer-portal]]
 
 ## Source
-- DevRev support article [Allowlist domains for the customer portal](https://support.devrev.ai/en-US/devrev/article/6_lYKw2d) (ART-23634)
+- DevRev support [[entities/article|article]] [Allowlist domains for the customer portal](https://support.devrev.ai/en-US/devrev/article/6_lYKw2d) (ART-23634)

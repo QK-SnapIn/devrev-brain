@@ -10,6 +10,7 @@ top_category: Computer by DevRev
 wiki_match: index
 match_score: 0.429
 last_updated: 2026-05-11
+summary: "You can access DevRev on the web, mobile, and tablets."
 ---
 
 # Accessing DevRev
@@ -46,29 +47,29 @@ Integrate all departments with a customizable CRM and get connected with custome
 
 **Benefits of using DevRev app**
 
-**Conversations**
+**[[features/conversations-feature|Conversations]]**
 
 * Get notified through push notifications.
 * Respond to the external users.
-* Assign a conversation to another user.
+* Assign a [[entities/conversation|conversation]] to another user.
 * Change the stage of a conversation.
 * Access recent conversations and a list of open conversations.
 
-**Tickets**
+**[[features/tickets|Tickets]]**
 
 * Discuss and follow up on tickets by tagging users, responding to comments and threads, and adding attachments. Additionally, respond to comments and threads.
 * Find relevant and open tickets with ease: Users can find relevant and open tickets without difficulty.
-* Update the owner and stage of the ticket.
+* Update the owner and stage of the [[entities/ticket|ticket]].
 * External Communications:
 
-  + External chats merge into tickets and can be accessed from within the ticket.
+  + External [[features/chats|chats]] merge into tickets and can be accessed from within the ticket.
   + Notifications of external comments.
   + Respond to external chats from within the tickets.
 
 **Notifications and Engagements**
 
-* Get notified about tickets, issues, and conversations through push notifications.
-* Triage through unread updates from **Updates**. Mark updates as *Read* or open them to see the relevant ticket/issue/conversation.
+* Get notified about tickets, [[features/issues|issues]], and conversations through push notifications.
+* Triage through unread updates from **Updates**. Mark updates as *Read* or open them to see the relevant ticket/[[entities/issue|issue]]/conversation.
 * Open the relevant ticket/issue/conversation in a discussion-first interface that prioritizes social engagement and discussions:
 
   + Mention any user.
@@ -79,11 +80,11 @@ Integrate all departments with a customizable CRM and get connected with custome
 * Update the following attributes with ease: stage, owner, and attachments.
 * Deep links enable opening any ticket/issue/conversation from an external hyperlink (for example, from email notifications)
 
-**Vista and search**
+**[[glossary/vista|Vista]] and [[features/search|search]]**
 
-* View any of your Vistas.
+* View any of your [[features/vistas|Vistas]].
 * Search for any ticket/issue/conversation and filter search by record type.
-* Browse the list of issues, tickets, parts, opportunities, and conversations and apply limited filters to the views.
+* Browse the list of issues, tickets, [[features/parts|parts]], [[entities/opportunity|opportunities]], and conversations and apply limited filters to the views.
 
 ## Android
 
@@ -109,7 +110,7 @@ Integrate all departments with a customizable CRM and get connected with custome
 
 * Discuss and follow up on tickets by tagging users, responding to comments and threads, and adding attachments. Additionally, respond to comments and threads.
 * Find relevant and open tickets with ease: Users can find relevant and open tickets without difficulty.
-* Update the owner, part, priority, and stage, of the ticket.
+* Update the owner, [[entities/part|part]], priority, and stage, of the ticket.
 * External Communications:
 
   + External chats merge into tickets and can be accessed from within the ticket.
@@ -151,7 +152,7 @@ Integrate all departments with a customizable CRM and get connected with custome
 
 ### Text editor keyboard shortcuts
 
-**Basic commands:**
+**Basic [[features/commands|commands]]:**
 
 * Copy: Use `Control + C` on Windows and Linux, or `Cmd + C` on macOS.
 * Cut: Use `Control + X` on Windows and Linux, or `Cmd + X` on macOS.
@@ -186,7 +187,7 @@ Integrate all departments with a customizable CRM and get connected with custome
 * Heading 3: `Control + Alt + 3` on Windows and Linux, or `Cmd + Alt + 3` on macOS.
 * Ordered list: `Control + Shift + 7` on Windows and Linux, or `Cmd + Shift + 7` on macOS.
 * Bullet list: `Control + Shift + 8` on Windows and Linux, or `Cmd + Shift + 8` on macOS.
-* Task list: `Control + Shift + 9` on Windows and Linux, or `Cmd + Shift + 9` on macOS.
+* [[entities/task|Task]] list: `Control + Shift + 9` on Windows and Linux, or `Cmd + Shift + 9` on macOS.
 * Blockquote: `Control + Shift + B` on Windows and Linux, or `Cmd + Shift + B` on macOS.
 * Left align: `Control + Shift + L` on Windows and Linux, or `Cmd + Shift + L` on macOS.
 * Center align: `Control + Shift + E` on Windows and Linux, or `Cmd + Shift + E` on macOS.
@@ -212,4 +213,4 @@ Integrate all departments with a customizable CRM and get connected with custome
 * Heading 3: `###`
 
 ## Source
-- DevRev support article [Accessing DevRev](https://support.devrev.ai/en-US/devrev/article/29fj4awx) (ART-21857)
+- DevRev support [[entities/article|article]] [Accessing DevRev](https://support.devrev.ai/en-US/devrev/article/29fj4awx) (ART-21857)

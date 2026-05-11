@@ -10,11 +10,12 @@ top_category: Snap-ins
 wiki_match: entities/enhancement
 match_score: 0.462
 last_updated: 2026-05-11
+summary: "Index your DevRev objects into Glean."
 ---
 
 # Glean connector
 
-Index your DevRev objects into Glean. This snap-in functions as a connector with Glean, the enterprise search tool, making DevRev objects discoverable and enabling searches using a wide range of filters.
+Index your DevRev objects into Glean. This snap-in functions as a connector with Glean, the enterprise [[features/search|search]] tool, making DevRev objects discoverable and enabling searches using a wide range of filters.
 
 For more information, refer to the [Glean connector snap-in](https://devrev.ai/marketplace/glean-connector) on the DevRev marketplace.
 
@@ -53,4 +54,4 @@ For more information, refer to the [Glean connector snap-in](https://devrev.ai/m
 5. Save your changes and proceed to install the snap-in. It will run on a schedule, indexing objects into Glean accordingly.
 
 ## Source
-- DevRev support article [Glean connector](https://support.devrev.ai/en-US/devrev/article/_NpOkgmO) (ART-21988)
+- DevRev support [[entities/article|article]] [Glean connector](https://support.devrev.ai/en-US/devrev/article/_NpOkgmO) (ART-21988)

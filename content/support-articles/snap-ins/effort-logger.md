@@ -11,11 +11,12 @@ wiki_match: log
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['log']
+summary: "The effort logger snap-in allows users to log effort against objects with comprehensive validation and custom schema management."
 ---
 
 # Effort logger
 
-The effort logger snap-in allows users to log effort against objects with comprehensive validation and custom schema management. It provides a seamless way for teams to track time spent on tickets, conversations, and other objects within DevRev.
+The effort logger snap-in allows users to log effort against objects with comprehensive validation and custom schema management. It provides a seamless way for teams to track time spent on [[features/tickets|tickets]], [[features/conversations-feature|conversations]], and other objects within DevRev.
 
 ## Installation
 
@@ -45,7 +46,7 @@ Configure the appropriate roles and permissions to access and modify the custom 
 
 ## How to use
 
-1. **Access the command**: In the timeline of any ticket or conversation, type the following command:
+1. **Access the command**: In the timeline of any [[entities/ticket|ticket]] or [[entities/conversation|conversation]], type the following command:
 
 ```
 /log_effort
@@ -74,4 +75,4 @@ The Effort logger snap-in works with the following object types:
 - [[log]]
 
 ## Source
-- DevRev support article [Effort logger](https://support.devrev.ai/en-US/devrev/article/tRt27Qm8) (ART-21939)
+- DevRev support [[entities/article|article]] [Effort logger](https://support.devrev.ai/en-US/devrev/article/tRt27Qm8) (ART-21939)

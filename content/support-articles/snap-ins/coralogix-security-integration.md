@@ -11,11 +11,12 @@ wiki_match: log
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['log']
+summary: "The Coralogix security integration snap-in enables automatic creation and management of DevRev issues based on security alerts from your Coralogix instance."
 ---
 
 # Coralogix security integration
 
-The Coralogix security integration snap-in enables automatic creation and management of DevRev issues based on security alerts from your Coralogix instance. This integration helps streamline your security incident response workflow by bringing Coralogix alerts directly into your DevRev workspace.
+The Coralogix security integration snap-in enables automatic creation and management of DevRev [[features/issues|issues]] based on security alerts from your Coralogix instance. This integration helps streamline your security [[glossary/incident|incident]] response workflow by bringing Coralogix alerts directly into your DevRev workspace.
 
 ## Features
 
@@ -27,10 +28,10 @@ The Coralogix security integration snap-in enables automatic creation and manage
 ## Install
 
 1. Go to [**Settings** > **Integrations** > **Snap-ins**](https://app.devrev.ai/?setting=snap-ins).
-2. Search for **Coralogix Security Integration** and click **Install**.
+2. [[features/search|Search]] for **Coralogix Security Integration** and click **Install**.
 3. Configure the snap-in settings:
 
-   * Select the default **Part ID** for issue creation
+   * Select the default **[[entities/part|Part]] ID** for [[entities/issue|issue]] creation
    * (Optional) Set a default owner for created issues
    * (Optional) Configure tags to be added to issues
    * Click **Save** > **Install**
@@ -112,4 +113,4 @@ If you encounter issues with the integration:
 - [[log]]
 
 ## Source
-- DevRev support article [Coralogix security integration](https://support.devrev.ai/en-US/devrev/article/trsnGQg_) (ART-21974)
+- DevRev support [[entities/article|article]] [Coralogix security integration](https://support.devrev.ai/en-US/devrev/article/trsnGQg_) (ART-21974)

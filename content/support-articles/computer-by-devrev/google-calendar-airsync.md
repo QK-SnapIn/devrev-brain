@@ -11,6 +11,7 @@ wiki_match: glossary/airsync
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['glossary/airsync']
+summary: "The Google Calendar snap-in brings your calendar events into DevRev, providing you to efficiently track your time commitments and interactions within DevRev."
 ---
 
 # Google Calendar AirSync
@@ -28,20 +29,20 @@ Google Calendar to DevRev.
 | Transcripts | Attachments | ✅ |
 | Customers | Customers | ✅ |
 | Users | Identities | ✅ |
-| Meetings | Meetings | ✅ |
+| [[entities/meeting|Meetings]] | Meetings | ✅ |
 
 ## Import Google Calendar
 
 Follow the steps below to import from Google Calendar:
 
-1. Go to the **Marketplace** and search for **Google Calendar** in the
+1. Go to the **Marketplace** and [[features/search|search]] for **Google Calendar** in the
    **Import** category, and install.
 2. Go to the **Import** section in your settings left nav.
 3. Click **+Import** and select the Google Calendar logo.
-4. In the **Select Connection** dropdown, choose **Google Calendar**. If a connection already exists, you can reuse it; otherwise, click **Add Connection**. In the connection modal, click **Sign in with snap-in** (with the Google Calendar icon), enter a connection name, and proceed to **authorize via your Google account using OAuth**. Provide the necessary permissions and click **Continue** to complete the
+4. In the **Select Connection** dropdown, choose **Google Calendar**. If a connection already exists, you can reuse it; otherwise, click **Add Connection**. In the connection modal, click **Sign in with snap-in** (with the Google Calendar icon), enter a connection name, and proceed to **authorize via your Google [[entities/account|account]] using OAuth**. Provide the necessary permissions and click **Continue** to complete the
    setup.
 5. Once the connection is established, select the calendars you want to import
-   and specify the DevRev part that should be used for any imported events. This
+   and specify the DevRev [[entities/part|part]] that should be used for any imported events. This
    initiates a bulk import of the selected calendar data.
 6. DevRev attempts to automatically map the fields from Google Calendar to the
    corresponding fields in DevRev. Manual mapping may be required in some cases.
@@ -55,9 +56,9 @@ The Google Calendar integration provides configuration options to control what d
 
 ### Privacy and visibility
 
-All meetings brought in from Google Calendar—both internal and external—are **private** by default (visible only to meeting participants and organizer ).
+All meetings brought in from Google Calendar—both internal and external—are **private** by default (visible only to [[entities/meeting|meeting]] participants and organizer ).
 
-To make external meetings public while keeping sensitive meetings private, create a group whose members are the people whose external meetings should stay private (e.g. executives, sensitive teams), then add that group under **Private Meetings Groups** in Organization Settings. External meetings where any internal participant (organizer, creator, or attendee from your org) is a member of that group remain visible only to event participants; other external meetings are public.
+To make external meetings public while keeping sensitive meetings private, create a [[entities/group|group]] whose members are the people whose external meetings should stay private (e.g. executives, sensitive teams), then add that group under **Private Meetings [[entities/group|Groups]]** in Organization Settings. External meetings where any internal participant (organizer, creator, or attendee from your org) is a member of that group remain visible only to event participants; other external meetings are public.
 
 ### Organization-level Settings
 
@@ -89,4 +90,4 @@ Note:  First, add the snap-in to the organization. Then, enter the organization-
 - [[glossary/airsync]]
 
 ## Source
-- DevRev support article [Google Calendar AirSync](https://support.devrev.ai/en-US/devrev/article/FpwzcOH_) (ART-21976)
+- DevRev support [[entities/article|article]] [Google Calendar AirSync](https://support.devrev.ai/en-US/devrev/article/FpwzcOH_) (ART-21976)

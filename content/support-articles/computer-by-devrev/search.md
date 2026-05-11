@@ -11,11 +11,12 @@ wiki_match: features/search
 match_score: 1.0
 last_updated: 2026-05-11
 related: ['features/search']
+summary: "Search works across all DevRev apps, offering seamless navigation and access to issues, tickets, articles, customers, and more."
 ---
 
 # Search
 
-Search works across all DevRev apps, offering seamless navigation and access to issues, tickets, articles, customers, and more. It also allows you to search through timeline comments related to these items. By using search queries and commands, you can refine your search and achieve more precise results.
+[[features/search|Search]] works across all DevRev apps, offering seamless navigation and access to [[features/issues|issues]], [[features/tickets|tickets]], [[entities/article|articles]], customers, and more. It also allows you to search through timeline comments related to these items. By using search queries and [[features/commands|commands]], you can refine your search and achieve more precise results.
 
 Key actions in the search interface include:
 
@@ -53,7 +54,7 @@ Operators are used to filter the search results. The following table shows the s
 |  |  |  |
 | --- | --- | --- |
 | Syntax | Description | Examples |
-| in:`<body/title>` | Aids in searching within the body of the ticket/issue/enhancement or title. | `in:title crm` `in:title "crm exp"` `in:title crm exp` `in:body "bot issues"` |
+| in:`<body/title>` | Aids in searching within the body of the [[entities/ticket|ticket]]/[[entities/issue|issue]]/[[entities/enhancement|enhancement]] or title. | `in:title crm` `in:title "crm exp"` `in:title crm exp` `in:body "bot issues"` |
 | type:`<object type>` | Enables users to filter by object type. Supported object types include: `issue`, `enhancement`, `ticket`, `revu` (for searching contacts), `question_answer`, `conversation`, `article`, `devu` (for searching internal contacts), `account`, `feature`, `runnable`. | `type:issue` `type:enhancement in:title CRM` `type:revu` `type:enhancement, opportunity` `type:issue, enhancement in:title crm` |
 | `-` | Acts as an exclusion in search results. "-" can be used for the same purpose. | `type:issue -crm` `type:issue in:title -crm` |
 | state | Filters results based on the stage: open, closed, or in\_progress. | `state:open` `state:closed` `state:in_progress` |
@@ -74,7 +75,7 @@ Fields can be used along with operators to filter the search results further. Th
 
 ## Integrate search with customization
 
-DevRev's customization framework allows you to extend core objects with custom fields and create custom object types. These customizations are fully searchable using the same search syntax as standard fields.
+DevRev's [[features/customization|customization]] framework allows you to extend core objects with custom fields and create custom object types. These customizations are fully searchable using the same search syntax as standard fields.
 
 ### Search over custom fields
 
@@ -118,13 +119,13 @@ Learn more about creating and managing custom fields in the [Object customizatio
 
 Custom fields use the standard field search syntax and support all field types including text, numeric, boolean, date, and array fields. You should add the leaf\_type filter while searching over custom objects.
 
-Search for `book` custom objects related to AI agents:
+Search for `book` custom objects related to [[features/agents|AI agents]]:
 
 ```
 leaf_type:book AI agents
 ```
 
-Search for `book` custom objects related to AI agents with tenant field `author`:
+Search for `book` custom objects related to AI [[features/agents|agents]] with tenant field `author`:
 
 ```
 leaf_type:book author:"Chip Huyen" AI agents
@@ -136,4 +137,4 @@ For detailed information on creating custom objects, see the [Custom objects gui
 - [[features/search]]
 
 ## Source
-- DevRev support article [Search](https://support.devrev.ai/en-US/devrev/article/oYn1lc4B) (ART-21855)
+- DevRev support [[entities/article|article]] [Search](https://support.devrev.ai/en-US/devrev/article/oYn1lc4B) (ART-21855)

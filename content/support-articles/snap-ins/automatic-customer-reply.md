@@ -10,13 +10,14 @@ top_category: Snap-ins
 wiki_match: features/customer-portal
 match_score: 0.564
 last_updated: 2026-05-11
+summary: "The automatic customer reply snap-in provides the following functionalities:"
 ---
 
 # Automatic customer reply
 
 The [automatic customer reply](https://devrev.ai/marketplace/auto-reply) snap-in provides the following functionalities:
 
-* Automatically reply on your behalf in the Plug Widget.
+* Automatically reply on your behalf in the [[features/plug-widget|Plug Widget]].
 * Send a custom button along with the automatic message.
 * Collect the visitor's email address, if it does not exist in the system.
 
@@ -36,14 +37,14 @@ Depending on the requirement, these functionalities can be enabled or disabled.
 5. To send a button, turn on the **Enable a custom button** toggle.
 
    * In the **Text displayed on custom button** field, enter the text to be displayed on the button. For example, Book a Demo, Meet with Us!, Let's Chat.
-   * In the **Target URL for the custom button** field, enter the website you'd like to redirect to, such as Calendly, HubSpot meetings, Microsoft Bookings, or another site.
+   * In the **Target URL for the custom button** field, enter the website you'd like to redirect to, such as Calendly, HubSpot [[entities/meeting|meetings]], Microsoft Bookings, or another site.
 6. To collect unregistered email IDs, turn on the **Enable email collector** toggle.
 
    * In the **Placeholder text for email collector** field, enter the text to display in the email collector.
    * In the **Email collector submit button text** field, enter the text to display on the submit button.
 7. Click **Save**.
 
-If Turing in your workspace is in Auto-response mode, don't enable auto-customer reply or you'll send two messages to your customer. By using this snap-in, you can still request email addresses for enriching customer data, as well as contacting customers through the right channel if they drift off your website.
+If [[glossary/turing|Turing]] in your workspace is in Auto-response mode, [[glossary/don|don]]'t enable auto-customer reply or you'll send two messages to your customer. By using this snap-in, you can still request email addresses for enriching customer data, as well as contacting customers through the right channel if they drift off your website.
 
 ## Source
-- DevRev support article [Automatic customer reply](https://support.devrev.ai/en-US/devrev/article/qW8nBHfZ) (ART-21924)
+- DevRev support [[entities/article|article]] [Automatic customer reply](https://support.devrev.ai/en-US/devrev/article/qW8nBHfZ) (ART-21924)

@@ -11,6 +11,7 @@ wiki_match: features/workflows
 match_score: 0.733
 last_updated: 2026-05-11
 related: ['features/workflows']
+summary: "Loops are steps in a workflow that allow you to repeat actions across multiple objects or data points to avoid duplicating steps."
 ---
 
 # Workflow nodes
@@ -25,12 +26,12 @@ When the items you are trying to iterate are not supported objects, you should u
 
 ### Objects in workspace
 
-The **Object** loop iterates over objects that are already part of your workspace. Supported objects include:
+The **Object** loop iterates over objects that are already [[entities/part|part]] of your workspace. Supported objects include:
 
-* Enhancements
-* Issues
-* Tickets
-* Meetings
+* [[entities/enhancement|Enhancements]]
+* [[features/issues|Issues]]
+* [[features/tickets|Tickets]]
+* [[entities/meeting|Meetings]]
 * Objects linked to issues
 * Users
 
@@ -72,4 +73,4 @@ To configure an HTTP step:
 - [[features/workflows]]
 
 ## Source
-- DevRev support article [Workflow nodes](https://support.devrev.ai/en-US/devrev/article/Ss4lA3mc) (ART-21905)
+- DevRev support [[entities/article|article]] [Workflow nodes](https://support.devrev.ai/en-US/devrev/article/Ss4lA3mc) (ART-21905)

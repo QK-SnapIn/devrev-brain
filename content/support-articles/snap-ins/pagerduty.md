@@ -10,12 +10,13 @@ top_category: Snap-ins
 wiki_match: entities/part
 match_score: 0.615
 last_updated: 2026-05-11
+summary: "The PagerDuty snap-in integrates DevRev\"s incident management with the PagerDuty platform."
 ---
 
 # PagerDuty
 
-The PagerDuty snap-in integrates DevRev's incident management with the PagerDuty
-platform. Synchronize the DevRev incident object with PagerDuty incidents using
+The PagerDuty snap-in integrates DevRev's [[features/incidents|incident management]] with the PagerDuty
+platform. Synchronize the DevRev [[glossary/incident|incident]] object with PagerDuty [[features/incidents|incidents]] using
 the **PagerDuty** incident subtype. Create, update, and escalate incidents
 seamlessly between the two.
 
@@ -42,10 +43,10 @@ In **Configure**, the following configuration options are available:
 
   If the configured API key has a **Read-only** access level, the PagerDuty snap-in will not be able to make changes on your PagerDuty instance. The DevRev webhook will also have to be manually set up on [PagerDuty Generic Webhooks - v3](https://support.pagerduty.com/main/docs/webhooks#add-a-v3-webhook-subscription-on-the-generic-webhooks-page).
   Make sure to select the desired scope and event subscriptions.
-* **PagerDuty Services Rev Part**: Select the customer part that all your
+* **PagerDuty Services Rev [[entities/part|Part]]**: Select the customer part that all your
   PagerDuty services serve when first created as DevRev runnables.
 
-  + The snap-in creates and maps your PagerDuty services as runnable builder parts
+  + The snap-in creates and maps your PagerDuty services as runnable builder [[features/parts|parts]]
     in DevRev. Builder parts always serve (are linked to) a specific customer
     part.
   + After snap-in installation, you can update each runnable builder part to serve a
@@ -53,7 +54,7 @@ In **Configure**, the following configuration options are available:
 * **Default PagerDuty User Email** (optional): Specify a default PagerDuty user
   email to synchronize DevRev changes from non-PagerDuty users.
 
-  + You will need a default PagerDuty user email for workflows and other
+  + You will need a default PagerDuty user email for [[features/workflows|workflows]] and other
     automations to make changes in PagerDuty on behalf of this user.
   + A default email is required for non-PagerDuty users since all PagerDuty API
     calls need to contain a valid PagerDuty user email address.
@@ -86,4 +87,4 @@ In **Configure**, the following configuration options are available:
 2. **Remove** or **Deactivate** the snap-in.
 
 ## Source
-- DevRev support article [PagerDuty](https://support.devrev.ai/en-US/devrev/article/cRJBvgPG) (ART-21990)
+- DevRev support [[entities/article|article]] [PagerDuty](https://support.devrev.ai/en-US/devrev/article/cRJBvgPG) (ART-21990)

@@ -11,13 +11,14 @@ wiki_match: glossary/airsync
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['glossary/airsync']
+summary: "The Confluence AirSync snap-in simplifies migration from Confluence to DevRev, supporting both one-time imports and ongoing syncs."
 ---
 
 # Confluence AirSync
 
-The Confluence AirSync snap-in simplifies migration from Confluence to DevRev, supporting both one-time imports and ongoing syncs.
+The Confluence [[glossary/airsync|AirSync]] snap-in simplifies migration from Confluence to DevRev, supporting both one-time imports and ongoing syncs.
 
-Confluence AirSync is a tool that lets you migrate your team's knowledge base from Confluence into DevRev. It allows you to:
+Confluence AirSync is a tool that lets you migrate your team's [[features/knowledge-base|knowledge base]] from Confluence into DevRev. It allows you to:
 
 * Transfer your pages, blogs, and content
 * Keep your content organizational structure intact
@@ -26,7 +27,7 @@ Confluence AirSync is a tool that lets you migrate your team's knowledge base fr
 
 Use the Confluence AirSync if you need to:
 
-* Import pages, blogs, and knowledge base articles from Confluence into DevRev
+* Import pages, blogs, and knowledge base [[entities/article|articles]] from Confluence into DevRev
 * Import spaces and their contents as per user requirements
 * Maintain user identities and relationships between platforms
 * Preserve organizational structures and hierarchies
@@ -40,17 +41,17 @@ The following is a list of Confluence objects and their corresponding DevRev equ
 | Pages | Articles | ✅ |
 | Blogs | Articles | ✅ |
 | Users | Users | ✅ |
-| Attachments | Artifacts on Article | ✅ |
+| Attachments | [[features/artifacts|Artifacts]] on [[entities/article|Article]] | ✅ |
 | Folders | Directories | ✅ |
 
 ## First time import overview
 
 When using Confluence AirSync for the first time:
 
-1. **Preparation**: Ensure you have appropriate access to your Confluence account and choose your preferred authentication method (OAuth, Scoped Token, or Classic Token).
+1. **Preparation**: Ensure you have appropriate access to your Confluence [[entities/account|account]] and choose your preferred authentication method (OAuth, Scoped Token, or Classic Token).
 2. **Installation and Setup**: Follow the steps in the `Importing from Confluence` section below.
 3. **Connection Process**: Authenticate using one of the three supported methods to establish a secure connection between Confluence and DevRev.
-4. **Selection Process**: You'll have the opportunity to choose specific Confluence spaces to import, allowing you to be selective about what data moves to DevRev.
+4. **Selection Process**: You'll have the [[glossary/opportunity|opportunity]] to choose specific Confluence spaces to import, allowing you to be selective about what data moves to DevRev.
 5. **Processing Time**: The import duration depends on the volume of data. Small spaces might complete in seconds, while larger spaces with thousands of pages and attachments may take hours.
 6. **Results and Verification**: After completion, review the import report to confirm that all pages, blogs, users, and attachments were properly transferred.
 
@@ -59,7 +60,7 @@ When using Confluence AirSync for the first time:
 ## Importing from Confluence
 
 1. Log in to DevRev.
-2. Navigate to **Settings > Integrations > Snap-ins**, search for **Confluence** under **All Snap-ins**.
+2. Navigate to **Settings > Integrations > Snap-ins**, [[features/search|search]] for **Confluence** under **All Snap-ins**.
 3. Open the snap-in and click the **Add** button located in the top-right corner.
 4. Click **Install**.
 5. Once installed, click on **Config** to configure the snap-in settings. See `Snap-in configuration` for details on the available options.
@@ -67,7 +68,7 @@ When using Confluence AirSync for the first time:
 7. Click the **AirSync** button and select **Confluence**.
 8. Click **Add Connection**, enter a connection name, and select your preferred authentication method. See `Set up Confluence connection` for details on each method.
 9. After the connection is successfully established, select it to view a list of Confluence spaces.
-10. Choose the spaces and the corresponding **DevRev part** for import, then start the extraction.
+10. Choose the spaces and the corresponding **DevRev [[entities/part|part]]** for import, then start the extraction.
 11. DevRev makes an effort to automatically map the fields from Confluence to the corresponding fields in DevRev. Review the pre-configured field mappings and click **Next** to proceed through each step until the mapping process is complete. You may be prompted to manually map certain fields if needed.
 12. The extraction will begin, and after some time, the import will be completed.
 13. Click on the completed import to view a detailed report, including imported **Users**, **Pages**, **Blogs**, and **Attachments**.
@@ -155,7 +156,7 @@ When selecting **Classic Token (PAT)** as the authentication method in step 8 of
 
 ## Email visibility
 
-To successfully import users and their associated articles, you must set email visibility to **Anyone** in your Confluence account settings. This is required for both Scoped Token and Classic Token authentication methods. Without this setting, user associations and identity mapping may fail.
+To successfully import users and their associated articles, you must set email visibility to **Anyone** in your Confluence account settings. This is required for both Scoped Token and Classic Token authentication methods. Without this setting, user associations and [[features/identity|identity]] mapping may fail.
 
 To set email visibility:
 
@@ -170,7 +171,7 @@ After installing the Confluence AirSync snap-in, the following configuration opt
 
 | Option | Description |
 | --- | --- |
-| **Article Visibility** | Enabling this toggle will make the imported articles accessible to all the dev users in your organization. If disabled, the original Confluence permissions will be preserved. |
+| **Article Visibility** | Enabling this toggle will make the imported articles accessible to all the [[entities/dev-user|dev users]] in your organization. If disabled, the original Confluence permissions will be preserved. |
 | **Import as External** | Import all Confluence pages with external scope. This is generally intended only for PLuG-related use cases. |
 | **Allow External Hyperlinks In Article Content** | Allow external hyperlinks in article content. When disabled, only internal DevRev links (devrev.ai) are preserved as clickable hyperlinks; all other external URLs will be rendered as plain text. |
 

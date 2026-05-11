@@ -11,11 +11,12 @@ wiki_match: entities/ticket
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['entities/ticket']
+summary: "Number of tickets where SLA is applied."
 ---
 
 # Ticket-SLA Analytics
 
-* **SLA applied Tickets**
+* **[[features/slas|SLA]] applied [[features/tickets|Tickets]]**
 
   Number of tickets where SLA is applied.
 * **SLA compliance rate**
@@ -50,11 +51,11 @@ related: ['entities/ticket']
   Number of tickets where SLA was breached for each source channel.
 * **SLA breaches by Subtype**
 
-  Number of tickets where SLA was breached for each ticket subtype.
+  Number of tickets where SLA was breached for each [[entities/ticket|ticket]] subtype.
 * **SLA breaches by Owner**
 
   Number of Tickets with SLA breaches for ticket owners.
-* **Avg CSAT by SLA status**
+* **Avg [[glossary/csat|CSAT]] by SLA status**
 
   Average CSAT rating of tickets w.r.t. their SLA status and severity.
 * **Unassigned Tickets with SLA breaches per Customer**
@@ -65,4 +66,4 @@ related: ['entities/ticket']
 - [[entities/ticket]]
 
 ## Source
-- DevRev support article [Ticket-SLA Analytics](https://support.devrev.ai/en-US/devrev/article/P12_dZOD) (ART-21911)
+- DevRev support [[entities/article|article]] [Ticket-SLA Analytics](https://support.devrev.ai/en-US/devrev/article/P12_dZOD) (ART-21911)

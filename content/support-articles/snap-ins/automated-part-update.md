@@ -11,11 +11,12 @@ wiki_match: entities/part
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['entities/part']
+summary: "The Automated part update snap-in streamlines the updating of issue or ticket parts based on the initial part and target field defined in its configuration."
 ---
 
 # Automated part update
 
-The Automated part update snap-in streamlines the updating of issue or ticket parts based on the initial part and target field defined in its configuration. It monitors the creation events of issues and tickets, ensuring that new entries match the part specified in the **Initial Part of Issue/Ticket** input field. Upon successful validation, the snap-in relocates the issue or ticket to the part specified in the **Issue/Ticket - Target Part Field**.
+The Automated [[entities/part|part]] update snap-in streamlines the updating of [[entities/issue|issue]] or [[entities/ticket|ticket]] [[features/parts|parts]] based on the initial part and target field defined in its configuration. It monitors the creation events of [[features/issues|issues]] and [[features/tickets|tickets]], ensuring that new entries match the part specified in the **Initial Part of Issue/Ticket** input field. Upon successful validation, the snap-in relocates the issue or ticket to the part specified in the **Issue/Ticket - Target Part Field**.
 
 ## Installation
 
@@ -37,4 +38,4 @@ The Automated part update snap-in streamlines the updating of issue or ticket pa
 - [[entities/part]]
 
 ## Source
-- DevRev support article [Automated part update](https://support.devrev.ai/en-US/devrev/article/CN6gjQj_) (ART-21926)
+- DevRev support [[entities/article|article]] [Automated part update](https://support.devrev.ai/en-US/devrev/article/CN6gjQj_) (ART-21926)

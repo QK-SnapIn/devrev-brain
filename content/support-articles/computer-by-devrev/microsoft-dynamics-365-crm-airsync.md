@@ -11,11 +11,12 @@ wiki_match: glossary/airsync
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['glossary/airsync']
+summary: "The Microsoft Dynamics 365 CRM AirSync simplifies migration from Dynamics 365 to DevRev, supporting both one-time imports and ongoing syncs."
 ---
 
 # Microsoft Dynamics 365 CRM AirSync
 
-The Microsoft Dynamics 365 CRM AirSync simplifies migration from Dynamics 365 to DevRev, supporting both one-time imports and ongoing syncs. This integration brings your CRM data including accounts, contacts, opportunities, cases, and activities into your DevRev workspace. This AirSync specifically supports data from the Customer Service and Sales Hub modules.
+The Microsoft Dynamics 365 CRM [[glossary/airsync|AirSync]] simplifies migration from Dynamics 365 to DevRev, supporting both one-time imports and ongoing syncs. This integration brings your CRM data including [[features/accounts|accounts]], contacts, [[entities/opportunity|opportunities]], cases, and activities into your DevRev workspace. This AirSync specifically supports data from the Customer Service and Sales Hub modules.
 
 ### Supported objects
 
@@ -24,16 +25,16 @@ The following is a list of Microsoft Dynamics 365 CRM objects and their correspo
 | Dynamics 365 Object | DevRev Object | Sync to DevRev |
 | --- | --- | --- |
 | System User | DevUser | ✅ |
-| Account | Account | ✅ |
+| [[entities/account|Account]] | Account | ✅ |
 | Contact | Contact | ✅ |
 | Lead | Contact | ✅ |
-| Opportunity | Opportunity | ✅ |
-| Incident (Case) | Ticket | ✅ |
-| Task | Issue | ✅ |
-| Knowledge Article | Article | ✅ |
+| [[glossary/opportunity|Opportunity]] | Opportunity | ✅ |
+| [[glossary/incident|Incident]] (Case) | [[entities/ticket|Ticket]] | ✅ |
+| [[entities/task|Task]] | [[entities/issue|Issue]] | ✅ |
+| Knowledge [[entities/article|Article]] | Article | ✅ |
 | Annotation (Note) | Comment | ✅ |
 | Product | Product | ✅ |
-| Appointment | Meeting | ✅ |
+| Appointment | [[entities/meeting|Meeting]] | ✅ |
 | Activities | Custom Object | ✅ |
 | Quote | Custom Object | ✅ |
 | Quote Detail | Custom Object | ✅ |
@@ -42,7 +43,7 @@ The following is a list of Microsoft Dynamics 365 CRM objects and their correspo
 | Invoice | Custom Object | ✅ |
 | Price Level | Custom Object | ✅ |
 | Unit of Measure | Custom Object | ✅ |
-| Unit Group | Custom Object | ✅ |
+| Unit [[entities/group|Group]] | Custom Object | ✅ |
 | Opportunity Product | Custom Object | ✅ |
 | Campaign | Custom Object | ✅ |
 | Marketing List | Custom Object | ✅ |
@@ -54,7 +55,7 @@ The following is a list of Microsoft Dynamics 365 CRM objects and their correspo
 | Discount | Custom Object | ✅ |
 | Transaction Currency | Custom Object | ✅ |
 | Entitlement | Custom Object | ✅ |
-| SLA | Custom Object | ✅ |
+| [[features/slas|SLA]] | Custom Object | ✅ |
 | SLA Item | Custom Object | ✅ |
 | SLA KPI | Custom Object | ✅ |
 | Subject | Custom Object | ✅ |
@@ -84,12 +85,12 @@ The Microsoft Dynamics 365 CRM snap-in uses OAuth 2.0 for secure authentication.
 ### Importing from Microsoft Dynamics 365 CRM
 
 1. Log in to DevRev.
-2. Go to **Settings > Integrations > Snap-ins**, search for **Microsoft Dynamics 365 CRM** under **All Snap-ins**.
+2. Go to **Settings > Integrations > Snap-ins**, [[features/search|search]] for **Microsoft Dynamics 365 CRM** under **All Snap-ins**.
 3. Click **Add and Install Snap-in**.
 4. Navigate to **Settings > Integrations > Airsync** in the left-navigation.
 5. Click **Airsync** in the top right corner and select **Microsoft Dynamics 365 CRM**.
 6. Create a new connection to authenticate with your Dynamics 365 organization, or use an existing active connection if you already have one.
-7. Once the connection is established and the snap-in is installed, click **Start AirSync**, select **Dynamics 365 AirSync**, then select the organization you want to import and specify the DevRev part to be used for any imported work. This initiates a bulk import of the selected organization.
+7. Once the connection is established and the snap-in is installed, click **Start AirSync**, select **Dynamics 365 AirSync**, then select the organization you want to import and specify the DevRev [[entities/part|part]] to be used for any imported work. This initiates a bulk import of the selected organization.
 8. DevRev automatically maps fields from Dynamics 365 to the corresponding fields in DevRev. However, it is advised to manually review the mapping and update certain fields if needed.
 
 **Note**: Import duration varies from minutes to hours based on the volume of data in your Dynamics 365 organization.
@@ -98,7 +99,7 @@ The Microsoft Dynamics 365 CRM snap-in uses OAuth 2.0 for secure authentication.
 
 The Activities object in the supported objects table includes the following activity types from Microsoft Dynamics 365.
 
-**Note**: Tasks are mapped separately to a DevRev issue, and email activities are not supported.
+**Note**: [[entities/task|Tasks]] are mapped separately to a DevRev issue, and email activities are not supported.
 
 | Activity Type | Description |
 | --- | --- |
@@ -194,7 +195,7 @@ If this setting is turned off, updates do not trigger any event-driven processes
 
 ### Delete import
 
-> This deletes any content created by the import, including accounts, contacts, opportunities, cases, activities, products, knowledge articles, and all related data.
+> This deletes any content created by the import, including accounts, contacts, opportunities, cases, activities, products, knowledge [[entities/article|articles]], and all related data.
 
 An import and all the content it creates can be deleted from DevRev. This can be useful when running POCs or to change the configuration used during the import. Once an import has been deleted, all the content it created gets deleted, even if they were modified in DevRev. It's possible to import the Dynamics 365 organization again after its deletion.
 

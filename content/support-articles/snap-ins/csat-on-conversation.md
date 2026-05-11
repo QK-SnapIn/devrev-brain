@@ -11,15 +11,16 @@ wiki_match: entities/conversation
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['entities/conversation']
+summary: "CSAT on conversation offers a simplified approach to measure customer satisfaction level for the conversation resolved with the help of surveys which can be utilized to enhance the overall customer experience."
 ---
 
 # CSAT on conversation
 
-[CSAT on conversation](https://marketplace.devrev.ai/csat_on_conversation_68rj7531) offers a simplified approach to measure customer satisfaction level for the conversation resolved with the help of surveys which can be utilized to enhance the overall customer experience.
+[CSAT on conversation](https://marketplace.devrev.ai/csat_on_conversation_68rj7531) offers a simplified approach to measure customer satisfaction level for the [[entities/conversation|conversation]] resolved with the help of surveys which can be utilized to enhance the overall customer experience.
 
 This snap-in displays a customer satisfaction survey to customers after their conversation gets resolved. The questions can be customized to align with their requirements.
 
-To manually request CSAT feedback without having to wait until the conversation is resolved, use the `/survey` command in **Inbox** > **Customer messages**.
+To manually request [[glossary/csat|CSAT]] feedback without having to wait until the conversation is resolved, use the `/survey` command in **[[features/inbox|Inbox]]** > **Customer messages**.
 
 ## Installation
 
@@ -42,4 +43,4 @@ To manually request CSAT feedback without having to wait until the conversation 
 - [[entities/conversation]]
 
 ## Source
-- DevRev support article [CSAT on conversation](https://support.devrev.ai/en-US/devrev/article/8hsIAD6w) (ART-21933)
+- DevRev support [[entities/article|article]] [CSAT on conversation](https://support.devrev.ai/en-US/devrev/article/8hsIAD6w) (ART-21933)

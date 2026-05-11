@@ -11,11 +11,12 @@ wiki_match: glossary/airsync
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['glossary/airsync']
+summary: "The DevRev AirSync simplifies migration of objects from one DevRev workspace into another one, supporting both one-time imports and ongoing syncs."
 ---
 
 # DevRev AirSync
 
-The DevRev AirSync simplifies migration of objects from one DevRev workspace into another one, supporting both one-time imports and ongoing syncs.
+The DevRev [[glossary/airsync|AirSync]] simplifies migration of objects from one DevRev workspace into another one, supporting both one-time imports and ongoing syncs.
 
 ## Supported objects
 
@@ -23,30 +24,30 @@ The following is a list of DevRev objects that the user might expect to be succe
 
 | DevRev Object | Sync to DevRev |
 | --- | --- |
-| Issue | ✅ |
-| Ticket | ✅ |
+| [[entities/issue|Issue]] | ✅ |
+| [[entities/ticket|Ticket]] | ✅ |
 | DevUser | ✅ |
 | Customer | ✅ |
 | Tag | ✅ |
 | Product | ✅ |
 | Capability | ✅ |
-| Enhancement | ✅ |
+| [[entities/enhancement|Enhancement]] | ✅ |
 | Feature | ✅ |
 | Runnable | ✅ |
 | Links on works | ✅ |
 | Timeline Comment | ✅ |
-| Account | ✅ |
-| Custom Group | ✅ |
-| Articles | ✅ |
-| Opportunities | ✅ |
-| Tasks | ❌ |
+| [[entities/account|Account]] | ✅ |
+| Custom [[entities/group|Group]] | ✅ |
+| [[entities/article|Articles]] | ✅ |
+| [[entities/opportunity|Opportunities]] | ✅ |
+| [[entities/task|Tasks]] | ❌ |
 | Attachments | ❌ |
 
 ## Importing from DevRev
 
 Follow the steps below to import from DevRev:
 
-1. In the Marketplace, search for **DevRev ADaaS** under the **Import** category and install.
+1. In the Marketplace, [[features/search|search]] for **DevRev ADaaS** under the **Import** category and install.
 2. In the snap-in config modal toggle all the object types that are intended to
    be extracted, then save and click on **Install**, then go to the **Import**
    section on your settings left nav.
@@ -55,13 +56,13 @@ Follow the steps below to import from DevRev:
    pulled, or use an existing connection if you already have one. A personal
    access token which has access to that particular org is required.
 5. Once the connection is established, select the workspace you want to import and
-   specify the DevRev part that should be used for any imported work. This
+   specify the DevRev [[entities/part|part]] that should be used for any imported work. This
    initiates a bulk import of the selected site.
 6. A pre-defined mapping is provided for all object types to ease on the user's
    required interaction and have them set beforehand. However, you may be
    prompted to manually map certain fields if needed.
 
-The duration of the import depends on the size of the workspace and the data being imported. It can take seconds for an account with only a few dozen tickets to a few hours for an account with tens of thousands of items with many attachments.
+The duration of the import depends on the size of the workspace and the data being imported. It can take seconds for an account with only a few dozen [[features/tickets|tickets]] to a few hours for an account with tens of thousands of items with many attachments.
 
 It is recommended to only extract the necessary objects to avoid these long running imports, although it is up to the users' needs.
 
@@ -69,4 +70,4 @@ It is recommended to only extract the necessary objects to avoid these long runn
 - [[glossary/airsync]]
 
 ## Source
-- DevRev support article [DevRev AirSync](https://support.devrev.ai/en-US/devrev/article/pDAoQ_sS) (ART-22019)
+- DevRev support [[entities/article|article]] [DevRev AirSync](https://support.devrev.ai/en-US/devrev/article/pDAoQ_sS) (ART-22019)

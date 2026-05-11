@@ -10,11 +10,12 @@ top_category: Computer+ Observe
 wiki_match: glossary/nnl
 match_score: 0.6
 last_updated: 2026-05-11
+summary: "Funnels in DevRev\"s Session Analytics help you track user journeys through multi-step processes in your application."
 ---
 
 # Funnels
 
-Funnels in DevRev's Session Analytics help you track user journeys through multi-step processes in your application. Unlike traditional analytics that focus on individual events, funnels provide a comprehensive view of user behavior across entire journeys, spanning multiple sessions and interactions.
+Funnels in DevRev's Session [[features/analytics|Analytics]] help you track user journeys through multi-step processes in your application. Unlike traditional analytics that focus on individual events, funnels provide a comprehensive view of user behavior across entire journeys, spanning multiple sessions and interactions.
 
 A funnel represents a sequence of user actions leading to a desired outcome. Each step captures a critical user interaction, allowing you to visualize where users succeed, encounter friction, or abandon their journey.
 
@@ -25,7 +26,7 @@ A funnel represents a sequence of user actions leading to a desired outcome. Eac
 To access the Funnels feature:
 
 1. Click **Explore** in the left navigation menu.
-2. Search for "Usage Funnels".
+2. [[features/search|Search]] for "Usage Funnels".
 3. Click **Usage Funnels** to open the feature.
 4. (Optional) Pin **Usage Funnels** to your left navigation for quick access.
 
@@ -277,7 +278,7 @@ This reveals the full context of why a specific user dropped off.
 
 Use the following SDK methods to track events for your funnels:
 
-**Web SDK (Plug)**
+**Web SDK ([[glossary/plug|Plug]])**
 
 ```
 window.plugSDK.trackEvent(event_name, properties)
@@ -394,10 +395,10 @@ If funnel data doesn't update during the day:
 
 ### Integrated events not visible in funnel creation
 
-If newly integrated events don't appear in the funnel creation interface:
+If newly integrated events [[glossary/don|don]]'t appear in the funnel creation interface:
 
 * Newly integrated events take time to appear in the funnel creation interface
 * It may take 12-24 hours for events to become available in the funnel step selection
 
 ## Source
-- DevRev support article [Funnels](https://support.devrev.ai/en-US/devrev/article/_FG4pa74) (ART-21919)
+- DevRev support [[entities/article|article]] [Funnels](https://support.devrev.ai/en-US/devrev/article/_FG4pa74) (ART-21919)

@@ -10,14 +10,15 @@ top_category: Snap-ins
 wiki_match: features/csat
 match_score: 0.413
 last_updated: 2026-05-11
+summary: "HTTP archive file upload & sanitization offers the ability to prompt clients to upload HTTP archive (.har) files through conversations, and automatically sanitizes the file while hard-deleting the unsanitized version."
 ---
 
 # HTTP archive file upload & sanitization
 
 [HTTP archive file upload & sanitization](https://devrev.ai/marketplace/har-sanitization) offers the ability to prompt clients to upload HTTP archive (`.har`) files
-through conversations, and automatically sanitizes the file while hard-deleting
+through [[features/conversations-feature|conversations]], and automatically sanitizes the file while hard-deleting
 the unsanitized version. Once sanitization is done, the sanitized file is
-reuploaded to the conversation.
+reuploaded to the [[entities/conversation|conversation]].
 
 The snap-in has default sanitization targets for specific cookies, headers and
 MIME types. Through configuration, you can specify sanitization of all cookies,
@@ -72,4 +73,4 @@ headers, POST parameters, MIME types, or query string parameters.
 3. Click **Save** > **Install snap-in**.
 
 ## Source
-- DevRev support article [HTTP archive file upload & sanitization](https://support.devrev.ai/en-US/devrev/article/XUa0R9o1) (ART-21940)
+- DevRev support [[entities/article|article]] [HTTP archive file upload & sanitization](https://support.devrev.ai/en-US/devrev/article/XUa0R9o1) (ART-21940)

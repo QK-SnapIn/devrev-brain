@@ -10,11 +10,12 @@ top_category: Computer by DevRev
 wiki_match: features/_minor-features
 match_score: 0.351
 last_updated: 2026-05-11
+summary: "When integrating external systems with DevRev, you might encounter a \"Request failed with status code 400\" error after filling out the connection form."
 ---
 
 # Troubleshooting "Request Failed with Status Code 400" When Making Connection
 
-When integrating external systems with DevRev, you might encounter a "Request failed with status code 400" error after filling out the connection form. This article will help you understand common reasons for this error and how to resolve them.
+When integrating external systems with DevRev, you might encounter a "Request failed with status code 400" error after filling out the connection form. This [[entities/article|article]] will help you understand common reasons for this error and how to resolve them.
 
 ## Common Reasons for "Request Failed with Status Code 400"
 

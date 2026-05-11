@@ -10,11 +10,12 @@ top_category: Snap-ins
 wiki_match: features/updates-feed
 match_score: 0.421
 last_updated: 2026-05-11
+summary: "This automation creates a link between Datadog and DevRev."
 ---
 
 # Datadog
 
-This automation creates a link between Datadog and DevRev. When a new incident
+This automation creates a link between Datadog and DevRev. When a new [[glossary/incident|incident]]
 is created on Datadog or an existing incident is updated, the webhook is
 triggered and a payload is sent over to DevRev. Using this payload, a new
 incident is created and the existing incident is updated on DevRev. Similarly,
@@ -30,7 +31,7 @@ Timeline entries are synced one-way—from DevRev to Datadog.
 3. In DevRev app, setup the connection in **Settings** > **Snap-ins** >
    **Connections** on top.
 
-   * Search and choose an existing connection or create a new one by clicking
+   * [[features/search|Search]] and choose an existing connection or create a new one by clicking
      **+ Connection**.
    * Select **Datadog** from the dropdown list.
    * Give it a connection name and paste your Datadog **API Key**, **Application
@@ -44,7 +45,7 @@ Timeline entries are synced one-way—from DevRev to Datadog.
 This connection is necessary if you wish to bring stage and custom
 fields to DevRev.
 
-3. Select the part, and default severity value for incidents. This default
+3. Select the [[entities/part|part]], and default severity value for [[features/incidents|incidents]]. This default
    incident value is used when the Datadog incident has `UNKNOWN` severity.
 4. Include the desired severity mapping from Datadog to DevRev and vice versa.
 5. Include the desired stage mapping from Datadog to DevRev and vice versa.
@@ -113,8 +114,8 @@ Datadog.
 
    i. Click **Save** to enable the notification rule.
 
-Once the above setup is complete, file a support ticket with DevRev to enable
+Once the above setup is complete, file a support [[entities/ticket|ticket]] with DevRev to enable
 the Incident object in your workspace.
 
 ## Source
-- DevRev support article [Datadog](https://support.devrev.ai/en-US/devrev/article/hsqoeCOm) (ART-21975)
+- DevRev support [[entities/article|article]] [Datadog](https://support.devrev.ai/en-US/devrev/article/hsqoeCOm) (ART-21975)

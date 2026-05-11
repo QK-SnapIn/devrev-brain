@@ -10,11 +10,12 @@ top_category: Computer+ Observe
 wiki_match: features/csat
 match_score: 0.407
 last_updated: 2026-05-11
+summary: "The Plug SDK tracks session details using the client-side browser storage, but this approach is limited by the same-origin policy."
 ---
 
 # Cross-domain session tracking
 
-The Plug SDK tracks session details using the client-side browser storage, but this approach is limited by the same-origin policy. As a result, when users navigate between different domains or subdomains (for example, from domain1.com to domain2.com), the SDK records separate, unconnected sessions, preventing comprehensive user journey tracking.
+The [[glossary/plug|Plug]] SDK tracks session details using the client-side browser storage, but this approach is limited by the same-origin policy. As a result, when users navigate between different domains or subdomains (for example, from domain1.com to domain2.com), the SDK records separate, unconnected sessions, preventing comprehensive user journey tracking.
 
 Plug SDK enables cross-domain session tracking by using the following method.
 
@@ -104,4 +105,4 @@ You can leave the `tabId` empty if you want to track this domain as a separate t
 If the session identifiers passed to the Plug method correspond to a session which has already ended, or some invalid identifiers, the SDK rejects them and start a complete new session instead.
 
 ## Source
-- DevRev support article [Cross-domain session tracking](https://support.devrev.ai/en-US/devrev/article/Qz2Gf4Rg) (ART-21920)
+- DevRev support [[entities/article|article]] [Cross-domain session tracking](https://support.devrev.ai/en-US/devrev/article/Qz2Gf4Rg) (ART-21920)

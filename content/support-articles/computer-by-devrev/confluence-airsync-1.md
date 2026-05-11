@@ -11,11 +11,12 @@ wiki_match: glossary/airsync
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['glossary/airsync']
+summary: "The Confluence AirSync snap-in simplifies migration from Confluence to DevRev, supporting both one-time imports and ongoing syncs."
 ---
 
 # Confluence AirSync
 
-The Confluence AirSync snap-in simplifies migration from Confluence to DevRev, supporting both one-time imports and ongoing syncs.
+The Confluence [[glossary/airsync|AirSync]] snap-in simplifies migration from Confluence to DevRev, supporting both one-time imports and ongoing syncs.
 
 ### Supported objects
 
@@ -23,26 +24,26 @@ The following is a list of Confluence objects and their corresponding DevRev equ
 
 | Confluence Object | DevRev Object | Sync to DevRev |
 | --- | --- | --- |
-| Pages | Articles | ✅ |
+| Pages | [[entities/article|Articles]] | ✅ |
 | Blogs | Articles | ✅ |
 | Users | Identities | ✅ |
-| Attachments | Artifacts on Article | ✅ |
+| Attachments | [[features/artifacts|Artifacts]] on [[entities/article|Article]] | ✅ |
 | Folders | Directories | ✅ |
 
 ### Importing from Confluence
 
 1. Log in to DevRev.
-2. Navigate to **[Settings > Integrations > Snap-ins](https://app.devrev.ai/?setting=snap-ins)**, search for **Confluence **under **All Snap-ins**.
+2. Navigate to **[Settings > Integrations > Snap-ins](https://app.devrev.ai/?setting=snap-ins)**, [[features/search|search]] for **Confluence **under **All Snap-ins**.
 3. Click **Add and Install Snap-in**.
 4. Navigate to **[Settings > Integrations > Airsync](https://app.devrev.ai/?setting=airsyncs)** in the left-navigation.
 5. Click **Airsync** in the top right corner and select **Confluence**.
 6. Create a new connection to authenticate with your Confluence workspace, or use an existing active connection if you already have one.
-7. Once the connection is established, select the Confluence spaces you want to import and specify the DevRev part to be used for any imported work. This initiates a bulk import of the selected spaces.
+7. Once the connection is established, select the Confluence spaces you want to import and specify the DevRev [[entities/part|part]] to be used for any imported work. This initiates a bulk import of the selected spaces.
 8. DevRev makes an effort to automatically map the fields from Confluence to the corresponding fields in DevRev. However, you may be prompted to manually map certain fields if needed.
 
 ### Create Confluence Connection
 
-To create a Confluence connection, you must first generate a Personal Access Token (PAT) from your Atlassian account and then use it while creating the connection in DevRev.
+To create a Confluence connection, you must first generate a Personal Access Token (PAT) from your Atlassian [[entities/account|account]] and then use it while creating the connection in DevRev.
 
 ### Step 1: Create a Personal Access Token
 
@@ -87,7 +88,7 @@ While Confluence AirSync supports importing a wide range of content and metadata
 - Page reactions (likes or other emoji responses)
 - Inline attachments indexing
 - Table sorting — tables imported from Confluence will appear as static content and cannot be sorted within DevRev
-- Email visibility requirement — users must explicitly set their email visibility to** Anyone** in their Confluence profile settings; otherwise, user associations and identity mapping may fail
+- Email visibility requirement — users must explicitly set their email visibility to** Anyone** in their Confluence profile settings; otherwise, user associations and [[features/identity|identity]] mapping may fail
 - Shared public Confluence links — any publicly shared Confluence links cannot be tracked or mapped; no user or content association will be pulled from such links
 
 These limitations exist due to differences in feature support between Confluence and DevRev.

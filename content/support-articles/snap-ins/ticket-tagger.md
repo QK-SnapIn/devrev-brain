@@ -11,20 +11,21 @@ wiki_match: entities/ticket
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['entities/ticket']
+summary: "The Ticket Tagger is an automation tool designed to streamline ticket management."
 ---
 
 # Ticket tagger
 
-The **Ticket Tagger** is an automation tool designed to streamline ticket
-management. It automatically assigns appropriate tags to tickets based on the
-tags of the contact or their account.
+The **[[entities/ticket|Ticket]] Tagger** is an automation tool designed to streamline ticket
+management. It automatically assigns appropriate tags to [[features/tickets|tickets]] based on the
+tags of the contact or their [[entities/account|account]].
 
 ## Key features
 
 * Automatically tags tickets created by specific users (customer users).
 * Ignores tickets created by other user types.
 * Allows multiple tags to be assigned based on predefined rules.
-* Can be triggered via commands or automatically when tickets are created.
+* Can be triggered via [[features/commands|commands]] or automatically when tickets are created.
 
 ## Configuration
 
@@ -33,7 +34,7 @@ Follow these steps to set up the Ticket Tagger:
 1. Go to **Snap-ins** > **Ticket Tagger** > **Configure**.
 2. Fill in the configuration settings.
 
-   * **Search for Tags**: Select the tags to check for on the contact or
+   * **[[features/search|Search]] for Tags**: Select the tags to check for on the contact or
      account. If multiple tags are selected, only one needs to match.
    * **Search for tags on**: Specify where to search for tags—on the contact,
      the account, or both.
@@ -62,4 +63,4 @@ To apply tags to tickets that were created before the snap-in was installed:
 - [[entities/ticket]]
 
 ## Source
-- DevRev support article [Ticket tagger](https://support.devrev.ai/en-US/devrev/article/TKQV--P6) (ART-21960)
+- DevRev support [[entities/article|article]] [Ticket tagger](https://support.devrev.ai/en-US/devrev/article/TKQV--P6) (ART-21960)

@@ -10,11 +10,12 @@ top_category: Snap-ins
 wiki_match: features/slack-integration
 match_score: 0.424
 last_updated: 2026-05-11
+summary: "The bulk delete data snap-in allows users to quickly delete multiple tickets, issues, accounts, or contacts in DevRev."
 ---
 
 # Bulk delete data
 
-The bulk delete data snap-in allows users to quickly delete multiple tickets, issues, accounts, or contacts in DevRev. By using a command-based approach and tag-based filtering, it ensures efficient data cleanup while maintaining reliability. Furthermore, access control options are included to prevent the feature from being misused.
+The bulk delete data snap-in allows users to quickly delete multiple [[features/tickets|tickets]], [[features/issues|issues]], [[features/accounts|accounts]], or contacts in DevRev. By using a command-based approach and tag-based filtering, it ensures efficient data cleanup while maintaining reliability. Furthermore, access control options are included to prevent the feature from being misused.
 
 The following fields are mandatory:
 
@@ -23,7 +24,7 @@ The following fields are mandatory:
 
 Deleted data cannot be recovered.
 
-If items were imported via an active AirSync, the deletion will cause the sync to fail.
+If items were imported via an active [[glossary/airsync|AirSync]], the deletion will cause the sync to fail.
 
 ## Features
 
@@ -69,4 +70,4 @@ If you're changing the configuration after running the command, re-run the comma
 If some items, such as accounts linked to tickets, couldn't be deleted, resolve the dependencies and re-run the command.
 
 ## Source
-- DevRev support article [Bulk delete data](https://support.devrev.ai/en-US/devrev/article/rPFz5oz2) (ART-21928)
+- DevRev support [[entities/article|article]] [Bulk delete data](https://support.devrev.ai/en-US/devrev/article/rPFz5oz2) (ART-21928)

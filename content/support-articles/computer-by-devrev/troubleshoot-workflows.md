@@ -10,19 +10,20 @@ top_category: Computer by DevRev
 wiki_match: features/conversational-workflows
 match_score: 0.565
 last_updated: 2026-05-11
+summary: "Workflows in DevRev automate actions based on triggers and conditions."
 ---
 
 # Troubleshoot workflows
 
-Workflows in DevRev automate actions based on triggers and conditions. When a workflow doesn't behave as expected, the issues usually fall into one of a few predictable categories.
+[[features/workflows|Workflows]] in DevRev automate actions based on triggers and conditions. When a workflow doesn't behave as expected, the [[features/issues|issues]] usually fall into one of a few predictable categories.
 
 > 📝 **Note**: The **Runs** tab and most workflow management features are visible only to users with admin access. If you cannot see the Runs tab or certain settings, confirm your role with your workspace administrator.
 
 ## Workflow isn't triggering
 
-* **Issue**: Trigger conditions are too restrictive.
+* **[[entities/issue|Issue]]**: Trigger conditions are too restrictive.
 
-  **Solution**: If you've set filters on the trigger (such as a specific part, tag, or severity), the event may not match. Review your trigger conditions and temporarily remove filters to confirm the workflow fires at all, then re-add conditions one at a time.
+  **Solution**: If you've set filters on the trigger (such as a specific [[entities/part|part]], tag, or severity), the event may not match. Review your trigger conditions and temporarily remove filters to confirm the workflow fires at all, then re-add conditions one at a time.
 * **Issue**: The subtype filter on `issue_updated` doesn't restrict which updates fire the trigger.
 
   **Solution**: The subtype input on the `issue_updated` trigger surfaces custom fields for that subtype but does not restrict which updates fire the trigger. To limit execution to a specific subtype, add an **If/Else** node immediately after the trigger and check the subtype field there. Note that this behavior differs from `issue_created`, where the subtype input does act as a filter — only issues of the selected subtype trigger the workflow.
@@ -38,7 +39,7 @@ Workflows in DevRev automate actions based on triggers and conditions. When a wo
 * **Issue**: The **If/Else** node routes to the wrong path.
 
   **Solution**: This is a known UI issue where both output paths can appear mapped to the same node, causing the wrong branch to execute. Delete the connections from the **If/Else** node and reconnect them carefully, ensuring the correct node is attached to each path.
-* **Issue**: Conditions are case-sensitive and don't match expected values.
+* **Issue**: Conditions are case-sensitive and [[glossary/don|don]]'t match expected values.
 
   **Solution**: Workflow conditions match text exactly, including capitalization. If a condition like `stage = "In Progress"` isn't matching, check for case differences. Use **Contains Any** with all expected variations as a workaround.
 * **Issue**: A custom field used in the workflow doesn't exist in this workspace.
@@ -58,7 +59,7 @@ Workflows in DevRev automate actions based on triggers and conditions. When a wo
   **Solution**: The workflow is making too many API calls in a short period. Add a delay node between calls, or reduce the frequency of the trigger.
 * **Issue**: Permission error.
 
-  **Solution**: The workflow may lack the necessary permissions to perform the action. Confirm that you have admin access — admin access is required both to view the Runs tab and to manage workflow service accounts. Verify that the workflow's service account has the required role for the action it performs.
+  **Solution**: The workflow may lack the necessary permissions to perform the action. Confirm that you have admin access — admin access is required both to view the Runs tab and to manage workflow service [[features/accounts|accounts]]. Verify that the workflow's service [[entities/account|account]] has the required role for the action it performs.
 
 To prevent errors from stopping the entire workflow, add an **error path** to any action node by clicking the three-dot menu on the node and selecting **Set Error Path**. This lets the workflow continue even if that step fails.
 
@@ -76,7 +77,7 @@ If you cannot access the Runs tab (for example, because you lack admin access), 
 
 ## Slack node isn't appearing or isn't working
 
-* **Issue**: Slack-related nodes don't appear in the workflow builder.
+* **Issue**: Slack-related nodes don't appear in the [[features/workflows|workflow builder]].
 
   **Solution**: Slack nodes only appear if the **Slack snap-in** is installed in your workspace. Install it from [Settings > Snap-ins](https://app.devrev.ai/?setting=snap-ins).
 * **Issue**: A Slack connection isn't appearing in the node's dropdown.
@@ -102,4 +103,4 @@ The following are platform constraints to be aware of when designing workflows.
 * **Scheduled events cannot be unscheduled via workflows.** Once a scheduled event is created, it cannot be canceled or modified through a workflow action.
 
 ## Source
-- DevRev support article [Troubleshoot workflows](https://support.devrev.ai/en-US/devrev/article/Jg_gNHsv) (ART-33224)
+- DevRev support [[entities/article|article]] [Troubleshoot workflows](https://support.devrev.ai/en-US/devrev/article/Jg_gNHsv) (ART-33224)

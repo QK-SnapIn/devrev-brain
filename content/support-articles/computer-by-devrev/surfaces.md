@@ -10,6 +10,7 @@ top_category: Computer by DevRev
 wiki_match: features/artifacts
 match_score: 0.588
 last_updated: 2026-05-11
+summary: "To get the most out of your AI teammate, ensure you have Computer installed across all your primary platforms."
 ---
 
 # Surfaces
@@ -34,26 +35,26 @@ The Desktop App is the most powerful way to use Computer. It lives natively on y
 The Web App provides full functionality through any modern browser. This is ideal for quick access or when working on a machine where you cannot install local software.
 
 * **Access**: Go to <https://app.devrev.ai/[your-org-name]/computer>.
-* **Functionality**: Includes all core features including Conversational Analytics, File Uploads, and Search.
+* **Functionality**: Includes all core features including Conversational [[features/analytics|Analytics]], File Uploads, and [[features/search|Search]].
 
 ![img2.png](https://app.devrev.ai/api/gateway/internal/artifacts.download?id=don:core:dvrv-us-1:devo/0:artifact/9178779&key=388d5974cb141c1e8e240aeda976a795c91fb4a510e82851f5c01259766dcd82)
 
 # Mobile app
 
-Stay connected with your data and tickets on the go. The mobile experience is optimized for quick summaries and status updates.
+Stay connected with your data and [[features/tickets|tickets]] on the go. The mobile experience is optimized for quick summaries and status updates.
 
 * **Availability**: Search for DevRev on the Apple App Store or Google Play Store.
-* **Usage**: Use the mobile app to get instant answers from your internal documents or check the status of a ticket while away from your desk.
+* **Usage**: Use the mobile app to get instant answers from your internal documents or check the status of a [[entities/ticket|ticket]] while away from your desk.
 
 ![img3.png](https://app.devrev.ai/api/gateway/internal/artifacts.download?id=don:core:dvrv-us-1:devo/0:artifact/9178907&key=a5c53a41f4ab1cc850fdb63dd530b4700ced4099b341442052119c58d2567442)
 
 # In-app version of Computer inside the DevRev SoR app
 
-Computer is integrated into the DevRev sidebar, providing a persistent companion as you navigate through different modules like Support, Build, or Grow.
+Computer is integrated into the DevRev sidebar, providing a persistent companion as you navigate through different modules like Support, [[features/build|Build]], or Grow.
 
 * **Toggle interface**: Use the Computer icon in the global navigation bar to expand or collapse the chat interface.
 
 ![img4.png](https://app.devrev.ai/api/gateway/internal/artifacts.download?id=don:core:dvrv-us-1:devo/0:artifact/9178943&key=f198c6bc55e0db3c2bfbc5c0e5b028ab0b7fec64b04ff74903e2a9e6ce2ae532)
 
 ## Source
-- DevRev support article [Surfaces](https://support.devrev.ai/en-US/devrev/article/KueGVtUc) (ART-24047)
+- DevRev support [[entities/article|article]] [Surfaces](https://support.devrev.ai/en-US/devrev/article/KueGVtUc) (ART-24047)

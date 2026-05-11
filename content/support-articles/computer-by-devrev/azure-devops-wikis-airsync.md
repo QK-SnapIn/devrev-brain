@@ -11,11 +11,12 @@ wiki_match: glossary/airsync
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['glossary/airsync']
+summary: "The Azure DevOps Wikis AirSync simplifies the migration of Wiki content from Azure DevOps to DevRev, supporting both one-time imports and ongoing syncs."
 ---
 
 # Azure DevOps Wikis AirSync
 
-The Azure DevOps Wikis AirSync simplifies the migration of Wiki content from Azure DevOps to DevRev, supporting both one-time imports and ongoing syncs.
+The Azure DevOps Wikis [[glossary/airsync|AirSync]] simplifies the migration of Wiki content from Azure DevOps to DevRev, supporting both one-time imports and ongoing syncs.
 
 ### configure the Azure DevOps Connection
 
@@ -23,7 +24,7 @@ To configure the Azure DevOps connection, ensure the Azure DevOps token includes
 
 * Code - Read
 * Graph - Read
-* Identity - Read
+* [[features/identity|Identity]] - Read
 * Member Entitlement Management - Read
 * Project and Team - Read
 * Security - Manage
@@ -35,17 +36,17 @@ The following is a list of Azure DevOps Wiki objects and their corresponding Dev
 
 | Azure Wikis Object | DevRev Object | Sync to DevRev |
 | --- | --- | --- |
-| Code Wikis | Articles | ✅ |
+| Code Wikis | [[entities/article|Articles]] | ✅ |
 | Project Wikis | Articles | ✅ |
 | Users | Identities | ✅ |
-| Groups | Groups | ✅ |
+| [[entities/group|Groups]] | Groups | ✅ |
 
 ### Import from Azure DevOps Wikis
 
-1. Go to **Marketplace** and search for **Azure DevOps Wikis** in the **Airsync** category.
+1. Go to **Marketplace** and [[features/search|search]] for **Azure DevOps Wikis** in the **Airsync** category.
 2. Install the snap-in and configure it in the **Airsync** section of your settings.
 3. Click **+Import** and select the Azure DevOps Wikis logo.
-4. Create a new connection to your Azure DevOps account or use an existing one.
+4. Create a new connection to your Azure DevOps [[entities/account|account]] or use an existing one.
 5. Once the connection is established, select the Azure DevOps organization and Wiki repositories to import.
 6. DevRev automatically maps fields from Azure DevOps Wikis to DevRev articles. You may be prompted to manually map certain fields if needed.
 
@@ -118,4 +119,4 @@ To delete an import and all the content it created, go to **Settings > Integrati
 - [[glossary/airsync]]
 
 ## Source
-- DevRev support article [Azure DevOps Wikis AirSync](https://support.devrev.ai/en-US/devrev/article/yYohvsGz) (ART-22014)
+- DevRev support [[entities/article|article]] [Azure DevOps Wikis AirSync](https://support.devrev.ai/en-US/devrev/article/yYohvsGz) (ART-22014)

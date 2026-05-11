@@ -10,11 +10,12 @@ top_category: Snap-ins
 wiki_match: features/slack-integration
 match_score: 0.552
 last_updated: 2026-05-11
+summary: "The Slack snap-in lets you scale your customer support in Slack by creating conversations, tickets, and issues, syncing messages bidirectionally and by routing notifications to the right channels."
 ---
 
 # Slack snap-in
 
-The [Slack snap-in](https://marketplace.devrev.ai/one-slack) lets you scale your customer support in Slack by creating conversations, tickets, and issues, syncing messages bidirectionally and by routing notifications to the right channels.
+The [Slack snap-in](https://marketplace.devrev.ai/one-slack) lets you scale your customer support in Slack by creating [[features/conversations-feature|conversations]], [[features/tickets|tickets]], and [[features/issues|issues]], syncing messages bidirectionally and by routing notifications to the right channels.
 
 For historical import of Slack data into DevRev, see the [Slack AirSync](https://marketplace.devrev.ai/slack-airdrop) connector, which performs bulk imports rather than real-time sync.
 
@@ -31,11 +32,11 @@ The Slack snap-in behaves differently depending on the type of Slack channel. De
 Before installing the Slack snap-in, verify the following prerequisites:
 
 * You have Slack workspace admin rights, or a Slack workspace admin is available to approve the OAuth connection.
-* If you have a Slack Enterprise account, contact DevRev Support to be allowlisted before attempting setup. Enterprise workspace support is in limited availability.
-* Maintain one public Slack connection per DevRev workspace. Within a workspace, one Slack connection can be used across multiple snap-ins and workflows. Creating multiple connections may disrupt existing integrations due to Slack's OAuth limitations.
+* If you have a Slack Enterprise [[entities/account|account]], contact DevRev Support to be allowlisted before attempting setup. Enterprise workspace support is in limited availability.
+* Maintain one public Slack connection per DevRev workspace. Within a workspace, one Slack connection can be used across multiple snap-ins and [[features/workflows|workflows]]. Creating multiple connections may disrupt existing integrations due to Slack's OAuth limitations.
 * After installation, invite the DevRev bot to every channel where you want conversations or sync to operate by running `/invite @DevRev` in each channel.
 
-1. Search for and open [Slack](https://marketplace.devrev.ai/one-slack) in the DevRev Marketplace, then click **Add** in the top-right corner.
+1. [[features/search|Search]] for and open [Slack](https://marketplace.devrev.ai/one-slack) in the DevRev Marketplace, then click **Add** in the top-right corner.
 2. In the [snap-in settings](https://app.devrev.ai/?setting=snap-ins), connect your Slack workspace to DevRev by clicking **Sign in with Slack**, which redirects you to Slack's OAuth page.
 3. Select the appropriate Slack workspace from the top-right corner of the OAuth page and click **Allow** to complete the connection.
 4. Add configurations in the snap-in, click **Save** at the bottom of the configuration page, then click **Install** to activate the snap-in.
@@ -44,10 +45,10 @@ Before installing the Slack snap-in, verify the following prerequisites:
 
 ## Available commands
 
-After installation, run `/devrev help` in any Slack channel to display all available commands in a pop-up modal. The key commands include:
+After installation, run `/devrev help` in any Slack channel to display all available [[features/commands|commands]] in a pop-up modal. The key commands include:
 
-* `/devrev create-ticket` — Open a new ticket creation form.
-* `/devrev create-issue` — Open a new issue creation form.
+* `/devrev create-ticket` — Open a new [[entities/ticket|ticket]] creation form.
+* `/devrev create-issue` — Open a new [[entities/issue|issue]] creation form.
 * `/devrev link` — Link a Slack channel to a DevRev customer workspace.
 * `/devrev view <identifier>` — View a DevRev object by its display ID (for example, `TKT-123` or `ISS-456`), full object ID, or full DevRev URL. Running `/devrev view` without an identifier opens a search modal.
 * `/devrev ticket-digest` — Display a paginated list of all open and in-progress tickets.
@@ -74,14 +75,14 @@ Once linking and invitation are complete:
 
 * Messages sent by customers directly to the channel create new conversations.
 * Messages in threads or channel messages from members of your own team do not create new conversations.
-* Created conversations appear in the **Inbox vista** in your DevRev app.
-* If a message is sent to a Slack thread belonging to an archived conversation, the snap-in creates a new follow-up conversation and syncs all subsequent messages to it.
+* Created conversations appear in the **[[features/inbox|Inbox]] [[glossary/vista|vista]]** in your DevRev app.
+* If a message is sent to a Slack thread belonging to an archived [[entities/conversation|conversation]], the snap-in creates a new follow-up conversation and syncs all subsequent messages to it.
 
 > 📝 **Note**: A Slack channel can be linked to only one DevRev customer workspace, and vice versa.
 
 ### Conversation roll window
 
-To avoid multiple conversations for related customer messages, a **conversation roll window** groups messages together.
+To avoid multiple conversations for related customer messages, a **conversation roll window** [[entities/group|groups]] messages together.
 
 * The roll window remains active for five minutes after a conversation is created.
 * Any new message sent directly in the channel within this window is appended to the existing conversation, and each new direct customer message resets the timer.
@@ -126,7 +127,7 @@ The Slack snap-in allows you to create tickets directly from Slack. There are mu
 
 Choosing either the command or message action option opens a pop-up modal with the new ticket form. Complete the required fields; some fields auto-fill based on the messages.
 
-> 📝 **Note**: Ticket creation dropdowns for parts and customer workspaces display up to 100 items (most recently created). If the item you need does not appear, search by name in the dropdown.
+> 📝 **Note**: Ticket creation dropdowns for [[features/parts|parts]] and customer workspaces display up to 100 items (most recently created). If the item you need does not appear, search by name in the dropdown.
 
 ### Ticket sharing options
 
@@ -207,13 +208,13 @@ Understanding these types is important because sync behavior, summary card visib
 
 ### Custom objects not supported
 
-The Slack snap-in does not support custom objects or related automations. Only stock DevRev objects (tickets, issues, incidents, opportunities, and parts) are supported.
+The Slack snap-in does not support custom objects or related automations. Only stock DevRev objects (tickets, issues, [[features/incidents|incidents]], [[entities/opportunity|opportunities]], and parts) are supported.
 
 ### Two-way sync between DevRev and Slack
 
 If two-way sync is enabled on an object, new messages received from non-Slack source channels appear in DevRev but do not sync to the Slack thread.
 
-By default, messages from bots, service accounts, or AI agents in DevRev are not synced to Slack. To change this, enable the **Sync bot messages from DevRev to Slack** option in snap-in configurations.
+By default, messages from bots, service [[features/accounts|accounts]], or [[features/agents|AI agents]] in DevRev are not synced to Slack. To change this, enable the **Sync bot messages from DevRev to Slack** option in snap-in configurations.
 
 The snap-in supports syncing of message edits and deletions between platforms. Message attachment sync is supported both ways, with a file size limit of 250 MB.
 
@@ -234,7 +235,7 @@ If sync is not possible, the form displays a clear warning. Possible reasons inc
 
 ## DevRev incidents and Slack
 
-The Slack snap-in allows incident creation directly from Slack using the following methods:
+The Slack snap-in allows [[glossary/incident|incident]] creation directly from Slack using the following methods:
 
 * Use the `/devrev create-incident` command.
 * Select **Create a new incident** from the message actions.
@@ -298,7 +299,7 @@ The Slack snap-in honors DevRev's object customizations, including:
 
 > ⚠️ **Warning**: Custom objects are not supported by the Slack snap-in. Only stock DevRev objects (tickets, issues, incidents, opportunities, and parts) work with Slack customizations and automations.
 
-The summary view card of all objects can be customized. Only fields marked with **Show in Summary = true** in object customization are shown. Summary cards are static Slack messages and may not reflect real-time data. Use the **Refresh** button at the bottom of the card to update; a timestamp indicates the last update time. To view all fields or update the object, click the **View/Update** button.
+The summary view card of all objects can be customized. Only fields marked with **Show in Summary = true** in object [[features/customization|customization]] are shown. Summary cards are static Slack messages and may not reflect real-time data. Use the **Refresh** button at the bottom of the card to update; a timestamp indicates the last update time. To view all fields or update the object, click the **View/Update** button.
 
 The information shown in the summary card differs by channel type:
 
@@ -313,7 +314,7 @@ If email is unavailable, the snap-in creates a new DevRev contact and attaches t
 
 ## Deactivate or uninstall the Slack snap-in
 
-To temporarily disable the Slack integration without removing its configuration, deactivate the snap-in:
+To temporarily disable the [[features/slack-integration|Slack integration]] without removing its configuration, deactivate the snap-in:
 
 1. Go to **Settings > Snap-ins** and locate the Slack snap-in.
 2. Click the snap-in, then select **Deactivate**. The snap-in stops processing events but retains all configuration and sync history.
@@ -344,4 +345,4 @@ To permanently remove the Slack snap-in and all its configuration:
   **Solution**: Verify that the channel is listed in the **Auto-create incidents from Slack channels** snap-in configuration. Ensure the DevRev app is a member of the channel and that the message is a direct post (not a thread reply) if the configuration expects top-level messages.
 
 ## Source
-- DevRev support article [Slack snap-in](https://support.devrev.ai/en-US/devrev/article/nDruC5fJ) (ART-21978)
+- DevRev support [[entities/article|article]] [Slack snap-in](https://support.devrev.ai/en-US/devrev/article/nDruC5fJ) (ART-21978)

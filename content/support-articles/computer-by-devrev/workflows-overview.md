@@ -10,15 +10,16 @@ top_category: Computer by DevRev
 wiki_match: features/workflows
 match_score: 0.647
 last_updated: 2026-05-11
+summary: "A workflow is a series of triggers, actions, and conditions designed to achieve a specific goal or outcome."
 ---
 
 # Workflows Overview
 
 A workflow is a series of triggers, actions, and conditions designed to achieve a specific goal or outcome. Depicted as a flowchart or diagram, it illustrates how various triggers and actions interconnect.
 
-DevRev’s workflow engine automates tedious tasks, providing precise control and efficiency. Leveraging AI through Computer, it creates adaptive, real-time workflows that handle complex tasks with minimal human intervention. AI agents interpret and execute tasks based on fuzzy inputs, enhancing productivity and efficiency. This shift from rigid workflows to adaptive automation aims to improve organizational processes and outcomes.
+DevRev’s workflow engine automates tedious [[entities/task|tasks]], providing precise control and efficiency. Leveraging AI through Computer, it creates adaptive, real-time [[features/workflows|workflows]] that handle complex tasks with minimal human intervention. [[features/agents|AI agents]] interpret and execute tasks based on fuzzy inputs, enhancing productivity and efficiency. This shift from rigid workflows to adaptive automation aims to improve organizational processes and outcomes.
 
-The workflow engine is a highly flexible solution enabling users to build personalized workflows tailored to their organization’s needs. Catering to both high-code and no-code users, it simplifies the creation of complex automations.
+The workflow engine is a highly flexible solution enabling users to [[features/build|build]] personalized workflows tailored to their organization’s needs. Catering to both high-code and no-code users, it simplifies the creation of complex automations.
 
 With our pre-built library of workflow nodes for common tasks, users can quickly implement powerful functions without writing custom code.
 
@@ -29,7 +30,7 @@ This combination of flexibility and a robust pre-built library ensures that you 
 - **AI-powered automation**: Utilize out-of-the-box AI-based nodes and AI generation capabilities for intelligent automation that enhances productivity.
 - **No middleware**: Our workflow engine is natively built into the CRM system, eliminating the need for third-party tools and additional training.
 - **Scalable performance**: Handle thousands to millions of executions per day effortlessly with our scalable workflow engine.
-- **Automations on one schema**: Our AirSync feature automatically transforms data from different sources. It enables you to create workflows natively in DevRev without the need to create fetch nodes or manually transform data.
+- **Automations on one schema**: Our [[glossary/airsync|AirSync]] feature automatically transforms data from different sources. It enables you to create workflows natively in DevRev without the need to create fetch nodes or manually transform data.
 
 ## Components
 
@@ -53,15 +54,15 @@ We provide several native AI nodes out of the box to enhance your workflows.
 
 **Spam checker**
 
-The spam checker takes the ID of a ticket or object and determines whether the ticket or conversation is spam. You can use this output in your workflows as needed. For example, if the ticket is found to be spam, you can automatically add a comment to the ticket.
+The spam checker takes the ID of a [[entities/ticket|ticket]] or object and determines whether the ticket or [[entities/conversation|conversation]] is spam. You can use this output in your workflows as needed. For example, if the ticket is found to be spam, you can automatically add a comment to the ticket.
 
-**Suggest part**
+**Suggest [[entities/part|part]]**
 
-Often, your integrations create tickets or issues associated with a default part. The suggest part takes the ID of a ticket or issue and suggests a relevant part. You can use this to route your tickets or issues to the most appropriate part of the product. For example, when a ticket is created, you can find a relevant part and update the ticket with the suggested part.
+Often, your integrations create [[features/tickets|tickets]] or [[features/issues|issues]] associated with a default part. The suggest part takes the ID of a ticket or [[entities/issue|issue]] and suggests a relevant part. You can use this to route your tickets or issues to the most appropriate part of the product. For example, when a ticket is created, you can find a relevant part and update the ticket with the suggested part.
 
 **Sentiment evaluator**
 
-The sentiment evaluator takes the ID of a ticket and assesses the customer's sentiment based on their comments. Sentiment values can be *Delighted*, *Happy*, *Frustrated*, *Neutral*, *Unhappy*, or *Unknown*. It also provides justification for the sentiment values. These values are only generated if there is a customer conversation on the ticket. For example, you can listen to a ticket update event, evaluate the sentiment, and send a comment to the account.
+The sentiment evaluator takes the ID of a ticket and assesses the customer's sentiment based on their comments. Sentiment values can be *Delighted*, *Happy*, *Frustrated*, *Neutral*, *Unhappy*, or *Unknown*. It also provides justification for the sentiment values. These values are only generated if there is a customer conversation on the ticket. For example, you can listen to a ticket update event, evaluate the sentiment, and send a comment to the [[entities/account|account]].
 
 **Ask AI**
 
@@ -84,4 +85,4 @@ Write your own LLM prompt to generate content that can be used in various contex
 ![Workflow Engine Example Diagram](don:core:dvrv-us-1:devo/0:artifact/4099829)
 
 ## Source
-- DevRev support article [Workflows Overview](https://support.devrev.ai/en-US/devrev/article/JXCETTW_) (ART-21836)
+- DevRev support [[entities/article|article]] [Workflows Overview](https://support.devrev.ai/en-US/devrev/article/JXCETTW_) (ART-21836)

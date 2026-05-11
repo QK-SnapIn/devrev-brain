@@ -11,11 +11,12 @@ wiki_match: glossary/airsync
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['glossary/airsync']
+summary: "The Gong AirSync simplifies migration from Gong to DevRev, enabling seamless synchronization of sales call data, transcripts, and user information."
 ---
 
 # Gong AirSync
 
-The Gong AirSync simplifies migration from Gong to DevRev, enabling seamless synchronization of sales call data, transcripts, and user information. This integration supports both one-time imports and periodic sync, bringing valuable conversation intelligence into your DevRev workspace.
+The Gong [[glossary/airsync|AirSync]] simplifies migration from Gong to DevRev, enabling seamless synchronization of sales call data, transcripts, and user information. This integration supports both one-time imports and periodic sync, bringing valuable [[entities/conversation|conversation]] intelligence into your DevRev workspace.
 
 ### Supported objects
 
@@ -24,7 +25,7 @@ The following is a list of Gong objects and their corresponding DevRev equivalen
 | Gong Object | DevRev Object | Sync to DevRev |
 | --- | --- | --- |
 | Users | DevUser | ✅ |
-| Calls | Meeting (with rich descriptions) | ✅ |
+| Calls | [[entities/meeting|Meeting]] (with rich descriptions) | ✅ |
 | Transcripts | Attachment (linked to Meeting) | ✅ |
 | Participants | RevUser (external only) | ✅ |
 | Workspaces | Sync Unit (for workspace selection) | ✅ |
@@ -32,12 +33,12 @@ The following is a list of Gong objects and their corresponding DevRev equivalen
 ### Import from Gong
 
 1. Log in to DevRev.
-2. Navigate to **Settings > Integrations > Snap-ins**, search for **Gong** under **All Snap-ins**.
+2. Navigate to **Settings > Integrations > Snap-ins**, [[features/search|search]] for **Gong** under **All Snap-ins**.
 3. Click **Add and Install Snap-in**.
 4. Navigate to **Settings > Integrations > Airsync** in the left-navigation.
 5. Click **Airsync** in the top right corner and select **Gong**.
 6. Create a new connection to authenticate with your Gong workspace, or use an existing active connection if you already have one.
-7. Once the connection is established, select the Gong workspace you want to import and specify the DevRev part that should be used for any imported work. This initiates a bulk import of the selected sync.
+7. Once the connection is established, select the Gong workspace you want to import and specify the DevRev [[entities/part|part]] that should be used for any imported work. This initiates a bulk import of the selected sync.
 8. DevRev automatically maps the fields from Gong to the corresponding fields in DevRev, including call metadata, transcripts, participant information, and user details.
 
 ## Create Gong connection
@@ -59,7 +60,7 @@ Step 1: Create OAuth connection in DevRev
 Step 2: Complete OAuth authorization
 
 1. You will be redirected to Gong's authorization page.
-2. Log in to your Gong account if not already logged in.
+2. Log in to your Gong [[entities/account|account]] if not already logged in.
 3. Review the requested permissions (workspaces, calls, transcripts, users, media).
 4. Click **Authorize** to grant access.
 5. You will be redirected back to DevRev with the connection established.
@@ -76,7 +77,7 @@ Step 3: Start import
 > 
 > - `api:workspaces:read` - Access workspace information
 > - `api:calls:read:basic` - Read basic call details
-> - `api:calls:read:extensive` - Access detailed call data, participants, and analytics
+> - `api:calls:read:extensive` - Access detailed call data, participants, and [[features/analytics|analytics]]
 > - `api:calls:read:transcript` - Read call transcripts
 > - `api:calls:read:media` - Access call recordings
 > - `api:users:read` - Read user information
@@ -112,10 +113,10 @@ Step 3: Start import
 
 ## Limitations
 
-While Gong Airdrop supports importing a wide range of content and metadata, the following are **not** imported or supported:
+While Gong [[glossary/airdrop|Airdrop]] supports importing a wide range of content and metadata, the following are **not** imported or supported:
 
 - **Unidirectional sync only** — Data flows from Gong to DevRev. Changes made in DevRev are not synced back to Gong.
-- **No end date filtering** — Incremental syncs capture all calls from the start date onwards, including future scheduled meetings and updates to existing calls. A specific end date cannot be specified.
+- **No end date filtering** — Incremental syncs capture all calls from the start date onwards, including future scheduled [[entities/meeting|meetings]] and updates to existing calls. A specific end date cannot be specified.
 - **Recording URLs not included** — While Gong provides audio and video recording URLs in the API, these are not currently synced to DevRev meetings.
 - **Workspace filtering limitations** — When fetching specific calls by ID, workspace filtering cannot be applied due to Gong API constraints.
 - **Permission handling** — Permission-based access controls for different workspace types are not fully supported. If a workspace returns a 403 Forbidden error, it will be skipped with a warning.
@@ -129,4 +130,4 @@ These limitations exist due to differences in feature support between Gong and D
 - [[glossary/airsync]]
 
 ## Source
-- DevRev support article [Gong AirSync](https://support.devrev.ai/en-US/devrev/article/U3BHnxzm) (ART-22664)
+- DevRev support [[entities/article|article]] [Gong AirSync](https://support.devrev.ai/en-US/devrev/article/U3BHnxzm) (ART-22664)

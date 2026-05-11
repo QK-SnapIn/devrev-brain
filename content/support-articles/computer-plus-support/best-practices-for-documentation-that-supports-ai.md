@@ -10,13 +10,14 @@ top_category: Computer+ Support
 wiki_match: flows/automation-priority-matrix
 match_score: 0.351
 last_updated: 2026-05-11
+summary: "Computer works best when articles and QnAs in the knowledge base adhere to certain guidelines."
 ---
 
 # Best practices for documentation that supports AI
 
-Computer works best when articles and QnAs in the knowledge base adhere to certain guidelines. The old computing adage of “garbage in, garbage out” applies to AI as much as to earlier technologies. Most of these guidelines are typical for professional/technical writing, especially content that has requirements for accessibility and localization.
+Computer works best when [[entities/article|articles]] and QnAs in the [[features/knowledge-base|knowledge base]] adhere to certain guidelines. The old computing adage of “garbage in, garbage out” applies to AI as much as to earlier technologies. Most of these guidelines are typical for professional/technical writing, especially content that has requirements for accessibility and localization.
 
-To enable searching through the knowledge base, Computer cuts up articles into smaller *chunks* (paragraphs and sentences). As an overarching principle, think of the various elements of an article or QnA as modules that may be used in a variety of ways.
+To enable searching through the knowledge base, Computer cuts up articles into smaller *chunks* (paragraphs and sentences). As an overarching principle, think of the various elements of an [[entities/article|article]] or QnA as modules that may be used in a variety of ways.
 
 ## Multiple mediums/modalities
 

@@ -10,23 +10,24 @@ top_category: Snap-ins
 wiki_match: features/airdrop
 match_score: 0.444
 last_updated: 2026-05-11
+summary: "Bring your code to the center of your decision-making with Azure Repos and DevRev."
 ---
 
 # Azure Repos
 
 Bring your code to the center of your decision-making with Azure Repos and DevRev.
 
-The Azure Repos integration enables teams to streamline their development workflows by connecting DevRev with Azure Repos. With this snap-in, you can automatically track and manage work items directly from your Git activity, keeping your issues and statuses always in sync and up to date.
+The Azure Repos integration enables teams to streamline their development [[features/workflows|workflows]] by connecting DevRev with Azure Repos. With this snap-in, you can automatically track and manage work items directly from your Git activity, keeping your [[features/issues|issues]] and statuses always in sync and up to date.
 
-> ⚠️ This integration supports only organization accounts in Azure DevOps. Personal accounts are not supported.
+> ⚠️ This integration supports only organization [[features/accounts|accounts]] in Azure DevOps. Personal accounts are not supported.
 
 ## Key features
 
 * **Work automation**: Connect Azure Repos activity to your DevRev issues.
-* **Autotrack work**: Automatically track your work in DevRev even without creating an issue ahead of time.
-* **PR Task Creation**: Create DevRev tasks for PR reviewers.
+* **Autotrack work**: Automatically track your work in DevRev even without creating an [[entities/issue|issue]] ahead of time.
+* **PR [[entities/task|Task]] Creation**: Create DevRev [[entities/task|tasks]] for PR reviewers.
 * **PR Reminders**: Automatically remind PR reviewers when a PR goes stale.
-* **Magic Commands**: Update DevRev issues without leaving your IDE.
+* **Magic [[features/commands|Commands]]**: Update DevRev issues without leaving your IDE.
 * **Azure Boards Support**: Use Azure Boards work item ID prefixes instead of ISS.
 
 ## Work Automation
@@ -38,13 +39,13 @@ You can enable Azure Repos automation through the Azure Repos for DevRev snap-in
 1. Go to **Settings**.
 2. Under the **Integration** section, select **Snap-Ins**.
 3. Click on **All Snap-Ins** to view the available options.
-4. Use the search bar to find **Azure Repos**.
+4. Use the [[features/search|search]] bar to find **Azure Repos**.
 5. Select **Azure Repos** from the search results.
 6. Click the **Add** button located in the top-right corner to install the snap-in.
 
 ### Connecting Your Azure Account
 
-Once the snap-in is installed, a configuration modal will appear. Follow these steps to connect your Azure account:
+Once the snap-in is installed, a configuration modal will appear. Follow these steps to connect your Azure [[entities/account|account]]:
 
 **Add a Connection**
 
@@ -110,7 +111,7 @@ Based on Azure Repos activity, DevRev updates issue stages automatically:
 | PR merged | In Development |
 | PR closed | In Development |
 
-Customization is possible to map each event to specific stages or opt out of automation.
+[[features/customization|Customization]] is possible to map each event to specific stages or opt out of automation.
 
 ## Magic Commands
 
@@ -156,7 +157,7 @@ These issues progress through:
 * **In Review** (on PR creation)
 * **Closed** (on PR merge or inactivity timeout)
 
-You can configure the default part for autonomous work.
+You can configure the default [[entities/part|part]] for autonomous work.
 
 ### Enrich Autonomous Work Descriptions
 
@@ -197,4 +198,4 @@ To reduce PR stagnation, reminders are posted when a PR remains inactive for a c
 Start using the Azure Repos snap-in to make your software development more accountable, automated, and free of tedious status updates.
 
 ## Source
-- DevRev support article [Azure Repos](https://support.devrev.ai/en-US/devrev/article/H3nQTPYl) (ART-22935)
+- DevRev support [[entities/article|article]] [Azure Repos](https://support.devrev.ai/en-US/devrev/article/H3nQTPYl) (ART-22935)

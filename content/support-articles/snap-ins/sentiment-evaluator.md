@@ -10,13 +10,14 @@ top_category: Snap-ins
 wiki_match: features/customer-portal
 match_score: 0.412
 last_updated: 2026-05-11
+summary: "The Sentiment evaluator snap-in lets you get feedback from a customer conversation in a seamless automatic way with the help of sentiment analysis."
 ---
 
 # Sentiment evaluator
 
-The [Sentiment evaluator snap-in](https://devrev.ai/marketplace/sentiment_evaluator_v60lv2iu) lets you get feedback from a customer conversation in a seamless automatic way with the help of sentiment analysis.
+The [Sentiment evaluator snap-in](https://devrev.ai/marketplace/sentiment_evaluator_v60lv2iu) lets you get feedback from a customer [[entities/conversation|conversation]] in a seamless automatic way with the help of sentiment analysis.
 As soon as a customer conversation is resolved, it starts evaluating the texts into five categories: frustrated, unhappy, neutral, happy, or delighted. Additionally, it provides a concise justification for its analysis, empowering customer experience engineers with actionable insights into customer sentiment.
-It works on all platforms like Plug, Slack, or any other medium where customer conversation takes place and provides you with accurate analysis to understand your customers better.
+It works on all platforms like [[glossary/plug|Plug]], Slack, or any other medium where customer conversation takes place and provides you with accurate analysis to understand your customers better.
 
 ## Installation
 
@@ -28,4 +29,4 @@ The feedback from the Sentiment evaluator is only be visible to the users in you
 ![Sentiment evaluator](don:core:dvrv-us-1:devo/0:artifact/4100675)
 
 ## Source
-- DevRev support article [Sentiment evaluator](https://support.devrev.ai/en-US/devrev/article/wzM9KCcx) (ART-21944)
+- DevRev support [[entities/article|article]] [Sentiment evaluator](https://support.devrev.ai/en-US/devrev/article/wzM9KCcx) (ART-21944)

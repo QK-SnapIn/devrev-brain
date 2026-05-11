@@ -11,11 +11,12 @@ wiki_match: glossary/airsync
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['glossary/airsync']
+summary: "Seamlessly import your articles from GitBook to DevRev."
 ---
 
 # GitBook AirSync
 
-Seamlessly import your articles from GitBook to DevRev.
+Seamlessly import your [[entities/article|articles]] from GitBook to DevRev.
 
 ## Supported objects
 
@@ -24,28 +25,28 @@ equivalent. Those marked as **Supported** are eligible for import.
 
 | GitBook object | DevRev object | Sync to DevRev |
 | --- | --- | --- |
-| Collection | Article collection | ✅ |
+| Collection | [[entities/article|Article]] collection | ✅ |
 | Space | Article collection | ✅ |
 | Page | Article | ✅ |
-| User group | Group | ❌ |
+| User [[entities/group|group]] | Group | ❌ |
 | Attachment | Attachment | ❌ |
 
 ## Import from GitBook
 
 Follow the steps below to import from GitBook:
 
-1. In **Marketplace**, search for **GitBook** and install the snap-in.
+1. In **Marketplace**, [[features/search|search]] for **GitBook** and install the snap-in.
 2. In the snap-in config modal, click **Install** then go to **Integrations** >
    **AirSyncs** in your settings left nav.
-3. Click the **AirSync** button and select the GitBook tile in the **Start
+3. Click the **[[glossary/airsync|AirSync]]** button and select the GitBook tile in the **Start
    import** window.
-4. Create a new connection to your GitBook account, or use an existing.
+4. Create a new connection to your GitBook [[entities/account|account]], or use an existing.
    connection if you already have one.While creating the connection, you are required to input a **Subdomain**
    field. This is a mandatory unique identifier used by AirSync to group
    together AirSyncs from the same source system.It is recommended to use the name of the GitBook workspace you want to import
    as the value of **Subdomain**.
 5. Once the connection is established, select the GitBook workspace you want to
-   import, and specify the DevRev part that should be used for any imported work.
+   import, and specify the DevRev [[entities/part|part]] that should be used for any imported work.
    This initiates a bulk import of the selected site.
 6. Click **Map fields** in the import row and configure filters, object mapping,
    or field mapping as necessary.While DevRev attempts to automatically map fields, you may be prompted to

@@ -11,11 +11,12 @@ wiki_match: entities/conversation
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['entities/conversation']
+summary: "Number of conversations where SLA is applied."
 ---
 
 # Conversation-SLA Analytics
 
-* **SLA applied Conversations**
+* **[[features/slas|SLA]] applied [[features/conversations-feature|Conversations]]**
 
   Number of conversations where SLA is applied.
 * **SLA compliance rate**
@@ -39,15 +40,15 @@ related: ['entities/conversation']
 * **SLA breaches w.r.t. Channel**
 
   Number of conversations where SLA was breached for each source channel.
-* **Avg CSAT w.r.t. SLA status**
+* **Avg [[glossary/csat|CSAT]] w.r.t. SLA status**
 
   Average CSAT rating of conversations w.r.t. their SLA status.
 * **Unassigned Conversations with SLA breaches per customer**
 
-  Number of Unassigned Tickets with SLA breaches for each customer.
+  Number of Unassigned [[features/tickets|Tickets]] with SLA breaches for each customer.
 
 ## Related wiki nodes
 - [[entities/conversation]]
 
 ## Source
-- DevRev support article [Conversation-SLA Analytics](https://support.devrev.ai/en-US/devrev/article/jtM1jwyt) (ART-21908)
+- DevRev support [[entities/article|article]] [Conversation-SLA Analytics](https://support.devrev.ai/en-US/devrev/article/jtM1jwyt) (ART-21908)

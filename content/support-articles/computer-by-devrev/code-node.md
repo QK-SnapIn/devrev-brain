@@ -10,22 +10,23 @@ top_category: Computer by DevRev
 wiki_match: entities/incident
 match_score: 0.471
 last_updated: 2026-05-11
+summary: "The Code node is a powerful workflow component that enables you to write and execute custom Python code directly within your DevRev workflows."
 ---
 
 # Code node
 
-The Code node is a powerful workflow component that enables you to write and execute custom Python code directly within your DevRev workflows. It bridges the gap between no-code automation and full programmatic control, giving you the flexibility to implement complex logic, data transformations, and custom business rules without leaving the workflow builder.
+The Code node is a powerful workflow component that enables you to write and execute custom Python code directly within your DevRev [[features/workflows|workflows]]. It bridges the gap between no-code automation and full programmatic control, giving you the flexibility to implement complex logic, data transformations, and custom business rules without leaving the [[features/workflows|workflow builder]].
 
-Use the Code node when native workflow nodes don't provide the flexibility you need.
+Use the Code node when native workflow nodes [[glossary/don|don]]'t provide the flexibility you need.
 
 |  |  |  |
 | --- | --- | --- |
 | **Scenario** | **Operation** | **Example** |
 | Data transformation | Reshape, filter, merge, or restructure data between workflow steps | Convert "tag1,tag2,tag3" into ["tag1", "tag2", "tag3"], or merge first name + last name into a formatted greeting |
-| Complex calculations | Perform math, date arithmetic, or scoring that native nodes can't handle | Calculate SLA deadline by adding business hours to creation time, or compute a priority score from severity × customer tier |
-| Text processing | Extract patterns, clean input, or parse unstructured text | Pull all email addresses from a ticket body using regex, or strip @mentions before sending to an external system |
-| Custom business logic | Implement organization-specific rules that don't fit standard nodes | Route tickets based on a combination of keywords + customer segment + time of day |
-| Dynamic generation | Create computed values on the fly | Generate a reference number like TKT-2024-001234 or build a custom notification message with conditional sections |
+| Complex calculations | Perform math, date arithmetic, or scoring that native nodes can't handle | Calculate [[features/slas|SLA]] deadline by adding business hours to creation time, or compute a priority score from severity × customer tier |
+| Text processing | Extract patterns, clean input, or parse unstructured text | Pull all email addresses from a [[entities/ticket|ticket]] body using regex, or strip @mentions before sending to an external system |
+| Custom business logic | Implement organization-specific rules that don't fit standard nodes | Route [[features/tickets|tickets]] based on a combination of keywords + customer segment + time of day |
+| Dynamic generation | Create computed values on the fly | Generate a reference number like TKT-2024-001234 or [[features/build|build]] a custom notification message with conditional sections |
 
 When a workflow execution reaches a Code node:
 
@@ -390,7 +391,7 @@ def run(input_values):
 
 ### Example 3: Extract and clean text data
 
-Use case: Extract emails and clean text from a conversation message (remove mentions, extract key content)
+Use case: Extract emails and clean text from a [[entities/conversation|conversation]] message (remove mentions, extract key content)
 
 Input values:
 
@@ -475,7 +476,7 @@ Input values:
 
 * customer\_name (string): Customer's name
 * ticket\_id (string): Ticket identifier
-* issue\_summary (string): Brief issue description
+* [[entities/issue|issue]]\_summary (string): Brief issue description
 
 Output values:
 
@@ -619,4 +620,4 @@ def run(input_values):
 * Test with sample data: Verify logic before deploying.
 
 ## Source
-- DevRev support article [Code node](https://support.devrev.ai/en-US/devrev/article/69lsqcvI) (ART-23382)
+- DevRev support [[entities/article|article]] [Code node](https://support.devrev.ai/en-US/devrev/article/69lsqcvI) (ART-23382)

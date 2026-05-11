@@ -11,17 +11,18 @@ wiki_match: entities/ticket
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['entities/ticket']
+summary: "Number of Tickets with SLA breaches divided by number of ticket owners."
 ---
 
 # Ticket-Team Performance
 
 * **Number of Owners**
 
-  Total number of ticket owners.
-* **Avg SLA breaches by Owner**
+  Total number of [[entities/ticket|ticket]] owners.
+* **Avg [[features/slas|SLA]] breaches by Owner**
 
-  Number of Tickets with SLA breaches divided by number of ticket owners.
-* **Average CSAT rating**
+  Number of [[features/tickets|Tickets]] with SLA breaches divided by number of ticket owners.
+* **Average [[glossary/csat|CSAT]] rating**
 
   Average CSAT rating for ticket Owners.
 * **SLA breaches by Customer tier**
@@ -47,4 +48,4 @@ related: ['entities/ticket']
 - [[entities/ticket]]
 
 ## Source
-- DevRev support article [Ticket-Team Performance](https://support.devrev.ai/en-US/devrev/article/KNuxs2PA) (ART-21912)
+- DevRev support [[entities/article|article]] [Ticket-Team Performance](https://support.devrev.ai/en-US/devrev/article/KNuxs2PA) (ART-21912)

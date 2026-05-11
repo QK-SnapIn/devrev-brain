@@ -10,11 +10,12 @@ top_category: Snap-ins
 wiki_match: entities/issue
 match_score: 0.375
 last_updated: 2026-05-11
+summary: "The Spam Shield snap-in checks for spam from users."
 ---
 
 # Spam Shield
 
-The Spam Shield snap-in checks for spam from users. This snap-in marks or suggests conversations, tickets, and contacts as spam. It analyzes the first customer message and determines whether a ticket or conversation is spam. It uses advanced algorithms to identify patterns indicative of spam content, ensuring that customer support teams can focus their efforts on genuine customer interactions.
+The Spam Shield snap-in checks for spam from users. This snap-in marks or suggests [[features/conversations-feature|conversations]], [[features/tickets|tickets]], and contacts as spam. It analyzes the first customer message and determines whether a [[entities/ticket|ticket]] or [[entities/conversation|conversation]] is spam. It uses advanced algorithms to identify patterns indicative of spam content, ensuring that customer support teams can focus their efforts on genuine customer interactions.
 
 For more information, refer to the [Spam Shield snap-in](https://marketplace.devrev.ai/spam-snap) on the DevRev marketplace.
 
@@ -36,4 +37,4 @@ Click **Install snap-in** to deploy the snap-in.
 ![spam shield](don:core:dvrv-us-1:devo/0:artifact/4100749)
 
 ## Source
-- DevRev support article [Spam Shield](https://support.devrev.ai/en-US/devrev/article/LAK75G01) (ART-21953)
+- DevRev support [[entities/article|article]] [Spam Shield](https://support.devrev.ai/en-US/devrev/article/LAK75G01) (ART-21953)

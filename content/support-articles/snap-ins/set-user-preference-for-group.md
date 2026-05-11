@@ -11,11 +11,12 @@ wiki_match: entities/group
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['entities/group']
+summary: "The Set user preference for group snap-in sets the status of users within a group to either active or away."
 ---
 
 # Set user preference for group
 
-The [Set user preference for group](https://marketplace.devrev.ai/marketplace/set-user-preference) snap-in sets the status of users within a group to either active or away. This operation is available in the Workflow Builder after the snap-in is activated, allowing efficient management of user preferences.
+The [Set user preference for group](https://marketplace.devrev.ai/marketplace/set-user-preference) snap-in sets the status of users within a [[entities/group|group]] to either active or away. This operation is available in the [[features/workflows|Workflow Builder]] after the snap-in is activated, allowing efficient management of user preferences.
 
 ## Installing the Set user preference for group
 
@@ -28,4 +29,4 @@ The [Set user preference for group](https://marketplace.devrev.ai/marketplace/se
 - [[entities/group]]
 
 ## Source
-- DevRev support article [Set user preference for group](https://support.devrev.ai/en-US/devrev/article/yk5Vj8U0) (ART-21950)
+- DevRev support [[entities/article|article]] [Set user preference for group](https://support.devrev.ai/en-US/devrev/article/yk5Vj8U0) (ART-21950)

@@ -11,17 +11,18 @@ wiki_match: entities/account
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['entities/account']
+summary: "You can upload and manage accounts and contacts by importing data from CSV files."
 ---
 
 # Account and contact import
 
-You can upload and manage accounts and contacts by importing data from CSV files.
+You can upload and manage [[features/accounts|accounts]] and contacts by importing data from CSV files.
 
 ![CSV upload](don:core:dvrv-us-1:devo/0:artifact/4100327)
 
 ## Import data
 
-1. Go to the top-right corner of the **Accounts and Contacts** vista and click the ⚡ button.
+1. Go to the top-right corner of the **Accounts and Contacts** [[glossary/vista|vista]] and click the ⚡ button.
 2. Click **Download sample CSV**. The sample CSV file includes all the necessary headers and sample values supported by DevRev.
 3. Open the downloaded sample CSV file. Fill in the required headers and values as specified in the sample CSV.
 
@@ -42,7 +43,7 @@ To ensure a successful import, certain fields are required.
 **Accounts**:
 
 * `display_name`
-* `external_refs` (a unique identifier for the account, such as the company's website domain.)
+* `external_refs` (a unique identifier for the [[entities/account|account]], such as the company's website domain.)
 
 **Contacts:**
 
@@ -86,4 +87,4 @@ The following table describes the errors you may encounter during import and how
 - [[entities/account]]
 
 ## Source
-- DevRev support article [Account and contact import](https://support.devrev.ai/en-US/devrev/article/Ni6_K6iY) (ART-21882)
+- DevRev support [[entities/article|article]] [Account and contact import](https://support.devrev.ai/en-US/devrev/article/Ni6_K6iY) (ART-21882)

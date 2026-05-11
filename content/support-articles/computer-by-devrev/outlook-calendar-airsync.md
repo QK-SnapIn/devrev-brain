@@ -11,6 +11,7 @@ wiki_match: glossary/airsync
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['glossary/airsync']
+summary: "The following is a list of Outlook Calendar objects and their corresponding DevRev equivalents."
 ---
 
 # Outlook Calendar AirSync
@@ -21,25 +22,25 @@ The following is a list of Outlook Calendar objects and their corresponding DevR
 
 | **Outlook Calendar Object** | **DevRev Object** | **Sync to DevRev** |
 | --- | --- | --- |
-| Calendar Events | Meetings | ✅ |
+| Calendar Events | [[entities/meeting|Meetings]] | ✅ |
 | Attendees/Contacts | Contacts/DevUsers | ✅ |
 | Categories | Tags | ✅ |
 | Attachments & Transcripts | Attachments | ✅ |
 
- **Note:** Teams meeting transcripts are only available if meetings are recorded with transcription enabled and the organization has Teams Premium licensing.
+ **Note:** Teams [[entities/meeting|meeting]] transcripts are only available if meetings are recorded with transcription enabled and the organization has Teams Premium licensing.
 
 ## Import from Outlook calendar
 
 Follow the steps below to import from Outlook Calendar:
 
-1. Go to the **Marketplace**, search for **Outlook Calendar** in the **Import** category, and install.
+1. Go to the **Marketplace**, [[features/search|search]] for **Outlook Calendar** in the **Import** category, and install.
 2. Go to the **Import** section in your settings left nav.
 3. Click **+Import** and select the **Outlook Calendar** logo.
 4. Choose **Outlook Calendar** in the **Select Connection** dropdown.- If a connection already exists, you can reuse it; otherwise, click **Add Connection**.
-   - Click **Sign in with snap-in** (with the Outlook icon) in the connection modal, enter a connection name, and proceed to authorise via your Microsoft account using OAuth 2.0.
-   - **Admin Consent for Sensitive Scopes:** The application requests sensitive permissions (such as reading meeting transcripts, recordings, and files). An organisation administrator **must** check the box to **Consent on behalf of your organisation** in the Microsoft permission dialog. **Note:** Admin consent is mandatory for sensitive scopes. Once the admin authorizes these for the whole organization, individual users can subsequently consent to non-sensitive scopes for their own accounts.
+   - Click **Sign in with snap-in** (with the Outlook icon) in the connection modal, enter a connection name, and proceed to authorise via your Microsoft [[entities/account|account]] using OAuth 2.0.
+   - **Admin Consent for Sensitive Scopes:** The application requests sensitive permissions (such as reading meeting transcripts, recordings, and files). An organisation administrator **must** check the box to **Consent on behalf of your organisation** in the Microsoft permission dialog. **Note:** Admin consent is mandatory for sensitive scopes. Once the admin authorizes these for the whole organization, individual users can subsequently consent to non-sensitive scopes for their own [[features/accounts|accounts]].
    - Click **Accept** to complete the setup.
-5. Select the calendars you want to import and specify the DevRev part where imported events should reside, after the connection is established. This initiates a bulk import.
+5. Select the calendars you want to import and specify the DevRev [[entities/part|part]] where imported events should reside, after the connection is established. This initiates a bulk import.
 6. Review the automatic field mapping from Outlook Calendar to corresponding DevRev fields.
 
 The import time depends on calendar size and number of events and could range from seconds to several minutes.
@@ -50,7 +51,7 @@ The Outlook Calendar integration provides configuration options to control what 
 
 **Organization-level settings:**
 
-- **internal_domains** - List of internal email domains. Emails with these domains are considered internal and are used to distinguish Dev Users and Rev Users.
+- **internal_domains** - List of internal email domains. Emails with these domains are considered internal and are used to distinguish [[entities/dev-user|Dev Users]] and [[entities/rev-user|Rev Users]].
 - **skip_events_with_emails** - Comma-separated list of email addresses. No meetings are created in DevRev for events where these emails appear as attendees, organisers, or creators.
 
 **User-level settings:**
@@ -69,4 +70,4 @@ The Outlook Calendar integration provides configuration options to control what 
 - [[glossary/airsync]]
 
 ## Source
-- DevRev support article [Outlook Calendar AirSync](https://support.devrev.ai/en-US/devrev/article/UHvBBKVn) (ART-22150)
+- DevRev support [[entities/article|article]] [Outlook Calendar AirSync](https://support.devrev.ai/en-US/devrev/article/UHvBBKVn) (ART-22150)

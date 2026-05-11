@@ -10,11 +10,12 @@ top_category: Computer by DevRev
 wiki_match: entities/article
 match_score: 0.471
 last_updated: 2026-05-11
+summary: "The board view transforms your work items into visual cards organized in columns and rows, replacing the need to scroll through long lists or switch between multiple tabs."
 ---
 
 # Board view
 
-The board view transforms your work items into visual cards organized in columns and rows, replacing the need to scroll through long lists or switch between multiple tabs. It helps teams visualize their workflow, limit work in progress, and manage work items through different stages of completion. It's particularly valuable for process-oriented workflows, such as moving tickets through support stages, tracking issues from development to deployment, or managing sales opportunities through pipeline stages.
+The board view transforms your work items into visual cards organized in columns and rows, replacing the need to scroll through long lists or switch between multiple tabs. It helps teams visualize their workflow, limit work in progress, and manage work items through different stages of completion. It's particularly valuable for process-oriented [[features/workflows|workflows]], such as moving [[features/tickets|tickets]] through support stages, tracking [[features/issues|issues]] from development to deployment, or managing sales [[entities/opportunity|opportunities]] through pipeline stages.
 
 ## How to use it
 
@@ -52,10 +53,10 @@ The board view transforms your work items into visual cards organized in columns
 
 ## Best practices
 
-* **Optimal Setup**: Use Stage or Status as your primary column grouping since these represent natural workflow progression. Reserve swimlanes for secondary attributes like Owner, Priority, or Part when you need to see distribution across multiple dimensions.
+* **Optimal Setup**: Use Stage or Status as your primary column grouping since these represent natural workflow progression. Reserve swimlanes for secondary attributes like Owner, Priority, or [[entities/part|Part]] when you need to see distribution across multiple dimensions.
 * **Card Management**: Keep card fields to essential information only—too many fields make cards cluttered and hard to scan. Include ID, Title, Owner, and one status indicator as your baseline.
 * **Performance Considerations**: For large datasets with 500+ items, apply filters before switching to board view to maintain responsiveness.
 * **Column management:** Hide empty columns to reduce visual clutter when working with sparse data distributions.
 
 ## Source
-- DevRev support article [Board view](https://support.devrev.ai/en-US/devrev/article/KcmqnIJG) (ART-21900)
+- DevRev support [[entities/article|article]] [Board view](https://support.devrev.ai/en-US/devrev/article/KcmqnIJG) (ART-21900)

@@ -10,12 +10,13 @@ top_category: Snap-ins
 wiki_match: flows/workflow-builder-crud
 match_score: 0.578
 last_updated: 2026-05-11
+summary: "Work duration offers the ability to track how much work issues and tickets took to complete, measured by time spent in work sessions."
 ---
 
 # Work duration
 
 [Work duration](https://devrev.ai/marketplace/work-duration) offers the ability
-to track how much work issues and tickets took to complete, measured by time
+to track how much work [[features/issues|issues]] and [[features/tickets|tickets]] took to complete, measured by time
 spent in work sessions.
 
 The snap-in adds a new attribute to tickets and issues which automatically
@@ -32,4 +33,4 @@ hours or days.
 3. Click **Install snap-in**.
 
 ## Source
-- DevRev support article [Work duration](https://support.devrev.ai/en-US/devrev/article/NqsPxxwq) (ART-21963)
+- DevRev support [[entities/article|article]] [Work duration](https://support.devrev.ai/en-US/devrev/article/NqsPxxwq) (ART-21963)

@@ -11,11 +11,12 @@ wiki_match: glossary/airsync
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['glossary/airsync']
+summary: "The Google Drive AirSync simplifies migration from Google Drive to DevRev, supporting both one-time imports and ongoing syncs."
 ---
 
 # Google Drive AirSync
 
-The Google Drive AirSync simplifies migration from Google Drive to DevRev, supporting both one-time imports and ongoing syncs.
+The Google Drive [[glossary/airsync|AirSync]] simplifies migration from Google Drive to DevRev, supporting both one-time imports and ongoing syncs.
 
 ## Supported objects
 
@@ -23,14 +24,14 @@ The following is a list of Google Drive objects and their corresponding DevRev e
 
 | Google Drive object | DevRev object | Sync to DevRev |
 | --- | --- | --- |
-| Document | Article (Attachment) | ✅ |
+| Document | [[entities/article|Article]] (Attachment) | ✅ |
 | User | DevUser | ✅ |
-| Group | Group | ✅ |
+| [[entities/group|Group]] | Group | ✅ |
 | Group Members | Group Members | ✅ |
 
 ## Supported document types
 
-The Google Drive AirSync supports importing the following document types as attachments to DevRev Articles:
+The Google Drive AirSync supports importing the following document types as attachments to DevRev [[entities/article|Articles]]:
 
 - Google Docs (docs, sheets, slides)
 - Microsoft Docs (.docx, .doc, .pptx, .xlsx)
@@ -43,17 +44,17 @@ The Google Drive AirSync supports importing the following document types as atta
 
 Follow the steps below to import from Google Drive:
 
-1. Go to the **Marketplace** and search for **Google Drive** in the **Import** category and install.
+1. Go to the **Marketplace** and [[features/search|search]] for **Google Drive** in the **Import** category and install.
 2. In the snap-in config modal, click **Install**.
 3. Go to the **Import** section in your settings left nav.
 4. Click **+Import** and select the Google Drive logo.
-5. Create a new connection to your Google account, or use an existing connection if you already have one.You are required to use an admin connection first. So it imports all the users, groups with members successfully.
-6. Once the connection is established, select the Google Drive you want to import and specify the DevRev part that should be used for any imported work (future releases make use of this). This initiates a bulk import of the selected drive.
+5. Create a new connection to your Google [[entities/account|account]], or use an existing connection if you already have one.You are required to use an admin connection first. So it imports all the users, [[entities/group|groups]] with members successfully.
+6. Once the connection is established, select the Google Drive you want to import and specify the DevRev [[entities/part|part]] that should be used for any imported work (future releases make use of this). This initiates a bulk import of the selected drive.
 7. DevRev makes an effort to automatically map the fields from Google Drive to the corresponding fields in DevRev. However, you may be prompted to manually map certain fields if needed.
 
 The duration of the import depends on the size of the Google Drive and the data being imported. It can take seconds for an account with only a few dozen documents to a few hours for an account with tens of thousands of documents.
 
-For a Google file to be imported into the knowledge base with AirSync, it must have **Can find in search results** in the sharing settings.
+For a Google file to be imported into the [[features/knowledge-base|knowledge base]] with AirSync, it must have **Can find in search results** in the sharing settings.
 
 ![Google sharing settings](don:core:dvrv-us-1:devo/0:artifact/4100957)
 

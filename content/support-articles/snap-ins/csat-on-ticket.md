@@ -11,15 +11,16 @@ wiki_match: entities/ticket
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['entities/ticket']
+summary: "CSAT on ticket offers a simplified approach to measure customer satisfaction level for the ticket resolved with the help of surveys which can be utilized to enhance the overall customer experience."
 ---
 
 # CSAT on ticket
 
-[CSAT on ticket](https://devrev.ai/marketplace/csat_on_ticket_dwx7b2bp) offers a simplified approach to measure customer satisfaction level for the ticket resolved with the help of surveys which can be utilized to enhance the overall customer experience.
+[CSAT on ticket](https://devrev.ai/marketplace/csat_on_ticket_dwx7b2bp) offers a simplified approach to measure customer satisfaction level for the [[entities/ticket|ticket]] resolved with the help of surveys which can be utilized to enhance the overall customer experience.
 
 This snap-in displays a customer satisfaction survey to customers after their ticket gets resolved. The questions can be customized to align with their requirements.
 
-To manually request CSAT feedback without having to wait until the ticket is resolved, use the `/survey` command in **Tickets** > **Customer messages**.
+To manually request [[glossary/csat|CSAT]] feedback without having to wait until the ticket is resolved, use the `/survey` command in **[[features/tickets|Tickets]]** > **Customer messages**.
 
 ## Installation
 
@@ -61,4 +62,4 @@ To manually request CSAT feedback without having to wait until the ticket is res
 - [[entities/ticket]]
 
 ## Source
-- DevRev support article [CSAT on ticket](https://support.devrev.ai/en-US/devrev/article/iaG7eVAQ) (ART-21934)
+- DevRev support [[entities/article|article]] [CSAT on ticket](https://support.devrev.ai/en-US/devrev/article/iaG7eVAQ) (ART-21934)

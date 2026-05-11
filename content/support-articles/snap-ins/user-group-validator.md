@@ -11,18 +11,19 @@ wiki_match: entities/group
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['entities/group']
+summary: "The user group validator snap-in provides an operation to check if a given user is a member of a specified group in DevRev."
 ---
 
 # User group validator
 
-The user group validator snap-in provides an operation to check if a given user is a member of a specified group in DevRev. It is designed for use within the DevRev workflow builder and requires the user ID and group ID as input.
+The user [[entities/group|group]] validator snap-in provides an operation to check if a given user is a member of a specified group in DevRev. It is designed for use within the DevRev [[features/workflows|workflow builder]] and requires the user ID and group ID as input.
 
 For more information, refer to the [User group validator snap-in](https://marketplace.devrev.ai/user-group-validator) on the DevRev marketplace.
 
 ## Features
 
 * **Group membership validation**: Verify if a user belongs to a specific group
-* **Workflow integration**: Integrate user validation in your automated workflows
+* **Workflow integration**: Integrate user validation in your automated [[features/workflows|workflows]]
 * **Real-time verification**: Get instant validation results for access control decisions
 
 ## Installation
@@ -42,4 +43,4 @@ For more information, refer to the [User group validator snap-in](https://market
 - [[entities/group]]
 
 ## Source
-- DevRev support article [User group validator](https://support.devrev.ai/en-US/devrev/article/ZopEMXVg) (ART-21962)
+- DevRev support [[entities/article|article]] [User group validator](https://support.devrev.ai/en-US/devrev/article/ZopEMXVg) (ART-21962)
