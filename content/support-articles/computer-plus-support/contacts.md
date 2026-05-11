@@ -39,7 +39,7 @@ You can create a contact using DevRev's `rev-users.create` API. Follow the [Crea
 
 To bulk import customer records, see [[support-articles/computer-plus-support/account-and-contact-import|Account and contact import]].
 
-You can also use [AirSync]([[support-articles/computer-by-devrev/airsync-overview|AirSync overview]]#contact-deduplication) to migrate your customer contacts from various platforms such as HubSpot, Salesforce, Zendesk, Jira, Linear, ServiceNow, and more.
+You can also use [[support-articles/computer-by-devrev/airsync-overview#contact-deduplication|AirSync]] to migrate your customer contacts from various platforms such as HubSpot, Salesforce, Zendesk, Jira, Linear, ServiceNow, and more.
 
 Customer records offer a place to do the following:
 

@@ -34,7 +34,7 @@ You can create accounts in the following ways:
 
 To bulk import accounts, see [[support-articles/computer-plus-support/account-and-contact-import|Account and contact import]].
 
-You can also use [AirSync]([[support-articles/computer-by-devrev/airsync-overview|AirSync overview]]#account-deduplication) to migrate your accounts from various platforms such as HubSpot, Salesforce, Zendesk, Jira, Linear, ServiceNow, and more.
+You can also use [[support-articles/computer-by-devrev/airsync-overview#account-deduplication|AirSync]] to migrate your accounts from various platforms such as HubSpot, Salesforce, Zendesk, Jira, Linear, ServiceNow, and more.
 
 ### Using DevRev APIs
 

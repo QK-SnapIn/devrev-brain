@@ -29,12 +29,12 @@ Here's how objects and subtypes work in DevRev:
 
 Object customization is available only for the following:
 
-* [Issues]([[support-articles/computer-plus-build/issues|Issues]]#attributes)
-* [Tickets]([[support-articles/computer-plus-support/tickets|Tickets]]#attributes)
+* [[support-articles/computer-plus-build/issues#attributes|Issues]]
+* [[support-articles/computer-plus-support/tickets#attributes|Tickets]]
 * [Opportunity](https://support.devrev.ai/devrev/article/ART-21830#opportunity-attributes)
 * [Account](https://support.devrev.ai/devrev/article/ART-21830#account-attributes)
 * [Contact](https://support.devrev.ai/devrev/article/ART-21830#contact-attributes)
-* [Parts]([[support-articles/computer-by-devrev/parts-trails|Parts & trails]]#attributes)
+* [[support-articles/computer-by-devrev/parts-trails#attributes|Parts]]
 
 Adding custom fields can be done by workspace admins only. Members of your organization can only view the custom fields and subtypes.
 

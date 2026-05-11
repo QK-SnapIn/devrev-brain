@@ -47,7 +47,7 @@ You can associate GitLab commits, branches, and pull requests with the issues th
 
 You can associate commits with their corresponding issue by either of these methods:
 
-* Including one or more [issue IDs]([[support-articles/snap-ins/gitlab|GitLab]]#work-formats) anywhere in the commit message.
+* Including one or more [[support-articles/snap-ins/gitlab#work-formats|issue IDs]] anywhere in the commit message.
 
   + For example: `Fix: paging issue (issue:123)`
   + For example: `Disable routing table ISS-123 and default to zero ISS-231`

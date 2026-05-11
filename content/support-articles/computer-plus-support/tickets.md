@@ -54,7 +54,7 @@ Shadow users can also be subscribers and email members.
 
 * **CCed members in email**: The CCed members in emails will be added to reporters if they are contacts in the workspace to which the ticket belongs. They will be added to email members if they are part of the ongoing email thread, without any workspace restriction.
 * **Shadow users**: Users created for tracking and record-keeping purposes that do not have access to the DevRev app. Shadow users are typically created when AirSync imports data from external sources and identifies users without an email address. Tools like AirSync can assign work and attribute comments and actions to them. AirSync can also create **Unassigned** users that serve the same purpose but do have emails.
-  Shadow users are considered users (members of the DevRev organization) rather than contacts, although they have no access to the platform. For more information, refer to the [import docs]([[support-articles/computer-by-devrev/airsync-overview|AirSync overview]]#dev-user-deduplication).
+  Shadow users are considered users (members of the DevRev organization) rather than contacts, although they have no access to the platform. For more information, refer to the [[support-articles/computer-by-devrev/airsync-overview#dev-user-deduplication|import docs]].
 * **Close date**: The date the ticket was closed.
 * **Source channel**: The channel through which the ticket was created. Customers can create tickets via email, the portal, and various other channels.
 * **Channel**: Indicates the medium used for customer communication.

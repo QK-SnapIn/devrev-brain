@@ -37,9 +37,9 @@ You need to create a mapping between the tickets and issues/enhancement stages s
 
    Refer to the default stages documentation for each product feature:
 
-   * [Issue stages]([[support-articles/computer-plus-build/issues|Issues]]#stages)
-   * [Ticket stages]([[support-articles/computer-plus-support/tickets|Tickets]]#stages)
-   * [Enhancement stages]([[support-articles/computer-plus-build/enhancements|Enhancements]]#stages)
+   * [[support-articles/computer-plus-build/issues#stages|Issue stages]]
+   * [[support-articles/computer-plus-support/tickets#stages|Ticket stages]]
+   * [[support-articles/computer-plus-build/enhancements#stages|Enhancement stages]]
 
 You can only create either ticket-issue mapping or ticket-enhancement mapping in a single CSV file.
 

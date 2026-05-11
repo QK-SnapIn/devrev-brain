@@ -158,7 +158,7 @@ To delete an import and all the content it created, go to [**Settings** > **Inte
 The following is a list of AirSync Jira Service Management scopes and
 limitations to keep in mind when performing a Jira Service Management AirSync.
 In addition to these Jira-specific limitations, there are also some generic
-[AirSync scopes and limitations]([[support-articles/computer-by-devrev/airsync-overview|AirSync overview]]#airsync-scope-and-limitations).
+[[support-articles/computer-by-devrev/airsync-overview#airsync-scope-and-limitations|AirSync scopes and limitations]].
 
 ### Attachments
 
@@ -181,7 +181,7 @@ In addition to these Jira-specific limitations, there are also some generic
   Management must be a site admin or the organization admin for AirSync to be
   able to collect the email addresses of users. Otherwise, Jira users are
   collected but they are created with generated email addresses. The DevRev
-  admin can [merge the user accounts manually]([[support-articles/computer-by-devrev/airsync-overview|AirSync overview]]#manual-dev-user-merging).
+  admin can [[support-articles/computer-by-devrev/airsync-overview#manual-dev-user-merging|merge the user accounts manually]].
 
 ## Related wiki nodes
 - [[glossary/airsync]]

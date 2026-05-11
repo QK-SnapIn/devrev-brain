@@ -90,7 +90,7 @@ After a DevRev work item has been marked for syncing, it's created in the specif
 
 ## AirSync Salesforce scope and limitations
 
-The following is a list of AirSync Salesforce scopes and limitations to keep in mind when performing a Salesforce AirSync. In addition to these Salesforce-specific limitations, there are also some generic [AirSync scopes and limitations]([[support-articles/computer-by-devrev/airsync-overview|AirSync overview]]#airsync-scope-and-limitations).
+The following is a list of AirSync Salesforce scopes and limitations to keep in mind when performing a Salesforce AirSync. In addition to these Salesforce-specific limitations, there are also some generic [[support-articles/computer-by-devrev/airsync-overview#airsync-scope-and-limitations|AirSync scopes and limitations]].
 
 ### Comments
 
