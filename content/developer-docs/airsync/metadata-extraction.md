@@ -269,7 +269,7 @@ The supported types are:
 * `int`
 * `float`
 * `text`: Interpreted as plain text.
-* `rich_text`: Formatted text with mentions and images. See the [rich text section](/airsync/data-model/rich-text-fields) for more details.
+* `rich_text`: Formatted text with mentions and images. See the [rich text section](https://developer.devrev.ai/airsync/data-model/rich-text-fields) for more details.
 * `reference`: IDs referring to another record. References have to declare what they can refer
   to, which can be one or more record types (`#record:`) or categories (`#category:`).
 * `typed_reference`: Like `reference`, but requires each referenced ID in the extracted data to include its record type. Use this when a field can point to multiple record types and the type must be determined per-record at extraction time (for example, an `assignee` field that can reference either a `user` or a `team`).
@@ -277,10 +277,10 @@ The supported types are:
 * `date`
 * `timestamp`
 * `struct`
-* `permission`: Used in article `shared_with` field. See the [permissions section](/airsync/data-model/permissions) for more details.
-* `record_type_privilege`: Used to map record-type level permissions. See the [permissions section](/airsync/data-model/permissions) for more details.
-* `field_type_privilege`: Used to map field-level permissions. See the [permissions section](/airsync/data-model/permissions) for more details.
-* `conditional_privilege`: Used to map conditional permissions. See the [permissions section](/airsync/data-model/permissions) for more details.
+* `permission`: Used in article `shared_with` field. See the [permissions section](https://developer.devrev.ai/airsync/data-model/permissions) for more details.
+* `record_type_privilege`: Used to map record-type level permissions. See the [permissions section](https://developer.devrev.ai/airsync/data-model/permissions) for more details.
+* `field_type_privilege`: Used to map field-level permissions. See the [permissions section](https://developer.devrev.ai/airsync/data-model/permissions) for more details.
+* `conditional_privilege`: Used to map conditional permissions. See the [permissions section](https://developer.devrev.ai/airsync/data-model/permissions) for more details.
 
 Refer to the metadata schema file (`external_domain_metadata_schema.json`) to help choose the appropriate type for your fields.
 

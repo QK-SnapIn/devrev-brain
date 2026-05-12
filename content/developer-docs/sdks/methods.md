@@ -218,7 +218,7 @@ var properties = {
 window.plugSDK.trackEvent("signed_up",properties)
 ```
 
-To learn more about tracking events, visit [Track events](/sdks/web/track-events).
+To learn more about tracking events, visit [Track events](https://developer.devrev.ai/sdks/web/track-events).
 
 ## [Restart session recording](#restart-session-recording)
 

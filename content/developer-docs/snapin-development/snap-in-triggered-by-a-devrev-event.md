@@ -17,7 +17,7 @@ Tutorials
 
 ## [Introduction](#introduction)
 
-In this tutorial, you'll learn to create a dynamic snap-in that responds to both DevRev Webhook events triggered by the creation of a [work](https://support.devrev.ai/devrev/article/ART-21847) and specialized [command](/snapin-development/references/commands) within DevRev.
+In this tutorial, you'll learn to create a dynamic snap-in that responds to both DevRev Webhook events triggered by the creation of a [work](https://support.devrev.ai/devrev/article/ART-21847) and specialized [command](https://developer.devrev.ai/snapin-development/references/commands) within DevRev.
 
 The focus is on the process of working with the payload associated with these events. The objective is to adeptly extract pertinent fields from the payload within the defined functions, subsequently executing a well-defined action. This action involves the addition of a comment to the object timeline, a feature that can be conveniently customized.
 
@@ -40,7 +40,7 @@ To learn more, refer to the [Using a snap-in to perform a DevRev action](https:/
 * Install [jq](https://stedolan.github.io/jq)
 * Install [DevRev SDK](https://www.npmjs.com/package/@devrev/typescript-sdk?activeTab=readme)
 
-If you did not follow the [getting started](/snapin-development/tutorials/getting-started) tutorial then follow these steps to authenticate and initialize the snap-in TypeScript template:
+If you did not follow the [getting started](https://developer.devrev.ai/snapin-development/tutorials/getting-started) tutorial then follow these steps to authenticate and initialize the snap-in TypeScript template:
 
 ```
 devrev profiles authenticate -o <dev-org-slug> -u <youremail@yourdomain.com>
@@ -88,7 +88,7 @@ service_account:
 
 ### [Event source](#event-source)
 
-Following the manifest update, the next step is to incorporate the [event source](/snapin-development/references/event-sources).
+Following the manifest update, the next step is to incorporate the [event source](https://developer.devrev.ai/snapin-development/references/event-sources).
 For this scenario, events from DevRev are essential. Therefore, an event source
 of type `devrev-webhook` is added. In the configuration, the event type is
 specified as `work_created`.
@@ -183,7 +183,7 @@ automations:
 
 ### [Commands](#commands)
 
-To accommodate the additional trigger, a [command](/snapin-development/references/commands) must be defined within the
+To accommodate the additional trigger, a [command](https://developer.devrev.ai/snapin-development/references/commands) must be defined within the
 manifest file:
 
 ```

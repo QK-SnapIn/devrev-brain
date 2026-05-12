@@ -24,7 +24,7 @@ There are several reasons why some mappings might be unavailable:
 
 1. A common reason is mismatch of types. For example, if a DevRev field is expected to be `rich_text`,
    but the field is set as `text` mapping to some fields is unavailable.
-   Refer to the [supported types](/airsync/metadata-extraction#declare-fields-for-each-record-type)
+   Refer to the [supported types](https://developer.devrev.ai/airsync/metadata-extraction#declare-fields-for-each-record-type)
    section and the general DevRev documentation for more information.
 2. Only references can be mapped to references. Ensure that source system fields are correctly
    mapped to reference fields in DevRev.

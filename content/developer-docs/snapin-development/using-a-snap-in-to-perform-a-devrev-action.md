@@ -21,7 +21,7 @@ The objective is to build a snap-in that creates a new ticket every 10 minutes.
 
 ## [Background context](#background-context)
 
-The [Getting Started](/snapin-development/tutorials/getting-started) tutorial creates a hello-world snap-in which prints a log message when a work item is created.
+The [Getting Started](https://developer.devrev.ai/snapin-development/tutorials/getting-started) tutorial creates a hello-world snap-in which prints a log message when a work item is created.
 This tutorial makes the following changes to the snap-in:
 
 1. Update the trigger condition to run every 10 minutes instead of work
@@ -44,7 +44,7 @@ since it provides additional types and helper methods which ease development.
 * Install [jq](https://stedolan.github.io/jq)
 * Install [DevRev SDK](https://www.npmjs.com/package/@devrev/typescript-sdk?activeTab=readme)
 
-If you did not follow the [getting started](/snapin-development/tutorials/getting-started) tutorial then follow these steps to authenticate and initialize the snap-in TypeScript template:
+If you did not follow the [getting started](https://developer.devrev.ai/snapin-development/tutorials/getting-started) tutorial then follow these steps to authenticate and initialize the snap-in TypeScript template:
 
 ```
 devrev profiles authenticate -o <dev-org-slug> -u <youremail@yourdomain.com>
@@ -57,8 +57,8 @@ devrev snap_in_version init
 #### [Trigger](#trigger)
 
 The trigger condition for the snap-in is dictated by the
-[Event Sources](/snapin-development/references/event-sources)
-section in the manifest. The [`timer-events`](/snapin-development/references/event-sources#timer-based-event-sources)
+[Event Sources](https://developer.devrev.ai/snapin-development/references/event-sources)
+section in the manifest. The [`timer-events`](https://developer.devrev.ai/snapin-development/references/event-sources#timer-based-event-sources)
 event source is suitable for the use-case, since it allows trigger of snap-ins
 using [CRON expression](https://crontab.guru/).
 
@@ -93,7 +93,7 @@ service_account:
 Next, update the `event_sources` section to use the `timer-events` event source.
 The `timer-events` source type takes a `config` of type `cron` or
 `interval_seconds` as mentioned in the
-[documentation](/snapin-development/references/event-sources#timer-based-event-sources).
+[documentation](https://developer.devrev.ai/snapin-development/references/event-sources#timer-based-event-sources).
 The `cron` config is used here.
 
 manifest.yaml
@@ -271,7 +271,7 @@ Always remember to build and package the snap-in whenever there are code changes
 and it needs to be re-deployed.
 
 Steps for deploying this snap-in have been discussed in the
-[Getting Started](/snapin-development/tutorials/getting-started) section.
+[Getting Started](https://developer.devrev.ai/snapin-development/tutorials/getting-started) section.
 
 ## [Resources](#resources)
 

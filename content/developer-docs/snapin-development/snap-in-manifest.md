@@ -154,7 +154,7 @@ Event sources can be categorized as "organization" level and "user" level. Event
           type: <An enum specifying the type of source to create.>
 ```
 
-Refer to [Event sources](/snapin-development/references/event-sources) for a checklist of supported event sources and their corresponding event types.
+Refer to [Event sources](https://developer.devrev.ai/snapin-development/references/event-sources) for a checklist of supported event sources and their corresponding event types.
 
 Refer to the webhook event-request example for a list of supported webhooks:
 

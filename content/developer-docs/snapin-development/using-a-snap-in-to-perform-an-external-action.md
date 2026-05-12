@@ -32,7 +32,7 @@ In this tutorial, you learn how to develop a snap-in that mirrors an issue from 
 3. **Command creation and utilization in DevRev:**
 
    * Gain proficiency in creating and using
-     [commands](/snapin-development/references/commands) in DevRev.
+     [commands](https://developer.devrev.ai/snapin-development/references/commands) in DevRev.
 
 ### [Installation guide](#installation-guide)
 
@@ -40,7 +40,7 @@ In this tutorial, you learn how to develop a snap-in that mirrors an issue from 
 * Install [jq](https://stedolan.github.io/jq).
 * Install [DevRev SDK](https://www.npmjs.com/package/@devrev/typescript-sdk?activeTab=readme)
 
-If you did not follow the [getting started](/snapin-development/tutorials/getting-started) tutorial then follow these steps to authenticate and initialize the snap-in TypeScript template:
+If you did not follow the [getting started](https://developer.devrev.ai/snapin-development/tutorials/getting-started) tutorial then follow these steps to authenticate and initialize the snap-in TypeScript template:
 
 ```
 devrev profiles authenticate -o <dev-org-slug> -u <youremail@yourdomain.com>

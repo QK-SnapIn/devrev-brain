@@ -15,7 +15,7 @@ Data model
 
 # Permissions import example
 
-This represents an example of how you can extract and map permissions using the [Authorization policy object](/airsync/data-model/permissions#authorization-policy).
+This represents an example of how you can extract and map permissions using the [Authorization policy object](https://developer.devrev.ai/airsync/data-model/permissions#authorization-policy).
 
 ## [External domain metadata definition](#external-domain-metadata-definition)
 

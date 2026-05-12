@@ -73,7 +73,7 @@ and article links must map to articles.
 ### [Managing permissions](#managing-permissions)
 
 Article permissions are managed through the `shared_with` field, which can reference users, groups, and platform groups.
-Refer to the [permissions](/airsync/data-model/permissions) for more details.
+Refer to the [permissions](https://developer.devrev.ai/airsync/data-model/permissions) for more details.
 
 ### [Inline attachments](#inline-attachments)
 

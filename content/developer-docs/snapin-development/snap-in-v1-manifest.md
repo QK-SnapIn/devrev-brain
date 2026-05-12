@@ -15,7 +15,7 @@ References
 
 # Snap-in V1 manifest
 
-The following guide is for the version 1 of the manifest spec. For the latest version, refer to [Manifest](/snapin-development/references/manifest).
+The following guide is for the version 1 of the manifest spec. For the latest version, refer to [Manifest](https://developer.devrev.ai/snapin-development/references/manifest).
 
 The snap-in manifest is what the developers write to define a snap-in. The manifest has the following sections:
 
@@ -119,7 +119,7 @@ Event sources are specified in the manifest with the following syntax:
         type: <enum specifying what type of the source should be created>
 ```
 
-Here is the [list of supported event sources](/snapin-development/references/event-sources).
+Here is the [list of supported event sources](https://developer.devrev.ai/snapin-development/references/event-sources).
 
 Example:
 

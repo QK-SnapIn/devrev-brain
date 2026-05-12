@@ -77,7 +77,7 @@ MCP is an experimental feature and works locally without requiring a sync to be 
 
 The two approaches work on the same format of initial domain mapping file, allowing you to use them together.
 
-For AI-assisted mapping creation, see the [Model Context Protocol integration guide](/airsync/mcp).
+For AI-assisted mapping creation, see the [Model Context Protocol integration guide](https://developer.devrev.ai/airsync/mcp).
 
 ## [Chef UI setup](#chef-ui-setup)
 
@@ -174,7 +174,7 @@ Map one record type at a time, ensuring you map all required fields and as many 
 #### [Mapping as custom object](#mapping-as-custom-object)
 
 The system allows importing record types and categories as custom objects. To achieve this you have to select `new_custom_object` when mapping the record type. For each external record type mapped as a custom object, a new custom **Leaf type** will be defined in DevRev and a **Subtype** will automatically be created. For more details on customization concepts, please refer to the
-[Object Customization](/guides/object-customization) and [Custom Objects](/guides/custom-objects) documentation.
+[Object Customization](https://developer.devrev.ai/guides/object-customization) and [Custom Objects](https://developer.devrev.ai/guides/custom-objects) documentation.
 
 The field mapping works the same as for the stock DevRev types, with the difference being that there are significantly fewer fields to map. All the unmapped fields of the external record type will be created as custom fields.
 

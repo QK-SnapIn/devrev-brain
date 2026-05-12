@@ -15,7 +15,7 @@ Publish to the marketplace
 
 When your snap-in is ready for use by you or other organizations, you can publish it to the DevRev marketplace.
 Before starting the publication process, make sure your snap-in is deployed to your organization.
-If you need a refresher, refer to the [instructions](/airsync/deploy-to-organization) for deploying your snap-in.
+If you need a refresher, refer to the [instructions](https://developer.devrev.ai/airsync/deploy-to-organization) for deploying your snap-in.
 
 ### [1. Create marketplace listing](#1-create-marketplace-listing)
 
@@ -53,7 +53,7 @@ To make sure that marketplace item was published you can retrieve it using its I
 devrev marketplace_items show [marketplace_item_id] | jq '{name: .name, id: .id, state: .state}'
 ```
 
-Learn more about the marketplace [here](/snapin-development/marketplace-listings).
+Learn more about the marketplace [here](https://developer.devrev.ai/snapin-development/marketplace-listings).
 
 Last updated on
 

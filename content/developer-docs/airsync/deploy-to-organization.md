@@ -39,7 +39,7 @@ To open logs in your favorite editor:
 devrev snap_in_package logs | code -
 ```
 
-For more information, refer to [Debugging](/snapin-development/debugging).
+For more information, refer to [Debugging](https://developer.devrev.ai/snapin-development/debugging).
 
 Last updated on
 

@@ -17,7 +17,7 @@ Tutorials
 
 The following tutorials provide a step-by-step guide to creating snap-ins:
 
-1. [Getting started](/snapin-development/tutorials/getting-started)
+1. [Getting started](https://developer.devrev.ai/snapin-development/tutorials/getting-started)
 2. [Using a snap-in to perform a DevRev action](https://developer.devrev.ai/snapin-development/tutorials/timer-ticket-creator)
 3. [Snap-in triggered by a DevRev event](https://developer.devrev.ai/snapin-development/tutorials/triggered-event)
 4. [Snap-in triggered by an external source](https://developer.devrev.ai/snapin-development/tutorials/triggered-external-source)

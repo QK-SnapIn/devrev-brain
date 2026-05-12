@@ -43,13 +43,13 @@ A connection uses a keyring object to provide authentication, access token refre
 
 ## [Event source](#event-source)
 
-[Event sources](/snapin-development/references/event-sources) collect events from webhooks, emails, and timer-based API calls. Events can also be manually published. DevRev supports the ingestion of webhooks from any source. Each event source is assigned to a dev org.
+[Event sources](https://developer.devrev.ai/snapin-development/references/event-sources) collect events from webhooks, emails, and timer-based API calls. Events can also be manually published. DevRev supports the ingestion of webhooks from any source. Each event source is assigned to a dev org.
 
 For example, if you want to collect webhook events from an organization's GitHub, create an event source which in turn gives us a URL to subscribe to on GitHub. Webhook events published to this URL are available from this event source.
 
 ## [Function](#function)
 
-The framework for executing code provided by users is [functions](/snapin-development/references/functions). Currently, Javascript/TypeScript can be taken as input from the user and deployed as a function.
+The framework for executing code provided by users is [functions](https://developer.devrev.ai/snapin-development/references/functions). Currently, Javascript/TypeScript can be taken as input from the user and deployed as a function.
 
 Connection values can be passed to a function at runtime, enabling it to execute API calls to DevRev and to external systems such as GitHub, Slack, Bitbucket, and Discord.
 
@@ -60,7 +60,7 @@ and in some cases the organization name. A keyring is used by a snap-ins to auth
 
 ## [Imports](#imports)
 
-Snap-ins that provide an extractor function for an [AirSync](/airsync) snap-in responsible for extracting data from an external system need to have an import section defined in their manifest to register their snap-in in the **Imports** section of the DevRev app.
+Snap-ins that provide an extractor function for an [AirSync](https://developer.devrev.ai/airsync) snap-in responsible for extracting data from an external system need to have an import section defined in their manifest to register their snap-in in the **Imports** section of the DevRev app.
 
 ## [Globals](#globals)
 
@@ -68,7 +68,7 @@ Snap-ins can be configured to enable and disable features, based on custom input
 
 ## [Commands](#commands)
 
-A user can trigger [commands](/snapin-development/references/commands) on different surfaces based on some parameters. Once a command is executed, a function is triggered.
+A user can trigger [commands](https://developer.devrev.ai/snapin-development/references/commands) on different surfaces based on some parameters. Once a command is executed, a function is triggered.
 
 A developer can develop commands to be included in a snap-in Version along with associated functions. These commands are installed when the snap-in is installed.
 
@@ -76,9 +76,9 @@ As part of the snap-in, commands have access to keyrings, global variables, and 
 
 ## [Hooks](#hooks)
 
-[Hooks](/snapin-development/references/hooks) enable developers to invoke functions when various events in the lifecycle of a snap-in occur. Hooks can be used to perform various actions based on the event such as validating the snap-in inputs and keyrings when the configuration is updated, registering event-sources and webhooks in external platforms when snap-in is activated, or setting custom fields to be used by the snap-in.
+[Hooks](https://developer.devrev.ai/snapin-development/references/hooks) enable developers to invoke functions when various events in the lifecycle of a snap-in occur. Hooks can be used to perform various actions based on the event such as validating the snap-in inputs and keyrings when the configuration is updated, registering event-sources and webhooks in external platforms when snap-in is activated, or setting custom fields to be used by the snap-in.
 
-Detailed documentation on hooks can be found in the [hooks reference](/snapin-development/references/hooks).
+Detailed documentation on hooks can be found in the [hooks reference](https://developer.devrev.ai/snapin-development/references/hooks).
 
 ## [States](#states)
 
@@ -98,7 +98,7 @@ The following diagram illustrates the transitions between different states.
 
 ## [Snap-kit](#snap-kit)
 
-[Snap-kit](/snapin-development/references/snapkit) defines UI customization components. It's defined in the snap-in package and used to display developer-defined components. A snap-kit component can display data to a user or collect input for triggering a function.
+[Snap-kit](https://developer.devrev.ai/snapin-development/references/snapkit) defines UI customization components. It's defined in the snap-in package and used to display developer-defined components. A snap-kit component can display data to a user or collect input for triggering a function.
 
 ## [Marketplace](#marketplace)
 

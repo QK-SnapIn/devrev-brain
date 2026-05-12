@@ -148,7 +148,7 @@ Behind the scenes, the SDK library stores items pushed to the repository and upl
 ### [Data normalization](#data-normalization)
 
 Extracted data must be normalized to fit the domain metadata defined in the `external-domain-metadata.json` file.
-More details on this process are provided in the [Metadata extraction](/airsync/metadata-extraction) section.
+More details on this process are provided in the [Metadata extraction](https://developer.devrev.ai/airsync/metadata-extraction) section.
 
 Normalization rules:
 

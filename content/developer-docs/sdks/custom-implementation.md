@@ -19,7 +19,7 @@ Plug has a completely [no-code way](https://support.devrev.ai/devrev/article/ART
 
 If you have customized these properties of the widget through the Plug settings page of DevRev, the values set in the initalization code take priority over those which you have updated in your Plug settings.
 
-All of these properties have to be passed as parameters while initializing the Plug widget using `plugSDK.init()`. For details, refer to the Plug SDK for Web [methods documentation](/sdks/web/methods).
+All of these properties have to be passed as parameters while initializing the Plug widget using `plugSDK.init()`. For details, refer to the Plug SDK for Web [methods documentation](https://developer.devrev.ai/sdks/web/methods).
 
 | Customization | Description |
 | --- | --- |

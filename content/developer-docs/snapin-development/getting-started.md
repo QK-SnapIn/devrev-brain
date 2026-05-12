@@ -71,7 +71,7 @@ devrev-snaps-typescript-template/
 
 The command creates a folder `devrev-snaps-typescript-template`. This contains a `manifest.yaml` file and a `code` folder.
 
-* `manifest` file defines the resources to be created on the DevRev platform. For detailed information on the various components of a manifest file, see [Snap-in Manifest](/snapin-development/references/manifest).
+* `manifest` file defines the resources to be created on the DevRev platform. For detailed information on the various components of a manifest file, see [Snap-in Manifest](https://developer.devrev.ai/snapin-development/references/manifest).
 * `code` folder consists of sample starter code for snap-ins. For detailed information on how to get started, see [starter example repo](https://github.com/devrev/snap-in-examples/tree/main/1-starter/code#readme).
 
 ### [Create a snap-in package](#create-a-snap-in-package)
@@ -187,7 +187,7 @@ devrev snap_in_version upgrade --path ./
 
 The above expects the manifest file to be present in the current directory by the name `manifest.yaml` and the code to be present in the `code` directory.
 
-Refer to [upgrade command](/snapin-development/upgrade-snap-ins) for more information.
+Refer to [upgrade command](https://developer.devrev.ai/snapin-development/upgrade-snap-ins) for more information.
 
 Last updated on
 

@@ -35,9 +35,9 @@ hooks:
     function: update-resource
 ```
 
-The above definition would register the hooks and invoke the provided functions alongside each hook. The functions can be defined in the manifest and provided in the code as explained in the [functions reference](/snapin-development/references/functions).
+The above definition would register the hooks and invoke the provided functions alongside each hook. The functions can be defined in the manifest and provided in the code as explained in the [functions reference](https://developer.devrev.ai/snapin-development/references/functions).
 
-For the event schema received by the function invocation, refer to the [function invocation reference](/snapin-development/references/function-invocation).
+For the event schema received by the function invocation, refer to the [function invocation reference](https://developer.devrev.ai/snapin-development/references/function-invocation).
 
 The event name is the identifier for the hook. The event name can be used to identify the hook that's being invoked. The identifiers are defined in the summary table below.
 

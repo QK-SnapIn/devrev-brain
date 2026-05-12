@@ -24,7 +24,7 @@ comments from GitHub into the DevRev platform.
 ## [Background context](#background-context)
 
 1. **Understanding webhooks in GitHub**: Explore the fundamentals of
-   [webhooks](/guides/webhooks) and learn how
+   [webhooks](https://developer.devrev.ai/guides/webhooks) and learn how
    to incorporate them into the GitHub repository. Gain insights into the
    mechanisms of triggering events and handling notifications.
 2. **Extracting information from external payload**: Delve into the external
@@ -42,7 +42,7 @@ comments from GitHub into the DevRev platform.
 * Install [jq](https://stedolan.github.io/jq)
 * Install [DevRev SDK](https://www.npmjs.com/package/@devrev/typescript-sdk?activeTab=readme)
 
-If you did not follow the [getting started](/snapin-development/tutorials/getting-started) tutorial then follow these steps to authenticate and initialize the snap-in TypeScript template:
+If you did not follow the [getting started](https://developer.devrev.ai/snapin-development/tutorials/getting-started) tutorial then follow these steps to authenticate and initialize the snap-in TypeScript template:
 
 ```
 devrev profiles authenticate -o <dev-org-slug> -u <youremail@yourdomain.com>
@@ -55,7 +55,7 @@ devrev snap_in_version init
 #### [Trigger](#trigger)
 
 The main trigger for this snap-in is an
-[external webhook](/snapin-development/references/event-sources), which necessitates
+[external webhook](https://developer.devrev.ai/snapin-development/references/event-sources), which necessitates
 registration within GitHub. This ensures that the relevant payloads are
 dispatched to our designated endpoint.
 
@@ -268,7 +268,7 @@ for a seamless deployment:
    npm run package
    ```
 3. Following this, proceed to create your snap-in package and version as
-   described in the [previous steps](/snapin-development/tutorials/getting-started).
+   described in the [previous steps](https://developer.devrev.ai/snapin-development/tutorials/getting-started).
 4. During the installation of the snap-in, crucial inputs such as the product
    part description need to be provided. Additionally, it's imperative to
    register the webhook in GitHub during this process.

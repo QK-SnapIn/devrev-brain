@@ -224,7 +224,7 @@ If an error occurs, it catches the error and returns an error response with an a
 
 Note: This endpoint is currently in beta, and its functionality or parameters may change in future updates.
 
-For more details on the snap-kit JSON format and available elements, refer to the [DevRev Snap-kit documentation](/snapin-development/references/snapkit).
+For more details on the snap-kit JSON format and available elements, refer to the [DevRev Snap-kit documentation](https://developer.devrev.ai/snapin-development/references/snapkit).
 
 Last updated on
 

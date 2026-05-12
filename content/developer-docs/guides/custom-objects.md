@@ -26,7 +26,7 @@ and manage object types tailored to your specific business needs.
 5. **ID prefix**: A unique prefix used to generate the display ID for the custom object. If the `id_prefix` is "CAMP", the generated custom object display ID is "C-CAMP-1". The display ID is used to identify the custom object in the UI, similar to the standard DevRev object display IDs like "ISS-001" for issues.
 
 For more details on customization concepts, please refer to the
-[Customization](/guides/object-customization) documentation.
+[Customization](https://developer.devrev.ai/guides/object-customization) documentation.
 
 ## [Custom object lifecycle](#custom-object-lifecycle)
 

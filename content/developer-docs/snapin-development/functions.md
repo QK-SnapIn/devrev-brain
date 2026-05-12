@@ -17,7 +17,7 @@ References
 
 Using functions, you can provide custom code and link it to your event sources, automations, or snap-kit actions. Functions are written in JavaScript and can be used to transform events, send notifications, or perform any other custom logic including network calls.
 
-In order to create a snap-in version, functions must be defined as shown in the [code samples](/snapin-development/code-samples). Functions are packaged and provided as an artifact at the time of snap-in version creation and then used to deploy functions to snap-in versions. An artifact may contain multiple function definitions. The artifact is a zip file containing the following files:
+In order to create a snap-in version, functions must be defined as shown in the [code samples](https://developer.devrev.ai/snapin-development/code-samples). Functions are packaged and provided as an artifact at the time of snap-in version creation and then used to deploy functions to snap-in versions. An artifact may contain multiple function definitions. The artifact is a zip file containing the following files:
 
 ```
 /
@@ -92,7 +92,7 @@ To enable this:
 
 Each function should be registered in `src/function-factory.ts` to be available for execution.
 
-Refer to the [function invocation](/snapin-development/references/function-invocation) for details about the exact payload of the function.
+Refer to the [function invocation](https://developer.devrev.ai/snapin-development/references/function-invocation) for details about the exact payload of the function.
 
 Last updated on
 

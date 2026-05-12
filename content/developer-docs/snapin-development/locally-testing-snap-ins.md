@@ -65,7 +65,7 @@ The service account token included with the request is valid for only 30 minutes
 ### [Update the URL](#update-the-url)
 
 The code can be changed without the need to create a snap-in version or redeploy the snap-in. On any change to the
-`src` folder, the server restarts with the updated changes. However, on [patch compatible](/snapin-development/upgrade-snap-ins#version-compatibility) updates to the manifest or the testing URL, you can `upgrade` the snap-in version.
+`src` folder, the server restarts with the updated changes. However, on [patch compatible](https://developer.devrev.ai/snapin-development/upgrade-snap-ins#version-compatibility) updates to the manifest or the testing URL, you can `upgrade` the snap-in version.
 
 ```
 devrev snap_in_version upgrade --manifest <PATH_TO_MANIFEST> --testing-url <UPDATED_URL>
