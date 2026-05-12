@@ -10,6 +10,7 @@ top_category: Snap-ins
 wiki_match: features/workflows
 match_score: 0.474
 last_updated: 2026-05-11
+summary: "The CSV Work Item Uploader is a snap-in designed to streamline the process of creating and updating work items in bulk through a CSV file."
 ---
 
 # CSV Work Item Uploader
@@ -18,18 +19,18 @@ The CSV Work Item Uploader is a snap-in designed to streamline the process of cr
 
 ## Feature
 
-* **Access Control**: Ensures only authorized users from the group selected in the snap-in configuration can run the snap-in
+* **Access Control**: Ensures only authorized users from the [[entities/group|group]] selected in the snap-in configuration can run the snap-in
 
 ## Commands
 
 * `/upload_workitems`: Initiates the CSV upload process for creating or updating work items.
-* `/reset_snap_in`: Resets the snap-in state and terminates any current execution, allowing you to restart the upload process. Use this command if you encounter issues during the upload process and want to terminate the current process or need to start over with a different CSV file.
+* `/reset_snap_in`: Resets the snap-in state and terminates any current execution, allowing you to restart the upload process. Use this command if you encounter [[features/issues|issues]] during the upload process and want to terminate the current process or need to start over with a different CSV file.
 
 ## CSV requirements
 
 1. For `Owned_by`, `Reported_by`, and `Contact` columns,provide the email of the person who should be assigned as the owner or reporter of the work item. If the CSV lists multiple owners, only the first is set as the owner.
 2. For `Owned_by` column , to assign `Unassigned` as the owner of a work item, enter `unassigned` in the `Owned_by` column. This will set the owner of the work item to `Unassigned`.
-3. For `Applies to Part`, `Stage`, `Account`, `RevOrg`, `Developed with Parts`, and `Tags` columns, provide the part name, stage name, account name, workspace, part name, and tag name respectively as it appears in the UI (case-sensitive).
+3. For `Applies to Part`, `Stage`, `Account`, `RevOrg`, `Developed with Parts`, and `Tags` columns, provide the [[entities/part|part]] name, stage name, [[entities/account|account]] name, workspace, part name, and tag name respectively as it appears in the UI (case-sensitive).
 4. For `Date` and `Timestamp` related fields, provide the date and timestamp in the format `YYYY/MM/DD`.
 5. The `tnt__` prefix in some columns indicates custom fields from the tenant fragment.
 6. The `ctype__` prefix in some columns represents custom type fields from the custom type fragment. Users can fill these fields when selecting a subtype for a work item. If certain ctype\_\_ fields are mandatory for a specific subtype, they must be filled.
@@ -64,4 +65,4 @@ If you need to restart the upload process, in the **Discussion** tab of the snap
 After the reset, you can run `/upload_workitems` again to restart the upload process.
 
 ## Source
-- DevRev support article [CSV Work Item Uploader](https://support.devrev.ai/en-US/devrev/article/SkecO3wG) (ART-21935)
+- DevRev support [[entities/article|article]] [CSV Work Item Uploader](https://support.devrev.ai/en-US/devrev/article/SkecO3wG) (ART-21935)

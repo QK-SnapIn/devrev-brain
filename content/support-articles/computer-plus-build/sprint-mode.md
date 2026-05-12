@@ -10,6 +10,7 @@ top_category: Computer+ Build
 wiki_match: support-app
 match_score: 0.455
 last_updated: 2026-05-11
+summary: "Sprints involve the following for engineering work management:"
 ---
 
 # Sprint mode
@@ -27,7 +28,7 @@ For a guided tour of sprints, check out the interactive [walkthrough](https://wa
 
 ### Creation
 
-To enable teams to deliver great products, attaching work items to parts is no longer a requirement. You can define sprint boards the way you want because every organization has its team structure and way of distributing work among these teams. Creating sprint boards to start building is as easy as creating issues. Refer to Create a sprint for detailed instructions.
+To enable teams to deliver great products, attaching work items to [[features/parts|parts]] is no longer a requirement. You can define sprint boards the way you want because every organization has its team structure and way of distributing work among these teams. Creating sprint boards to start building is as easy as creating [[features/issues|issues]]. Refer to Create a sprint for detailed instructions.
 
 Once the sprint board is created, you can find it under **Sprint Boards** in the left navigation bar of the DevRev app.
 
@@ -35,13 +36,13 @@ The issues visible in the sprint board's backlog are the ones that meet specific
 
 ### Planning
 
-Planning a sprint starts with the **Backlog** tab on a sprint board, which shows issues logged but not assigned to any sprint. The sprint planning exercise involves the team members coming together to discuss the issues shown here and to decide which ones should be taken up as part of the current sprint.
+Planning a sprint starts with the **Backlog** tab on a sprint board, which shows issues logged but not assigned to any sprint. The sprint planning exercise involves the team members coming together to discuss the issues shown here and to decide which ones should be taken up as [[entities/part|part]] of the current sprint.
 
 You can view the current sprint, the next sprint, and the backlog on the sprint board at any time.
 
 As you plan on the issues, you may move them into a sprint by selecting the relevant ones, selecting the **Add to sprint** icon on top, and choosing the sprint number from the menu.
 
-During sprint planning, it's also good practice to look at the issue coverage done in previous sprints. To access previous sprints select the **Previous** switch at the top of the sprint board.
+During sprint planning, it's also good practice to look at the [[entities/issue|issue]] coverage done in previous sprints. To access previous sprints select the **Previous** switch at the top of the sprint board.
 
 ![Previous sprints](don:core:dvrv-us-1:devo/0:artifact/4100187)
 
@@ -51,7 +52,7 @@ You can export views to CSV or JSON by selecting **Actions** in the upper-right 
 
 ### Retrospection
 
-After completing a sprint, visit the sprint from the **Previous** tab and review the items which are *Completed* or still *In progress* by using the **Stage** filter on top. Alternatively, you can use a block-wise view by applying **Group** on the **Stage** attribute. Toggle the switch in the **Group By** multi-select pane to view a metric summarization.
+After completing a sprint, visit the sprint from the **Previous** tab and review the items which are *Completed* or still *In progress* by using the **Stage** filter on top. Alternatively, you can use a block-wise view by applying **[[entities/group|Group]]** on the **Stage** attribute. Toggle the switch in the **Group By** multi-select pane to view a metric summarization.
 
 ![Previous sprint by stage](don:core:dvrv-us-1:devo/0:artifact/4100191)
 
@@ -65,7 +66,7 @@ PMs, engineers, and designers should visit the backlog regularly to plan, brains
 
 1. You can create a sprint in either of the following ways:- ![sprint board in left nav](don:core:dvrv-us-1:devo/0:artifact/4100195)Go to **Work** > **Sprint Boards** on the left nav to view and create the sprint boards by clicking **+ Sprint board**.
      
-   - Create sprint boards using Parts/Trails:- Go to **[Product](https://app.devrev.ai/?vista=vista-def-my-parts)**[ > ](https://app.devrev.ai/?vista=vista-def-my-parts)**[Parts](https://app.devrev.ai/?vista=vista-def-my-parts)**[ > ](https://app.devrev.ai/?vista=vista-def-my-parts)**[Capability/Feature](https://app.devrev.ai/?vista=vista-def-my-parts)**. Select the part you want to create a sprint for.
+   - Create sprint boards using Parts/[[glossary/trails|Trails]]:- Go to **[Product](https://app.devrev.ai/?vista=vista-def-my-parts)**[ > ](https://app.devrev.ai/?vista=vista-def-my-parts)**[Parts](https://app.devrev.ai/?vista=vista-def-my-parts)**[ > ](https://app.devrev.ai/?vista=vista-def-my-parts)**[Capability/Feature](https://app.devrev.ai/?vista=vista-def-my-parts)**. Select the part you want to create a sprint for.
      - Go to **Product** > **Trails** > **Capability/Feature**. Hover over the part you want to create a sprint and click **View**.
      - Go to **Related** > **Sprint boards**. If there are no sprint boards for the part, click **New sprint board** and specify the name, duration of sprints, and the start date. The start time allows you to select the date and time when the sprint begins. The sprint will conclude at the same time after the specified number of days, including weekends.![New sprint board](don:core:dvrv-us-1:devo/0:artifact/4100199)
 2. Go to the new sprint board and click **Backlog**. Any issues assigned to the part but not to a sprint are listed here.
@@ -76,13 +77,13 @@ PMs, engineers, and designers should visit the backlog regularly to plan, brains
 
 Parts are not linked to the sprint board. A sprint board will show up on a part if issues of that part are assigned to an active sprint.
 
-You can search for sprint boards directly by adding the **Sprint** filter inside **Issues**. Go to **Sprint** > **Add** on top and search for the sprint by name. Use this to navigate to a sprint board that has not been shared with you explicitly.
+You can [[features/search|search]] for sprint boards directly by adding the **Sprint** filter inside **Issues**. Go to **Sprint** > **Add** on top and search for the sprint by name. Use this to navigate to a sprint board that has not been shared with you explicitly.
 
 ![Search sprints in issues](don:core:dvrv-us-1:devo/0:artifact/4100217)
 
 ### Share and customize sprint boards
 
-- As with other vistas, everyone in the workspace can view the sprint board in **Sprint Boards** even if it's not exclusively shared with you. You can pin the sprint board for easy access and share the URL too which is under **Share** > **Copy Link**. To grant write permission, click **Share** and enter the email or name of the person.
+- As with other [[features/vistas|vistas]], everyone in the workspace can view the sprint board in **Sprint Boards** even if it's not exclusively shared with you. You can pin the sprint board for easy access and share the URL too which is under **Share** > **Copy Link**. To grant write permission, click **Share** and enter the email or name of the person.
 
 ![Share sprint board](don:core:dvrv-us-1:devo/0:artifact/4100221)
 
@@ -109,4 +110,4 @@ Sprint insights help you understand and visualize more about your issues and pro
 - **Time spent per stage**: One can view and analyze the average time spent on issues in each stage since the beginning of the sprint. This helps developers to reflect on which stages of their work are taking up most of their time.
 
 ## Source
-- DevRev support article [Sprint mode](https://support.devrev.ai/en-US/devrev/article/nPb7lTWZ) (ART-21872)
+- DevRev support [[entities/article|article]] [Sprint mode](https://support.devrev.ai/en-US/devrev/article/nPb7lTWZ) (ART-21872)

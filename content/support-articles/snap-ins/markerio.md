@@ -10,19 +10,20 @@ top_category: Snap-ins
 wiki_match: features/airdrop
 match_score: 0.533
 last_updated: 2026-05-11
+summary: "Seamlessly bring user feedback from Marker.io into DevRev."
 ---
 
 # Marker.io
 
 Seamlessly bring user feedback from Marker.io into DevRev. DevRev's Marker.io
-integration enables you to create tickets or issues automatically when a
-Marker.io issue is created, linking it to a specific part of your product,
+integration enables you to create [[features/tickets|tickets]] or [[features/issues|issues]] automatically when a
+Marker.io [[entities/issue|issue]] is created, linking it to a specific [[entities/part|part]] of your product,
 assigning a default owner, and adding tags.
 
 Additionally, if you include the reporter's email in the Marker.io issues custom
 data, and create DevRev tickets from Marker.io issues, you can configure the
 snap-in to use this email to auto-fill the **Reported By** and **Customer
-Workspace** fields in tickets. If no contact or accounts match the email, they
+Workspace** fields in tickets. If no contact or [[features/accounts|accounts]] match the email, they
 are automatically created.
 
 ## Installing the Marker.io integration snap-in
@@ -34,7 +35,7 @@ are automatically created.
    * (Optional) Select the default owner for Marker.io work items.
    * Select the default part for Marker.io work items.
    * Optionally add default tags for Marker.io work items.
-   * Select the DevRev work item type (issue or ticket) for Marker.io reports.
+   * Select the DevRev work item type (issue or [[entities/ticket|ticket]]) for Marker.io reports.
    * Optionally add the reporter email field from Marker.io issues custom data.
    * Click **Save** > **Install**
 3. Go to the **Instructions** tab.
@@ -50,4 +51,4 @@ are automatically created.
      URL field.
 
 ## Source
-- DevRev support article [Marker.io](https://support.devrev.ai/en-US/devrev/article/v5fbKQXS) (ART-21983)
+- DevRev support [[entities/article|article]] [Marker.io](https://support.devrev.ai/en-US/devrev/article/v5fbKQXS) (ART-21983)

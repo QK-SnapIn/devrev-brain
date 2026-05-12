@@ -10,6 +10,7 @@ top_category: Computer by DevRev
 wiki_match: features/customer-portal
 match_score: 0.56
 last_updated: 2026-05-11
+summary: "User roles are used to manage the access and permissions of users in an organization."
 ---
 
 # User roles
@@ -21,7 +22,7 @@ User roles are used to manage the access and permissions of users in an organiza
 1. Under [**Settings** > **User Management** > **Roles**](https://app.devrev.ai?setting=user-roles),
    select **+ Create new**.
 2. Enter the role name and description.
-3. Select an object, such as **Ticket** or **Inbox**, to assign permissions.
+3. Select an object, such as **[[entities/ticket|Ticket]]** or **[[features/inbox|Inbox]]**, to assign permissions.
 4. To restrict permissions, select **+ Add condition** and create a custom
    condition.
 5. To apply privileges to all subtypes of the object, select **Apply to all
@@ -49,10 +50,10 @@ User roles are used to manage the access and permissions of users in an organiza
 
 1. In [**Settings** > **User Management** > **Roles**](https://app.devrev.ai?setting=user-roles), select the role to assign.
 2. Select **Assign role**.
-3. To assign the role to a group:
+3. To assign the role to a [[entities/group|group]]:
 
    1. Select **+ Group**.
-   2. Search for and select the groups.
+   2. [[features/search|Search]] for and select the [[entities/group|groups]].
    3. Select **Assign role**.
 4. To assign the role to a user:
 
@@ -65,4 +66,4 @@ User roles are used to manage the access and permissions of users in an organiza
 You cannot assign a role to the **All users** group.
 
 ## Source
-- DevRev support article [User roles](https://support.devrev.ai/en-US/devrev/article/lK4IIwFs) (ART-21897)
+- DevRev support [[entities/article|article]] [User roles](https://support.devrev.ai/en-US/devrev/article/lK4IIwFs) (ART-21897)

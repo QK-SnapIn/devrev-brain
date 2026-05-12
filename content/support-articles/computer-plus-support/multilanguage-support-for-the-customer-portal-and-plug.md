@@ -11,31 +11,32 @@ wiki_match: features/customer-portal
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['features/customer-portal']
+summary: "The customer support portal and Plug can be configured to support multiple languages."
 ---
 
 # Multilanguage support for the customer portal and Plug
 
-The customer support portal and Plug can be configured to support multiple languages. For DevRev app UI language settings, see [Multilanguage support in DevRev](https://support.devrev.ai/devrev/article/ART-17790). For general portal setup including custom domains, login methods, and roles, see [[support-articles/computer-plus-support/customer-portal-setup-and-administration|Customer portal setup]].
+The customer support portal and [[glossary/plug|Plug]] can be configured to support multiple languages. For DevRev app UI language settings, see [Multilanguage support in DevRev](https://support.devrev.ai/devrev/article/ART-17790). For general portal setup including custom domains, login methods, and roles, see [[support-articles/computer-plus-support/customer-portal-setup-and-administration|Customer portal setup]].
 
 ## Multilanguage portal user experience
 
 **Language switching on the portal**
 
-If a translation exists for the selected language, the customer sees the translated article or collection. If a translation does not exist, the customer lands on an error page with a link back to the homepage. Customers who access your portal URL without a language code see the default language.
+If a translation exists for the selected language, the customer sees the translated [[entities/article|article]] or collection. If a translation does not exist, the customer lands on an error page with a link back to the homepage. Customers who access your portal URL without a language code see the default language.
 
-**Search behavior**
+**[[features/search|Search]] behavior**
 
-On the portal and Plug, search is language-scoped: a customer on the Spanish portal sees results only from published Spanish articles. In conversations, articles from all languages are indexed regardless of the Plug language, and the AI responds in the language the customer writes in.
+On the portal and Plug, search is language-scoped: a customer on the Spanish portal sees results only from published Spanish [[entities/article|articles]]. In [[features/conversations-feature|conversations]], articles from all languages are indexed regardless of the Plug language, and the AI responds in the language the customer writes in.
 
-**Ticket fields**
+**[[entities/ticket|Ticket]] fields**
 
 Stock ticket fields are auto-translated with no manual work needed. Custom ticket fields are not translated.
 
-Configure Portal and Plug to serve content in multiple languages. This guide covers adding languages, configuring translations for Portal and Plug, and managing translated knowledge base articles.
+Configure Portal and Plug to serve content in multiple languages. This guide covers adding languages, configuring translations for Portal and Plug, and managing translated [[features/knowledge-base|knowledge base]] articles.
 
 ## Supported languages
 
-The following locales are supported for the customer portal and Plug. Additional languages may be enabled on request by contacting [DevRev support](https://support.devrev.ai).
+The following locales are supported for the [[features/customer-portal|customer portal]] and Plug. Additional languages may be enabled on request by contacting [DevRev support](https://support.devrev.ai).
 
 | **Language** | **Code** |
 | --- | --- |
@@ -122,11 +123,11 @@ When importing articles through the API, pass the `language` parameter to assign
 * Omit the language code to create the article in the default language (en-US).
 * Avoid passing unsupported language codes. The API returns an error.
 
-When importing articles through the AirSync connector for Zendesk, configure language mappings to assign translated articles to the correct locale in DevRev.
+When importing articles through the [[glossary/airsync|AirSync]] connector for Zendesk, configure language mappings to assign translated articles to the correct locale in DevRev.
 
 ### Troubleshooting
 
-* **Issue**: A translated article shows a collection warning and cannot be mapped to a collection.
+* **[[entities/issue|Issue]]**: A translated article shows a collection warning and cannot be mapped to a collection.
 
   **Solution**: Create the translated collection structure before creating translated articles. The collection hierarchy must match across all languages. Once the translated collection exists, re-map the article to the correct collection.
 * **Issue**: A language does not appear on the portal after configuration.
@@ -144,7 +145,7 @@ When importing articles through the AirSync connector for Zendesk, configure lan
 1. Go to [Settings > Language & Region > Plug & Portal language settings](https://app.devrev.ai/?setting=languages) and add languages for Plug in the **Plug Language Settings** section.
 2. Go to [Settings > Plug Chat](https://app.devrev.ai/devrevdocs/settings/customer-portal-settings/general?activeTab=appearance).
 3. Select the default language (`en-US`).
-4. Configure conversation toggle, button text, logo, accent color, tabs (Home, Conversations, Tickets), and welcome text.
+4. Configure [[entities/conversation|conversation]] toggle, button text, logo, accent color, tabs (Home, Conversations, [[features/tickets|Tickets]]), and welcome text.
 5. Click **Save & Publish**.
 6. Select each additional language from the language switcher.
 7. Customize language-specific fields for each language.
@@ -161,7 +162,7 @@ window.plugSDK.init({
 });
 ```
 
-To verify, open the Plug widget on your website with the `locale` parameter set and confirm the translated interface loads.
+To verify, open the [[features/plug-widget|Plug widget]] on your website with the `locale` parameter set and confirm the translated interface loads.
 
 ### Troubleshooting
 

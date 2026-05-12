@@ -10,14 +10,15 @@ top_category: Snap-ins
 wiki_match: entities/opportunity
 match_score: 0.606
 last_updated: 2026-05-11
+summary: "Automate opportunities snap-in helps you automate the following features on opportunities to eliminate updating the fields manually and to enhance data consistency:"
 ---
 
 # Automate opportunities
 
-Automate opportunities snap-in helps you automate the following features on opportunities to eliminate updating the fields manually and to enhance data consistency:
+Automate [[entities/opportunity|opportunities]] snap-in helps you automate the following features on opportunities to eliminate updating the fields manually and to enhance data consistency:
 
 * Auto-fills the forecast categories on the opportunities based on status updates. Enable this feature to keep the **Forecast Category** field on opportunities updated in sync with their current stage, as per the stage to forecast category mapping configured in the automation.
-* Auto-fills the **Probability** field on opportunities based on their current stage. Enable this feature to auto-update opportunity probabilities based on the stage to probability mapping configured in the automation.
+* Auto-fills the **Probability** field on opportunities based on their current stage. Enable this feature to auto-update [[glossary/opportunity|opportunity]] probabilities based on the stage to probability mapping configured in the automation.
 
 ## Installation
 
@@ -33,4 +34,4 @@ Automate opportunities snap-in helps you automate the following features on oppo
 2. Fill the required fields and click **Submit**.
 
 ## Source
-- DevRev support article [Automate opportunities](https://support.devrev.ai/en-US/devrev/article/cW4I2YiJ) (ART-21927)
+- DevRev support [[entities/article|article]] [Automate opportunities](https://support.devrev.ai/en-US/devrev/article/cW4I2YiJ) (ART-21927)

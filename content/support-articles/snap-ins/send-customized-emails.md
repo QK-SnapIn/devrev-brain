@@ -10,15 +10,16 @@ top_category: Snap-ins
 wiki_match: features/customization
 match_score: 0.571
 last_updated: 2026-05-11
+summary: "The send customized emails snap-in automates email sending."
 ---
 
 # Send customized emails
 
-The [**send customized emails**](https://marketplace.devrev.ai/marketplace/send-emails) snap-in automates email sending. Once activated, this operation becomes available in the Workflow builder, enabling the delivery of personalized messages.
+The [**send customized emails**](https://marketplace.devrev.ai/marketplace/send-emails) snap-in automates email sending. Once activated, this operation becomes available in the [[features/workflows|Workflow builder]], enabling the delivery of personalized messages.
 
 ## Configuration
 
-1. Create a **SendGrid** account.
+1. Create a **SendGrid** [[entities/account|account]].
 2. Generate an **API key**.
 3. Create a SendGrid connection:
    a. Go to **Settings** > **Snap-ins** > **+ Connection**
@@ -45,4 +46,4 @@ The [**send customized emails**](https://marketplace.devrev.ai/marketplace/send-
 * The SendGrid API has a rate limit of 600 requests per minute per account or more (depending on the account subscription). Exceeding this limit results in rate limiting, where requests are delayed or rejected.
 
 ## Source
-- DevRev support article [Send customized emails](https://support.devrev.ai/en-US/devrev/article/oiSCboZz) (ART-21947)
+- DevRev support [[entities/article|article]] [Send customized emails](https://support.devrev.ai/en-US/devrev/article/oiSCboZz) (ART-21947)

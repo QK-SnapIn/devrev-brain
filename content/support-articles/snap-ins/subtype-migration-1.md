@@ -10,11 +10,12 @@ top_category: Snap-ins
 wiki_match: features/github-integration
 match_score: 0.629
 last_updated: 2026-05-11
+summary: "The Subtype Migration snap-in is designed to facilitate the seamless transition of work items (tickets and issues) from one custom schema subtype to another."
 ---
 
 # Subtype Migration
 
-The [Subtype Migration snap-in](https://marketplace.devrev.ai/marketplace/subtype-migration) is designed to facilitate the seamless transition of work items (tickets and issues) from one custom schema subtype to another. It efficiently handles large volumes of work items by processing them in batches, transferring custom field values between corresponding fields and maintaining proper workflow stages while preserving data integrity throughout the migration process.
+The [Subtype Migration snap-in](https://marketplace.devrev.ai/marketplace/subtype-migration) is designed to facilitate the seamless transition of work items ([[features/tickets|tickets]] and [[features/issues|issues]]) from one custom schema subtype to another. It efficiently handles large volumes of work items by processing them in batches, transferring custom field values between corresponding fields and maintaining proper workflow stages while preserving data integrity throughout the migration process.
 
 ## Installation
 
@@ -26,12 +27,12 @@ The [Subtype Migration snap-in](https://marketplace.devrev.ai/marketplace/subtyp
 1. Go to **Snap-ins** > **Subtype Migration** > **Configure**.
 2. Fill in the configuration details:
 
-   * **Work Item Type**: Select either "ticket" or "issue" based on the type of work items you want to migrate
+   * **Work Item Type**: Select either "[[entities/ticket|ticket]]" or "[[entities/issue|issue]]" based on the type of work items you want to migrate
    * **Source Subtype**: Enter the name of the current subtype from which you want to migrate work items
    * **Target Subtype**: Enter the name of the target subtype to which you want to migrate work items
    * **Field Mappings**: Enter each mapping as `source_field, target_field`, one mapping per line
 
-   Field names and subtype names must exactly match how they appear in object customization.
+   Field names and subtype names must exactly match how they appear in object [[features/customization|customization]].
 
    * Each `source_field` must exist in the source subtype and each `target_field` must exist in the target subtype.
    * Field types between source and target must be compatible for successful data transfer.
@@ -52,4 +53,4 @@ The [Subtype Migration snap-in](https://marketplace.devrev.ai/marketplace/subtyp
    When the migration is completed, a summary is provided showing total items successfully migrated and any failed items with their display IDs. If any items fail, you can re-run the command `/migrate_subtype` to retry the migration for those specific items.
 
 ## Source
-- DevRev support article [Subtype Migration](https://support.devrev.ai/en-US/devrev/article/5v0wASIB) (ART-21954)
+- DevRev support [[entities/article|article]] [Subtype Migration](https://support.devrev.ai/en-US/devrev/article/5v0wASIB) (ART-21954)

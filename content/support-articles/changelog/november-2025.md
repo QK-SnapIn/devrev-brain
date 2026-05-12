@@ -10,6 +10,7 @@ top_category: Changelog
 wiki_match: features/commerce
 match_score: 0.381
 last_updated: 2026-05-11
+summary: "Access sprint boards directly using the Cmd + K search, bypassing the need to select views."
 ---
 
 # November 2025
@@ -20,10 +21,10 @@ last_updated: 2026-05-11
 
 * **Enhanced Sprint Board Navigation**
 
-  Access sprint boards directly using the **Cmd + K** search, bypassing the need to select views. This update simplifies navigation and streamlines the workflow based on user feedback.
-* The current sprint view now shows all assigned issues on initial load, so there's no need to navigate away and back.
+  Access sprint boards directly using the **Cmd + K** [[features/search|search]], bypassing the need to select views. This update simplifies navigation and streamlines the workflow based on user feedback.
+* The current sprint view now shows all assigned [[features/issues|issues]] on initial load, so there's no need to navigate away and back.
 
-![paper-list-document-link.svg](https://app.devrev.ai/api/gateway/internal/artifacts.download?id=don:core:dvrv-us-1:devo/0:artifact/4107994&key=ab7b128b7fe54c50f424c1fd262ac68c4f057106f227c84243bea1ae1710ead6) For more information about *Build App*, refer to the following articles: [Sprint mode](https://app.devrev.ai/devrev/settings/knowledge-base/articles/ART-21872)
+![paper-list-document-link.svg](https://app.devrev.ai/api/gateway/internal/artifacts.download?id=don:core:dvrv-us-1:devo/0:artifact/4107994&key=ab7b128b7fe54c50f424c1fd262ac68c4f057106f227c84243bea1ae1710ead6) For more information about *[[features/build|Build]] App*, refer to the following [[entities/article|articles]]: [Sprint mode](https://app.devrev.ai/devrev/settings/knowledge-base/articles/ART-21872)
 
 ![chat.svg](https://app.devrev.ai/api/gateway/internal/artifacts.download?id=don:core:dvrv-us-1:devo/0:artifact/4108196&key=bd83d7afde18015a08e1d5c8ce390c7d1fc3e5d923b17e68270ed9b794cd2d88)
 
@@ -36,10 +37,10 @@ last_updated: 2026-05-11
   **New features:**
 
   + **Inbound call support:** Receive incoming calls directly on DevRev powered by AWS Connect, offering a new voice channel for customer support.
-  + **Outbound call support:** Agents can initiate outgoing calls to customers via DevRev.
-  + **Identity mapping:** DevUser and RevUser identities are now mapped between AWS Connect and DevRev for smooth call routing and user identification.
+  + **Outbound call support:** [[features/agents|Agents]] can initiate outgoing calls to customers via DevRev.
+  + **[[features/identity|Identity]] mapping:** DevUser and RevUser identities are now mapped between AWS Connect and DevRev for smooth call routing and user identification.
 
-![paper-list-document-link.svg](https://app.devrev.ai/api/gateway/internal/artifacts.download?id=don:core:dvrv-us-1:devo/0:artifact/4108012&key=7f57d650058837e3dd7e01a2b6fab177e2f5b6bfa7f80484fc25ae3ebaca7d1e) For more information about *Channels*, refer to the following article: [[support-articles/snap-ins/exotel|Exotel]]
+![paper-list-document-link.svg](https://app.devrev.ai/api/gateway/internal/artifacts.download?id=don:core:dvrv-us-1:devo/0:artifact/4108012&key=7f57d650058837e3dd7e01a2b6fab177e2f5b6bfa7f80484fc25ae3ebaca7d1e) For more information about *Channels*, refer to the following [[entities/article|article]]: [[support-articles/snap-ins/exotel|Exotel]]
 
 ![cube.svg](https://app.devrev.ai/api/gateway/internal/artifacts.download?id=don:core:dvrv-us-1:devo/0:artifact/4108259&key=7fe69f908ee5de8ae2e80fa5382f148797b870a19374ab38445af3d80fe38645)
 
@@ -47,9 +48,9 @@ last_updated: 2026-05-11
 
 **Enhanced Bar Chart User Readability**
 
-Bar charts now display user names as labels for quick identification of issue owners, improving data readability.
+Bar charts now display user names as labels for quick identification of [[entities/issue|issue]] owners, improving data readability.
 
-![paper-list-document-link.svg](https://app.devrev.ai/api/gateway/internal/artifacts.download?id=don:core:dvrv-us-1:devo/0:artifact/4108028&key=b598030343abfa79eeca9bb7ecef5d2b2e7a8b388d6bded689e827328b5d18f2) For more information about *Vistas*, refer to the following articles: [[support-articles/computer-by-devrev/vistas|Vistas]]
+![paper-list-document-link.svg](https://app.devrev.ai/api/gateway/internal/artifacts.download?id=don:core:dvrv-us-1:devo/0:artifact/4108028&key=b598030343abfa79eeca9bb7ecef5d2b2e7a8b388d6bded689e827328b5d18f2) For more information about *[[features/vistas|Vistas]]*, refer to the following articles: [[support-articles/computer-by-devrev/vistas|Vistas]]
 
 ![cube.svg](https://app.devrev.ai/api/gateway/internal/artifacts.download?id=don:core:dvrv-us-1:devo/0:artifact/4108350&key=35da23de2a9a21c3ea0b5fdaedc5f91bc3428e350f91ff7c5bcb884ea6ac218b)
 
@@ -65,19 +66,19 @@ We've enhanced the Sprint filter for easier selection. Now, when you choose a sp
 
 ### Support App
 
-**Improvements to Owner and Group Assignment**
+**Improvements to Owner and [[entities/group|Group]] Assignment**
 
 * Added a warning when selecting an owner not in the chosen group.
 * Automatically sets the owner to **Unassigned** when switching to a group excluding the current owner.
 
-**Description Enhancements**
+**Description [[entities/enhancement|Enhancements]]**
 
 * **Inline images:** Users can now add inline images directly within descriptions for clearer context.
 * **Close button fix:** Resolved issue where images couldn't be closed due to editor mode switching.
 * **Text cut-off issue:** Fixed text being cut off after images upon saving.
 * **No more duplicates on clone:** Corrected duplicate copying of inline images when cloning.
 
-**Internal Tickets via Workflows**
+**Internal [[features/tickets|Tickets]] via [[features/workflows|Workflows]]**
 
 * Introduced visibility field in workflow nodes for managing a wide range of automations.
 
@@ -93,11 +94,11 @@ We've enhanced the Sprint filter for easier selection. Now, when you choose a sp
 ### Vista
 
 * **Link and ID Copying** Enhancements: Users can now copy links and IDs more easily with improved tooltips and reduced lag.
-* **Ticket Number Copy Feature**: A new copy button next to the ticket number allows for quick URL copying.
+* **[[entities/ticket|Ticket]] Number Copy Feature**: A new copy button next to the ticket number allows for quick URL copying.
 * **Create List Views Instantly**
 
   Instantly create list views by clicking **+** in the left navigation. Select an object type, name your view, and optionally select a location to pin it.
-* We've enhanced Vista view filtering with operator-based options, including **not-in** conditions for the Stage field, allowing precise exclusion of certain stages. The addition of **any of** and **none of** operators ensures consistent filtering across fields, streamlining workflows and boosting productivity.
+* We've enhanced [[glossary/vista|Vista]] view filtering with operator-based options, including **not-in** conditions for the Stage field, allowing precise exclusion of certain stages. The addition of **any of** and **none of** operators ensures consistent filtering across fields, streamlining workflows and boosting productivity.
 
 ![paper-list-document-link.svg](https://app.devrev.ai/api/gateway/internal/artifacts.download?id=don:core:dvrv-us-1:devo/0:artifact/4108066&key=53c9a5ca5627abb0adaaafa9a1682015de8bafc16377b98a134cdfefd58b20a7) For more information about *Vistas*, refer to the following articles: ‣ [[support-articles/computer-by-devrev/vista-reports|Vista reports]] ‣ [[support-articles/computer-by-devrev/vistas|Vistas]]
 

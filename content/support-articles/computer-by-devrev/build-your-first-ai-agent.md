@@ -11,6 +11,7 @@ wiki_match: features/build
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['features/build']
+summary: "Agent Studio is currently in beta only."
 ---
 
 # Build your first AI agent
@@ -19,9 +20,9 @@ Agent Studio is currently in beta only.
 
 **Prerequisites:**
 
-* Access to DevRev with permissions to create agents.
-* At least one knowledge source, for example, articles or tickets in your DevRev workspace.
-* If you plan to attach workflow skills, ensure you have already built the workflows you intend to use.
+* Access to DevRev with permissions to create [[features/agents|agents]].
+* At least one knowledge source, for example, [[entities/article|articles]] or [[features/tickets|tickets]] in your DevRev workspace.
+* If you plan to attach workflow skills, ensure you have already built the [[features/workflows|workflows]] you intend to use.
 
 ---
 
@@ -33,7 +34,7 @@ In the DevRev sidebar, go to [**Settings > Agent Studio**](https://app.devrev.ai
 
 ## Step 2: Create a new agent
 
-Click **Create New Agent** in the top-right corner of the Agent Studio page. You are taken to the **Build** tab for your new agent.
+Click **Create New Agent** in the top-right corner of the Agent Studio page. You are taken to the **[[features/build|Build]]** tab for your new agent.
 
 Your agent is created with a default name ("New Agent"), a default goal, and a default guardrail already enabled.
 
@@ -44,7 +45,7 @@ At the top of the Build page, you see two editable fields:
 1. **Agent name**: Click the name at the top and type a meaningful name for your agent, for example, Support Assistant.
 2. **Agent goal**: Below the name, click the text area and describe what your agent should do. For example:
 
-   You are a customer support assistant. Help users resolve their issues by searching the knowledge base and creating tickets when necessary.
+   You are a customer support assistant. Help users resolve their [[features/issues|issues]] by searching the [[features/knowledge-base|knowledge base]] and creating tickets when necessary.
 
 The goal gives the agent its overall direction. Be specific about the agent's purpose.
 
@@ -55,12 +56,12 @@ The goal gives the agent its overall direction. Be specific about the agent's pu
 Knowledge sources tell the agent where to look when answering questions.
 
 1. In the **Capabilities** section, find the **Knowledge** row and click **+ Add**.
-2. In the **Add Knowledge** modal, select the object types you want the agent to search. Common choices include:
+2. In the **Add Knowledge** modal, select the object types you want the agent to [[features/search|search]]. Common choices include:
 
-   * **Article**: Knowledge base articles.
-   * **Ticket**: Support tickets.
+   * **[[entities/article|Article]]**: Knowledge base articles.
+   * **[[entities/ticket|Ticket]]**: Support tickets.
    * **Question & Answer**: Q&A entries.
-   * **Conversation**: Past conversations.
+   * **[[entities/conversation|Conversation]]**: Past [[features/conversations-feature|conversations]].
 3. Use the search bar to filter the list if needed, then click **Add** to confirm your selection.
 
 Your selected knowledge sources appear as chips in the Knowledge row.
@@ -75,7 +76,7 @@ Skills give your agent the ability to take actions such as creating tickets, sen
 2. In the **Add Skill** modal, browse or search using the tabs:
 
    * **All**: A combined view showing operations and workflows.
-   * **Operations**: Built-in DevRev actions (e.g., create a ticket, update an issue).
+   * **Operations**: Built-in DevRev actions (e.g., create a ticket, update an [[entities/issue|issue]]).
    * **Workflows**: Custom automation workflows you have already built.
 3. **For operations:** After selecting one, a configuration panel opens where you can:
 
@@ -151,7 +152,7 @@ Your agent is now live. The version status changes from **Draft** to **Live**. A
 Now that you have built and published your first agent, explore the following topics in the [[support-articles/computer-by-devrev/agent-studio-task-reference|Agent Studio task reference]]:
 
 * **Run bulk tests** to evaluate your agent against a dataset of test cases.
-* **Monitor performance** in the Observe tab to track analytics and review session traces.
+* **Monitor performance** in the Observe tab to track [[features/analytics|analytics]] and review session traces.
 * **Iterate with versions** to make improvements without disrupting the live agent.
 
 For a complete field-level reference of every feature, see the [[support-articles/computer-by-devrev/agent-studio-reference|Agent Studio reference]].

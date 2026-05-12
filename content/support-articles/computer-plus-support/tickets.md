@@ -11,13 +11,14 @@ wiki_match: features/tickets
 match_score: 1.0
 last_updated: 2026-05-11
 related: ['features/tickets']
+summary: "A ticket is a record of a customer\"s request for assistance or support."
 ---
 
 # Tickets
 
-A *ticket* is a record of a customer's request for assistance or support. When a customer contacts a company with a problem or issue, the company creates a ticket to track the request and ensure that it's addressed in a timely and satisfactory manner. For example, if a user calls in and files a ticket for a problem they're facing any progress would be communicated to them through the ticket.
+A *[[entities/ticket|ticket]]* is a record of a customer's request for assistance or support. When a customer contacts a company with a problem or [[entities/issue|issue]], the company creates a ticket to track the request and ensure that it's addressed in a timely and satisfactory manner. For example, if a user calls in and files a ticket for a problem they're facing any progress would be communicated to them through the ticket.
 
-Tickets are associated with a part (product or service) and can come from both internal and external users. Tickets are also used to communicate progress to the user or other impacted party.
+[[features/tickets|Tickets]] are associated with a [[entities/part|part]] (product or service) and can come from both internal and external users. Tickets are also used to communicate progress to the user or other impacted party.
 
 There may be cases where mass communications (broadcast) are necessary in the event of lots of impacted or related parties (such as service status updates). In this scenario, the ticket would be used to broadcast and handle communications among multiple parties, including across multiple workspaces. Broadcast can also be used to engage customers for feedback/ideas (such as new feature ideas). Scoping is important for broadcast tickets as there needs to be a differentiation between broadcast (all revs) vs. multicast (particular revs).
 
@@ -29,20 +30,20 @@ You can export views to CSV or JSON by selecting **Actions** in the upper-right 
 
 ## Attributes
 
-Tickets have attributes that can be used to filter and group tickets in various views.
+Tickets have attributes that can be used to filter and [[entities/group|group]] tickets in various views.
 You can find all the stock attributes listed under [**Settings** > **Object customization** > **Ticket**](https://app.devrev.ai/?setting=object-customization?type=ticket), go to **Stock fields**.
 These are the stock attributes that come with DevRev:
 
 * **Owner**: The person responsible for the ticket. Tickets are assigned to an engineer, PM, designer, or any other team member through the **Owner** attribute.
-* **Group**: The group to which the ticket belongs. For more information on groups, see [[support-articles/computer-by-devrev/groups|groups]].
+* **Group**: The group to which the ticket belongs. For more information on [[entities/group|groups]], see [[support-articles/computer-by-devrev/groups|groups]].
 * **Severity**: The importance of the ticket. Severity can be set to low, medium, blocker, or high.
 * **Stage**: The current state of the issue. The stage attribute is used to track the progress of the issue through its lifecycle. For more information on stages, see stages.
-* **Part**: The part of the company or product that the issue is related to. For more information on parts, see [[support-articles/computer-by-devrev/parts-trails|parts]].
+* **Part**: The part of the company or product that the issue is related to. For more information on [[features/parts|parts]], see [[support-articles/computer-by-devrev/parts-trails|parts]].
 * **Created by**: The user who created the ticket.
 * **Created date**: The date the ticket was created.
 * **Modified date**: The date the ticket was last modified.
 * **Tags**: Tags are used to categorize tickets.
-* **Customer workspace**: The workspace that the ticket pertains to. You can create a new account or workspace if it doesn't exist.
+* **Customer workspace**: The workspace that the ticket pertains to. You can create a new [[entities/account|account]] or workspace if it doesn't exist.
 * **Target close date**: The date by which the issue is expected to be resolved.
 * **Modified by**: The user who last modified the ticket.
 * **Reported by**: Which customer is experiencing the issue. When a ticket is created from an email thread containing multiple customer email IDs, multiple reporters may be added. If a DevRev user adds a new customer while responding from DevRev, or if a new customer responds to the email thread, these new customers are added to the **Reported by** field. In the case of the Portal, there is only one **Reported by**, representing the person who has logged in to the portal to report the issue. Additional reporters can be added from the DevRev app. To select a contact in the **Reported by** field, first choose the corresponding account and workspace in the **Customer** attribute. After this selection, the contact's name will appear in the **Reported by** list.
@@ -53,19 +54,19 @@ Adding members to **Email members** also adds them to the **Reported by** field.
 Shadow users can also be subscribers and email members.
 
 * **CCed members in email**: The CCed members in emails will be added to reporters if they are contacts in the workspace to which the ticket belongs. They will be added to email members if they are part of the ongoing email thread, without any workspace restriction.
-* **Shadow users**: Users created for tracking and record-keeping purposes that do not have access to the DevRev app. Shadow users are typically created when AirSync imports data from external sources and identifies users without an email address. Tools like AirSync can assign work and attribute comments and actions to them. AirSync can also create **Unassigned** users that serve the same purpose but do have emails.
+* **Shadow users**: Users created for tracking and record-keeping purposes that do not have access to the DevRev app. Shadow users are typically created when [[glossary/airsync|AirSync]] imports data from external sources and identifies users without an email address. Tools like AirSync can assign work and attribute comments and actions to them. AirSync can also create **Unassigned** users that serve the same purpose but do have emails.
   Shadow users are considered users (members of the DevRev organization) rather than contacts, although they have no access to the platform. For more information, refer to the [[support-articles/computer-by-devrev/airsync-overview#dev-user-deduplication|import docs]].
 * **Close date**: The date the ticket was closed.
 * **Source channel**: The channel through which the ticket was created. Customers can create tickets via email, the portal, and various other channels.
 * **Channel**: Indicates the medium used for customer communication.
 * **Subscribers**: Indicates the group of users who will receive updates about the tickets.External contacts cannot be added as subscribers, so a [[support-articles/customer-support-agent/customer-support-agent-overview|DevRev contact]] must be created first for any emails to be added as subscribers.
-* **Needs response**: Set to true whenever a new customer message is received on the ticket to ensure that no customer messages are missed. If a particular customer message does not need a response, the **Needs response** toggle can be turned off by the user. Turning off the **Needs response** toggle does not affect the SLA metrics.
+* **Needs response**: Set to true whenever a new customer message is received on the ticket to ensure that no customer messages are missed. If a particular customer message does not need a response, the **Needs response** toggle can be turned off by the user. Turning off the **Needs response** toggle does not affect the [[features/slas|SLA]] metrics.
 
-These attributes can be effectively used in filters and **Group** conditions across various vistas in DevRev to track specific work, capacity, and more.
+These attributes can be effectively used in filters and **Group** conditions across various [[features/vistas|vistas]] in DevRev to track specific work, capacity, and more.
 
 You can add custom attributes to tickets to track additional information. For more information on custom attributes, see [[support-articles/computer-by-devrev/object-customization|object customization]].
 
-Issues are attached to tickets in order to track efforts with product priorities.
+[[features/issues|Issues]] are attached to tickets in order to track efforts with product priorities.
 
 ## Create a ticket
 
@@ -80,7 +81,7 @@ Issues are attached to tickets in order to track efforts with product priorities
 7. If you would like to immediately create another ticket, select **Create multiple**.
 8. Click **Create**.
 
-If a ticket is created from an existing conversation, then the ticket's title and description are populated automatically from the conversation.
+If a ticket is created from an existing [[entities/conversation|conversation]], then the ticket's title and description are populated automatically from the conversation.
 
 ![ticket fields](don:core:dvrv-us-1:devo/0:artifact/4099987)
 
@@ -155,17 +156,17 @@ You can view all attachments sent via the ticket's description, internal discuss
 
 ## Turing suggests
 
-Turing suggests enables Computer to aid customer experience engineers in resolving current tickets more efficiently. Each time a ticket is viewed, Computer proactively presents a curated selection of similar tickets and related knowledge articles.
-Additionally, this system includes a feedback mechanism. This allows users to contribute to the continual learning and enhancement of the AI, ensuring an increasingly effective and refined support experience over time.
+[[glossary/turing|Turing]] suggests enables Computer to aid customer experience engineers in resolving current tickets more efficiently. Each time a ticket is viewed, Computer proactively presents a curated selection of similar tickets and related knowledge [[entities/article|articles]].
+Additionally, this system includes a feedback mechanism. This allows users to contribute to the continual learning and [[entities/enhancement|enhancement]] of the AI, ensuring an increasingly effective and refined support experience over time.
 This advancement is a valuable tool in streamlining your support workflow and enhancing overall service quality.
 
-In case you want it to learn and help you better in the future, don’t forget to give 👍 on the suggestion if you like it or 👎 to dislike it.
+In case you want it to learn and help you better in the future, [[glossary/don|don]]’t forget to give 👍 on the suggestion if you like it or 👎 to dislike it.
 
 ![turing-suggests](don:core:dvrv-us-1:devo/0:artifact/4100003)
 
 ## Duplicate ticket merging
 
-Duplicate tickets in a support system pose a significant challenge by creating inefficiencies, increasing the workload for support agents, and negatively impacting user experience. These tickets often result from user frustration or misunderstandings of the resolution process, leading to confusion and disrupting the support workflow. This not only wastes time on redundant issues but also slows response times and skews data analysis.
+Duplicate tickets in a support system pose a significant challenge by creating inefficiencies, increasing the workload for support [[features/agents|agents]], and negatively impacting user experience. These tickets often result from user frustration or misunderstandings of the resolution process, leading to confusion and disrupting the support workflow. This not only wastes time on redundant issues but also slows response times and skews data analysis.
 
 Merging duplicate tickets establishes uniform communication between customers and agents, providing an effective solution to this problem.
 
@@ -192,7 +193,7 @@ You can configure the following options in the ticket preferences page:
 
 * Communication messages for duplicate and primary ticket owners
 * Stage of duplicate tickets after merge
-* Accounts to exclude from automated messages
+* [[features/accounts|Accounts]] to exclude from automated messages
 
 Merge can be enabled only when users configure the post merge stage in the ticket preference settings page.
 
@@ -216,7 +217,7 @@ Merge can be enabled only when users configure the post merge stage in the ticke
 * The older messages and attachments on the duplicate ticket remains within the duplicate ticket post merge.
 * Any new customer message on duplicate tickets post merge sync to the primary ticket.
 * Duplicate tickets remain accessible through the **Linked Objects** section of the primary ticket.
-* CSAT triggers only for the primary ticket resolution.
+* [[glossary/csat|CSAT]] triggers only for the primary ticket resolution.
 * Merge actions cannot be reversed, and merged tickets cannot be merged again.
 
 ## Follow up tickets
@@ -240,7 +241,7 @@ The below fields would be copied on the new follow up ticket from the archived/i
 * Channel specific custom fields
 * Subtype
 
-The follow up trigger is added in the workflows and admins configure the changes required on new follow up ticket, for example, copying of any other fields.
+The follow up trigger is added in the [[features/workflows|workflows]] and admins configure the changes required on new follow up ticket, for example, copying of any other fields.
 
 ## Internal Tickets
 
@@ -256,4 +257,4 @@ You can convert an internal ticket to an external ticket by clicking **Convert t
 - [[features/tickets]]
 
 ## Source
-- DevRev support article [Tickets](https://support.devrev.ai/en-US/devrev/article/WX96DY0b) (ART-21861)
+- DevRev support [[entities/article|article]] [Tickets](https://support.devrev.ai/en-US/devrev/article/WX96DY0b) (ART-21861)

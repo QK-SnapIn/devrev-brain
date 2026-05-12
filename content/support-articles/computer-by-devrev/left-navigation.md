@@ -10,11 +10,12 @@ top_category: Computer by DevRev
 wiki_match: features/side-conversations
 match_score: 0.545
 last_updated: 2026-05-11
+summary: "The updated DevRev\"s left navigation is designed to provide a more customizable and intuitive navigation experience."
 ---
 
 # Left navigation
 
-The updated DevRev's left navigation is designed to provide a more customizable and intuitive navigation experience. This update introduces new sections for better organization, enhanced customization capabilities, and a dedicated **Explore** page for managing views, dashboards, and sprint boards.
+The updated DevRev's left navigation is designed to provide a more customizable and intuitive navigation experience. This update introduces new sections for better organization, enhanced [[features/customization|customization]] capabilities, and a dedicated **Explore** page for managing views, dashboards, and sprint boards.
 
 When existing users log in, a prompt appears to guide them in migrating to the new left navigation. Follow the on-screen instructions to complete the migration and begin customizing your experience.
 
@@ -29,7 +30,7 @@ The updated left navigation includes the following sections:
 * **Customer**
 * **People**
 
-These new sections replace the former categories of **Build**, **Product**, **Support**, and **Grow**, offering a more personalized user experience. You can set defaults based on your primary application preferences and add custom views to these sections for easier access.
+These new sections replace the former categories of **[[features/build|Build]]**, **Product**, **Support**, and **Grow**, offering a more personalized user experience. You can set defaults based on your primary application preferences and add custom views to these sections for easier access.
 
 ## Explore boards and views
 
@@ -43,11 +44,11 @@ To access your boards and views, navigate to **Explore** in the left navigation 
 
 ### Search and filter options in Explore
 
-In the **Explore** section, users can search for specific views using the search bar located in the top-left corner. Additionally, users can filter views by type, including:
+In the **Explore** section, users can [[features/search|search]] for specific views using the search bar located in the top-left corner. Additionally, users can filter views by type, including:
 
 * **Dashboards**
 * **Sprint Boards**
-* **Vistas**
+* **[[features/vistas|Vistas]]**
 
 ### Pinning and unpinning views
 
@@ -68,4 +69,4 @@ The **Recents** section automatically displays the five most recently opened unp
 You do not need to pin these views; they appear automatically in **Recents** and remain there until replaced by newer views.
 
 ## Source
-- DevRev support article [Left navigation](https://support.devrev.ai/en-US/devrev/article/KvCmKLV1) (ART-21846)
+- DevRev support [[entities/article|article]] [Left navigation](https://support.devrev.ai/en-US/devrev/article/KvCmKLV1) (ART-21846)

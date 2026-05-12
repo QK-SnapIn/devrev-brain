@@ -11,11 +11,12 @@ wiki_match: glossary/airsync
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['glossary/airsync']
+summary: "The SharePoint AirSync simplifies migration from SharePoint to DevRev, supporting both one-time imports and ongoing syncs."
 ---
 
 # SharePoint AirSync
 
-The SharePoint AirSync simplifies migration from SharePoint to DevRev, supporting both one-time imports and ongoing syncs.
+The SharePoint [[glossary/airsync|AirSync]] simplifies migration from SharePoint to DevRev, supporting both one-time imports and ongoing syncs.
 
 SharePoint AirSync is a tool that lets you migrate your team's documents and knowledge from SharePoint into DevRev. It's like building a bridge between the two platforms, allowing you to:
 
@@ -26,7 +27,7 @@ SharePoint AirSync is a tool that lets you migrate your team's documents and kno
 
 Use the SharePoint AirSync if you need to:
 
-* Import documents and knowledge base articles from SharePoint into DevRev platform
+* Import documents and [[features/knowledge-base|knowledge base]] [[entities/article|articles]] from SharePoint into DevRev platform
 * Import libraries and their contents as per user requirements
 * Maintain user identities and relationships between platforms
 * Preserve organizational structures and hierarchies
@@ -37,9 +38,9 @@ The following is a list of SharePoint objects and their corresponding DevRev equ
 
 | SharePoint Object | DevRev Object | Sync to DevRev |
 | --- | --- | --- |
-| Pages (Site Pages, Web Part Pages, Wiki Pages, Space) | Article (URL), Article (Content) | ✅ |
+| Pages (Site Pages, Web [[entities/part|Part]] Pages, Wiki Pages, Space) | [[entities/article|Article]] (URL), Article (Content) | ✅ |
 | Library | Collection | ✅ |
-| Attachment on Page / Library | Artifacts on Article | ✅ |
+| Attachment on Page / Library | [[features/artifacts|Artifacts]] on Article | ✅ |
 | User | DevUser | ✅ |
 
 # First time import overview
@@ -47,10 +48,10 @@ The following is a list of SharePoint objects and their corresponding DevRev equ
 When using SharePoint AirSync for the first time:
 
 1. **Admin Consent**: First, your organization's administrator needs to give consent to DevRev and establish the initial connection. After this is done, other organization members can create their own connections.
-2. **Preparation**: Ensure you have appropriate access to your SharePoint account.
+2. **Preparation**: Ensure you have appropriate access to your SharePoint [[entities/account|account]].
 3. **Installation and Setup**: Follow the steps in the "Importing from SharePoint" section below.
 4. **Connection Process**: You'll need to authenticate with your Microsoft account to establish a secure connection between SharePoint and DevRev.
-5. **Selection Process**: You'll have the opportunity to choose specific SharePoint sites to import, allowing you to be selective about what data moves to DevRev.
+5. **Selection Process**: You'll have the [[glossary/opportunity|opportunity]] to choose specific SharePoint sites to import, allowing you to be selective about what data moves to DevRev.
 6. **Processing Time**: The import duration depends on the volume of data. Small sites might complete in seconds, while larger sites with thousands of pages and attachments may take hours.
 7. **Results and Verification**: After completion, review the import report to confirm that all pages, libraries, users, and attachments were properly transferred.
 
@@ -64,7 +65,7 @@ To configure the SharePoint connection, you'll need to use OAuth authentication.
 ### Import from SharePoint
 
 1. Go to **Settings > Integrations > Snap-ins**.
-2. Navigate to **All snap-ins** and search for **SharePoint AirSync**.
+2. Navigate to **All snap-ins** and [[features/search|search]] for **SharePoint AirSync**.
 3. Open the snap-in and click the **Add** button located in the top-right corner.
 4. Click **Install**.
 5. Once installed, click on **Config**.
@@ -83,12 +84,12 @@ To configure the SharePoint connection, you'll need to use OAuth authentication.
 
 ## Supported site types
 
-SharePoint AirSync supports both project and communication group sites.
+SharePoint AirSync supports both project and communication [[entities/group|group]] sites.
 
 **Project group sites**
 
 * Designed for team collaboration
-* Integrated with Microsoft 365 Groups and Teams
+* Integrated with Microsoft 365 [[entities/group|Groups]] and Teams
 * Includes libraries, lists, wiki pages, and attachments
 * Best for importing structured content and documents
 

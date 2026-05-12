@@ -10,17 +10,18 @@ top_category: Customer Support Agent
 wiki_match: features/customer-portal
 match_score: 0.609
 last_updated: 2026-05-11
+summary: "The Customer Support Agent, which comprises the Plug widget and SDK, empowers your customers and customer-facing teams with ready access to relevant information, enabling effective communication and interaction between them."
 ---
 
 # Customer Support Agent overview
 
-The Customer Support Agent, which comprises the Plug widget and SDK, empowers your customers and customer-facing teams with ready access to relevant information, enabling effective communication and interaction between them.
+The Customer Support Agent, which comprises the [[features/plug-widget|Plug widget]] and SDK, empowers your customers and customer-facing teams with ready access to relevant information, enabling effective communication and interaction between them.
 
-The Plug SDK is a powerful, comprehensive tool designed to support the various needs of your customer-facing teams, including those in customer success, support, and product management. The Plug SDK enables features such as an AI-powered chat widget and search bar, user session recording, along with engagements and nudges.
+The [[glossary/plug|Plug]] SDK is a powerful, comprehensive tool designed to support the various needs of your customer-facing teams, including those in customer success, support, and product management. The Plug SDK enables features such as an AI-powered chat widget and [[features/search|search]] bar, user session recording, along with engagements and nudges.
 
 You can see an example Plug widget on the [Maple Software website](https://maplesoftware.net/).
 
-The best way to try out Plug is to experiment with it in the app. If you haven’t yet created a DevRev account, you can do that on our [signup page](https://app.devrev.ai/signup?utm_source=docs).
+The best way to try out Plug is to experiment with it in the app. If you haven’t yet created a DevRev [[entities/account|account]], you can do that on our [signup page](https://app.devrev.ai/signup?utm_source=docs).
 
 ## Plug capabilities
 
@@ -34,11 +35,11 @@ The [Plug widget SDK](https://developer.devrev.ai/public/sdks) integrates DevRev
 
 ### 📝 Nudges
 
-[[support-articles/customer-support-agent/nudges|Nudges]] are outbound messages from the Plug widget designed to engage users, prompt actions, provide information, and initiate conversations, enhancing user interaction and guiding them toward desired outcomes on your platform.
+[[support-articles/customer-support-agent/nudges|Nudges]] are outbound messages from the Plug widget designed to engage users, prompt actions, provide information, and initiate [[features/conversations-feature|conversations]], enhancing user interaction and guiding them toward desired outcomes on your platform.
 
 ### 🔍 Search
 
-DevRev's search offers seamless access across tickets and articles.
+DevRev's search offers seamless access across [[features/tickets|tickets]] and [[entities/article|articles]].
 
 ## Integration
 
@@ -55,4 +56,4 @@ To incorporate Plug features into your website, refer to the [Web SDK documentat
 To add Plug features to your mobile applications and boost user engagement, refer to the [Mobile SDKs documentation](https://developer.devrev.ai/public/sdks/mobile).
 
 ## Source
-- DevRev support article [Customer Support Agent overview](https://support.devrev.ai/en-US/devrev/article/HWipyCxT) (ART-21829)
+- DevRev support [[entities/article|article]] [Customer Support Agent overview](https://support.devrev.ai/en-US/devrev/article/HWipyCxT) (ART-21829)

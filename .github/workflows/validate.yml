@@ -1,0 +1,92 @@
+name: Validate Quartz Build
+
+on:
+  pull_request:
+    branches: [v4]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        run: npm ci --no-audit --no-fund
+
+      - name: Build Quartz
+        run: npx quartz build
+
+      - name: Broken-link audit
+        run: |
+          python3 - <<'PY'
+          import re, os, glob, sys
+          from urllib.parse import unquote
+
+          files = glob.glob('public/**/*.html', recursive=True)
+          existing = set()
+          for f in files:
+              existing.add(os.path.relpath(f, 'public').replace('.html',''))
+
+          # Pre-existing broken links (allow-listed)
+          ALLOWED = {'links'}
+
+          hrefs = set()
+          for f in files:
+              c = open(f).read()
+              for m in re.finditer(r'<a[^>]+href="([^"]+)"[^>]+class="internal[^"]*"', c):
+                  h = m.group(1)
+                  if h.startswith('http') or h.startswith('#'):
+                      continue
+                  hrefs.add(h)
+
+          broken = []
+          for h in hrefs:
+              h0 = unquote(h.split('#')[0].split('?')[0])
+              h0 = h0.lstrip('./').lstrip('/').rstrip('/')
+              if not h0:
+                  continue
+              if h0 in existing or (h0 + '/index') in existing:
+                  continue
+              if h0 in ALLOWED:
+                  continue
+              broken.append((h, h0))
+
+          print(f"Internal links scanned: {len(hrefs)}")
+          print(f"Broken (excluding allow-listed): {len(broken)}")
+          for h, h0 in broken:
+              print(f"  ❌ {h} -> {h0}")
+          if broken:
+              sys.exit(1)
+          PY
+
+      - name: Frontmatter sanity check
+        run: |
+          python3 - <<'PY'
+          import re, glob, sys
+          bad = []
+          for f in glob.glob('content/**/*.md', recursive=True):
+              c = open(f).read()
+              if not c.startswith('---\n'):
+                  continue
+              m = re.match(r'^---\n(.*?)\n---\n', c, re.S)
+              if not m:
+                  bad.append((f, 'malformed frontmatter delimiters'))
+                  continue
+              fm = m.group(1)
+              # title must be present
+              if not re.search(r'^title:', fm, re.M):
+                  bad.append((f, 'missing title:'))
+          print(f"Files audited: {len(glob.glob('content/**/*.md', recursive=True))}")
+          print(f"Frontmatter issues: {len(bad)}")
+          for f, msg in bad[:20]:
+              print(f"  ⚠️  {f}: {msg}")
+          if bad:
+              sys.exit(1)
+          PY

@@ -10,6 +10,7 @@ top_category: Snap-ins
 wiki_match: glossary/airsync
 match_score: 0.5
 last_updated: 2026-05-11
+summary: "The Org tags sync snap-in is an automation tool designed to synchronize tags across multiple organizations."
 ---
 
 # Org tags sync
@@ -31,7 +32,7 @@ Follow these steps to set up the Org tags sync snap-in:
 2. Fill in the configuration settings.
 
    * **Connect your snap-ins workspace**: Go to the **Connections** and locate
-     the **Connect your Snap-ins workspace** section. Click **Search for
+     the **Connect your Snap-ins workspace** section. Click **[[features/search|Search]] for
      Connections** and select **Org tags sync** from the list of available
      options.
    * Enter connection details:
@@ -56,4 +57,4 @@ To create and update tags that were created before the snap-in was installed:
    of existing tags.
 
 ## Source
-- DevRev support article [Org tags sync](https://support.devrev.ai/en-US/devrev/article/1v0qi5L8) (ART-21942)
+- DevRev support [[entities/article|article]] [Org tags sync](https://support.devrev.ai/en-US/devrev/article/1v0qi5L8) (ART-21942)

@@ -11,6 +11,7 @@ wiki_match: entities/issue
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['entities/issue']
+summary: "Repeat Step 2 for all issue types that need filtering:"
 ---
 
 # Filtering Jira Issues with Custom Fields - UI Guide
@@ -22,7 +23,7 @@ related: ['entities/issue']
 ## Prerequisites
 
 1. **Jira Custom Field**: Create a custom field in Jira with enum/select list values
-2. **Field Applied to Issue Types**: Ensure the custom field is added to the Jira issue types to be synced
+2. **Field Applied to [[entities/issue|Issue]] Types**: Ensure the custom field is added to the Jira issue types to be synced
 
 ---
 
@@ -30,14 +31,14 @@ related: ['entities/issue']
 
 ### Step 1: Create a Custom Field in Jira
 
-1. Go to **Jira Settings** → **Issues** → **Custom Fields**
+1. Go to **Jira Settings** → **[[features/issues|Issues]]** → **Custom Fields**
 2. Click **Create Custom Field**
-3. Associate with relevant issue types (Task, Bug, Story, etc.)
+3. Associate with relevant issue types ([[entities/task|Task]], Bug, Story, etc.)
 4. Add the newly created field to all the screens where you want to see the field
 
 ### Step 2: Configure Filter in DevRev
 
-1. Navigate to **Settings → AirSync → Add connection -> Jira Sync**
+1. Navigate to **Settings → [[glossary/airsync|AirSync]] → Add connection -> Jira Sync**
 2. Select your Jira sync connection
 3. Go to **Sync Configuration** or **Field Mappings**
 4. For each issue type you want to filter:
@@ -112,4 +113,4 @@ In the DevRev → Jira reverse sync, only issues associated with the subtypes de
 - [[entities/issue]]
 
 ## Source
-- DevRev support article [Filtering Jira Issues with Custom Fields - UI Guide](https://support.devrev.ai/en-US/devrev/article/dhtjswOf) (ART-23026)
+- DevRev support [[entities/article|article]] [Filtering Jira Issues with Custom Fields - UI Guide](https://support.devrev.ai/en-US/devrev/article/dhtjswOf) (ART-23026)

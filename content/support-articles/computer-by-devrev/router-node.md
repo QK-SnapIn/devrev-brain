@@ -10,6 +10,7 @@ top_category: Computer by DevRev
 wiki_match: overview
 match_score: 0.519
 last_updated: 2026-05-11
+summary: "The Router node enables you to split a workflow into multiple parallel paths based on conditions."
 ---
 
 # Router node
@@ -32,8 +33,8 @@ Each route evaluates independently. By default, all routes whose conditions are 
 Use the Router node in the following cases:
 
 * You need to handle multiple different outcomes from a single trigger.
-* Different ticket states require different actions (such as "resolved" vs "open" vs "closed").
-* You want cleaner, more maintainable workflows than nested conditionals.
+* Different [[entities/ticket|ticket]] states require different actions (such as "resolved" vs "open" vs "closed").
+* You want cleaner, more maintainable [[features/workflows|workflows]] than nested conditionals.
 * Multiple paths may need to execute simultaneously.
 
 ## Route definition
@@ -43,13 +44,13 @@ A route comprises the following attributes:
 1. Name (required): A unique identifier for this route that becomes the output port name that downstream nodes connect to  
    Example: "urgent", "follow\_up\_needed", "escalate"
 2. Description: Explains the purpose of this route and helps other users understand when this path executes.  
-   Example: "Route high-severity tickets to the senior support team"
+   Example: "Route high-severity [[features/tickets|tickets]] to the senior support team"
 3. Condition (required): The logic that determines if this route executes. Multiple conditions can be combined with AND/OR logic.  
-   The conditions are constructed from field values from previous steps (such as Ticket.severity, Issue.status) and operators (such as Contains, Equals, Greater than, Less than).
+   The conditions are constructed from field values from previous steps (such as Ticket.severity, [[entities/issue|Issue]].status) and operators (such as Contains, Equals, Greater than, Less than).
 
    Example: Issue.title Contains "urgent" AND Issue.priority = "P0"
 
-All fields and outputs from steps before the Router are accessible within every route. When you build conditions or add actions in any route, you can reference data from earlier workflow steps.
+All fields and outputs from steps before the Router are accessible within every route. When you [[features/build|build]] conditions or add actions in any route, you can reference data from earlier workflow steps.
 
 Example: If a trigger or previous step provides Ticket.severity, Ticket.priority, and Ticket.status, all routes can use these fields in their conditions and actions.
 
@@ -101,7 +102,7 @@ For example, a ticket should be categorized into exactly one queue—either "urg
 * Test with sample data to ensure conditions work as expected.
 * Use "First Match Only" when routes are mutually exclusive.
 
-❌ Don't:
+❌ [[glossary/don|Don]]'t:
 
 * Create overlapping conditions without considering parallel execution.
 * Use overly complex nested condition logic, split into multiple routes instead.
@@ -128,4 +129,4 @@ Router
 ```
 
 ## Source
-- DevRev support article [Router node](https://support.devrev.ai/en-US/devrev/article/rJS1COSx) (ART-23384)
+- DevRev support [[entities/article|article]] [Router node](https://support.devrev.ai/en-US/devrev/article/rJS1COSx) (ART-23384)

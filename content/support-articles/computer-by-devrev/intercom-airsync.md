@@ -11,11 +11,12 @@ wiki_match: glossary/airsync
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['glossary/airsync']
+summary: "The Intercom AirSync simplifies migration from Intercom to DevRev, supporting both one-time imports and ongoing syncs."
 ---
 
 # Intercom AirSync
 
-The Intercom AirSync simplifies migration from Intercom to DevRev, supporting both one-time imports and ongoing syncs.
+The Intercom [[glossary/airsync|AirSync]] simplifies migration from Intercom to DevRev, supporting both one-time imports and ongoing syncs.
 
 # Supported objects
 
@@ -23,21 +24,21 @@ The following is a list of Intercom objects and their corresponding DevRev equiv
 
 | Intercom Object | DevRev Object | Sync to DevRev |
 | --- | --- | --- |
-| Conversations | Conversations | ✅ |
-| Conversation Parts (comments) | Conversation comments | ✅ |
+| [[features/conversations-feature|Conversations]] | Conversations | ✅ |
+| [[entities/conversation|Conversation]] [[features/parts|Parts]] (comments) | Conversation comments | ✅ |
 | Tags | Tags | ✅ |
 | Attachment in conversation/comments | Attachment in conversation/comments | ✅ |
 | Admins | DevUser | ✅ |
-| Companies | Accounts | ✅ |
+| Companies | [[features/accounts|Accounts]] | ✅ |
 | Contacts | Contacts | ✅ |
 | Collections | Collections | ✅ |
-| Articles | Articles | ✅ |
+| [[entities/article|Articles]] | Articles | ✅ |
 | Attachment in Articles | Attachment in Articles | ❌ |
 
 ## Import from Intercom
 
 1. Log in to DevRev.
-2. Go to **Settings** and search for **Integrations**.
+2. Go to **Settings** and [[features/search|search]] for **Integrations**.
 3. In the snap-in config, click on **All Snap-ins**, search for **Intercom AirSync Snap-in**, and click **Add**. The snap-in configuration component will be displayed.
 4. Do the following:
 
@@ -59,7 +60,7 @@ The following is a list of Intercom objects and their corresponding DevRev equiv
 5. Click **Install Snap-in**.
 6. Go to **Airsync** from the left navigation in your settings.
 7. Click **Airsync** in the top-right corner and select the **Intercom AirSync Snap-in** logo.
-8. Create a new connection to your **Intercom** account, or use an existing active connection if you already have one.
+8. Create a new connection to your **Intercom** [[entities/account|account]], or use an existing active connection if you already have one.
 
 ### **Choose a Connection Type**
 
@@ -81,7 +82,7 @@ There are two types of connections. You can choose either one to authenticate wi
 
 ### Sync Units
 
-A list of sync units will be displayed. Select the sync unit as per required and **DevRev part** that should be used for any imported work. *(Future releases will enhance this functionality.)* This initiates a **bulk import** of the selected sync unit.
+A list of sync units will be displayed. Select the sync unit as per required and **DevRev [[entities/part|part]]** that should be used for any imported work. *(Future releases will enhance this functionality.)* This initiates a **bulk import** of the selected sync unit.
 
 * `[org_name] Article & Collections`: Imports only **articles and collections**.
 * `[org_name] Recent 3 Months All Entities`: Imports **all entities** (users, contacts, accounts, conversations, tags, attachments, comments, articles, and collections) from the **last 3 months**.
@@ -169,4 +170,4 @@ To delete an import and all the content it created, go to **Settings > Integrati
 - [[glossary/airsync]]
 
 ## Source
-- DevRev support article [Intercom AirSync](https://support.devrev.ai/en-US/devrev/article/PkxZOkjf) (ART-22006)
+- DevRev support [[entities/article|article]] [Intercom AirSync](https://support.devrev.ai/en-US/devrev/article/PkxZOkjf) (ART-22006)

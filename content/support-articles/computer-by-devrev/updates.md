@@ -11,13 +11,14 @@ wiki_match: features/updates-feed
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['features/updates-feed']
+summary: "Updates help you stay on top of all your activity on DevRev."
 ---
 
 # Updates
 
 Updates help you stay on top of all your activity on DevRev.
 
-Conversations, tickets, and issues where you are an owner, member, or creator, or where comments are made or you are @mentioned, are automatically shown in your updates. A group can also be mentioned here which will send a notification to all the members of the group. For other tickets and issues, you can follow them to receive some or all updates through the bell icon 🔔 on the work item. You can unfollow work items to stop updates by unchecking all or some update types.
+[[features/conversations-feature|Conversations]], [[features/tickets|tickets]], and [[features/issues|issues]] where you are an owner, member, or creator, or where comments are made or you are @mentioned, are automatically shown in your updates. A [[entities/group|group]] can also be mentioned here which will send a notification to all the members of the group. For other tickets and issues, you can follow them to receive some or all updates through the bell icon 🔔 on the work item. You can unfollow work items to stop updates by unchecking all or some update types.
 
 Both discussions and field updates show up as participation updates. Participation updates are the most frequent. You can unfollow them to reduce noise in your updates.
 
@@ -44,10 +45,10 @@ DevRev helps you efficiently manage and triage updates with the following featur
 
 DevRev provides several tools to help you manage your notifications.
 
-* Unread vs All: Toggle between **Unread** and **All** updates, with **Unread** as the default to achieve inbox zero.
+* Unread vs All: Toggle between **Unread** and **All** updates, with **Unread** as the default to achieve [[features/inbox|inbox]] zero.
 * Subscription management: Unsubscribe using the bell icon on hover if a specific record is no longer relevant.
 * Mark as read: Use the check mark icon on hover to mark notifications as read.
-* Filters: Filter notifications by record type (such as ticket or Issue), notification type (mentions, comments, assignments, etc.), or notified by (select from your colleagues or bots).
+* Filters: Filter notifications by record type (such as [[entities/ticket|ticket]] or [[entities/issue|Issue]]), notification type (mentions, comments, assignments, etc.), or notified by (select from your colleagues or bots).
 * Bulk actions: Select any notification and a new option to **Select All** will appear, allowing you to take bulk actions or mark all as read. It selects all updates on the current page, not all available updates.
 
 ### Notification priorities and channels
@@ -69,7 +70,7 @@ Notifications are prioritized and sent through different channels based on their
 * Email notifications: Sent after a five-minute delay if the notification is unread.
 * Push notifications: Sent immediately and marked as stale if read on the web.
 
-By using these features, DevRev helps you efficiently manage updates, focus on critical tasks, and maintain a streamlined workflow.
+By using these features, DevRev helps you efficiently manage updates, focus on critical [[entities/task|tasks]], and maintain a streamlined workflow.
 
 ## Personalizing notifications
 
@@ -80,7 +81,7 @@ DevRev allows users to personalize their notification preferences to ensure they
 
    * Reminders: Set notifications for reminders.
    * Assignments: Enable notifications for new assignments.
-   * Group Mentions: Enable notifications for mentions involving your affiliated groups.
+   * Group Mentions: Enable notifications for mentions involving your affiliated [[entities/group|groups]].
    * Mentions: Enable alerts when you're mentioned.
    * Comments: Enable updates for comments on your subscribed records.
    * Attribute Updates: Enable notifications for attribute updates in records to which you subscribe.
@@ -101,7 +102,7 @@ Examples:
 
 ## Follow conversations
 
-To receive updates about conversations in the Plug inbox, you must be a member of the support group. To manage membership of the support group go to [**Settings** > **Groups**](https://app.devrev.ai/?setting=groups).
+To receive updates about conversations in the [[glossary/plug|Plug]] inbox, you must be a member of the support group. To manage membership of the support group go to [**Settings** > **Groups**](https://app.devrev.ai/?setting=groups).
 
 For more information about groups, refer to [[support-articles/computer-by-devrev/groups|Groups]].
 
@@ -113,4 +114,4 @@ DevRev sends a daily email digest with a summary of unread updates. The updates 
 - [[features/updates-feed]]
 
 ## Source
-- DevRev support article [Updates](https://support.devrev.ai/en-US/devrev/article/knFZaYQO) (ART-21852)
+- DevRev support [[entities/article|article]] [Updates](https://support.devrev.ai/en-US/devrev/article/knFZaYQO) (ART-21852)

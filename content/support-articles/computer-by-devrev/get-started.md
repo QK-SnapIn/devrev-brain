@@ -10,13 +10,14 @@ top_category: Computer by DevRev
 wiki_match: entities/article
 match_score: 0.444
 last_updated: 2026-05-11
+summary: "To check out the computer walkthrough video, click here."
 ---
 
 # Get started
 
 To check out the computer walkthrough video, click [here.](https://www.youtube.com/watch?v=JK4NosXEmeo)
 
-You can set up Computer in just a few minutes. Follow these steps to create your account and configure your workspace.
+You can set up Computer in just a few minutes. Follow these steps to create your [[entities/account|account]] and configure your workspace.
 
 1. Open the [DevRev website](https://devrev.ai/) and click **Sign up**.
 2. Choose to sign up using Google, LinkedIn, or email.
@@ -42,4 +43,4 @@ Once you've completed the onboarding, you'll be taken to your workspace and can 
 * What are the latest trends on AI?
 
 ## Source
-- DevRev support article [Get started](https://support.devrev.ai/en-US/devrev/article/HQiNUwlK) (ART-23983)
+- DevRev support [[entities/article|article]] [Get started](https://support.devrev.ai/en-US/devrev/article/HQiNUwlK) (ART-23983)

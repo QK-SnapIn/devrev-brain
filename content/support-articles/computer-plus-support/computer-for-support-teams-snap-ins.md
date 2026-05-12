@@ -10,6 +10,7 @@ top_category: Computer+ Support
 wiki_match: features/customer-portal
 match_score: 0.449
 last_updated: 2026-05-11
+summary: "Add-on modules for DevRev, called snap-ins, are available on the Marketplace."
 ---
 
 # Computer for Support Teams snap-ins
@@ -19,8 +20,8 @@ Add-on modules for DevRev, called snap-ins, are available on the [Marketplace](h
 Snap-ins are of the following types:
 
 * **Integrations** let you connect DevRev with existing systems such as Slack and Jira.
-* **Automations** perform tasks within DevRev based on events, like responding to customer conversations and linking tickets and issues.
-* **AirSync** helps you bring data from external sources to DevRev and keep them in sync.
+* **Automations** perform [[entities/task|tasks]] within DevRev based on events, like responding to customer [[features/conversations-feature|conversations]] and linking [[features/tickets|tickets]] and [[features/issues|issues]].
+* **[[glossary/airsync|AirSync]]** helps you bring data from external sources to DevRev and keep them in sync.
 
 While numerous snap-ins are available and more are in development, you can create your own using [DevRev APIs](https://developer.devrev.ai/).
 
@@ -56,4 +57,4 @@ While numerous snap-ins are available and more are in development, you can creat
 | [[support-articles/snap-ins/airtable|Airtable]] |  |  |
 
 ## Source
-- DevRev support article [Computer for Support Teams snap-ins](https://support.devrev.ai/en-US/devrev/article/67fdp80i) (ART-21869)
+- DevRev support [[entities/article|article]] [Computer for Support Teams snap-ins](https://support.devrev.ai/en-US/devrev/article/67fdp80i) (ART-21869)

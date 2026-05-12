@@ -10,6 +10,7 @@ top_category: Computer by DevRev
 wiki_match: features/incidents
 match_score: 0.579
 last_updated: 2026-05-11
+summary: "DevRev provides robust version management capabilities that allow you to track changes, maintain version history, and manage workflow iterations."
 ---
 
 # Workflow management
@@ -57,9 +58,9 @@ Any changes remain in draft mode until published, and the existing version conti
 
 ## Access control
 
-* By default, only admins can edit or deploy workflows, while all users have the ability to view them.
-* There is a default group called **Agent and Automations Admin**. Members of this group have full access to manage workflows, including creating, updating, deploying, and deleting them. You can add people to this group to grant them these permissions.
-* To create custom groups for workflow managers, go to [**Settings** > **User Management** > **Roles**](https://app.devrev.ai/?setting=user-roles). Create a new role with the necessary workflow privileges and assign this role to a group.
+* By default, only admins can edit or deploy [[features/workflows|workflows]], while all users have the ability to view them.
+* There is a default [[entities/group|group]] called **Agent and Automations Admin**. Members of this group have full access to manage workflows, including creating, updating, deploying, and deleting them. You can add people to this group to grant them these permissions.
+* To create custom [[entities/group|groups]] for workflow managers, go to [**Settings** > **User Management** > **Roles**](https://app.devrev.ai/?setting=user-roles). Create a new role with the necessary workflow privileges and assign this role to a group.
 * If you grant Create, Read, Update, and Delete permissions, the role gains full access to perform all operations on the workflows.
 * If you provide only Create and Read permissions, the role can create new workflows and view existing ones, but can only update those in draft status.
 
@@ -72,4 +73,4 @@ You can enhance your workflows with robust error handling:
 * **Ensure graceful management**: Manage errors by enabling appropriate fallback actions, such as sending a notification or logging the error. When a step fails, any subsequent steps in the path do not execute.
 
 ## Source
-- DevRev support article [Workflow management](https://support.devrev.ai/en-US/devrev/article/sgdTQ9C3) (ART-21904)
+- DevRev support [[entities/article|article]] [Workflow management](https://support.devrev.ai/en-US/devrev/article/sgdTQ9C3) (ART-21904)

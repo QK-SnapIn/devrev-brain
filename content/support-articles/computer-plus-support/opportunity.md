@@ -11,13 +11,14 @@ wiki_match: entities/opportunity
 match_score: 1.0
 last_updated: 2026-05-11
 related: ['entities/opportunity']
+summary: "An opportunity record represents a potential source of revenue for your organization."
 ---
 
 # Opportunity
 
-An opportunity record represents a potential source of revenue for your organization. Opportunities feature customizable states and stages that communicate their position within the sales pipeline.
+An [[glossary/opportunity|opportunity]] record represents a potential source of revenue for your organization. [[entities/opportunity|Opportunities]] feature customizable states and stages that communicate their position within the sales pipeline.
 
-You can link opportunities to an account, tickets, and conversations which could lead to a potential source of revenue.
+You can link opportunities to an [[entities/account|account]], [[features/tickets|tickets]], and [[features/conversations-feature|conversations]] which could lead to a potential source of revenue.
 
 ## Create an opportunity
 
@@ -30,7 +31,7 @@ You can link opportunities to an account, tickets, and conversations which could
 
 ### Opportunity attributes
 
-Opportunities have attributes that can be used to filter and group them in various views.
+Opportunities have attributes that can be used to filter and [[entities/group|group]] them in various views.
 You can find all the stock attributes listed under [**Settings** > **Object customization** > **Opportunity**](https://app.devrev.ai/?setting=object-customization?type=opportunity), and click > **Stock fields**.
 These are the stock attributes that come with DevRev:
 
@@ -49,13 +50,13 @@ These are the stock attributes that come with DevRev:
 * **Tags**: Tags are used to categorize opportunities.
 * **Modified by**: The person who last modified the opportunity.
 
-These attributes can be effectively used in filters and **Group** conditions across various vistas in DevRev to track specific work, capacity, and more.
+These attributes can be effectively used in filters and **Group** conditions across various [[features/vistas|vistas]] in DevRev to track specific work, capacity, and more.
 
 You can add custom attributes to opportunities to track additional information. For more information on custom attributes, see [[support-articles/computer-by-devrev/object-customization|object customization]].
 
 ## Stages
 
-This diagram represents the **Opportunity Transitions** workflow in DevRev, organized into three main groups:
+This diagram represents the **Opportunity Transitions** workflow in DevRev, organized into three main [[entities/group|groups]]:
 
 * **📂 Open**: Initial opportunity assessment stage (Qualification)
 * **⚡ In Progress**: Active sales process stages (Stalled, Validation, Negotiation, Contract)
@@ -99,4 +100,4 @@ The workflow supports flexible sales processes with the ability to handle stalle
 - [[entities/opportunity]]
 
 ## Source
-- DevRev support article [Opportunity](https://support.devrev.ai/en-US/devrev/article/VSU6Qz6K) (ART-21880)
+- DevRev support [[entities/article|article]] [Opportunity](https://support.devrev.ai/en-US/devrev/article/VSU6Qz6K) (ART-21880)

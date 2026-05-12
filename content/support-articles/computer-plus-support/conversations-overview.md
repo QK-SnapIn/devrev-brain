@@ -11,15 +11,16 @@ wiki_match: entities/conversation
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['entities/conversation']
+summary: "A conversation is an object type that\"s used to track any synchronous or near-synchronous discussions."
 ---
 
 # Conversations Overview
 
-A conversation is an object type that's used to track any synchronous or near-synchronous discussions. A conversation maybe started by a customer, a builder, or a system (auto-created).
+A [[entities/conversation|conversation]] is an object type that's used to track any synchronous or near-synchronous discussions. A conversation maybe started by a customer, a builder, or a system (auto-created).
 
 A new conversation is routed to the customer org's default owner unless it matches keywords in the support routing snap-in configuration.
 
-Conversations from new or unidentified customer orgs have lower priority than existing customer orgs.
+[[features/conversations-feature|Conversations]] from new or unidentified customer orgs have lower priority than existing customer orgs.
 
 **Tags** [*values*]
 
@@ -42,7 +43,7 @@ The following figure shows the state machine for conversations.
   The initial stage for all valid conversations. In certain cases, spam may get past the filter and end up in *new* which would be moved to *suspended*. When someone from the support team responds, the status changes to *waiting on user* as they need a response from the user to take the next step towards addressing the user's concern.
 * *Suspended*
 
-  The initial stage for all invalid conversations, which may include spam or otherwise suspicious inquiries. This stage is used to minimize noise in the support inbox. If, upon review, the *suspended* item is deemed valid, it's transitioned to the *new* stage.
+  The initial stage for all invalid conversations, which may include spam or otherwise suspicious inquiries. This stage is used to minimize noise in the support [[features/inbox|inbox]]. If, upon review, the *suspended* item is deemed valid, it's transitioned to the *new* stage.
 
 **In-progress**
 
@@ -55,9 +56,9 @@ The following figure shows the state machine for conversations.
   To calculate the time to initial response you can look at the duration between the conversation created timestamp and the time the stage transitions from *new* to *waiting on user*. Another method is to see how long the conversation was in the *new* stage.
 * *Needs response* (NR)
 
-  The customer has responded; the customer experience engineer needs to review the item and respond or resolve the issue if the user requests or validates the fix. When a customer experience engineer responds the stage transitions to *waiting on user*.
+  The customer has responded; the customer experience engineer needs to review the item and respond or resolve the [[entities/issue|issue]] if the user requests or validates the fix. When a customer experience engineer responds the stage transitions to *waiting on user*.
 
-  In certain cases it may be necessary to escalate the item internally where the conversation may depend on tickets, issues, or a response from someone other than themselves. In this case the stage transitions to *hold* since the customer experience engineer is blocked by a dependent item.
+  In certain cases it may be necessary to escalate the item internally where the conversation may depend on [[features/tickets|tickets]], [[features/issues|issues]], or a response from someone other than themselves. In this case the stage transitions to *hold* since the customer experience engineer is blocked by a dependent item.
 
   Conversations which need a response from the customer experience engineer shows a **Reply** button in the inbox.
 * *Hold* (H)
@@ -81,4 +82,4 @@ The following figure shows the state machine for conversations.
 - [[entities/conversation]]
 
 ## Source
-- DevRev support article [Conversations Overview](https://support.devrev.ai/en-US/devrev/article/C48RPDJK) (ART-21838)
+- DevRev support [[entities/article|article]] [Conversations Overview](https://support.devrev.ai/en-US/devrev/article/C48RPDJK) (ART-21838)

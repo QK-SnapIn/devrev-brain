@@ -10,6 +10,7 @@ top_category: Computer by DevRev
 wiki_match: features/workflows
 match_score: 0.615
 last_updated: 2026-05-11
+summary: "When a workflow starts running, the action steps define which operations or processes occur and specify any data that needs to be transferred between blocks."
 ---
 
 # Workflow action library
@@ -22,24 +23,24 @@ blocks. Below is a list the action steps you can use.
 
 | Operation | Description | Input Parameters | Output |
 | --- | --- | --- | --- |
-| Create Account | Creates a new account in DevRev. | * Account details like name, description, domains, etc. * subtype: (Optional) Account subtype * apps: (Optional) Related apps * app\_custom\_fields: (Optional) Custom fields | Created account object |
+| Create [[entities/account|Account]] | Creates a new account in DevRev. | * Account details like name, description, domains, etc. * subtype: (Optional) Account subtype * apps: (Optional) Related apps * app\_custom\_fields: (Optional) Custom fields | Created account object |
 | Create Contact | Creates a new contact (rev\_user) in DevRev. | * Contact details like email, full\_name, phone, etc. * subtype: (Optional) Contact subtype * apps: (Optional) Related apps * app\_custom\_fields: (Optional) Custom fields | Created rev\_user object |
-| Create Incident | Creates a new incident in DevRev. | * Incident details like title, body, applies\_to\_part, etc. * subtype: (Optional) Incident subtype * apps: (Optional) Related apps * app\_custom\_fields: (Optional) Custom fields | Created incident object |
-| Create Issue | Creates a new issue in DevRev. | * Issue details like title, body, priority\_v2, etc. * subtype: (Optional) Issue subtype * apps: (Optional) Related apps * app\_custom\_fields: (Optional) Custom fields | Created issue object |
-| Create Meeting | Creates a new meeting in DevRev. | * Meeting details like title, description, start\_date, attendees, etc. * subtype: (Optional) Meeting subtype * apps: (Optional) Related apps * app\_custom\_fields: (Optional) Custom fields | Created meeting object |
-| Create Opportunity | Creates a new opportunity in DevRev. | * Opportunity details like title, body, applies\_to\_part, etc. * subtype: (Optional) Opportunity subtype * apps: (Optional) Related apps * app\_custom\_fields: (Optional) Custom fields | Created opportunity object |
-| Create Ticket | Creates a new ticket in DevRev. | * Ticket details like title, body, applies\_to\_part, etc. * subtype: (Optional) Ticket subtype * apps: (Optional) Related apps * app\_custom\_fields: (Optional) Custom fields | Created ticket object |
-| Convert Conversation To Ticket | Converts a conversation to a ticket. | * conversation\_id: ID of the conversation to convert | ticket\_id: ID of the created ticket |
+| Create [[glossary/incident|Incident]] | Creates a new incident in DevRev. | * Incident details like title, body, applies\_to\_part, etc. * subtype: (Optional) Incident subtype * apps: (Optional) Related apps * app\_custom\_fields: (Optional) Custom fields | Created incident object |
+| Create [[entities/issue|Issue]] | Creates a new issue in DevRev. | * Issue details like title, body, priority\_v2, etc. * subtype: (Optional) Issue subtype * apps: (Optional) Related apps * app\_custom\_fields: (Optional) Custom fields | Created issue object |
+| Create [[entities/meeting|Meeting]] | Creates a new meeting in DevRev. | * Meeting details like title, description, start\_date, attendees, etc. * subtype: (Optional) Meeting subtype * apps: (Optional) Related apps * app\_custom\_fields: (Optional) Custom fields | Created meeting object |
+| Create [[glossary/opportunity|Opportunity]] | Creates a new opportunity in DevRev. | * Opportunity details like title, body, applies\_to\_part, etc. * subtype: (Optional) Opportunity subtype * apps: (Optional) Related apps * app\_custom\_fields: (Optional) Custom fields | Created opportunity object |
+| Create [[entities/ticket|Ticket]] | Creates a new ticket in DevRev. | * Ticket details like title, body, applies\_to\_part, etc. * subtype: (Optional) Ticket subtype * apps: (Optional) Related apps * app\_custom\_fields: (Optional) Custom fields | Created ticket object |
+| Convert [[entities/conversation|Conversation]] To Ticket | Converts a conversation to a ticket. | * conversation\_id: ID of the conversation to convert | ticket\_id: ID of the created ticket |
 
 ## Object retrieval
 
 | Operation | Description | Input Parameters | Output |
 | --- | --- | --- | --- |
 | GetAccount | Retrieves account details. | * id: ID of the account * subtype: (Optional) Account subtype * apps: (Optional) Related apps | Account object |
-| GetAirdropSyncUnit | Retrieves information about an Airdrop sync unit. | * id: ID of the sync unit | Sync unit object |
+| GetAirdropSyncUnit | Retrieves information about an [[glossary/airdrop|Airdrop]] sync unit. | * id: ID of the sync unit | Sync unit object |
 | GetConversation | Retrieves conversation details. | * id: ID of the conversation * subtype: (Optional) Conversation subtype * apps: (Optional) Related apps | Conversation object |
 | GetCustomer | Retrieves customer (rev\_user) details. | * id: ID of the customer * subtype: (Optional) Customer subtype * apps: (Optional) Related apps | Rev\_user object |
-| GetEnhancement | Retrieves enhancement details. | * id: ID of the enhancement * subtype: (Optional) Enhancement subtype * apps: (Optional) Related apps | Enhancement object |
+| GetEnhancement | Retrieves [[entities/enhancement|enhancement]] details. | * id: ID of the enhancement * subtype: (Optional) Enhancement subtype * apps: (Optional) Related apps | Enhancement object |
 | GetFeature | Retrieves feature details. | * id: ID of the feature * subtype: (Optional) Feature subtype * apps: (Optional) Related apps | Feature object |
 | GetIncident | Retrieves incident details. | * id: ID of the incident | Incident object |
 | GetIssue | Retrieves issue details. | * id: ID of the issue * subtype: (Optional) Issue subtype * apps: (Optional) Related apps | Issue object |
@@ -69,7 +70,7 @@ blocks. Below is a list the action steps you can use.
 | --- | --- | --- | --- |
 | LinkConversationWithTicket | Creates a link between a conversation and a ticket. | * source: Conversation ID * link\_type: Type of link (usually "is\_related\_to") * target: Ticket ID | Empty response on success |
 | LinkIncidentWithIssue | Creates a link between an incident and an issue. | * source: Incident ID * link\_type: Type of link (usually "is\_dependent\_on") * target: Issue ID | Empty response on success |
-| LinkIssueWithIssue | Creates a link between two issues. | * source: Source issue ID * link\_type: Type of link * target: Target issue ID | Empty response on success |
+| LinkIssueWithIssue | Creates a link between two [[features/issues|issues]]. | * source: Source issue ID * link\_type: Type of link * target: Target issue ID | Empty response on success |
 | LinkTicketWithIssue | Creates a link between a ticket and an issue. | * source: Ticket ID * link\_type: Type of link (usually "is\_dependent\_on") * target: Issue ID | Empty response on success |
 | ListObjectsLinkedToIssue | Retrieves objects linked to an issue. | * issue: ID of the issue * objects: Types of objects to find * relationship: (Optional) Specific relationship types to filter by | Array of linked objects with relationship information |
 | ListObjectsLinkedToTicket | Retrieves objects linked to a ticket. | * ticket: ID of the ticket * objects: Types of objects to find * relationship: (Optional) Specific relationship types to filter by | Array of linked objects with relationship information |
@@ -80,7 +81,7 @@ blocks. Below is a list the action steps you can use.
 | --- | --- | --- | --- |
 | AddComment | Adds a comment to an object in DevRev. Supports various visibility options and user permissions. | * object: ID of the object * body: Comment body * visibility: (Optional) "external", "internal", or "private" * users: (Required if visibility is "private") List of users who can   see the comment | * id: ID of the created comment * created\_by: User who created the comment |
 | AskOptions | Displays a message with interactive buttons that users can click. | * object: ID of the object * message: (Optional) Message text * buttons: Array of buttons with name and display\_name * visibility: (Optional) Visibility setting * panel: (Optional) Panel to display the message * private\_to: (Optional) Users for private visibility | Output ports created dynamically based on button clicks |
-| SendNotification | Sends a notification to specified users or groups. | * receivers: Users or groups who will receive the notification * body: The body of the notification * title: The title of the notification * linked\_object: (Optional) The object which will open on clicking the   notification | Empty response on success |
+| SendNotification | Sends a notification to specified users or [[entities/group|groups]]. | * receivers: Users or groups who will receive the notification * body: The body of the notification * title: The title of the notification * linked\_object: (Optional) The object which will open on clicking the   notification | Empty response on success |
 
 ## Source
-- DevRev support article [Workflow action library](https://support.devrev.ai/en-US/devrev/article/I5gcoCnY) (ART-21901)
+- DevRev support [[entities/article|article]] [Workflow action library](https://support.devrev.ai/en-US/devrev/article/I5gcoCnY) (ART-21901)

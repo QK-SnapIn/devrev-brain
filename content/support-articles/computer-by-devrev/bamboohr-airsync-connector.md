@@ -11,19 +11,20 @@ wiki_match: glossary/airsync
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['glossary/airsync']
+summary: "The BambooHR AirSync connector imports your HR data from BambooHR into DevRev."
 ---
 
 # BambooHR AirSync Connector
 
 # BambooHR AirSync Connector
 
-The BambooHR AirSync connector imports your HR data from BambooHR into DevRev. It keeps employee records, departments, time-off requests, and other HR entities in sync so your team can work with up-to-date HR data directly in DevRev.
+The BambooHR [[glossary/airsync|AirSync]] connector imports your HR data from BambooHR into DevRev. It keeps employee records, departments, time-off requests, and other HR entities in sync so your team can work with up-to-date HR data directly in DevRev.
 
 ---
 
 ## What this connector does
 
-The connector reads data from your BambooHR account and creates corresponding records in DevRev. After the initial full import, it runs incremental syncs that only pull in records that have changed since the last run—keeping your data fresh without redundant transfers.
+The connector reads data from your BambooHR [[entities/account|account]] and creates corresponding records in DevRev. After the initial full import, it runs incremental syncs that only pull in records that have changed since the last run—keeping your data fresh without redundant transfers.
 
 The connector also supports **two-way sync for employees**: changes made to employee records in DevRev can be written back to BambooHR.
 
@@ -72,7 +73,7 @@ These records are linked to individual employees:
 Before you install the connector, make sure you have:
 
 * A BambooHR account with **admin access** (required to generate an API key)
-* Your **BambooHR subdomain** (the part before `.bamboohr.com` in your account URL — for example, if your URL is `https://acme.bamboohr.com`, your subdomain is `acme`)
+* Your **BambooHR subdomain** (the [[entities/part|part]] before `.bamboohr.com` in your account URL — for example, if your URL is `https://acme.bamboohr.com`, your subdomain is `acme`)
 * A DevRev account with permission to install snap-ins
 
 ### How to get your BambooHR API key
@@ -86,7 +87,7 @@ Before you install the connector, make sure you have:
 
 ## How to install the connector
 
-1. Go to the [DevRev Marketplace](https://app.devrev.ai/marketplace) and search for **BambooHR AirSync**.
+1. Go to the [DevRev Marketplace](https://app.devrev.ai/marketplace) and [[features/search|search]] for **BambooHR AirSync**.
 2. Click the connector listing and select **Install**.
 3. Follow the on-screen prompts to complete installation.
 
@@ -196,7 +197,7 @@ Two-way sync applies to the **Employees** entity only. All other entities are re
 
 **How often does the connector sync?** Incremental syncs run on a schedule managed by DevRev. You can also trigger a manual sync at any time from the connector settings.
 
-**Can I sync only specific departments or employee groups?** The current connector imports all employees (and optionally terminated employees) from your BambooHR account. Department or group filtering is not supported at this time.
+**Can I sync only specific departments or employee [[entities/group|groups]]?** The current connector imports all employees (and optionally terminated employees) from your BambooHR account. Department or [[entities/group|group]] filtering is not supported at this time.
 
 **What happens if BambooHR is temporarily unavailable?** The connector retries failed requests automatically. If BambooHR is rate-limiting requests, the connector waits and resumes. The sync state is preserved so the connector picks up where it left off rather than restarting from scratch.
 
@@ -206,4 +207,4 @@ Two-way sync applies to the **Employees** entity only. All other entities are re
 - [[glossary/airsync]]
 
 ## Source
-- DevRev support article [BambooHR AirSync Connector](https://support.devrev.ai/en-US/devrev/article/OG12XyE2) (ART-27919)
+- DevRev support [[entities/article|article]] [BambooHR AirSync Connector](https://support.devrev.ai/en-US/devrev/article/OG12XyE2) (ART-27919)

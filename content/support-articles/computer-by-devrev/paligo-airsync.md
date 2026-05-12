@@ -11,11 +11,12 @@ wiki_match: glossary/airsync
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['glossary/airsync']
+summary: "Seamlessly import your articles from Paligo to DevRev."
 ---
 
 # Paligo AirSync
 
-Seamlessly import your articles from Paligo to DevRev.
+Seamlessly import your [[entities/article|articles]] from Paligo to DevRev.
 
 ## Supported objects
 
@@ -24,27 +25,27 @@ equivalent. Those marked as **Supported** are eligible for import.
 
 | Paligo object | DevRev object | Sync to DevRev |
 | --- | --- | --- |
-| Folder | Article collection | ✅ |
+| Folder | [[entities/article|Article]] collection | ✅ |
 | Document | Article | ✅ |
-| User group | Group | ❌ |
+| User [[entities/group|group]] | Group | ❌ |
 
 ## Import from Paligo
 
 Follow the steps below to import from Paligo:
 
-1. In **Marketplace**, search for Paligo under the **Import** category and
+1. In **Marketplace**, [[features/search|search]] for Paligo under the **Import** category and
    select the option for the **Paligo**.
 2. In the snap-in config modal, click **Install** then go to **Integrations** >
    **Imports** in your settings left nav.
 3. Click the **Import** button and select the Paligo tile in the **Start
    import** window.
-4. Create a new connection to your Paligo account, or use an existing.
+4. Create a new connection to your Paligo [[entities/account|account]], or use an existing.
    connection if you already have one.While creating the connection, you are required to input a **Subdomain**
-   field. This is a mandatory unique identifier used by AirSync to group
+   field. This is a mandatory unique identifier used by [[glossary/airsync|AirSync]] to group
    together imports from the same source system.It is recommended to use the **Instance** of the Paligo workspace you want to import
    as the value of **Subdomain**.
 5. Once the connection is established, select the Paligo publication you want to
-   import, and specify the DevRev part that should be used for any imported work.
+   import, and specify the DevRev [[entities/part|part]] that should be used for any imported work.
    This initiates a bulk import of the selected site.
 6. Click **Map fields** in the import row and configure filters, object mapping,
    or field mapping as necessary.While DevRev attempts to automatically map fields, you may be prompted to

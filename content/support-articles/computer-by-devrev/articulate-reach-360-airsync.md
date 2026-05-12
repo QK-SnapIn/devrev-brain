@@ -11,11 +11,12 @@ wiki_match: glossary/airsync
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['glossary/airsync']
+summary: "The Articulate Reach 360 AirSync simplifies migration from Articulate Reach 360 learning management system to DevRev, supporting both one-time imports and ongoing syncs."
 ---
 
 # Articulate Reach 360 AirSync
 
-The Articulate Reach 360 AirSync simplifies migration from Articulate Reach 360 learning management system to DevRev, supporting both one-time imports and ongoing syncs.
+The Articulate Reach 360 [[glossary/airsync|AirSync]] simplifies migration from Articulate Reach 360 learning management system to DevRev, supporting both one-time imports and ongoing syncs.
 
 ### Key features
 
@@ -23,8 +24,8 @@ The Articulate Reach 360 AirSync simplifies migration from Articulate Reach 360 
 - User profile sync with domain-based categorization into DevUsers (employees) and contacts (customers).
 - Comprehensive course catalog extraction with metadata including titles, and content types.
 - Detailed learner progress tracking with enrollment status, completion percentages, quiz scores, and learning duration metrics.
-- Group import and organizational hierarchy management.
-- Learning analytics with cross-referential data for course-learner-user relationships and progress reporting.
+- [[entities/group|Group]] import and organizational hierarchy management.
+- Learning [[features/analytics|analytics]] with cross-referential data for course-learner-user relationships and progress reporting.
 
 ## Supported objects
 
@@ -36,20 +37,20 @@ The following is a list of Articulate Reach 360 objects and their corresponding 
 | Users (Customers) | Contact | ✅ | ❌ |
 | Courses | Custom Object (Courses) | ✅ | ❌ |
 | Learners | Custom Object (Learners) | ✅ | ❌ |
-| Groups | Groups | ✅ | ❌ |
+| [[entities/group|Groups]] | Groups | ✅ | ❌ |
 
 ## Import from Articulate Reach 360
 
-1. Go to the **Marketplace** and search for **Articulate Reach 360** in the **Import** category and install.
+1. Go to the **Marketplace** and [[features/search|search]] for **Articulate Reach 360** in the **Import** category and install.
    2.In the snap-in config modal, enter the domain of your organization, such as devrev.ai for the DevRev organization, in the snap-in input for user categorization.
 2. Click **Install**.
 3. Go to the **Import** section in your settings left nav.
 4. Click **+Import** and select the Articulate Reach 360 logo.
-5. Create a new connection to your Articulate Reach 360 account using your API key, or use an existing connection if you already have one.
+5. Create a new connection to your Articulate Reach 360 [[entities/account|account]] using your API key, or use an existing connection if you already have one.
 
 You must provide a valid API key for Articulate Reach 360 API access. OAuth 2.0 authentication is not currently supported by the Articulate Reach 360 platform.
 
-1. Once the connection is established, select the learning data you want to import and specify the DevRev part to be used for any imported work.
+1. Once the connection is established, select the learning data you want to import and specify the DevRev [[entities/part|part]] to be used for any imported work.
 2. DevRev makes an effort to automatically map the fields from Articulate Reach 360 to the corresponding fields in DevRev. However, you may be prompted to manually map certain fields if needed.
 
 ### Limitations
@@ -61,4 +62,4 @@ You must provide a valid API key for Articulate Reach 360 API access. OAuth 2.0 
 - [[glossary/airsync]]
 
 ## Source
-- DevRev support article [Articulate Reach 360 AirSync](https://support.devrev.ai/en-US/devrev/article/_eS2rQAB) (ART-21992)
+- DevRev support [[entities/article|article]] [Articulate Reach 360 AirSync](https://support.devrev.ai/en-US/devrev/article/_eS2rQAB) (ART-21992)

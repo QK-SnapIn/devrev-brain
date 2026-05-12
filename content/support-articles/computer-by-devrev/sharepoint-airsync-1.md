@@ -11,11 +11,12 @@ wiki_match: glossary/airsync
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['glossary/airsync']
+summary: "The SharePoint AirSync simplifies import from SharePoint to DevRev, supporting both one-time imports and ongoing syncs."
 ---
 
 # SharePoint AirSync
 
-The SharePoint AirSync simplifies import from SharePoint to DevRev, supporting both one-time imports and ongoing syncs.
+The SharePoint [[glossary/airsync|AirSync]] simplifies import from SharePoint to DevRev, supporting both one-time imports and ongoing syncs.
 
 # Supported Objects
 
@@ -24,15 +25,15 @@ The following is a list of SharePoint objects and their corresponding DevRev equ
 |  |  |  |
 | --- | --- | --- |
 | **SharePoint Object** | **DevRev Object** | **Sync to DevRev** |
-| Wiki pages | Article(as a Page) | ✅ |
+| Wiki pages | [[entities/article|Article]](as a Page) | ✅ |
 | Site pages | Article(as a Link) | ✅ |
 | Site URL | Article(as a Link) | ✅ |
-| Web parts | Article(as an attachment) | ✅ |
+| Web [[features/parts|parts]] | Article(as an attachment) | ✅ |
 | Files | Article(as an attachment) | ✅ |
 | Drives | Collection | ✅ |
 | Folders | Collection | ✅ |
 | User | DevUser | ✅ |
-| Group | Group | ✅ |
+| [[entities/group|Group]] | Group | ✅ |
 | Group Members | Object Members | ✅ |
 
 # Supported Connection Types
@@ -43,7 +44,7 @@ SharePoint AirSync offers two connection types. Choose the one that fits your or
 
 In this flow, each user creates their own OAuth connection to SharePoint. Here's how it works:
 
-* Each user authenticates with their Microsoft account.
+* Each user authenticates with their Microsoft [[entities/account|account]].
 * Users can only import data from SharePoint sites they have access to.
 * Each user selects the SharePoint sites they want to import.
 
@@ -57,7 +58,7 @@ In this flow, a Microsoft Entra ID Global Administrator sets up a single organiz
 
 # Installing the SharePoint AirSync to your org
 
-To get started, navigate to **Settings > Integrations > Snap-ins**. Under the **All Snap-ins** tab, search for **Microsoft SharePoint**, open the snap-in, click **Add**, and then click the **Install Snap-in** button.
+To get started, navigate to **Settings > Integrations > Snap-ins**. Under the **All Snap-ins** tab, [[features/search|search]] for **Microsoft SharePoint**, open the snap-in, click **Add**, and then click the **Install Snap-in** button.
 
 # Setting Up the SharePoint Connection
 
@@ -94,7 +95,7 @@ The App Flow uses client credential-based authentication and certificate-based s
 1. Go to **Microsoft Entra ID** > **App registrations**
 2. Click on a **New registration**
 3. Provide the application name as **DevRev SharePoint** for easy identification. However, you may choose a different name if preferred.
-4. For the Supported account types select **Accounts in this organizational directory only (<ORG> Management only - Single tenant)**
+4. For the Supported account types select **[[features/accounts|Accounts]] in this organizational directory only (<ORG> Management only - Single tenant)**
 5. Click on the Register button  
    ![image1.png](https://app.devrev.ai/api/gateway/internal/artifacts.download?id=don:core:dvrv-us-1:devo/0:artifact/9316067&key=ea2d086641271d0080b09ff6cd47d9a5d23afd90a12b1d3726341ff012d5a1db)
 6. Open the OAuth application and select the API permissions from the available options  
@@ -142,7 +143,7 @@ openssl version
 
 If this command works, you are ready to proceed.
 
-**Run the following commands in the same sequence from the terminal/command line:**
+**Run the following [[features/commands|commands]] in the same sequence from the terminal/command line:**
 
 ```
 openssl genrsa -out tempprivatekey.key 2048

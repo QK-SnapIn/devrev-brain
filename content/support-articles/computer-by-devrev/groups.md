@@ -11,17 +11,18 @@ wiki_match: entities/group
 match_score: 0.909
 last_updated: 2026-05-11
 related: ['entities/group']
+summary: "A group is a collection of members used to organize access and permissions within a workspace."
 ---
 
 # Groups
 
-A group is a collection of members used to organize access and permissions within a workspace. Only administrators can create and manage groups.
+A [[entities/group|group]] is a collection of members used to organize access and permissions within a workspace. Only administrators can create and manage [[entities/group|groups]].
 
 [[support-articles/computer-by-devrev/roles|Roles]] can be assigned to groups, granting the associated permissions to all members of that group.
 
 ## User groups and customer groups
 
-**User groups** contain the workspace's internal users (team members, agents, platform users). Manage user groups at [Settings > Groups](https://app.devrev.ai/?setting=groups). Default user groups include **Admins**, **Platform Users**, and **All Users**.
+**User groups** contain the workspace's internal users (team members, [[features/agents|agents]], platform users). Manage user groups at [Settings > Groups](https://app.devrev.ai/?setting=groups). Default user groups include **Admins**, **Platform Users**, and **All Users**.
 
 For further details, refer to [[support-articles/computer-by-devrev/user-management|User groups]].
 
@@ -39,4 +40,4 @@ For further details, refer to see [[support-articles/computer-by-devrev/customer
 - [[entities/group]]
 
 ## Source
-- DevRev support article [Groups](https://support.devrev.ai/en-US/devrev/article/s1klL8Gq) (ART-21893)
+- DevRev support [[entities/article|article]] [Groups](https://support.devrev.ai/en-US/devrev/article/s1klL8Gq) (ART-21893)

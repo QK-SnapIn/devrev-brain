@@ -10,6 +10,7 @@ top_category: Snap-ins
 wiki_match: glossary/trails
 match_score: 0.421
 last_updated: 2026-05-11
+summary: "The Outlook Email Sender snap-in lets you send emails directly from DevRev workflows using your organization\"s Microsoft Outlook mailbox."
 ---
 
 # Outlook Email
@@ -18,9 +19,9 @@ last_updated: 2026-05-11
 
 ## Overview
 
-The **Outlook Email Sender** snap-in lets you send emails directly from DevRev workflows using your organization's Microsoft Outlook mailbox. It connects to Microsoft Graph — Microsoft's unified API for Office 365 — via an Azure AD app registration, so emails appear to come from a real mailbox in your tenant without requiring any user to be logged in.
+The **Outlook Email Sender** snap-in lets you send emails directly from DevRev [[features/workflows|workflows]] using your organization's Microsoft Outlook mailbox. It connects to Microsoft Graph — Microsoft's unified API for Office 365 — via an Azure AD app registration, so emails appear to come from a real mailbox in your tenant without requiring any user to be logged in.
 
-Use this snap-in whenever a workflow needs to notify customers, teammates, or external stakeholders by email. You can personalize each email with a rich HTML body, include CC and BCC recipients, and attach files stored as DevRev artifacts.
+Use this snap-in whenever a workflow needs to notify customers, teammates, or external stakeholders by email. You can personalize each email with a rich HTML body, include CC and BCC recipients, and attach files stored as DevRev [[features/artifacts|artifacts]].
 
 ---
 
@@ -28,8 +29,8 @@ Use this snap-in whenever a workflow needs to notify customers, teammates, or ex
 
 Before you install the snap-in, set up the Azure AD app registration that it uses to send mail.
 
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) with an account that has permission to register applications.
-2. Go to **Identity → Applications → App registrations** and select **New registration**.
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) with an [[entities/account|account]] that has permission to register applications.
+2. Go to **[[features/identity|Identity]] → Applications → App registrations** and select **New registration**.
 3. Give the app a descriptive name (for example, `DevRev Outlook Email Sender`) and register it.
 4. After the app is created, copy and save the following values — you need them during snap-in configuration:
 
@@ -48,7 +49,7 @@ Before you install the snap-in, set up the Azure AD app registration that it use
 
 ## Installation
 
-1. In DevRev, open the **Snap-in marketplace** and search for **Outlook Email Sender**.
+1. In DevRev, open the **Snap-in marketplace** and [[features/search|search]] for **Outlook Email Sender**.
 2. Select the snap-in and click **Install**.
 3. When prompted, create a new **Outlook / Microsoft Graph** keyring and enter the three values you copied from Azure AD:
 
@@ -56,7 +57,7 @@ Before you install the snap-in, set up the Azure AD app registration that it use
    * **Client Secret** — the secret value from the client secret you created.
    * **Tenant ID** — the Directory (tenant) ID.
 4. Save the keyring. DevRev stores these credentials securely and never exposes them in logs.
-5. Complete the installation. The **Send Outlook email** action is now available in the workflow builder.
+5. Complete the installation. The **Send Outlook email** action is now available in the [[features/workflows|workflow builder]].
 
 ---
 
@@ -76,7 +77,7 @@ The snap-in is configured at the workflow step level. Each step that uses **Send
 
 ### Tips for configuration
 
-* Use workflow variables in **Subject** and **Body** to personalize emails with customer names, ticket IDs, or other dynamic data from your workflow context.
+* Use workflow variables in **Subject** and **Body** to personalize emails with customer names, [[entities/ticket|ticket]] IDs, or other dynamic data from your workflow context.
 * The **Sender mailbox** is typically a shared mailbox (for example, `support@yourdomain.com`) so the reply-to address is managed by your team rather than tied to an individual.
 * If you use the **Attachments** field, make sure the artifacts are already created in DevRev before the **Send Outlook email** step runs.
 
@@ -114,7 +115,7 @@ Use the **Success** output in subsequent workflow steps to branch on success or 
 After a workflow run that includes **Send Outlook email**, verify the outcome using these steps:
 
 1. **Check workflow run logs** — Open the workflow run in DevRev. The **Send Outlook email** step shows **Success: true** or **Success: false**. If it failed, the **Error message** output explains why (for example, invalid recipient address, missing permission, or attachment too large).
-2. **Check the recipient's inbox** — The email arrives from the configured sender mailbox. If it does not appear in the inbox, check the recipient's spam or junk folder.
+2. **Check the recipient's [[features/inbox|inbox]]** — The email arrives from the configured sender mailbox. If it does not appear in the inbox, check the recipient's spam or junk folder.
 3. **Check the sender mailbox Sent Items** — In Outlook or OWA, open the sender mailbox (if you have access) and look in **Sent Items**. A successfully delivered email appears there.
 4. **Check Azure AD audit logs** — In the Microsoft Entra admin center, go to **Monitoring → Audit logs** and filter by the app registration. Successful token requests confirm that the snap-in authenticated correctly.
 
@@ -154,8 +155,8 @@ After a workflow run that includes **Send Outlook email**, verify the outcome us
 * **Set Client Secret expiry reminders.** Azure AD client secrets expire. When a secret expires, the snap-in fails with an authentication error. Rotate secrets before they expire and update the DevRev keyring immediately.
 * **Grant only the permissions you need.** If your workflows never send attachments larger than 3 MB, you only need `Mail.Send`. Add `Mail.ReadWrite` only when large attachments are required.
 * **Use workflow variables for personalization.** Dynamic subjects and bodies improve recipient engagement and reduce the need for multiple similar workflow steps.
-* **Handle the Success output.** Always connect the **Success** output to a downstream step so your workflow can react to failures gracefully — for example, by creating a follow-up task or sending an alert to your team.
+* **Handle the Success output.** Always connect the **Success** output to a downstream step so your workflow can react to failures gracefully — for example, by creating a follow-up [[entities/task|task]] or sending an alert to your team.
 * **Test in a non-production workflow first.** Before rolling out to customers, run the step with a test recipient to confirm credentials, formatting, and attachments all work as expected.
 
 ## Source
-- DevRev support article [Outlook Email](https://support.devrev.ai/en-US/devrev/article/724unkqM) (ART-30343)
+- DevRev support [[entities/article|article]] [Outlook Email](https://support.devrev.ai/en-US/devrev/article/724unkqM) (ART-30343)

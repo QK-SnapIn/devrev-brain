@@ -11,27 +11,28 @@ wiki_match: features/conversational-workflows
 match_score: 1.0
 last_updated: 2026-05-11
 related: ['features/conversational-workflows']
+summary: "In DevRev, you can automate your customer support conversations with our workflow engine."
 ---
 
 # Conversational workflows
 
-In DevRev, you can automate your customer support conversations with our
-workflow engine. You can either build an AI agent handle to handle all or parts
+In DevRev, you can automate your customer support [[features/conversations-feature|conversations]] with our
+workflow engine. You can either [[features/build|build]] an AI agent handle to handle all or [[features/parts|parts]]
 of your customer support conversations, or you can also create deterministic
 button-based flows.
 
 ## AI agents in your conversational workflow
 
-To enable AI agents for customer support, please contact us through the
+To enable [[features/agents|AI agents]] for customer support, please contact us through the
 chat widget.
 
 ### AI agents for conversations or tickets
 
-1. Set the trigger for workflow to start with *Conversation created* or *Ticket
+1. Set the trigger for workflow to start with *[[entities/conversation|Conversation]] created* or *[[entities/ticket|Ticket]]
    created*.
 
    This trigger is whenever a conversation or ticket gets created by your
-   customers from Portal or Plug, or any of your integration which supports
+   customers from Portal or [[glossary/plug|Plug]], or any of your integration which supports
    conversation syncing, like Slack, WhatsApp, or email. You can find the
    integrations in our marketplace.
 2. Add the *Talk to agent* step as the next action. Fill all the required values
@@ -65,4 +66,4 @@ Find below a detailed explanation of all the fields needed to configure in the
 - [[features/conversational-workflows]]
 
 ## Source
-- DevRev support article [Conversational workflows](https://support.devrev.ai/en-US/devrev/article/dlr74RiI) (ART-21903)
+- DevRev support [[entities/article|article]] [Conversational workflows](https://support.devrev.ai/en-US/devrev/article/dlr74RiI) (ART-21903)

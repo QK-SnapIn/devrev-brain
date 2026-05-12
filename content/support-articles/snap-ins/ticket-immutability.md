@@ -11,11 +11,12 @@ wiki_match: entities/ticket
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['entities/ticket']
+summary: "The Ticket Immutability snap-in enables automatic enforcement of immutability on closed tickets."
 ---
 
 # Ticket immutability
 
-The [Ticket Immutability](https://devrev.ai/marketplace/followup) snap-in enables automatic enforcement of immutability on closed tickets. Organizations use this snap-in to maintain compliance with data governance policies, prevent accidental edits on resolved tickets, and preserve audit integrity. Once activated, tickets are marked as immutable after a defined number of days in a closed state, excluding those in the *Accepted* stage. After this period, no further modifications are permitted. This includes restrictions on rich-text editor access, field updates, object linking, and other changes, ensuring ticket integrity.
+The [Ticket Immutability](https://devrev.ai/marketplace/followup) snap-in enables automatic enforcement of immutability on closed [[features/tickets|tickets]]. Organizations use this snap-in to maintain compliance with data governance policies, prevent accidental edits on resolved tickets, and preserve audit integrity. Once activated, tickets are marked as immutable after a defined number of days in a closed state, excluding those in the *Accepted* stage. After this period, no further modifications are permitted. This includes restrictions on rich-text editor access, field updates, object linking, and other changes, ensuring [[entities/ticket|ticket]] integrity.
 
 This snap-in requires workspace admin privileges to install and configure.
 
@@ -23,7 +24,7 @@ This snap-in requires workspace admin privileges to install and configure.
 
 **Immutability enforcement**
 
-When a ticket has remained in a closed state (other than *Accepted*) for the configured number of days, the snap-in marks it as immutable. Once immutable, agents and customers cannot modify any fields, link objects, or edit the ticket's content.
+When a ticket has remained in a closed state (other than *Accepted*) for the configured number of days, the snap-in marks it as immutable. Once immutable, [[features/agents|agents]] and customers cannot modify any fields, link objects, or edit the ticket's content.
 
 > 📝 **Note**: To apply immutability to tickets, this snap-in runs about once per hour. On each run it can mark up to 50 tickets immutable. If there are a lot of tickets that meet the criteria for immutability, it can take multiple cycles to mark them all.
 
@@ -35,9 +36,9 @@ When a customer responds to an immutable ticket, the snap-in automatically creat
 
 Tickets are automatically archived 180 days after becoming immutable.
 
-**AirSync ticket exemption**
+**[[glossary/airsync|AirSync]] ticket exemption**
 
-Tickets imported through AirSync are exempt from being set as immutable. This prevents conflicts with synchronization workflows that may need to update ticket data after import.
+Tickets imported through AirSync are exempt from being set as immutable. This prevents conflicts with synchronization [[features/workflows|workflows]] that may need to update ticket data after import.
 
 ## Installation
 
@@ -54,4 +55,4 @@ In the **Configuration Settings**, specify the number of days (1–365) after wh
 - [[entities/ticket]]
 
 ## Source
-- DevRev support article [Ticket immutability](https://support.devrev.ai/en-US/devrev/article/8qJ46S4f) (ART-21957)
+- DevRev support [[entities/article|article]] [Ticket immutability](https://support.devrev.ai/en-US/devrev/article/8qJ46S4f) (ART-21957)

@@ -10,17 +10,18 @@ top_category: Computer by DevRev
 wiki_match: features/slas
 match_score: 0.431
 last_updated: 2026-05-11
+summary: "The Freshservice AirSync connector imports your IT service management data from Freshservice into DevRev, making it available for search, linking, and collaboration alongside your product and engineering workflows."
 ---
 
 # Freshservice Connector
 
 # Freshservice AirSync Connector
 
-The Freshservice AirSync connector imports your IT service management data from Freshservice into DevRev, making it available for search, linking, and collaboration alongside your product and engineering workflows. This connector supports bidirectional sync — data flows from Freshservice into DevRev, and updates made in DevRev on tickets, problems, and changes are written back to Freshservice.
+The Freshservice [[glossary/airsync|AirSync]] connector imports your IT service management data from Freshservice into DevRev, making it available for [[features/search|search]], linking, and collaboration alongside your product and engineering [[features/workflows|workflows]]. This connector supports bidirectional sync — data flows from Freshservice into DevRev, and updates made in DevRev on [[features/tickets|tickets]], problems, and changes are written back to Freshservice.
 
 ## What this connector does
 
-The connector reads data from your Freshservice account and creates or updates corresponding records in your DevRev org. It covers Tickets, Problems, Changes, Requesters, Agents, Groups, Departments, Knowledge Base Articles, Releases, Contracts, Vendors, Software, and Service Catalog Items — giving your teams a unified view of ITSM data directly in DevRev.
+The connector reads data from your Freshservice [[entities/account|account]] and creates or updates corresponding records in your DevRev org. It covers Tickets, Problems, Changes, Requesters, [[features/agents|Agents]], [[entities/group|Groups]], Departments, [[features/knowledge-base|Knowledge Base]] [[entities/article|Articles]], Releases, Contracts, Vendors, Software, and Service Catalog Items — giving your teams a unified view of ITSM data directly in DevRev.
 
 ---
 
@@ -32,7 +33,7 @@ The connector fetches the following entity types from Freshservice:
 
 | Entity | Description |
 | --- | --- |
-| Tickets | Support incidents from Freshservice. Each ticket is created as a DevRev ticket with subject, description, status, priority, assignee, and conversation history. |
+| Tickets | Support [[features/incidents|incidents]] from Freshservice. Each [[entities/ticket|ticket]] is created as a DevRev ticket with subject, description, status, priority, assignee, and [[entities/conversation|conversation]] history. |
 | Problems | Root cause analysis items. Created as DevRev tickets with problem-specific fields such as known error flag and analysis notes. |
 | Changes | Change request records. Created as DevRev tickets with change-specific fields such as risk, change type, and planned start/end dates. |
 
@@ -40,8 +41,8 @@ The connector fetches the following entity types from Freshservice:
 
 | Entity | Description |
 | --- | --- |
-| Requesters | End users who submitted tickets. Created as DevRev rev-user identities with name and email. |
-| Agents | Freshservice IT staff and support agents. Created as DevRev dev-user identities with name and email. |
+| Requesters | End users who submitted tickets. Created as DevRev [[entities/rev-user|rev-user]] identities with name and email. |
+| Agents | Freshservice IT staff and support agents. Created as DevRev [[entities/dev-user|dev-user]] identities with name and email. |
 
 ### Organization
 
@@ -195,7 +196,7 @@ If a sync run is interrupted (for example, due to a timeout), the connector save
 | Source | Source channel |
 | Requester | Reported by |
 | Assigned agent | Owned by |
-| Group | Group |
+| [[entities/group|Group]] | Group |
 | Tags | Tags |
 | Created at | Created date |
 | Updated at | Modified date |
@@ -272,7 +273,7 @@ Changes to the following DevRev fields trigger a write-back to Freshservice:
 
 **Use incremental sync for ongoing updates** — Schedule incremental syncs hourly or every few hours rather than triggering manual full syncs. The manual "Sync Now" button always runs a full sync, which is slower and uses more API quota.
 
-**Ensure agent emails match DevRev users** — The connector resolves ticket ownership by matching the Freshservice agent's email to a DevRev user. If emails don't match, tickets will appear unassigned. Keep email addresses consistent across both systems.
+**Ensure agent emails match DevRev users** — The connector resolves ticket ownership by matching the Freshservice agent's email to a DevRev user. If emails [[glossary/don|don]]'t match, tickets will appear unassigned. Keep email addresses consistent across both systems.
 
 **Set up Solution Folders before syncing articles** — The Freshservice Articles API requires at least one Solution Folder to exist. Create a folder in Freshservice before running the sync if you want articles to be imported.
 
@@ -294,7 +295,7 @@ Changes to the following DevRev fields trigger a write-back to Freshservice:
 
 ### Tickets show "Unassigned" as owner
 
-The connector matches Freshservice agent emails to DevRev users. If an agent's email in Freshservice does not match any DevRev user, the ticket owner will appear as "Unassigned." Ensure agents in Freshservice share the same email addresses as their DevRev user accounts.
+The connector matches Freshservice agent emails to DevRev users. If an agent's email in Freshservice does not match any DevRev user, the ticket owner will appear as "Unassigned." Ensure agents in Freshservice share the same email addresses as their DevRev user [[features/accounts|accounts]].
 
 ### Articles are not syncing
 
@@ -323,4 +324,4 @@ Freshservice's Articles API requires at least one Solution Folder to exist in yo
 * [Freshservice API documentation](https://api.freshservice.com/)
 
 ## Source
-- DevRev support article [Freshservice Connector](https://support.devrev.ai/en-US/devrev/article/-b76x-5N) (ART-34549)
+- DevRev support [[entities/article|article]] [Freshservice Connector](https://support.devrev.ai/en-US/devrev/article/-b76x-5N) (ART-34549)

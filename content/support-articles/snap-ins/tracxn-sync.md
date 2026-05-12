@@ -10,11 +10,12 @@ top_category: Snap-ins
 wiki_match: glossary/airsync
 match_score: 0.556
 last_updated: 2026-05-11
+summary: "The Tracxn Sync snap-in automates the discovery and syncing of recently funded startups from Tracxn into DevRev."
 ---
 
 # Tracxn sync
 
-The Tracxn Sync snap-in automates the discovery and syncing of recently funded startups from Tracxn into DevRev. It helps you capture emerging opportunities and enrich *Account* and *Contact* onjects.
+The Tracxn Sync snap-in automates the discovery and syncing of recently funded startups from Tracxn into DevRev. It helps you capture emerging [[entities/opportunity|opportunities]] and enrich *[[entities/account|Account]]* and *Contact* onjects.
 
 ## Installation
 
@@ -30,7 +31,7 @@ In **Settings** > **Menu**, the following configuration options are available:
 * **Enable *Account* Custom Field Mapping For DevRev:**Use static *Account* custom field values.
 * **Enable *Contact* Custom Field Mapping For Tracxn:**Use the Tracxn-based *Contact* custom field mappings.
 * **Enable *Contact* Custom Field Mapping for DevRev:**Use static *Contact* custom field values.
-* **Enable Tags For *Accounts*:**Apply tags to created *Accounts*.
+* **Enable Tags For *[[features/accounts|Accounts]]*:**Apply tags to created *Accounts*.
 * **Enable Tags For *Contacts*:**Apply tags to created *Contacts*.
 * ***Account* Field Mapping:**Map fields from Tracxn company objects to DevRev *Account* fields.
 
@@ -164,4 +165,4 @@ In **Settings** > **Menu**, the following configuration options are available:
   ```
 
 ## Source
-- DevRev support article [Tracxn sync](https://support.devrev.ai/en-US/devrev/article/_FQ-4JGU) (ART-21961)
+- DevRev support [[entities/article|article]] [Tracxn sync](https://support.devrev.ai/en-US/devrev/article/_FQ-4JGU) (ART-21961)

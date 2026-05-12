@@ -10,23 +10,24 @@ top_category: Computer by DevRev
 wiki_match: features/incidents
 match_score: 0.684
 last_updated: 2026-05-11
+summary: "Customer groups contain your external customers – contacts who interact with your product via the customer portal."
 ---
 
 # Customer management
 
-Customer groups contain your external customers – contacts who interact with your product via the customer portal. They control what your customers can see and access on the customer portal, such as article visibility, ticket permissions, and portal features.
+Customer [[entities/group|groups]] contain your external customers – contacts who interact with your product via the [[features/customer-portal|customer portal]]. They control what your customers can see and access on the customer portal, such as [[entities/article|article]] visibility, [[entities/ticket|ticket]] permissions, and portal features.
 
 ## Default customer groups
 
 The following are the default customer groups in a workspace:
 
-* **Customers:** All external members (customers) of the workspace. Any new customer is added to this group by default. This group also governs public portal access when the public portal is enabled, allowing visitors to view articles without signing in. See [[support-articles/computer-plus-support/customer-portal-setup-and-administration|Portal settings]] for details on how this group affects article visibility.
-* **Customer Admins:** Users who can manage customer inquiries and view all tickets belonging to the accounts they are members of. Workspace admins and other customer admins can add customers to this group.
+* **Customers:** All external members (customers) of the workspace. Any new customer is added to this [[entities/group|group]] by default. This group also governs public portal access when the public portal is enabled, allowing visitors to view [[entities/article|articles]] without signing in. See [[support-articles/computer-plus-support/customer-portal-setup-and-administration|Portal settings]] for details on how this group affects article visibility.
+* **Customer Admins:** Users who can manage customer inquiries and view all [[features/tickets|tickets]] belonging to the [[features/accounts|accounts]] they are members of. Workspace admins and other customer admins can add customers to this group.
 * **Verified Customers:** All verified external members (customers) of the workspace.
 
 ## Dynamic and static groups
 
-Admins can add or remove members from any static group. A dynamic group determines membership automatically based on rules and expressions rather than manual assignment. Members are added or removed as they meet or stop meeting the defined criteria. You cannot manually edit the member list of a dynamic group.
+Admins can add or remove members from any static group. A dynamic group determines membership automatically based on rules and expressions rather than manual assignment. Members are added or removed as they meet or stop [[entities/meeting|meeting]] the defined criteria. You cannot manually edit the member list of a dynamic group.
 
 For a detailed explanation of how dynamic groups work, including expression syntax and use cases, see [[support-articles/computer-by-devrev/groups|Groups]].
 

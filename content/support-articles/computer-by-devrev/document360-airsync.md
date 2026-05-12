@@ -11,13 +11,14 @@ wiki_match: glossary/airsync
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['glossary/airsync']
+summary: "Document360 AirSync enables migration from Document360 to DevRev, including one-time imports and ongoing syncs."
 ---
 
 # Document360 AirSync
 
 # Document360 AirSync
 
-Document360 AirSync enables migration from Document360 to DevRev, including one-time imports and ongoing syncs.
+Document360 [[glossary/airsync|AirSync]] enables migration from Document360 to DevRev, including one-time imports and ongoing syncs.
 
 ### Supported objects
 
@@ -25,13 +26,13 @@ The table below lists Document360 object types and their DevRev equivalents. Obj
 
 | Document360 object | DevRev object | Sync to DevRev |
 | --- | --- | --- |
-| Article | Article | ✅ |
+| [[entities/article|Article]] | Article | ✅ |
 | Category | Directory | ✅ |
 | Category page | Article | ✅ |
-| Team account (user) | DevUser | ✅ |
-| Permission group | Group | ✅ |
+| Team [[entities/account|account]] (user) | DevUser | ✅ |
+| Permission [[entities/group|group]] | Group | ✅ |
 
-**Permission groups.** Document360 and DevRev groups are not mapped one-to-one. Document360 does not provide permission-group entities for direct import. AirSync derives access from **team users**, then creates **static** DevRev groups (with associated membership) so articles can be shared in DevRev. Each group name is prefixed with `DOC360__` and corresponds to scope in this order: **project → version → language → category**. User groups defined under **Teams** in Document360 are not imported as separate DevRev groups; access is represented solely through this derived static-group model.
+**Permission [[entities/group|groups]].** Document360 and DevRev groups are not mapped one-to-one. Document360 does not provide permission-group entities for direct import. AirSync derives access from **team users**, then creates **static** DevRev groups (with associated membership) so [[entities/article|articles]] can be shared in DevRev. Each group name is prefixed with `DOC360__` and corresponds to scope in this order: **project → version → language → category**. User groups defined under **Teams** in Document360 are not imported as separate DevRev groups; access is represented solely through this derived static-group model.
 
 ### Disclaimer — Article sharing and category access
 
@@ -55,7 +56,7 @@ In the Document360 AirSync flow, use the **Configurations** tab (or equivalent c
 
 > The API token must be authorized for the project versions to be imported. Tokens with insufficient permissions may result in partial import failures (users, groups, or content).
 
-7. After the connection is active, select the Document360 **project version** (knowledge base version) to import and specify the DevRev **part** for imported work. This starts a bulk import of the selected version.
+7. After the connection is active, select the Document360 **project version** ([[features/knowledge-base|knowledge base]] version) to import and specify the DevRev **[[entities/part|part]]** for imported work. This starts a bulk import of the selected version.
 8. Field mapping from Document360 to DevRev is performed automatically where possible. Manual mapping may be required for certain fields.
 
 ### Supported content file types

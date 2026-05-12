@@ -11,11 +11,12 @@ wiki_match: features/identity
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['features/identity']
+summary: "DevRev can be configured to use external identity providers for SSO."
 ---
 
 # External identity provider setup
 
-DevRev can be configured to use external identity providers for SSO.
+DevRev can be configured to use external [[features/identity|identity]] providers for SSO.
 
 If you want DevRev to use an external identity provider, follow the instructions for your organization’s provider.
 
@@ -54,7 +55,7 @@ You can register DevRev as a service provider in any identity provider that supp
 ## Azure AD
 
 1. Log in to Azure Active Directory and select **Enterprise applications > + New application**.
-2. Search for "Azure AD SAML Toolkit" in the **Browse Azure AD Gallery** and select it.
+2. [[features/search|Search]] for "Azure AD SAML Toolkit" in the **Browse Azure AD Gallery** and select it.
 3. Enter `DevRev` as the name and click **Create**.
 4. Select **Single sign-on > SAML**.
 5. Edit the **Basic SAML Configuration** and enter the following parameters.
@@ -65,7 +66,7 @@ You can register DevRev as a service provider in any identity provider that supp
 
    The `<connection_name>` must be the same in both parameters and follow the naming pattern described earlier.
 6. Go to **Copy > SAML Certificates** and save the **App Federation Metadata URL**.
-7. In the Azure portal, go to the application named "DevRev" that you created earlier under Enterprise applications. Within the application, go to **Users and Groups** and assign the users who can access the app.
+7. In the Azure portal, go to the application named "DevRev" that you created earlier under Enterprise applications. Within the application, go to **Users and [[entities/group|Groups]]** and assign the users who can access the app.
 
 ## Google Workspace
 
@@ -230,7 +231,7 @@ Follow these steps to ensure your SSO integration is working correctly:
    * You should see a new SSO login option with your identity provider's name
 2. **Test user authentication:**
 
-   * Use a test user account that's assigned to the DevRev application in your identity provider
+   * Use a test user [[entities/account|account]] that's assigned to the DevRev application in your identity provider
    * Click the SSO login option and complete the authentication flow
    * Verify the user is successfully logged into DevRev
 3. **Test edge cases:**
@@ -292,7 +293,7 @@ A workaround for supporting IDP-initiated SSO is to bookmark your DevRev workspa
 
 ## Troubleshooting
 
-If you encounter issues:
+If you encounter [[features/issues|issues]]:
 
 1. **Authentication endpoint errors**: Verify the `sign_in_endpoint` (SAML) or `issuer` (OIDC) is accessible and returns valid responses.
 2. **Login failures**: Check that users are assigned to the application in your identity provider.
@@ -303,4 +304,4 @@ For additional support, contact the DevRev customer success team with your conne
 - [[features/identity]]
 
 ## Source
-- DevRev support article [External identity provider setup](https://support.devrev.ai/en-US/devrev/article/zEOt0tAE) (ART-21858)
+- DevRev support [[entities/article|article]] [External identity provider setup](https://support.devrev.ai/en-US/devrev/article/zEOt0tAE) (ART-21858)

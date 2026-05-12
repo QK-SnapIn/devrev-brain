@@ -11,11 +11,12 @@ wiki_match: entities/ticket
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['entities/ticket']
+summary: "The Ticket issue field migration snap-in automates the transfer of custom field values from tickets to new linked issues in DevRev."
 ---
 
 # Ticket issue field migrator
 
-The Ticket issue field migration snap-in automates the transfer of custom field values from tickets to new linked issues in DevRev. It checks for empty or undefined fields and fills them with corresponding ticket values based on the field mappings specified in the configuration input. The process features robust error handling, detailed logging, and appends a summary comment to the timeline for easy update tracking.
+The [[entities/ticket|Ticket]] [[entities/issue|issue]] field migration snap-in automates the transfer of custom field values from [[features/tickets|tickets]] to new linked [[features/issues|issues]] in DevRev. It checks for empty or undefined fields and fills them with corresponding ticket values based on the field mappings specified in the configuration input. The process features robust error handling, detailed logging, and appends a summary comment to the timeline for easy update tracking.
 
 ## Installation
 
@@ -34,4 +35,4 @@ The Ticket issue field migration snap-in automates the transfer of custom field 
 - [[entities/ticket]]
 
 ## Source
-- DevRev support article [Ticket issue field migrator](https://support.devrev.ai/en-US/devrev/article/BtqQCE8C) (ART-21956)
+- DevRev support [[entities/article|article]] [Ticket issue field migrator](https://support.devrev.ai/en-US/devrev/article/BtqQCE8C) (ART-21956)

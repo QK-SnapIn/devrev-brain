@@ -10,6 +10,7 @@ top_category: Snap-ins
 wiki_match: features/commerce
 match_score: 0.414
 last_updated: 2026-05-11
+summary: "The CSV comments uploader is a snap-in designed to streamline the process of creating timeline entries on work items in bulk through a CSV file."
 ---
 
 # CSV comments uploader
@@ -18,7 +19,7 @@ The CSV comments uploader is a snap-in designed to streamline the process of cre
 
 ## Feature
 
-* **Access Control**: Ensures only authorized users from the group selected in the snap-in configuration can run the snap-in
+* **Access Control**: Ensures only authorized users from the [[entities/group|group]] selected in the snap-in configuration can run the snap-in
 
 ## CSV requirements
 
@@ -48,4 +49,4 @@ The following validations are done while creating timeline entries on work items
 8. In case of a retry, a timeline entry is created, and the user needs to re-enter the command `/upload_timelines`.
 
 ## Source
-- DevRev support article [CSV comments uploader](https://support.devrev.ai/en-US/devrev/article/o0SkItaZ) (ART-21936)
+- DevRev support [[entities/article|article]] [CSV comments uploader](https://support.devrev.ai/en-US/devrev/article/o0SkItaZ) (ART-21936)

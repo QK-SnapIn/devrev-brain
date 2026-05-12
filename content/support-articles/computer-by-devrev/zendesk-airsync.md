@@ -11,11 +11,12 @@ wiki_match: glossary/airsync
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['glossary/airsync']
+summary: "DevRev\"s Zendesk AirSync allows you to perform a bulk import, ongoing 1-way sync, or ongoing 2-way syncs."
 ---
 
 # Zendesk AirSync
 
-DevRev's Zendesk AirSync allows you to perform a bulk import, ongoing 1-way sync, or ongoing 2-way syncs. A bulk import is a prerequisite to setting up a sync.
+DevRev's Zendesk [[glossary/airsync|AirSync]] allows you to perform a bulk import, ongoing 1-way sync, or ongoing 2-way syncs. A bulk import is a prerequisite to setting up a sync.
 
 For more information, refer to the [Zendesk AirSync snap-in](https://marketplace.devrev.ai/zendesk) on the DevRev marketplace.
 
@@ -25,18 +26,18 @@ The following is a list of Zendesk objects and their corresponding DevRev equiva
 
 | Zendesk Object | DevRev Object | Sync to DevRev | Sync to Zendesk |
 | --- | --- | --- | --- |
-| Ticket | Ticket | ✅ | ✅ |
+| [[entities/ticket|Ticket]] | Ticket | ✅ | ✅ |
 | Comment on Ticket | Comments | ✅ | ✅ |
 | Category/Status of Ticket | State/Stage of Ticket | ✅ | ✅ |
 | Attachments on Ticket | Attachments on Ticket | ✅ | ✅ |
 | Tag on Ticket | Tag on Ticket | ✅ | ❌ |
-| Organization | Account | ✅ | ❌ |
+| Organization | [[entities/account|Account]] | ✅ | ❌ |
 | Agent | DevUser | ✅ | ❌ |
 | End User | Contact | ✅ | ❌ |
-| Chat | Conversation | ❌ | ❌ |
+| Chat | [[entities/conversation|Conversation]] | ❌ | ❌ |
 | Conversation | Conversation | ❌ | ❌ |
-| SLA | SLA | ❌ | ❌ |
-| Article | Article | ✅ | ❌ |
+| [[features/slas|SLA]] | SLA | ❌ | ❌ |
+| [[entities/article|Article]] | Article | ✅ | ❌ |
 | Categories | Collections | ✅ | ❌ |
 | Sections | Collections | ✅ | ❌ |
 | Automation | Snap-in | ❌ | ❌ |
@@ -51,7 +52,7 @@ User performing the AirSync should have administrator permissions on external si
 
 1. Go to **[Settings](https://app.devrev.ai/?setting=airsyncs)**[ > ](https://app.devrev.ai/?setting=airsyncs)**[Integrations](https://app.devrev.ai/?setting=airsyncs)**[ > ](https://app.devrev.ai/?setting=airsyncs)**[AirSyncs](https://app.devrev.ai/?setting=airsyncs)** and select **AirSync** (or **Start AirSync** if it's your first).
 2. Create a new connection to your Zendesk account, or use an existing connection if you already have one.
-3. Once the connection is established, select the Zendesk workspace you want to import and specify the DevRev part where the imported tickets should be created. This initiates a bulk import of the selected workspace.
+3. Once the connection is established, select the Zendesk workspace you want to import and specify the DevRev [[entities/part|part]] where the imported [[features/tickets|tickets]] should be created. This initiates a bulk import of the selected workspace.
 4. DevRev makes an effort to automatically map the fields from Zendesk to corresponding fields in DevRev. However, you may be prompted to manually map certain fields if needed.
 
 DevRev supports importing Zendesk organization custom fields. When importing organizations, AirSync will display Zendesk organization custom fields under **Select Custom Fields**. Selecting them will create them as DevRev account custom fields with corresponding values filled in.
@@ -80,7 +81,7 @@ After a DevRev work item has been marked for syncing, it's created in Zendesk th
 
 ## Zendesk Help Center AirSync
 
-DevRev supports the import of Zendesk help center (Categories, Sections, and KB Articles) using AirSync.
+DevRev supports the import of Zendesk help center (Categories, Sections, and KB [[entities/article|Articles]]) using AirSync.
 
 The mapping of Zendesk items to their counterparts in DevRev is as follows:
 
@@ -90,7 +91,7 @@ The mapping of Zendesk items to their counterparts in DevRev is as follows:
 | Sections | Collections |
 | Articles | Articles |
 | Content Tags | Tags |
-| Permission Groups | Tags |
+| Permission [[entities/group|Groups]] | Tags |
 | User Segments | Tags |
 
 During import, any fields without equivalence in DevRev are excluded. For information about DevRev articles, click [[support-articles/computer-plus-support/articles|here]].
@@ -113,9 +114,9 @@ The help center import process is integrated into your overall Zendesk import. I
 DevRev supports bringing in translations of articles, sections and categories from Zendesk.
 
 - Tree structure of directories is kept as it was in Zendesk - sections are nested under the same categories and articles under the same sections.
-- The directory structure can be viewed **per locale** on UI under 'Collections' tab in Knowledge Base  (only directories form the same locale are shown on UI on the same view)
+- The directory structure can be viewed **per locale** on UI under 'Collections' tab in [[features/knowledge-base|Knowledge Base]]  (only directories form the same locale are shown on UI on the same view)
 - Same applies to articles which can be viewed under 'Articles' tab
-- Brands are not imported as directories as they don't have translations (described in the limitations)
+- [[features/brands|Brands]] are not imported as directories as they [[glossary/don|don]]'t have translations (described in the limitations)
 - Multi-language portals are currently not available but can be enabled on request.
 - References to other articles are resolved in a way that they point to other articles in the same locale as the article they are placed. If a referenced article in the same locale does not exist, reference points to the english version of the article.
 - Inline attachments are synced and are placed in the same place as in original article. Attachments can differ among different translations which is the same as in source system.
@@ -123,8 +124,8 @@ DevRev supports bringing in translations of articles, sections and categories fr
 
 Syncing of translations has certain **limitations**:
 
-- articles or sections that don't have a parent section/category translated into the same locale are synced to DevRev and can be found under list of all articles but will not be bound to any directory as DevRev can't link items with different locales. Note that so articles will not be visible in a customer portal. 
-- To mitigate above issue the corresponding translation of parent should be created in Zenesk beforehand or later on in DevRev. Note that in the later case the article has to be linked manually to this parent translation.
+- articles or sections that don't have a parent section/category translated into the same locale are synced to DevRev and can be found under list of all articles but will not be bound to any directory as DevRev can't link items with different locales. Note that so articles will not be visible in a [[features/customer-portal|customer portal]]. 
+- To mitigate above [[entities/issue|issue]] the corresponding translation of parent should be created in Zenesk beforehand or later on in DevRev. Note that in the later case the article has to be linked manually to this parent translation.
 - Note that there are multiple locales for the same language in Zendesk (for ex. `pl` and `pl-pl` both represent polish). For mapping of child objects to their parents this have to be set accordingly (`pl` parrent for `pl` child and `pl-pl` parent for `pl-pl` child).
 - Articles with similar locales as above will be synced as the same translation into DevRev - both with locale `pl-PL`.
 - References to other knowledge base articles will point to the article with the same locale as article that contains the reference. In case referenced article does not have the corresponding translation the reference will default to `en-us`. In case there is no `en-us` version the link will not be parsed.
@@ -133,7 +134,7 @@ Syncing of translations has certain **limitations**:
 
 ### Limitations
 
-- While Zendesk's API provides article content in *HTML*, DevRev articles are in a custom *JSON* format. We've made a best-effort conversion between the two formats, which may result in errors. If any errors are detected, a `Review Required` tag will be added, and the article status will be switched to *draft*. While our converter supports Zendesk's native editor tags, we cannot guarantee compatibility with all user-added HTML, potentially resulting in rendering issues and disruptions to the editing experience.
+- While Zendesk's API provides article content in *HTML*, DevRev articles are in a custom *JSON* format. We've made a best-effort conversion between the two formats, which may result in errors. If any errors are detected, a `Review Required` tag will be added, and the article status will be switched to *draft*. While our converter supports Zendesk's native editor tags, we cannot guarantee compatibility with all user-added HTML, potentially resulting in rendering [[features/issues|issues]] and disruptions to the editing experience.
 - The ordering of articles and collections during the initial import and subsequent syncs is not assured. This is because of limitations in how Zendesk transmits positions in its response and how we internally store the rank of articles and collections.
 - Syncing from DevRev to Zendesk for help center items is not supported.
 - For large AirSyncs, the data processing may take some time, which is why it remains in the extraction phase for an extended period.

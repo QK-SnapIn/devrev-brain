@@ -11,11 +11,12 @@ wiki_match: glossary/airsync
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['glossary/airsync']
+summary: "The Snowflake AirSync simplifies migration from Snowflake to DevRev, supporting both one-time imports and ongoing syncs."
 ---
 
 # Snowflake AirSync
 
-The Snowflake AirSync simplifies migration from Snowflake to DevRev, supporting both one-time imports and ongoing syncs.
+The Snowflake [[glossary/airsync|AirSync]] simplifies migration from Snowflake to DevRev, supporting both one-time imports and ongoing syncs.
 
 # Supported objects
 
@@ -34,13 +35,13 @@ Each Snowflake table selected for sync is mapped as a DevRev custom object type.
 # Import from Snowflake
 
 1. Log in to DevRev.
-2. Navigate to **Settings > Integrations > Snap-ins**, search for **Snowflake** under **All Snap-ins**.
+2. Navigate to **Settings > Integrations > Snap-ins**, [[features/search|search]] for **Snowflake** under **All Snap-ins**.
 3. Click **Add and Install Snap-in**.
 4. Navigate to **Settings > Integrations > Airsync** in the left-navigation.
 5. Click **Airsync** in the top right corner and select **Snowflake**.
-6. Create a new connection to your Snowflake account using key-pair authentication. You will need to provide:
+6. Create a new connection to your Snowflake [[entities/account|account]] using key-pair authentication. You will need to provide:
 
-* **Sub Domain** — This is the **Account Identifier** from Snowflake (e.g., `org-account`). You can find it under **Admin > Accounts** in the Snowflake web app, or by running `SELECT CURRENT_ORGANIZATION_NAME() || '-' || CURRENT_ACCOUNT_NAME();` in a Snowflake worksheet.
+* **Sub Domain** — This is the **Account Identifier** from Snowflake (e.g., `org-account`). You can find it under **Admin > [[features/accounts|Accounts]]** in the Snowflake web app, or by running `SELECT CURRENT_ORGANIZATION_NAME() || '-' || CURRENT_ACCOUNT_NAME();` in a Snowflake worksheet.
 * **Username** — This is the **Login Name** of the user in Snowflake. You can verify it by running `DESC USER <username>;` and checking the `LOGIN_NAME` property.
 * **Private Key** — Your RSA private key in PEM format (including the `-----BEGIN` and `-----END` header/footer). See ***Key-pair authentication setup*** below.
 * **Private Key Passphrase** *(optional)* — If your private key is encrypted, provide the passphrase. Must be at least **8 characters** long.
@@ -48,7 +49,7 @@ Each Snowflake table selected for sync is mapped as a DevRev custom object type.
 * **Warehouse Name** — The Snowflake virtual warehouse to use for compute.
 * **Role** — The Snowflake role to assume for the connection.
 
-7. Once the connection is established, select the Snowflake tables you want to import and specify the DevRev part to be used for any imported work. This initiates a bulk import of the selected tables.
+7. Once the connection is established, select the Snowflake tables you want to import and specify the DevRev [[entities/part|part]] to be used for any imported work. This initiates a bulk import of the selected tables.
 
    DevRev makes an effort to automatically map fields from Snowflake to the corresponding fields in DevRev. However, you may be prompted to manually map certain fields if needed.
 
@@ -246,4 +247,4 @@ To delete an import and all the content it created, go to **Settings > Integrati
 - [[glossary/airsync]]
 
 ## Source
-- DevRev support article [Snowflake AirSync](https://support.devrev.ai/en-US/devrev/article/8AJRfbiU) (ART-25907)
+- DevRev support [[entities/article|article]] [Snowflake AirSync](https://support.devrev.ai/en-US/devrev/article/8AJRfbiU) (ART-25907)

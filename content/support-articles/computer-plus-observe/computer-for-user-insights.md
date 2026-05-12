@@ -10,17 +10,18 @@ top_category: Computer+ Observe
 wiki_match: flows/client-critical-journeys
 match_score: 0.507
 last_updated: 2026-05-11
+summary: "Computer for User Insights is a comprehensive toolkit for unraveling user behavior within DevRev platform."
 ---
 
 # Computer for User Insights
 
-Computer for User Insights is a comprehensive toolkit for unraveling user behavior within DevRev platform. A session is captured when a user launches your application, which initializes the Session Analytics SDK. The SDK then tracks and captures all screens, events, API service calls, exceptions (such as crashes and ANRs), errors, and gestures (including scrolls, taps, and rage taps).
+Computer for User Insights is a comprehensive toolkit for unraveling user behavior within DevRev platform. A session is captured when a user launches your application, which initializes the Session [[features/analytics|Analytics]] SDK. The SDK then tracks and captures all screens, events, API service calls, exceptions (such as crashes and ANRs), errors, and gestures (including scrolls, taps, and rage taps).
 
 ## Session Replays
 
 ![Session replays](don:core:dvrv-us-1:devo/0:artifact/4100534)
 
-You can search for **Session Replays** in **Explore** page where you can see the sessions for your Web app and sessions for Android and iOS on mobile.
+You can [[features/search|search]] for **Session Replays** in **Explore** page where you can see the sessions for your Web app and sessions for Android and iOS on mobile.
 
 * View sessions by platform and time.
 * Apply simple filters such as **Platform**, **Session duration**, **Date range**, etc.
@@ -46,7 +47,7 @@ For mobile sessions, recordings shows the users screen recording and navigation.
 
 ![Session DevTool](don:core:dvrv-us-1:devo/0:artifact/4100546)
 
-DevTool provides developers with logs, errors, and network details to diagnose and fix issues.
+DevTool provides developers with logs, errors, and network details to diagnose and fix [[features/issues|issues]].
 
 1. Click **DevTools** to the right of the playback window.
 2. Below the playback window, the network information of all the web requests made and console errors from the browser are displayed in **Network** and **Console** tabs.
@@ -82,7 +83,7 @@ DevTool provides developers with logs, errors, and network details to diagnose a
 
 A **web session** consists of the following:
 
-* **Screen recording** of the application, captured by the Plug SDK through DOM mutation tracking.
+* **Screen recording** of the application, captured by the [[glossary/plug|Plug]] SDK through DOM mutation tracking.
 * **Auto-captured events** (also called *Stock events*), such as Click, Dead Click, Rage Click, Form Change.
 * **Custom events**, fired during SDK integration to log specific product interactions.
 * **Network calls**, captured and associated with the session.
@@ -130,7 +131,7 @@ Each tile in the Dashboard has a download icon. Click this icon to download the 
    Logged-in users with the highest number of sessions. These are your most engaged users, often ideal for feedback, early feature testing, or targeted communication.
 6. **Most Active Customer Workspaces**
 
-   Workspaces or customer accounts with the most sessions. Indicates which customers are deriving the most value from the platform and may warrant closer support or expansion opportunities.
+   Workspaces or customer [[features/accounts|accounts]] with the most sessions. Indicates which customers are deriving the most value from the platform and may warrant closer support or expansion [[entities/opportunity|opportunities]].
 7. **Popular Pages**
 
    The most frequently visited URLs across the platform. These are typically your highest-performing pages and can reveal what users find most valuable.
@@ -139,10 +140,10 @@ Each tile in the Dashboard has a download icon. Click this icon to download the 
    The percentage of sessions that included at least one rage click—rapid repeated clicking on an element. This is a strong signal of user frustration or unresponsive UI elements.
 9. **Sessions with % Dead Clicks**
 
-   The percentage of sessions that included at least one dead click—clicks on elements that don’t produce a response. Dead clicks often point to broken links or confusing interface design.
+   The percentage of sessions that included at least one dead click—clicks on elements that [[glossary/don|don]]’t produce a response. Dead clicks often point to broken links or confusing interface design.
 10. **Average Rage Clicks Per Session**
 
-    The average number of rage clicks made during a session. A rising average may indicate a growing UX issue or user dissatisfaction.
+    The average number of rage clicks made during a session. A rising average may indicate a growing UX [[entities/issue|issue]] or user dissatisfaction.
 11. **Average Dead Clicks Per Session**
 
     The average number of dead clicks per session. This metric helps surface broader UI reliability issues even when individual dead clicks are minor.
@@ -151,7 +152,7 @@ Each tile in the Dashboard has a download icon. Click this icon to download the 
     Pages where users frequently rage click. These pages likely contain frustrating or misleading elements that require UX improvements.
 13. **URLs with Dead Clicks**
 
-    Pages where users often click on non-responsive elements. These highlight parts of the interface that may not be working as expected.
+    Pages where users often click on non-responsive elements. These highlight [[features/parts|parts]] of the interface that may not be working as expected.
 14. **Sessions with % JS Errors**
 
     The percentage of sessions that experienced at least one JavaScript error. A high percentage may suggest performance instability or poor code execution affecting user experience.
@@ -267,4 +268,4 @@ Each tile in the Dashboard has a download icon. Click this icon to download the 
     Distribution of user sessions by operating system version. Essential for tracking legacy usage, planning deprecations, and debugging OS-specific issues.
 
 ## Source
-- DevRev support article [Computer for User Insights](https://support.devrev.ai/en-US/devrev/article/v4whY8L3) (ART-21917)
+- DevRev support [[entities/article|article]] [Computer for User Insights](https://support.devrev.ai/en-US/devrev/article/v4whY8L3) (ART-21917)

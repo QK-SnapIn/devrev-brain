@@ -11,11 +11,12 @@ wiki_match: entities/ticket
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['entities/ticket']
+summary: "The Ticket Linked Issues Comment Sync snap-in automatically synchronizes comments between linked tickets and issues in DevRev."
 ---
 
 # Ticket linked issues comment sync
 
-The **Ticket Linked Issues Comment Sync** snap-in automatically synchronizes comments between linked tickets and issues in DevRev. When a comment is added to a ticket, it is automatically replicated to all linked issues, maintaining context and ensuring all stakeholders have access to the same information.
+The **[[entities/ticket|Ticket]] Linked [[features/issues|Issues]] Comment Sync** snap-in automatically synchronizes comments between linked [[features/tickets|tickets]] and issues in DevRev. When a comment is added to a ticket, it is automatically replicated to all linked issues, maintaining context and ensuring all stakeholders have access to the same information.
 
 ## Key features
 
@@ -47,4 +48,4 @@ The **Ticket Linked Issues Comment Sync** snap-in automatically synchronizes com
 - [[entities/ticket]]
 
 ## Source
-- DevRev support article [Ticket linked issues comment sync](https://support.devrev.ai/en-US/devrev/article/rS-fxXX9) (ART-21970)
+- DevRev support [[entities/article|article]] [Ticket linked issues comment sync](https://support.devrev.ai/en-US/devrev/article/rS-fxXX9) (ART-21970)

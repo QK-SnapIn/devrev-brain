@@ -11,11 +11,12 @@ wiki_match: features/jira-integration
 match_score: 0.824
 last_updated: 2026-05-11
 related: ['features/jira-integration']
+summary: "The Tracxn Integration snap-in integrates DevRev with Tracxn to automatically populate the Account object with detailed company information fetched from Tracxn\"s API."
 ---
 
 # Tracxn Integration
 
-The Tracxn Integration snap-in integrates DevRev with Tracxn to automatically populate the Account object with detailed company information fetched from Tracxn's API. It streamlines the process of updating and enriching account records within DevRev using data from Tracxn.
+The Tracxn Integration snap-in integrates DevRev with Tracxn to automatically populate the [[entities/account|Account]] object with detailed company information fetched from Tracxn's API. It streamlines the process of updating and enriching account records within DevRev using data from Tracxn.
 
 For more information, refer to the [Tracxn Integration snap-in](https://marketplace.devrev.ai/tracxn-integration) on the DevRev marketplace.
 
@@ -23,7 +24,7 @@ For more information, refer to the [Tracxn Integration snap-in](https://marketpl
 
 1. Go to the **Settings > Integrations > Snap-ins**.
 2. Click **Explore Marketplace**.
-3. Search for **Tracxn** and click **Install** next to the Tracxn Integration snap-in.
+3. [[features/search|Search]] for **Tracxn** and click **Install** next to the Tracxn Integration snap-in.
 4. In DevRev app, setup the connection in **Settings** > **Snap-ins** > **Connections** on top.
    a. Search and choose an existing connection or create a new one by clicking **+ Connection**.
    b. Select **Snap-in Secret** from the dropdown list.
@@ -41,4 +42,4 @@ For more information, refer to the [Tracxn Integration snap-in](https://marketpl
 - [[features/jira-integration]]
 
 ## Source
-- DevRev support article [Tracxn Integration](https://support.devrev.ai/en-US/devrev/article/_stkZdzG) (ART-21986)
+- DevRev support [[entities/article|article]] [Tracxn Integration](https://support.devrev.ai/en-US/devrev/article/_stkZdzG) (ART-21986)

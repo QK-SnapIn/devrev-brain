@@ -11,11 +11,12 @@ wiki_match: glossary/airsync
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['glossary/airsync']
+summary: "The PlanHat AirSync simplifies migration from PlanHat to DevRev, supporting both one-time imports and periodic sync."
 ---
 
 # Planhat AirSync
 
-The PlanHat AirSync simplifies migration from PlanHat to DevRev, supporting both one-time imports and periodic sync.
+The PlanHat [[glossary/airsync|AirSync]] simplifies migration from PlanHat to DevRev, supporting both one-time imports and periodic sync.
 
 ### Supported objects
 
@@ -24,21 +25,21 @@ The following is a list of PlanHat objects and their corresponding DevRev equiva
 | PlanHat object | DevRev object | Sync to DevRev | Sync to PlanHat |
 | --- | --- | --- | --- |
 | User | DevUser | ✅ | ❌ |
-| Company | Account | ✅ | ❌ |
+| Company | [[entities/account|Account]] | ✅ | ❌ |
 | EndUser | Contact | ✅ | ❌ |
 | Comments | Comments | ✅ | ❌ |
 | Licenses | Custom Object | ✅ | ✅ |
-| Task | Conversation | ✅ | ❌ |
-| Conversation | Conversations | ✅ | ❌ |
-| Conversation.Ticket | Ticket | ✅ | ✅ |
+| [[entities/task|Task]] | [[entities/conversation|Conversation]] | ✅ | ❌ |
+| Conversation | [[features/conversations-feature|Conversations]] | ✅ | ❌ |
+| Conversation.[[entities/ticket|Ticket]] | Ticket | ✅ | ✅ |
 | Conversation.Chat | DM | ❌ | ❌ |
-| Conversation.Meeting | Custom Object | ✅ | ✅ |
+| Conversation.[[entities/meeting|Meeting]] | Custom Object | ✅ | ✅ |
 | ProductUsage | Custom field in Account | ✅ | ❌ |
 
 ### Importing from PlanHat
 
 1. Log in to DevRev.
-2. Navigate to [**Settings > Integrations > Snap-ins**](https://app.devrev.ai/?setting=snap-ins), search for **PlanHat** under **All Snap-ins**.
+2. Navigate to [**Settings > Integrations > Snap-ins**](https://app.devrev.ai/?setting=snap-ins), [[features/search|search]] for **PlanHat** under **All Snap-ins**.
 3. Click **Add and Install Snap-in**.
 4. Navigate to [**Settings > Integrations > AirSync**](https://app.devrev.ai/?setting=airsyncs) in the left-navigation.
 5. Click AirSync in the top right corner and select **PlanHat**.
@@ -46,10 +47,10 @@ The following is a list of PlanHat objects and their corresponding DevRev equiva
 
    * To create a PlanHat connection, provide a name to the connection. In the **Subdomain** field, enter your PlanHat domain, which can be found in the PlanHat browser URL. For example, from `https://app.planhat.com/`, `app.planhat.com` is the Subdomain. Then enter your token.
 
-**Note**: Ensure that the token has full access with the following permissions: **Portfolio:** Full access. **Data Module:** Company (View), End Users (View), Conversations (View, Create, Update), Tasks (View), Licenses (View, Create, Update), Users (View), Custom Fields (View, Create, Update), Comments (View, Create, Update).
+**Note**: Ensure that the token has full access with the following permissions: **Portfolio:** Full access. **Data Module:** Company (View), End Users (View), Conversations (View, Create, Update), [[entities/task|Tasks]] (View), Licenses (View, Create, Update), Users (View), Custom Fields (View, Create, Update), Comments (View, Create, Update).
 
 7. On the next screen, select the authenticated PlanHat workspace.
-8. Specify the DevRev part where the imported content should reside. Click on **Start**. This initiates a bulk import of the selected workspace.
+8. Specify the DevRev [[entities/part|part]] where the imported content should reside. Click on **Start**. This initiates a bulk import of the selected workspace.
 
 The duration of the import depends on the size of the PlanHat workspace and the data being imported. It can take minutes to hours based on data size.
 
@@ -58,7 +59,7 @@ The duration of the import depends on the size of the PlanHat workspace and the 
 * PlanHat does not support OAuth for API authentication.
 * Conversation-level or comment-level attachments are not supported.
 * User roles and permissions are not supported.
-* Reverse sync is only supported for tickets and custom objects.
+* Reverse sync is only supported for [[features/tickets|tickets]] and custom objects.
 * Tags are not supported.
 * When creating a custom object (e.g., License) in DevRev during reverse sync, the CompanyId, FromDate & ToDate are required.
 * In incremental sync, all data is extracted first and then filtered, which can cause the sync process to take longer than expected.
@@ -128,7 +129,7 @@ If this setting is turned off, updates do not trigger any event-driven processes
 
 ### Delete import
 
-> This deletes any content created by the import, including users, accounts, contacts, and conversations.
+> This deletes any content created by the import, including users, [[features/accounts|accounts]], contacts, and conversations.
 
 An import and all the content it creates can be deleted from DevRev. This can be useful when running POCs or to change the configuration used during the import. Once an import has been deleted, all the content it created gets deleted, even if they were modified in DevRev. It's possible to import the project again after its deletion.
 
@@ -138,4 +139,4 @@ To delete an import and all the content it created, go to **Settings > Integrati
 - [[glossary/airsync]]
 
 ## Source
-- DevRev support article [Planhat AirSync](https://support.devrev.ai/en-US/devrev/article/xQ3SygZ-) (ART-22022)
+- DevRev support [[entities/article|article]] [Planhat AirSync](https://support.devrev.ai/en-US/devrev/article/xQ3SygZ-) (ART-22022)

@@ -81,7 +81,7 @@
 - pages touched: [[entities/ticket]], [[entities/issue]], [[entities/conversation]], [[entities/part]], [[features/parts]], [[features/slas]], [[features/knowledge-base]], [[features/identity]], [[features/customization]], [[features/inbox]], [[features/vistas]], [[features/search]], [[features/customer-portal]], [[glossary/inbox]], [[glossary/shadow-user]], [[index]]
 
 ## [2026-04-12 23:00] ingest | Feature pages for tickets, issues, conversations
-- Created 3 new feature pages to resolve dangling [[links]] in graph view:
+- Created 3 new feature pages to resolve dangling **links** in graph view:
   - [[features/tickets]]: ticket lifecycle, creation methods, entry points, links to entities/ticket
   - [[features/issues]]: issue lifecycle, sprints, NNL, GitHub integration, links to entities/issue
   - [[features/conversations-feature]]: conversation lifecycle, routing, Inbox, PLuG/email/Slack, links to entities/conversation
@@ -153,3 +153,15 @@
 - Updated [[index]]: page count 79 -> 83, added 2 feature entries and 2 glossary entries
 - All new pages are status: draft (features) or stable (glossary) with [gap] markers for unknowns
 - pages touched: [[features/remote-mcp]], [[features/conversational-workflows]], [[glossary/mcp]], [[glossary/nudge]], [[features/workflows]], [[platform]], [[index]]
+
+## [2026-05-11 23:55] ingest v2 | graph expansion + dev docs
+
+- Inline auto-linker: scanned 239 support articles, added **1,946 inline wikilinks** to existing entities/features/glossary nodes (protected wikilinks, markdown links, code, headings, HTML tags)
+- Added `summary:` field to 239 support-article frontmatters (auto-extracted first sentence)
+- **Promoted 14 weak-match topics** into curated wiki nodes:
+  - new glossary: [[glossary/session-analytics]], [[glossary/funnels]], [[glossary/roadmap]], [[glossary/sprint-mode]], [[glossary/agent-studio]], [[glossary/connectors]], [[glossary/surfaces]], [[glossary/scim]], [[glossary/router-node]], [[glossary/code-node]]
+  - new features: [[features/snap-ins-overview]], [[features/access-control]], [[features/workflow-engine]], [[features/customer-management]]
+- **Crawled developer.devrev.ai** (second source): 107 pages across 6 categories (snapin-development, sdks, airsync, changelog, about, guides) — skipped 780 auto-generated API reference pages
+- Added [[developer-docs/index]] + 6 category index pages
+- Resolved stray `[[links]]` placeholder in this log
+- Added `.github/workflows/validate.yml` — runs Quartz build + broken-link audit + frontmatter sanity check on every PR to v4

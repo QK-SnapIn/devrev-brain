@@ -11,13 +11,14 @@ wiki_match: entities/account
 match_score: 1.0
 last_updated: 2026-05-11
 related: ['entities/account']
+summary: "An account represents a customer organization, and it holds information about the company, including its name, address, industry, domain, and website address."
 ---
 
 # Account
 
-An account represents a customer organization, and it holds information about the company, including its name, address, industry, domain, and website address.
+An [[entities/account|account]] represents a customer organization, and it holds information about the company, including its name, address, industry, domain, and website address.
 
-Accounts are associated with a workspace. An account can be a part of multiple workspaces at the same time. An account can also be linked to multiple opportunities. Accounts help you keep track of your customer contacts. Contacts are always linked to a workspace or an account.
+[[features/accounts|Accounts]] are associated with a workspace. An account can be a [[entities/part|part]] of multiple workspaces at the same time. An account can also be linked to multiple [[entities/opportunity|opportunities]]. Accounts help you keep track of your customer contacts. Contacts are always linked to a workspace or an account.
 
 ## Create an account
 
@@ -47,7 +48,7 @@ Accounts have attributes that can be used to filter them. You can find all the s
 These are the stock attributes that come with DevRev:
 
 * **Domains**: Domain names associated with the company to help map contacts to accounts when a contact isn't already linked. Use the format: '[subdomain].domain.com'
-* **External references**: Identifier for this company from your primary customer record, for example, company domain or account ID. This is used to match customer identity across channels to one record.
+* **External references**: Identifier for this company from your primary customer record, for example, company domain or account ID. This is used to match customer [[features/identity|identity]] across channels to one record.
 * **Created by**: The user who created the account.
 * **Created date**: The date the account was created.
 * **Modified by**: The user who last modified the account.
@@ -68,7 +69,7 @@ A unique identifier for the account from your primary customer record. If none i
 
 For ingestion channels where providing an external reference isn't possible, the system relies on custom logic to identify and match incoming customer identity.
 
-Example: The Slack and Email integration uses a combination of the customer `email` and workspace `domain_name` values. WhatsApp uses the WhatsApp number and associated name.
+Example: The Slack and [[features/email-integration|Email integration]] uses a combination of the customer `email` and workspace `domain_name` values. WhatsApp uses the WhatsApp number and associated name.
 
 ## Add a workspace
 
@@ -78,4 +79,4 @@ To add a workspace to an account, go to **Account** > **Workspace** and select *
 - [[entities/account]]
 
 ## Source
-- DevRev support article [Account](https://support.devrev.ai/en-US/devrev/article/x368dZAr) (ART-21879)
+- DevRev support [[entities/article|article]] [Account](https://support.devrev.ai/en-US/devrev/article/x368dZAr) (ART-21879)

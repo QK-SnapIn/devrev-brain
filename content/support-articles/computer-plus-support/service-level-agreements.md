@@ -11,11 +11,12 @@ wiki_match: features/slas
 match_score: 0.885
 last_updated: 2026-05-11
 related: ['features/slas']
+summary: "A service-level agreement (SLA) is a contract between you and your customers that sets the expectations for your service level."
 ---
 
 # Service-level agreements
 
-A service-level agreement (SLA) is a contract between you and your customers that sets the expectations for your service level. SLAs help ensure that your customers receive timely responses and resolutions to inquiries. SLAs are configured in [Settings > SLA](https://app.devrev.ai/?setting=slas).
+A service-level agreement ([[features/slas|SLA]]) is a contract between you and your customers that sets the expectations for your service level. [[features/slas|SLAs]] help ensure that your customers receive timely responses and resolutions to inquiries. SLAs are configured in [Settings > SLA](https://app.devrev.ai/?setting=slas).
 
 Admins and users with SLA policy permissions can set breach and warning targets for three time metrics: **First response**, **Next response**, and **Full resolution**. Each metric has its own breach and warning target. You can specify whether metrics are calculated using calendar hours or business hours while defining breach and warning targets.
 
@@ -27,7 +28,7 @@ Admins and users with SLA policy permissions can set breach and warning targets 
 
 **First response time**
 
-* **Default conditions**: A customer sends the first message in the conversation.
+* **Default conditions**: A customer sends the first message in the [[entities/conversation|conversation]].
 * **Start event**: Conversation created.
 * **End event**: The agent replies to the conversation, the conversation moves to *Waiting on User* or *Resolved*, or the conversation is marked as spam.
 
@@ -49,7 +50,7 @@ Admins and users with SLA policy permissions can set breach and warning targets 
 
 **First response time**
 
-* **Default conditions**: Ticket created by a customer, or by a support engineer on behalf of a customer.
+* **Default conditions**: [[entities/ticket|Ticket]] created by a customer, or by a support engineer on behalf of a customer.
 * **Start event**: Ticket created.
 * **End event**: The agent adds a comment to the customer chat, the ticket moves to *Awaiting Customer Response*, or the ticket is *Closed*.
 
@@ -81,7 +82,7 @@ An SLA metric can be in one of the following stages:
 
 Based on business hours defined in your org schedule, *Active*, *Close to breach*, and *Breached* metrics can move out of schedule. Time spent out of schedule is not included in the calculation.
 
-> ⚠️ **Warning**: If the customer account is updated after the ticket is created, all SLA metrics are recalculated based on the updated customer account information. Any previous SLA breaches or achievements are discarded, and new calculations are applied according to the updated SLA.
+> ⚠️ **Warning**: If the customer [[entities/account|account]] is updated after the ticket is created, all SLA metrics are recalculated based on the updated customer account information. Any previous SLA breaches or achievements are discarded, and new calculations are applied according to the updated SLA.
 
 > 📝 **Note**: The [Operational SLA Metrics snap-in](https://devrev.ai/marketplace/operational-sla-metrics) adds three additional metrics to ticket and conversation SLA policies.
 
@@ -91,9 +92,9 @@ SLA breach and close-to-breach events can trigger notifications to assignees and
 
 ## View SLAs
 
-The SLA targets applied to a particular conversation appear in the **Inbox** and the **Conversation Detailed** view. For tickets, SLA targets appear in any ticket vista.
+The SLA targets applied to a particular conversation appear in the **[[features/inbox|Inbox]]** and the **Conversation Detailed** view. For [[features/tickets|tickets]], SLA targets appear in any ticket [[glossary/vista|vista]].
 
-When two metrics are active, the vista displays the one closest to breach. For example, in a conversation where both the first response and full resolution metrics are active and the first response is due in five minutes while the full resolution is due in one day, the vista displays five minutes. If the first response is not provided within five minutes, the timer displays negative values (such as -10m), indicating that 10 minutes have passed since the first response was due. Conversations or tickets can also be grouped by SLA stages.
+When two metrics are active, the vista displays the one closest to breach. For example, in a conversation where both the first response and full resolution metrics are active and the first response is due in five minutes while the full resolution is due in one day, the vista displays five minutes. If the first response is not provided within five minutes, the timer displays negative values (such as -10m), indicating that 10 minutes have passed since the first response was due. [[features/conversations-feature|Conversations]] or tickets can also be grouped by SLA stages.
 
 In the **Detailed View**, all metrics applied to the ticket or conversation are visible along with their current stage.
 
@@ -125,7 +126,7 @@ To filter tickets based on SLA, use the **Next SLA Target** filter. The filter o
 Multiple policies can exist within an SLA. Each policy has a priority order, so if a ticket meets the conditions of two or more policies, the policy with the highest priority is applied. SLA metrics are only applied to tickets or conversations that meet the policy's conditions.
 
 1. Click **+ Policy** and select either *Ticket Policy* or *Conversation Policy*.
-2. In the policy pane, under **Conditions**, select the ticket or conversation attribute values for **Tag**, **Part**, and **Severity**.
+2. In the policy pane, under **Conditions**, select the ticket or conversation attribute values for **Tag**, **[[entities/part|Part]]**, and **Severity**.
 3. Under **Metrics**, enable or disable **First response**, **Next response**, and **Resolution time**, and set the breach and warning targets for each enabled metric.
 4. Click **Save**.
 
@@ -148,7 +149,7 @@ SLAs can only be assigned to customers after they are published. If no customers
 
 **Assignment rules**
 
-Assignment rules define conditions that automatically assign a particular SLA to matching customer accounts. You can manage assignment rules from within an individual SLA or from the dedicated assignment rules view. Under [Settings > SLA](https://app.devrev.ai/?setting=slas), the **Assignment rules** top-level tab displays assignment rules across all published SLAs in one place. From this view you can create, edit, or delete assignment rules for any published SLA and review the priority order that determines which SLA applies when multiple rules match the same account.
+Assignment rules define conditions that automatically assign a particular SLA to matching customer [[features/accounts|accounts]]. You can manage assignment rules from within an individual SLA or from the dedicated assignment rules view. Under [Settings > SLA](https://app.devrev.ai/?setting=slas), the **Assignment rules** top-level tab displays assignment rules across all published SLAs in one place. From this view you can create, edit, or delete assignment rules for any published SLA and review the priority order that determines which SLA applies when multiple rules match the same account.
 
 1. Go to the **Assignment rules** tab of a published SLA and click **+ Create Rule**.
 2. In the **New SLA assignment rule** pane, select the account attributes and their values to match against.
@@ -172,7 +173,7 @@ To see all active ticket and conversation SLA policies in a single view, go to [
 
 ## Troubleshooting
 
-* **Issue**: You have created and published an SLA, but no SLA is running on the ticket.
+* **[[entities/issue|Issue]]**: You have created and published an SLA, but no SLA is running on the ticket.
 
   **Solution**:
 
@@ -208,4 +209,4 @@ To see all active ticket and conversation SLA policies in a single view, go to [
 - [[features/slas]]
 
 ## Source
-- DevRev support article [Service-level agreements](https://support.devrev.ai/en-US/devrev/article/gjimnW9H) (ART-21867)
+- DevRev support [[entities/article|article]] [Service-level agreements](https://support.devrev.ai/en-US/devrev/article/gjimnW9H) (ART-21867)

@@ -10,11 +10,12 @@ top_category: Computer by DevRev
 wiki_match: features/side-conversations
 match_score: 0.667
 last_updated: 2026-05-11
+summary: "Provisioning users and groups from Okta to DevRev minimizes the need for manual addition of each employee or group in DevRev, reducing administrative errors, saving time, and ultimately lowering costs."
 ---
 
 # SCIM configuration
 
-Provisioning users and groups from Okta to DevRev minimizes the need for manual addition of each employee or group in DevRev, reducing administrative errors, saving time, and ultimately lowering costs.
+Provisioning users and [[entities/group|groups]] from Okta to DevRev minimizes the need for manual addition of each employee or [[entities/group|group]] in DevRev, reducing administrative errors, saving time, and ultimately lowering costs.
 
 # Features
 
@@ -55,7 +56,7 @@ Provisioning users and groups from Okta to DevRev minimizes the need for manual 
 
 1. Select the **Assignments** tab.
 2. Choose the **Assign** drop-down menu and select **Assign to People**.
-3. Enter the name of the user you want to send to DevRev in the **Search…** box.
+3. Enter the name of the user you want to send to DevRev in the **[[features/search|Search]]…** box.
 4. Select **Assign**.
 5. Enter additional user details if needed. Select **Save and Go Back**.
 
@@ -76,4 +77,4 @@ The provisioned group in Okta will be created in DevRev with associated members.
 * DevRev has a unique constraint on group names, so more than one group cannot have the same name. Click on **Refresh App Groups** before pushing a new group to prevent errors if the group already exists in DevRev.
 
 ## Source
-- DevRev support article [SCIM configuration](https://support.devrev.ai/en-US/devrev/article/sPx7s2Wz) (ART-22503)
+- DevRev support [[entities/article|article]] [SCIM configuration](https://support.devrev.ai/en-US/devrev/article/sPx7s2Wz) (ART-22503)

@@ -10,11 +10,12 @@ top_category: Computer+ Support
 wiki_match: features/csat
 match_score: 0.453
 last_updated: 2026-05-11
+summary: "Computer can be used to deflect user queries in conversation or to suggest articles from your knowledge base for resolving tickets."
 ---
 
 # Computer for Your Customers
 
-Computer can be used to deflect user queries in conversation or to suggest articles from your knowledge base for resolving tickets. It will try to answer customer queries based on the articles and QA pairs provided in the Knowledge base, while keeping a support agent subscribed to conversations. If it cannot answer a certain query or you request it to connect to the team, it will redirect it to the default owner of the conversation.
+Computer can be used to deflect user queries in [[entities/conversation|conversation]] or to suggest [[entities/article|articles]] from your [[features/knowledge-base|knowledge base]] for resolving [[features/tickets|tickets]]. It will try to answer customer queries based on the articles and QA pairs provided in the Knowledge base, while keeping a support agent subscribed to [[features/conversations-feature|conversations]]. If it cannot answer a certain query or you request it to connect to the team, it will redirect it to the default owner of the conversation.
 
 When looking for a source to inform its answer, it will prioritize the QA pairs, which are intended to serve as definitive answers to commonly repeated questions.
 
@@ -30,15 +31,15 @@ Computer automatically replies to the user query before it gets assigned to supp
 
 * If Computer doesn't understand the query, it gives the user an option to rephrase the question and ask again.
 * If the user marks the answer as useful, Computer asks the user if they have more questions, then resolves the conversation.
-* If the user marks the answer as not useful, Computer either creates a ticket or routes the conversation using the relevant routing rule.
+* If the user marks the answer as not useful, Computer either creates a [[entities/ticket|ticket]] or routes the conversation using the relevant routing rule.
 
 ![Plug](don:core:dvrv-us-1:devo/0:artifact/4099865)
 
 ## Goal-oriented mode (Beta)
 
-The goal-oriented agent allows users to create complete workflows triggered by their actions.
+The goal-oriented agent allows users to create complete [[features/workflows|workflows]] triggered by their actions.
 
 Goal-oriented mode is currently in beta. Contact our support team for more information.
 
 ## Source
-- DevRev support article [Computer for Your Customers](https://support.devrev.ai/en-US/devrev/article/2aHOSG2W) (ART-21840)
+- DevRev support [[entities/article|article]] [Computer for Your Customers](https://support.devrev.ai/en-US/devrev/article/2aHOSG2W) (ART-21840)

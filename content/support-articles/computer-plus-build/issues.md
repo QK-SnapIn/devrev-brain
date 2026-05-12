@@ -11,24 +11,25 @@ wiki_match: features/issues
 match_score: 1.0
 last_updated: 2026-05-11
 related: ['features/issues']
+summary: "Views of issues can be found under Build in the DevRev app and in sprint boards."
 ---
 
 # Issues
 
-Views of issues can be found under **Build** in the DevRev app and in sprint boards.
+Views of [[features/issues|issues]] can be found under **[[features/build|Build]]** in the DevRev app and in sprint boards.
 
 You can export views to CSV (max 5,000 entries) or JSON by selecting **Actions** in the upper-right corner and choosing the format.
 
 ## Attributes
 
-Issues have attributes that can be used to filter and group issues in various views. Certain fields will be highlighted as mandatory during creation. For example, **Priority** is a required field.
+Issues have attributes that can be used to filter and [[entities/group|group]] issues in various views. Certain fields will be highlighted as mandatory during creation. For example, **Priority** is a required field.
 You can find all the stock attributes listed under [**Settings** > **Object customization** > **Issue**](https://app.devrev.ai/?setting=object-customization?type=issue), go to **Stock fields**.
 These are the stock attributes that come with DevRev:
 
-* **Owner**: The person responsible for the issue. Issues are assigned to an engineer, PM, designer, or any other team member through the **Owner** attribute.
+* **Owner**: The person responsible for the [[entities/issue|issue]]. Issues are assigned to an engineer, PM, designer, or any other team member through the **Owner** attribute.
 * **Priority**: The importance of the issue. Priorities can be set to P0, P1, P2, and P3. P0 is the highest priority and P3 is the lowest.
 * **Stage**: The current state of the issue. The stage attribute is used to track the progress of the issue through its lifecycle. For more information on stages, see stages.
-* **Part**: The part of the company or product that the issue is related to. For more information on parts, see [[support-articles/computer-by-devrev/parts-trails|parts]].
+* **[[entities/part|Part]]**: The part of the company or product that the issue is related to. For more information on [[features/parts|parts]], see [[support-articles/computer-by-devrev/parts-trails|parts]].
 * **Created by**: The person who created the issue.
 * **Created date**: The date the issue was created.
 * **Modified date**: The date the issue was last modified.
@@ -38,7 +39,7 @@ These are the stock attributes that come with DevRev:
 * **Reported by**: The person who reported the issue.
 * **Close date**: The date the issue was closed.
 
-These attributes can be effectively used in filters and **Group** conditions across various vistas in DevRev to track specific work, capacity, and more.
+These attributes can be effectively used in filters and **Group** conditions across various [[features/vistas|vistas]] in DevRev to track specific work, capacity, and more.
 
 You can add custom attributes to issues to track additional information. For more information on custom attributes, see [[support-articles/computer-by-devrev/object-customization|object customization]].
 
@@ -52,7 +53,7 @@ From an issue, you can create a parent issue or a child issue. In an issue, sele
 
 While a parent issue can and usually does have multiple children, an issue can have only one parent. If you try to add a parent to an issue that already has one, it fails.
 
-[[support-articles/computer-by-devrev/tasks|Tasks]] can be used to break an issue down into smaller pieces. Issues may involve a checklist of items to be handled that can be represented as tasks.
+[[support-articles/computer-by-devrev/tasks|Tasks]] can be used to break an issue down into smaller pieces. Issues may involve a checklist of items to be handled that can be represented as [[entities/task|tasks]].
 
 ## Discussion and events
 
@@ -89,7 +90,7 @@ An *autonomous issue* is an issue created automatically from an external event, 
 
 ## Stages
 
-This diagram represents the **Issue Transitions** workflow in DevRev, organized into three main groups:
+This diagram represents the **Issue Transitions** workflow in DevRev, organized into three main [[entities/group|groups]]:
 
 * **📂 Open**: Initial stages for new and pending issues (Triage, Backlog, Prioritized)
 * **⚡ In Progress**: Active development stages (In Development, In Review, In Testing, In Deployment)
@@ -150,4 +151,4 @@ To know how to create subtypes and add custom attributes to them, see [[support-
 - [[features/issues]]
 
 ## Source
-- DevRev support article [Issues](https://support.devrev.ai/en-US/devrev/article/o81mkSOB) (ART-21870)
+- DevRev support [[entities/article|article]] [Issues](https://support.devrev.ai/en-US/devrev/article/o81mkSOB) (ART-21870)

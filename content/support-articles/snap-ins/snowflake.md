@@ -10,11 +10,12 @@ top_category: Snap-ins
 wiki_match: features/knowledge-base
 match_score: 0.522
 last_updated: 2026-05-11
+summary: "The Snowflake allows you to import account, contact data, and opportunity data from Snowflake to DevRev."
 ---
 
 # Snowflake
 
-The [Snowflake](https://devrev.ai/marketplace/snowflake) allows you to import account, contact data, and opportunity data from Snowflake to DevRev.
+The [Snowflake](https://devrev.ai/marketplace/snowflake) allows you to import [[entities/account|account]], contact data, and [[glossary/opportunity|opportunity]] data from Snowflake to DevRev.
 
 ## Installation
 
@@ -32,11 +33,11 @@ The [Snowflake](https://devrev.ai/marketplace/snowflake) allows you to import ac
    * **Contact Table**: Table for contact data
    * **Opportunity Table**: Table for opportunity data
    * **Sync Contacts**: Set to `true` if you want to import contacts.
-   * Set Sync Opportunities to `true` if you want to import opportunities.
+   * Set Sync [[entities/opportunity|Opportunities]] to `true` if you want to import opportunities.
 5. Click **Save**.
 6. Execute the `/initialize_mapping` command in the snap-in **Discussions** tab. This step ensures that custom fields from Snowflake map correctly to the DevRev schema.
-7. Once the mapping step is completed then every day at **12 UTC** the snap-in would start importing the accounts, contacts and opportunities object from Snowflake to DevRev.
+7. Once the mapping step is completed then every day at **12 UTC** the snap-in would start importing the [[features/accounts|accounts]], contacts and opportunities object from Snowflake to DevRev.
 8. One can also manually turn on the import by executing the `/initialize_snowflake_import` command in the snap-in **Discussions** tab.
 
 ## Source
-- DevRev support article [Snowflake](https://support.devrev.ai/en-US/devrev/article/M69kzanW) (ART-21991)
+- DevRev support [[entities/article|article]] [Snowflake](https://support.devrev.ai/en-US/devrev/article/M69kzanW) (ART-21991)

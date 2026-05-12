@@ -10,11 +10,12 @@ top_category: Snap-ins
 wiki_match: entities/article
 match_score: 0.667
 last_updated: 2026-05-11
+summary: "The Airtable snap-in automates lead intake from Airtable form submissions by mapping responses to DevRev contacts, accounts, and custom objects."
 ---
 
 # Airtable
 
-The **Airtable** snap-in automates lead intake from Airtable form submissions by mapping responses to DevRev contacts, accounts, and custom objects. It supports field mapping, duplicate detection, tagging, and ownership assignment using custom configurations. Submissions are processed in real time, enabling seamless CRM integration and streamlined data management.
+The **Airtable** snap-in automates lead intake from Airtable form submissions by mapping responses to DevRev contacts, [[features/accounts|accounts]], and custom objects. It supports field mapping, duplicate detection, tagging, and ownership assignment using custom configurations. Submissions are processed in real time, enabling seamless CRM integration and streamlined data management.
 
 ## Installation
 
@@ -27,7 +28,7 @@ In **Settings** > **Menu**, the following configuration options are available:
 
 * **Create Custom Object:**
   Create a custom object.
-* **Create Account and Contact:**
+* **Create [[entities/account|Account]] and Contact:**
   Enable this option to create accounts and contacts.
 * **Link Account and Contact:**
   Enable this option to link the account and contact to the custom object.
@@ -161,4 +162,4 @@ In **Settings** > **Menu**, the following configuration options are available:
   Define the field name where unmapped Airtable fields should be collected into a single field.
 
 ## Source
-- DevRev support article [Airtable](https://support.devrev.ai/en-US/devrev/article/t_d0xCEa) (ART-21922)
+- DevRev support [[entities/article|article]] [Airtable](https://support.devrev.ai/en-US/devrev/article/t_d0xCEa) (ART-21922)

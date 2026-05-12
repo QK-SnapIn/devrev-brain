@@ -10,17 +10,18 @@ top_category: Snap-ins
 wiki_match: features/chats
 match_score: 0.615
 last_updated: 2026-05-11
+summary: "Using DevRev, you can connect with your customers through WhatsApp."
 ---
 
 # WhatsApp
 
-Using DevRev, you can connect with your customers through WhatsApp. This new communication channel allows your customers to reach out with their questions and concerns directly on WhatsApp. The messages from WhatsApp seamlessly appear in your DevRev Inbox, making it easy for you to manage all your customer conversations in one place. By adding WhatsApp to DevRev, you can streamline your support and offer a smoother experience to your customers.
+Using DevRev, you can connect with your customers through WhatsApp. This new communication channel allows your customers to reach out with their questions and concerns directly on WhatsApp. The messages from WhatsApp seamlessly appear in your DevRev [[features/inbox|Inbox]], making it easy for you to manage all your customer [[features/conversations-feature|conversations]] in one place. By adding WhatsApp to DevRev, you can streamline your support and offer a smoother experience to your customers.
 
 For detailed information about WhatsApp for Business, refer to [WhatsApp Business Platform - Documentation](https://developers.facebook.com/docs/whatsapp/overview#about-the-platform)
 
 ## Prerequisites
 
-1. **Create a business account:** Ensure you have a [Business Account](https://business.facebook.com/overview) in Meta Business Manager. For detailed information, refer to [creating a Business Account](https://m.facebook.com/help/1710077379203657) in Meta Business Manager.
+1. **Create a business [[entities/account|account]]:** Ensure you have a [Business Account](https://business.facebook.com/overview) in Meta Business Manager. For detailed information, refer to [creating a Business Account](https://m.facebook.com/help/1710077379203657) in Meta Business Manager.
 2. **Number compatibility:** Ensure the designated number isn't linked to another WhatsApp account. If it is, either delete that account or [migrate your number](https://developers.facebook.com/docs/whatsapp/cloud-api/get-started/migrate-existing-whatsapp-number-to-a-business-account/) to a business account.
 3. **Partner integration:** We work with 360dialog for WhatsApp Integration. If you have an existing WhatsApp for Business Account, follow the steps to [migrate to 360dialog](https://docs.360dialog.com/partner/account-setup/migrating-phone-numbers).
 
@@ -33,8 +34,8 @@ To use this snap-in, you'll need to connect your WhatsApp with Business API with
 
 ## Limitations
 
-* Group Conversations are not supported by WhatsApp for Business API.
-* If you do not respond to the customer’s message within 24 hours, you can only respond to the conversation using Meta-approved template messages.
+* [[entities/group|Group]] Conversations are not supported by WhatsApp for Business API.
+* If you do not respond to the customer’s message within 24 hours, you can only respond to the [[entities/conversation|conversation]] using Meta-approved template messages.
 
 ## Set up the snap-in
 
@@ -56,4 +57,4 @@ Follow these steps to ensure WhatsApp messages sent to your business are synced 
    * **Share an update with the customer:** "Hi, here is an update (Custom Message)"
 
 ## Source
-- DevRev support article [WhatsApp](https://support.devrev.ai/en-US/devrev/article/UdY1CsSV) (ART-21979)
+- DevRev support [[entities/article|article]] [WhatsApp](https://support.devrev.ai/en-US/devrev/article/UdY1CsSV) (ART-21979)

@@ -10,6 +10,7 @@ top_category: Snap-ins
 wiki_match: features/slack-integration
 match_score: 0.529
 last_updated: 2026-05-11
+summary: "The Slack Broadcaster snap-in is a specialized automation tool designed to streamline the process of posting broadcast messages, both for customers and within your organization."
 ---
 
 # Slack Broadcaster
@@ -26,14 +27,14 @@ For detailed instructions, refer to the [Slack snap-in docs](https://app.devrev.
 ## Features
 
 * **Customer release notes**: Automatically share release notes with customers via Slack Connect channels.
-* **Account linking**: Link Slack channels to accounts using the `/slack_broadcaster_link <channel_id>` command in the account timeline. To unlink, use `/slack_broadcaster_link invalid`.
+* **[[entities/account|Account]] linking**: Link Slack channels to [[features/accounts|accounts]] using the `/slack_broadcaster_link <channel_id>` command in the account timeline. To unlink, use `/slack_broadcaster_link invalid`.
 * **Bulk account update**: Link multiple accounts using `/slack_broadcaster_upload external` or `/slack_broadcaster_upload internal` and upload a CSV with account display names and Slack channel IDs.
 * **Internal release notes**: Share internal updates by uploading a CSV with channel names and IDs using `/slack_broadcaster_upload internal`.
-* **Configuration management**: Only authorized users in specific groups can post to Slack channels.
+* **Configuration management**: Only authorized users in specific [[entities/group|groups]] can post to Slack channels.
 
 ## Slash Commands
 
-The Slack Broadcaster snap-in provides intuitive slash commands to streamline release note posting and management:
+The Slack Broadcaster snap-in provides intuitive slash [[features/commands|commands]] to streamline release note posting and management:
 
 * `/slack_broadcaster_link <channel_id>`: Links an account to a Slack channel.
 * `/slack_broadcaster_upload internal`: Uploads a CSV for internal broadcasts.
@@ -93,4 +94,4 @@ When uploading a CSV to link accounts or channels:
 Currently, this snap-in does not support broadcasting to more than 650 channels at a time.
 
 ## Source
-- DevRev support article [Slack Broadcaster](https://support.devrev.ai/en-US/devrev/article/aE1x22U7) (ART-21967)
+- DevRev support [[entities/article|article]] [Slack Broadcaster](https://support.devrev.ai/en-US/devrev/article/aE1x22U7) (ART-21967)

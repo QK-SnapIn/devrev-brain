@@ -11,11 +11,12 @@ wiki_match: glossary/airsync
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['glossary/airsync']
+summary: "The Azure Entra ID AirSync connector syncs identity and directory data from Microsoft Entra ID (formerly Azure Active Directory) to DevRev."
 ---
 
 # Azure Entra ID AirSync Connector
 
-The Azure Entra ID AirSync connector syncs identity and directory data from Microsoft Entra ID (formerly Azure Active Directory) to DevRev. This connector enables you to import users, groups, applications, devices, roles, policies, and audit logs from your Azure tenant into DevRev for unified identity management and access governance.
+The Azure Entra ID [[glossary/airsync|AirSync]] connector syncs [[features/identity|identity]] and directory data from Microsoft Entra ID (formerly Azure Active Directory) to DevRev. This connector enables you to import users, [[entities/group|groups]], applications, devices, roles, policies, and audit logs from your Azure tenant into DevRev for unified identity management and access governance.
 
 The connector uses Microsoft Graph API to extract data and supports both full and incremental syncs. Data flows one-way from Azure Entra ID to DevRev.
 
@@ -27,9 +28,9 @@ The connector extracts the following entities from your Azure Entra ID tenant:
 
 | Entity | Description |
 | --- | --- |
-| **Users** | All user accounts including guest users, with profile information (email, display name, job title, department, etc.) |
+| **Users** | All user [[features/accounts|accounts]] including guest users, with profile information (email, display name, job title, department, etc.) |
 | **Groups** | Security groups, Microsoft 365 groups, and distribution lists |
-| **Group Members** | Membership relationships between users and groups |
+| **[[entities/group|Group]] Members** | Membership relationships between users and groups |
 | **Directory Roles** | Administrative roles (Global Administrator, User Administrator, etc.) |
 | **Role Members** | Assignments of directory roles to users |
 
@@ -47,7 +48,7 @@ The connector extracts the following entities from your Azure Entra ID tenant:
 | Entity | Description |
 | --- | --- |
 | **Devices** | Azure AD joined, registered, and hybrid joined devices |
-| **Organizational Contacts** | External contacts not part of your directory |
+| **Organizational Contacts** | External contacts not [[entities/part|part]] of your directory |
 
 ### Security & Governance
 
@@ -57,7 +58,7 @@ The connector extracts the following entities from your Azure Entra ID tenant:
 | **Authentication Methods Policy** | Tenant-wide MFA policy configuration |
 | **Conditional Access Policies** | Policies controlling access based on conditions (location, device, risk, etc.) |
 | **PIM Eligible Roles** | Privileged Identity Management role eligibility (requires Azure AD Premium P2) |
-| **Lifecycle Workflows** | Automated user lifecycle workflows (requires Entra ID Governance) |
+| **Lifecycle [[features/workflows|Workflows]]** | Automated user lifecycle workflows (requires Entra ID Governance) |
 
 ### Licenses & Audit
 
@@ -157,7 +158,7 @@ After adding all permissions:
 
 1. Log in to your DevRev organization
 2. Navigate to **Settings** > **Integrations** > **Marketplace**
-3. Search for **Azure Entra ID**
+3. [[features/search|Search]] for **Azure Entra ID**
 4. Click on the Azure Entra ID connector card
 
 ### Step 2: Install the Snap-in
@@ -331,9 +332,9 @@ The connector gracefully handles missing permissions:
 **Solutions**:
 
 * Large tenants may take several hours for initial sync (this is normal)
-* Check DevRev status page for any platform issues
+* Check DevRev status page for any platform [[features/issues|issues]]
 * If stuck for more than 6 hours, cancel and retry sync
-* Contact DevRev support if issue persists
+* Contact DevRev support if [[entities/issue|issue]] persists
 
 **Problem**: "Rate limit exceeded" error
 
@@ -377,7 +378,7 @@ The connector gracefully handles missing permissions:
 
 **Problem**: "PIM Eligible Roles" not syncing
 
-**Solution**: Requires **Azure AD Premium P2** license. If you don't have P2, this entity will be skipped (this is expected behavior).
+**Solution**: Requires **Azure AD Premium P2** license. If you [[glossary/don|don]]'t have P2, this entity will be skipped (this is expected behavior).
 
 **Problem**: "Lifecycle Workflows" not syncing
 
@@ -482,4 +483,4 @@ The connector does **not** sync:
 - [[glossary/airsync]]
 
 ## Source
-- DevRev support article [Azure Entra ID AirSync Connector](https://support.devrev.ai/en-US/devrev/article/Pf4L4nuQ) (ART-27975)
+- DevRev support [[entities/article|article]] [Azure Entra ID AirSync Connector](https://support.devrev.ai/en-US/devrev/article/Pf4L4nuQ) (ART-27975)

@@ -11,11 +11,12 @@ wiki_match: features/search
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['features/search']
+summary: "The Search Node snap-in includes the custom operation Get Relevant Objects, which is available in the Workflow Builder upon activation."
 ---
 
 # Search Node
 
-The [Search Node](https://marketplace.devrev.ai/search-node) snap-in includes the custom operation Get Relevant Objects, which is available in the Workflow Builder upon activation. This automation gets the list of relevant objects for the given search query.
+The [Search Node](https://marketplace.devrev.ai/search-node) snap-in includes the custom operation Get Relevant Objects, which is available in the [[features/workflows|Workflow Builder]] upon activation. This automation gets the list of relevant objects for the given [[features/search|search]] query.
 
 ## Installation
 
@@ -25,9 +26,9 @@ The [Search Node](https://marketplace.devrev.ai/search-node) snap-in includes th
 
 ## Input Parameters
 
-1. **Account ID**:
+1. **[[entities/account|Account]] ID**:
 
-   * Description: Filters and retrieves tickets or conversations associated with a specific user account.
+   * Description: Filters and retrieves [[features/tickets|tickets]] or [[features/conversations-feature|conversations]] associated with a specific user account.
    * Requirement: Required only when the Namespace is `ticket`/`conversation`.
 2. **Search Query**:
 
@@ -49,4 +50,4 @@ The [Search Node](https://marketplace.devrev.ai/search-node) snap-in includes th
 - [[features/search]]
 
 ## Source
-- DevRev support article [Search Node](https://support.devrev.ai/en-US/devrev/article/Nu9tvhiJ) (ART-21943)
+- DevRev support [[entities/article|article]] [Search Node](https://support.devrev.ai/en-US/devrev/article/Nu9tvhiJ) (ART-21943)

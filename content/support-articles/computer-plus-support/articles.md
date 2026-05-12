@@ -11,11 +11,12 @@ wiki_match: entities/article
 match_score: 0.933
 last_updated: 2026-05-11
 related: ['entities/article']
+summary: "An article is a document containing essential information about your company’s products, services, and processes."
 ---
 
 # Articles
 
-An article is a document containing essential information about your company’s products, services, and processes. The objective is to assist customers in resolving common queries by referring to the information in articles, enabling them to find solutions independently rather than relying on ticketing or speaking to agents.
+An [[entities/article|article]] is a document containing essential information about your company’s products, services, and processes. The objective is to assist customers in resolving common queries by referring to the information in [[entities/article|articles]], enabling them to find solutions independently rather than relying on ticketing or speaking to [[features/agents|agents]].
 
 Users with edit rights can create new articles and modify existing ones.
 
@@ -33,20 +34,20 @@ To create a new article, do the following:
    * Upload a file (PDF or MS Word document). Selecting a PDF should open the source in a new browser tab, while selecting a Word file should download the source, requiring the user to open it in the MS Word application.
 3. If you are writing a new article, specify additional settings for the article:
 
-   * **Part** (required): Define the feature or capability the article addresses.
+   * **[[entities/part|Part]]** (required): Define the feature or capability the article addresses.
    * **Owned by** (required): Assign a singular point of contact responsible for the article, aiding in management and ownership.
    * **Status**: Indicate the current stage of the article.
-   * **Collection**: Categorize the article under a topic/theme in your customer portal.
+   * **Collection**: Categorize the article under a topic/theme in your [[features/customer-portal|customer portal]].
    * **Visible To**: Decide whether the article should be visible to all customers or only verified customers.
 4. Click **Create** and select whether you want to **Create** an article in draft mode, **Submit for review**, or **Publish**.
 
-To ensure that the article is visible to your users, the **Status** of the article must be *Published* and the user group must be indicated in the **Visible to** field.
+To ensure that the article is visible to your users, the **Status** of the article must be *Published* and the user [[entities/group|group]] must be indicated in the **Visible to** field.
 
 ### Edit article content and settings
 
 To update the content or settings of an existing article, do the following:
 
-1. Go to [**Settings > Support > Knowledge Base**](https://app.devrev.ai/?setting=knowledge-base%2Farticles) and select the article you want to edit. The article opens in an additional window on top of the knowledge base view.
+1. Go to [**Settings > Support > Knowledge Base**](https://app.devrev.ai/?setting=knowledge-base%2Farticles) and select the article you want to edit. The article opens in an additional window on top of the [[features/knowledge-base|knowledge base]] view.
 
 Select the full screen mode icon to expand the article view.
 
@@ -78,7 +79,7 @@ In the main knowledge base view, you can select multiple articles to delete arti
 
 ### Article visibility
 
-To control who can view the articles, open the **Visible to** menu. This displays all external groups that the article can be shared with. By default, the following groups are available:
+To control who can view the articles, open the **Visible to** menu. This displays all external [[entities/group|groups]] that the article can be shared with. By default, the following groups are available:
 
 * **Customers**: Allows public access without verification.
 
@@ -131,7 +132,7 @@ View and restore previous versions:
 
 ## Article templates
 
-Article templates help maintain consistency and save time during article creation.
+Article [[features/templates|templates]] help maintain consistency and save time during article creation.
 
 ### Create a template
 
@@ -225,7 +226,7 @@ An article is considered approved when all reviewers have approved it.
 
 ## Article analytics
 
-Article analytics in DevRev provides a customized prebuilt dashboard to assess whether customers can find relevant articles to address their queries.
+Article [[features/analytics|analytics]] in DevRev provides a customized prebuilt dashboard to assess whether customers can find relevant articles to address their queries.
 
 Access analytics under [**Settings** > **Support**> **Article Analytics**](https://app.devrev.ai/?setting=article-analytics?dashboardId=don%3Adata%3Advrv-us-1%3Adashboard%2FjoDZWGmRDo&dashboardToken=ZGV2cmV2LW9hc2lzNj6Q_7q4mkqFSM1mEwOl_IRS3DO5PR7v1QwJzTTk60XbZ0Rfwmo_Tk3a2nuwmFljyS51IwmOlQCbeSHhCQsY5Di0UuIX3w3-A16NG3LUh9fVeMqV_rv2vuk1Jy9YWzJ_cfMyN3giA39F1YWzuLKUHhBa1HvWgBsmDA%3D%3D&dashboardTabId=article-analytics-dashboard&record_date=%7B%22presetType%22%3A%22last_n_days%22%2C%22presetValue%22%3A30%2C%22type%22%3A%22preset%22%7D).
 

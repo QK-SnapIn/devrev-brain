@@ -11,12 +11,13 @@ wiki_match: features/customization
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['features/customization']
+summary: "DevRev powers your organization with the ability to customize DevRev objects for your organization\"s needs."
 ---
 
 # Object customization
 
 DevRev powers your organization with the ability to customize DevRev objects for your organization's needs. You can add custom fields to the objects along with the pre-existing fields or add new subtypes to the objects which helps you extend an object's capabilities.
-Objects are the core entities in DevRev that represent the data you work with. For example, issues, opportunities, contacts, and accounts are objects in DevRev. You can read more about how identity, parts, and work items work in [[support-articles/computer-by-devrev/core-concepts|core concepts]].
+Objects are the core entities in DevRev that represent the data you work with. For example, [[features/issues|issues]], [[entities/opportunity|opportunities]], contacts, and [[features/accounts|accounts]] are objects in DevRev. You can read more about how [[features/identity|identity]], [[features/parts|parts]], and work items work in [[support-articles/computer-by-devrev/core-concepts|core concepts]].
 Here's how objects and subtypes work in DevRev:
 
 ![Object Customization Diagram](don:core:dvrv-us-1:devo/0:artifact/4099910)
@@ -24,10 +25,10 @@ Here's how objects and subtypes work in DevRev:
 **Key features**:
 
 * Create custom object records: Easily create records for custom objects directly from the + button.
-* Search: Use cmd+K to quickly find and access your custom object records.
-* Association with stock and custom objects: Map custom objects to stock objects like tickets or contacts, as well as other custom objects.
+* [[features/search|Search]]: Use cmd+K to quickly find and access your custom object records.
+* Association with stock and custom objects: Map custom objects to [[features/stock-objects|stock objects]] like [[features/tickets|tickets]] or contacts, as well as other custom objects.
 
-Object customization is available only for the following:
+Object [[features/customization|customization]] is available only for the following:
 
 * [[support-articles/computer-plus-build/issues#attributes|Issues]]
 * [[support-articles/computer-plus-support/tickets#attributes|Tickets]]
@@ -58,10 +59,10 @@ Here you can view all the existing objects and their subtypes. You can also chec
      + **Dropdown**: You can select the options from the dropdown. Add options using **Dropdown options** > \**+ Add* in the value definitions section.
      + **Timestamp**: You can add the date and exact time in this field.
      + **Date**: You can select a date in this field. For example, "Date of bug identified: 19/07/2024".
-     + **Part**: Select the part to which this object belongs. It could be an enhancement, feature, capability, runnable, linkable, or product.
-     + **Dev user**: Select one or multiple users from the dropdown.
+     + **[[entities/part|Part]]**: Select the part to which this object belongs. It could be an [[entities/enhancement|enhancement]], feature, capability, runnable, linkable, or product.
+     + **[[entities/dev-user|Dev user]]**: Select one or multiple users from the dropdown.
      + **Customer**: Assign the object to an existing customer workspace.
-     + **Account**: Assign the object to a customer account.
+     + **[[entities/account|Account]]**: Assign the object to a customer account.
      + **Workspace**: Assign the object to a workspace.
 
        - **Value definitions**:
@@ -70,7 +71,7 @@ Here you can view all the existing objects and their subtypes. You can also chec
          * **Required field**: Toggle this on if you want to make it a required field. Required fields will have a red star which indicates that to create an object, this field needs to be filled.
          * **Default value**: Add a default value in the input so that it's not empty. Users can change this value later.
          * **Placeholder text**: Add a placeholder text that will be visible to the users before they enter an input.
-         * **Group name**: You can use a group name to create a group accordion for the chosen attributes.
+         * **[[entities/group|Group]] name**: You can use a group name to create a group accordion for the chosen attributes.
    * **Field visibility**: Choose how you want the field to be visible to users.
    * **Field actionables**: Select actions that you can perform after creating a field such as grouping, filtering, and sorting.
    * **Tooltip**: Add information about the field which will be visible when hovered on the field.
@@ -103,4 +104,4 @@ To delete the subtype, ⋮ next to **Edit** then **Deprecate subtype**.
 - [[features/customization]]
 
 ## Source
-- DevRev support article [Object customization](https://support.devrev.ai/en-US/devrev/article/2it-yKhx) (ART-21854)
+- DevRev support [[entities/article|article]] [Object customization](https://support.devrev.ai/en-US/devrev/article/2it-yKhx) (ART-21854)

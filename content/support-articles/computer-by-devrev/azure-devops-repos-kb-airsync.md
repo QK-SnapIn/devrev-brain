@@ -11,11 +11,12 @@ wiki_match: glossary/airsync
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['glossary/airsync']
+summary: "The Azure DevOps Repos KB AirSync simplifies migration of markdown documentation from Azure DevOps repositories to DevRev\"s Knowledge Base."
 ---
 
 # Azure DevOps Repos KB AirSync
 
-The Azure DevOps Repos KB AirSync simplifies migration of markdown documentation from Azure DevOps repositories to DevRev's Knowledge Base. This integration enables seamless synchronization of documentation files, folder structures, users, groups, and repository permissions, bringing your technical documentation into your DevRev workspace.
+The Azure DevOps Repos KB [[glossary/airsync|AirSync]] simplifies migration of markdown documentation from Azure DevOps repositories to DevRev's [[features/knowledge-base|Knowledge Base]]. This integration enables seamless synchronization of documentation files, folder structures, users, [[entities/group|groups]], and repository permissions, bringing your technical documentation into your DevRev workspace.
 
 ### Supported objects
 
@@ -23,10 +24,10 @@ The following is a list of Azure DevOps objects and their corresponding DevRev e
 
 | Azure DevOps object | DevRev object | Sync to DevRev |
 | --- | --- | --- |
-| Markdown Files | Article | ✅ |
+| Markdown Files | [[entities/article|Article]] | ✅ |
 | Folders | Collection (Directory) | ✅ |
 | Users | DevUser | ✅ |
-| Groups | Group | ✅ |
+| Groups | [[entities/group|Group]] | ✅ |
 | Group Members | Object Member | ✅ |
 | Repository Permissions | Article Permissions (access\_level, shared\_with) | ✅ |
 
@@ -54,7 +55,7 @@ To create a Personal Access Token:
 ### Importing from Azure DevOps Repos
 
 1. Log in to DevRev.
-2. Go to **Settings > Integrations > Snap-ins**, search for **Azure DevOps Repos** under **All Snap-ins**.
+2. Go to **Settings > Integrations > Snap-ins**, [[features/search|search]] for **Azure DevOps Repos** under **All Snap-ins**.
 3. Click **Add and Install Snap-in**.
 4. Navigate to **Settings > Integrations > Airsync** in the left-navigation.
 5. Click **Airsync** in the top right corner and select **Azure DevOps Repos**.
@@ -68,7 +69,7 @@ To create a Personal Access Token:
 7. Once the connection is established, configure the import settings:
 
    * Enter the **Git Branch Name** to sync from, such as, main, master, develop
-8. Select the repository you want to import and specify the DevRev part that should be used for any imported content.
+8. Select the repository you want to import and specify the DevRev [[entities/part|part]] that should be used for any imported content.
 9. Click **Start** to trigger the import.
 
 > Import duration varies from minutes to hours based on the number of files, users, and groups in your Azure DevOps organization.
@@ -99,7 +100,7 @@ Access level mapping:
 * **Unidirectional sync only**: Data flows from Azure DevOps to DevRev. Changes made in DevRev are not synced back to Azure DevOps.
 * **Markdown files only**: Only `.md` and `.markdown` files are extracted. Other file types are not synced.
 * **Single branch sync**: Each sync operates on one configured branch at a time.
-* **No folder permissions**: DevRev collections (folders) do not support permissions. Only articles receive permission mappings.
+* **No folder permissions**: DevRev collections (folders) do not support permissions. Only [[entities/article|articles]] receive permission mappings.
 * **No transactional guarantees**: If an import fails partway through, partial data may exist in DevRev without automatic rollback.
 * **Image link conversion**: Image references in markdown (`![alt](url)`) are converted to regular links (`[alt](url)`) for DevRev compatibility.
 * **Group-based permissions only**: Only group permissions from Azure DevOps repository ACLs are mapped to DevRev articles. Individual user permissions set directly on repositories are not imported. Users inherit article access through their group membership in DevRev, which mirrors Azure DevOps' group-based permission model. For more details on Azure DevOps permissions, see [About permissions and security groups](https://learn.microsoft.com/en-us/azure/devops/organizations/security/about-permissions).
@@ -121,7 +122,7 @@ After a successful import, you have the following options available for the impo
   If you want to remove the import and all data that were imported from Azure DevOps into DevRev, you can use this option. This will delete all articles, collections, and related metadata.
 * **Edit Connection**
 
-  Use this option to change the connection used for any subsequent actions. It can be helpful if a PAT token has expired or needs to be rotated, the user who established the connection is no longer available, or you want to use a different Azure DevOps account.
+  Use this option to change the connection used for any subsequent actions. It can be helpful if a PAT token has expired or needs to be rotated, the user who established the connection is no longer available, or you want to use a different Azure DevOps [[entities/account|account]].
 
 ### Sync to DevRev
 

@@ -11,11 +11,12 @@ wiki_match: glossary/airsync
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['glossary/airsync']
+summary: "DevRev\"s HubSpot AirSync allows you to seamlessly import your HubSpot companies and contacts into DevRev."
 ---
 
 # HubSpot AirSync
 
-DevRev's HubSpot AirSync allows you to seamlessly import your HubSpot companies
+DevRev's HubSpot [[glossary/airsync|AirSync]] allows you to seamlessly import your HubSpot companies
 and contacts into DevRev.
 
 For more information, refer to the [HubSpot AirSync snap-in](https://marketplace.devrev.ai/hubspot) on the DevRev marketplace.
@@ -28,16 +29,16 @@ equivalent. Those marked as **Supported** are eligible for import.
 | HubSpot Object | DevRev Object | Sync to DevRev |
 | --- | --- | --- |
 | Contact | Contact | ✅ |
-| Company | Account | ✅ |
-| Deal | Opportunity | ✅ |
+| Company | [[entities/account|Account]] | ✅ |
+| Deal | [[glossary/opportunity|Opportunity]] | ✅ |
 | Pipeline of Deal | State/Stage of Opportunity | ✅ |
 | Note on Deal | Comment on Opportunity | ✅ |
 | Attachment on Note | Attachment on Comment | ✅ |
 | User | DevUser | ✅ |
-| Ticket | Ticket | ❌ |
-| Product | Part | ❌ |
+| [[entities/ticket|Ticket]] | Ticket | ❌ |
+| Product | [[entities/part|Part]] | ❌ |
 | Timeline | Timeline | ❌ |
-| Conversation | Conversation | ❌ |
+| [[entities/conversation|Conversation]] | Conversation | ❌ |
 | Custom Object | Custom Object | ❌ |
 
 ## Import from HubSpot
@@ -69,4 +70,4 @@ back-off and resume automatically.
 - [[glossary/airsync]]
 
 ## Source
-- DevRev support article [HubSpot AirSync](https://support.devrev.ai/en-US/devrev/article/78b5Fv0r) (ART-21995)
+- DevRev support [[entities/article|article]] [HubSpot AirSync](https://support.devrev.ai/en-US/devrev/article/78b5Fv0r) (ART-21995)

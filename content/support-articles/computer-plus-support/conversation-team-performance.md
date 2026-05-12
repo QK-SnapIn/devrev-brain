@@ -11,17 +11,18 @@ wiki_match: entities/conversation
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['entities/conversation']
+summary: "Total number of conversation owners."
 ---
 
 # Conversation-Team Performance
 
 * **Number of Owners**
 
-  Total number of conversation owners.
-* **Avg SLA breaches per Owner**
+  Total number of [[entities/conversation|conversation]] owners.
+* **Avg [[features/slas|SLA]] breaches per Owner**
 
-  The ratio of conversations with SLA breaches to the number of owners.
-* **CSAT rating**
+  The ratio of [[features/conversations-feature|conversations]] with SLA breaches to the number of owners.
+* **[[glossary/csat|CSAT]] rating**
 
   Average CSAT rating for conversation Owners.
 * **Active Conversations**
@@ -35,7 +36,7 @@ related: ['entities/conversation']
   Indicates the average time taken by each owner to provide the first response to the customer.
 * **SLA breaches per Owner**
 
-  Number of Conversations with SLA breaches with breach type for ticket owners.
+  Number of Conversations with SLA breaches with breach type for [[entities/ticket|ticket]] owners.
 * **SLA breaches w.r.t. Customer Tier**
 
   Number of Conversations with SLA breaches per owner.
@@ -47,4 +48,4 @@ related: ['entities/conversation']
 - [[entities/conversation]]
 
 ## Source
-- DevRev support article [Conversation-Team Performance](https://support.devrev.ai/en-US/devrev/article/2PIYwx9D) (ART-21909)
+- DevRev support [[entities/article|article]] [Conversation-Team Performance](https://support.devrev.ai/en-US/devrev/article/2PIYwx9D) (ART-21909)

@@ -10,11 +10,12 @@ top_category: Computer+ Observe
 wiki_match: features/email-integration
 match_score: 0.476
 last_updated: 2026-05-11
+summary: "During Plug SDK initialization, you can provide custom attributes for session recording options."
 ---
 
 # Session recording options
 
-During Plug SDK initialization, you can provide custom attributes for session recording options. If no custom attributes are specified, the default options are used.
+During [[glossary/plug|Plug]] SDK initialization, you can provide custom attributes for session recording options. If no custom attributes are specified, the default options are used.
 
 Plug SDK offers the ability to hide sensitive user information by masking it in session recordings. During session replays, masking replaces user-visible or typed content in specific elements with asterisks ("\*"). This ensures that sensitive information is not displayed in the recordings, protecting user privacy.
 
@@ -69,7 +70,7 @@ PlugStartRecordingOptions = {
 | `captureMouseMove` | Whether to capture the full mouse movement throughout the session or only track mouse clicks. | False |
 | `captureNetworkLogs` | Whether network logs should be captured during the session. | True |
 | `captureConsoleLogs` | Whether the session captures console logs or not. | True |
-| `recordCrossOriginIframes` | Whether interactions occurring within the chat widget and search agent should be captured or not. | True |
+| `recordCrossOriginIframes` | Whether interactions occurring within the chat widget and [[features/search|search]] agent should be captured or not. | True |
 | `sessionDetails.sessionId` | Field to pass session ID of the previous session to link. | null |
 | `sessionDetails.tabId` | Field to pass the tab ID of the previous session to link. | null |
 | `maskTextFn` | An option to customize the logic for masking sensitive text during session recording. This function accepts a callback that receives the text content and allows you to define how the text should be masked | null Example: `maskTextFn: (text: string, element: HTMLElement) => {`  `return text.replace(/[\S]/g, "@");` `};`. |
@@ -104,4 +105,4 @@ You can set a custom label for an element using the `data-plug-label` attribute,
 | `data-plug-label` | Custom attribute to set an element's label in the web player timeline. | `<h1 data-plug-label="Custom label"> ... </h1>` |
 
 ## Source
-- DevRev support article [Session recording options](https://support.devrev.ai/en-US/devrev/article/8teIro6K) (ART-21918)
+- DevRev support [[entities/article|article]] [Session recording options](https://support.devrev.ai/en-US/devrev/article/8teIro6K) (ART-21918)

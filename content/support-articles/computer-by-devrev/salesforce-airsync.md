@@ -11,11 +11,12 @@ wiki_match: glossary/airsync
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['glossary/airsync']
+summary: "DevRev\"s Salesforce AirSync allows you to perform a bulk migration, ongoing 1-way sync, or ongoing 2-way syncs."
 ---
 
 # Salesforce AirSync
 
-DevRev's Salesforce AirSync allows you to perform a bulk migration, ongoing 1-way sync, or ongoing 2-way syncs. A bulk import is a prerequisite to setting up a sync.
+DevRev's Salesforce [[glossary/airsync|AirSync]] allows you to perform a bulk migration, ongoing 1-way sync, or ongoing 2-way syncs. A bulk import is a prerequisite to setting up a sync.
 
 For more information, refer to the [Salesforce AirSync snap-in](https://marketplace.devrev.ai/salesforce) on the DevRev marketplace.
 
@@ -25,17 +26,17 @@ The following is a list of Salesforce objects and their corresponding DevRev equ
 
 | Salesforce Object | DevRev Object | Sync to DevRev | Sync to Salesforce |
 | --- | --- | --- | --- |
-| Case | Ticket | ✅ | ✅ |
+| Case | [[entities/ticket|Ticket]] | ✅ | ✅ |
 | Problem | Ticket | ✅ | ✅ |
-| Incident | Ticket | ✅ | ✅ |
-| Comment on Case/Task/Problem/Incident | Comment on Ticket | ✅ | ✅ |
+| [[glossary/incident|Incident]] | Ticket | ✅ | ✅ |
+| Comment on Case/[[entities/task|Task]]/Problem/Incident | Comment on Ticket | ✅ | ✅ |
 | Attachment on Case/Task/Problem/Incident | Attachment on Ticket | ✅ | ❌ |
 | Product | Product | ✅ | ❌ |
-| Account | Account | ✅ | ❌ |
+| [[entities/account|Account]] | Account | ✅ | ❌ |
 | Contact | Contact | ✅ | ❌ |
-| Opportunity | Opportunity | ✅ | ✅ |
+| [[glossary/opportunity|Opportunity]] | Opportunity | ✅ | ✅ |
 | Lead | Contact | ❌ | ❌ |
-| Knowledge Article | Article | ✅ | ❌ |
+| Knowledge [[entities/article|Article]] | Article | ✅ | ❌ |
 | Custom Object | Custom Object | ✅ | ❌ |
 | Business Hours | Custom Object | ✅ | ❌ |
 | Asset | Custom Object | ✅ | ❌ |
@@ -61,7 +62,7 @@ To enable API Access Control, follow these instructions:1. Open a case with Sale
 
 1. Go to **[Settings](https://app.devrev.ai/?setting=airsyncs)**[ > ](https://app.devrev.ai/?setting=airsyncs)**[Integrations](https://app.devrev.ai/?setting=airsyncs)**[ > ](https://app.devrev.ai/?setting=airsyncs)**[AirSyncs](https://app.devrev.ai/?setting=airsyncs)** and select **AirSync** (or **Start AirSync** if it's your first).
 2. Create a new connection to your Salesforce account, or use an existing connection if you already have one.
-3. Once the connection is established, select the Salesforce account you want to import and specify the DevRev part that should be used for any imported cases without a product. This initiates a bulk import of the selected account.
+3. Once the connection is established, select the Salesforce account you want to import and specify the DevRev [[entities/part|part]] that should be used for any imported cases without a product. This initiates a bulk import of the selected account.
 4. DevRev makes an effort to automatically map the fields from Salesforce to corresponding fields in DevRev. However, you may be prompted to manually map certain fields if needed. You can track the migration and perform any required mapping under **[Settings](https://app.devrev.ai/?setting=airsyncs)**[ > ](https://app.devrev.ai/?setting=airsyncs)**[Integrations](https://app.devrev.ai/?setting=airsyncs)**[ > ](https://app.devrev.ai/?setting=airsyncs)**[AirSyncs](https://app.devrev.ai/?setting=airsyncs)**.
 
 To ensure a successful import, it's important to verify that the Salesforce user has **View All Data** permissions, not to be confused with the **View All** permissions for individual objects. If this permission is missing, the **FeedComment** object will not be extracted. 
@@ -70,7 +71,7 @@ The duration of the import depends on the size of the Salesforce account and the
 
 ### Sync to Salesforce
 
-After a successful import from a Salesforce account, you can sync changes made in DevRev to the previously imported cases back to Salesforce. Additionally, any new DevRev tickets marked for sync is created as new Salesforce items.
+After a successful import from a Salesforce account, you can sync changes made in DevRev to the previously imported cases back to Salesforce. Additionally, any new DevRev [[features/tickets|tickets]] marked for sync is created as new Salesforce items.
 
 To perform a one-time sync to Salesforce, follow these steps:
 
@@ -102,13 +103,13 @@ The following is a list of AirSync Salesforce scopes and limitations to keep in 
 
 ### Knowledge articles
 
-- Only published articles in the master language are imported from Salesforce to DevRev.
+- Only published [[entities/article|articles]] in the master language are imported from Salesforce to DevRev.
 - If the article has multiple rich text content fields, the article will be split into multiple DevRev articles, one for each rich text content field.
 
 ### Sync groups as owners of tickets
 
 - Articles with multiple rich text content fields are split into multiple DevRev articles, one for each rich text content field.
-- If a case in Salesforce is owned by a queue or a group, the case is imported into DevRev with a fallback service account owner, and the **Group** field in DevRev is set to the name of the queue or group in Salesforce.
+- If a case in Salesforce is owned by a queue or a [[entities/group|group]], the case is imported into DevRev with a fallback service account owner, and the **Group** field in DevRev is set to the name of the queue or group in Salesforce.
 - For syncing back to Salesforce, to assign the case to a queue or group, the **Group** field in DevRev must be set to the name of the queue or group in Salesforce, and the **Owner** field must be set to a fallback service account.
 
 ## Related wiki nodes

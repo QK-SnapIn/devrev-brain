@@ -11,16 +11,17 @@ wiki_match: features/github-integration
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['features/github-integration']
+summary: "Bring your code to the center of your decision-making with GitHub and DevRev."
 ---
 
 # GitHub
 
-Bring your code to the center of your decision-making with GitHub and DevRev. The GitHub integration allows GitHub users to onboard to DevRev and automate day-to-day activities, removing the need for tedious manual tasks.
+Bring your code to the center of your decision-making with GitHub and DevRev. The [[features/github-integration|GitHub integration]] allows GitHub users to onboard to DevRev and automate day-to-day activities, removing the need for tedious manual [[entities/task|tasks]].
 
-* Work automation: Connect GitHub events to your DevRev issues.
-* Magic Commands: Update DevRev issues without leaving your IDE.
-* Autotrack work: Automatically track your work in DevRev even without creating an issue ahead of time.
-* PR Task Creation: Create DevRev tasks for PR reviewers.
+* Work automation: Connect GitHub events to your DevRev [[features/issues|issues]].
+* Magic [[features/commands|Commands]]: Update DevRev issues without leaving your IDE.
+* Autotrack work: Automatically track your work in DevRev even without creating an [[entities/issue|issue]] ahead of time.
+* PR [[entities/task|Task]] Creation: Create DevRev tasks for PR reviewers.
 * PR Reminders: Automatically remind PR reviewers when a PR goes stale.
 
 ## Work automation
@@ -154,16 +155,16 @@ Fixes various formatting issues.
 
 ## Automatic work detection
 
-DevRev can automatically track your coding activity, even if you don't explicitly associate it with an issue. When you create a new branch or PR, and the branch or PR isn't explicitly associated with an issue, DevRev creates an issue for you. We call this an autonomous issue or autonomous work item. DevRev fills in the details for you but you can rename the issue in DevRev, or mark it as belonging to a different, existing issue.
+DevRev can automatically track your coding activity, even if you [[glossary/don|don]]'t explicitly associate it with an issue. When you create a new branch or PR, and the branch or PR isn't explicitly associated with an issue, DevRev creates an issue for you. We call this an autonomous issue or autonomous work item. DevRev fills in the details for you but you can rename the issue in DevRev, or mark it as belonging to a different, existing issue.
 
 The automation configured to update the stages of issues based on GitHub events also applies to autonomous issues.
 
 To make use of this feature, go to **My settings** and toggle **Enable for me**.
 
 1. You can enable the "Create DevRev issue when a new branch is created" or the **Create DevRev issue when a new PR is opened** feature in the [GitHub for DevRev snap-in](https://devrev.ai/marketplace/github).
-2. The "Default part to assign autonomous issues to" has been set to a valid part ID.
+2. The "Default [[entities/part|part]] to assign autonomous issues to" has been set to a valid part ID.
 
-Each developer who wants to use the automatic work detection feature must link their GitHub account by going to **Settings** > **Account** > **External Identities** and **Link GitHub Account**.
+Each developer who wants to use the automatic work detection feature must link their GitHub [[entities/account|account]] by going to **Settings** > **Account** > **External Identities** and **Link GitHub Account**.
 
 You can configure these automations from [GitHub for DevRev snap-in](https://devrev.ai/marketplace/github).
 
@@ -189,4 +190,4 @@ To make use of this feature, the following conditions must be met:
 - [[features/github-integration]]
 
 ## Source
-- DevRev support article [GitHub](https://support.devrev.ai/en-US/devrev/article/z0oDB6a6) (ART-21980)
+- DevRev support [[entities/article|article]] [GitHub](https://support.devrev.ai/en-US/devrev/article/z0oDB6a6) (ART-21980)

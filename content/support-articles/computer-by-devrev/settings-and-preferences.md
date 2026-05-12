@@ -10,17 +10,18 @@ top_category: Computer by DevRev
 wiki_match: features/slas
 match_score: 0.415
 last_updated: 2026-05-11
+summary: "The Profile page allows you to manage your personal information and identity within the organization."
 ---
 
 # Settings and preferences
 
 # Profile
 
-The Profile page allows you to manage your personal information and identity within the organization. This information is visible to other users in your workspace and is used across DevRev to identify you.
+The Profile page allows you to manage your personal information and [[features/identity|identity]] within the organization. This information is visible to other users in your workspace and is used across DevRev to identify you.
 
 **Your profile picture**
 
-Upload a JPEG, JPG, or PNG file up to 10 MB to personalize your account. If no image is uploaded, your initials are shown by default. Your profile picture appears next to your name across DevRev.
+Upload a JPEG, JPG, or PNG file up to 10 MB to personalize your [[entities/account|account]]. If no image is uploaded, your initials are shown by default. Your profile picture appears next to your name across DevRev.
 
 **Full name**
 
@@ -82,12 +83,12 @@ Use the **+ Add connection** button in the top right corner to browse and connec
 
 Once connected, your connections appear in a list showing key information for each connection:
 
-* **Last sync**: Shows when Computer last synchronized data from this connection. Recent sync times indicate the connection is actively updating. If a sync timestamp appears outdated, the connection may need to be re-authenticated or checked for connection issues.
+* **Last sync**: Shows when Computer last synchronized data from this connection. Recent sync times indicate the connection is actively updating. If a sync timestamp appears outdated, the connection may need to be re-authenticated or checked for connection [[features/issues|issues]].
 * **Sources connected**: Displays the number of data sources linked through this connection. For example, a Google Drive connection might have multiple folders or shared drives connected, while a calendar connection might include multiple calendars. The source count helps you understand the scope of data Computer can access from each service.
 
 **Managing connections**
 
-Click on any connection in the list to view its details, modify connected sources, re-authenticate, or disconnect the connection entirely. You can connect multiple instances of the same service if needed. For example, separate Google Drive accounts for personal and team use.
+Click on any connection in the list to view its details, modify connected sources, re-authenticate, or disconnect the connection entirely. You can connect multiple instances of the same service if needed. For example, separate Google Drive [[features/accounts|accounts]] for personal and team use.
 
 # Users
 
@@ -103,7 +104,7 @@ The Users page allows administrators to manage team membership, send invitations
 
 Admins can invite new users to the organization from the Users page.
 
-**Search and filters**
+**[[features/search|Search]] and filters**
 
 Use the search icon to find specific users by name or email address. You can also apply filters to narrow down the user list.
 
@@ -124,4 +125,4 @@ There are two user roles within Computer:
 * **Member**: Members can use Computer and its features but cannot modify organization settings or manage other users.
 
 ## Source
-- DevRev support article [Settings and preferences](https://support.devrev.ai/en-US/devrev/article/rOcub5Em) (ART-23993)
+- DevRev support [[entities/article|article]] [Settings and preferences](https://support.devrev.ai/en-US/devrev/article/rOcub5Em) (ART-23993)

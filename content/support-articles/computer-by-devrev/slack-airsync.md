@@ -11,13 +11,14 @@ wiki_match: glossary/airsync
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['glossary/airsync']
+summary: "Slack AirSync imports and syncs public channel conversations from Slack into DevRev."
 ---
 
 # Slack AirSync
 
-Slack AirSync imports and syncs public channel conversations from Slack into DevRev. It supports one-time imports, time-scoped imports, and ongoing periodic syncs, ensuring that knowledge from Slack is accessible and searchable within DevRev.
+Slack [[glossary/airsync|AirSync]] imports and syncs public channel [[features/conversations-feature|conversations]] from Slack into DevRev. It supports one-time imports, time-scoped imports, and ongoing periodic syncs, ensuring that knowledge from Slack is accessible and searchable within DevRev.
 
-For general information about how AirSync works, see the [[support-articles/computer-by-devrev/airsync-overview|AirSync overview]]. If you want to sync live Slack conversations with DevRev tickets and issues in real time rather than importing historical data, see the [[support-articles/snap-ins/slack-snap-in|Slack snap-in article]] instead.
+For general information about how AirSync works, see the [[support-articles/computer-by-devrev/airsync-overview|AirSync overview]]. If you want to sync live Slack conversations with DevRev [[features/tickets|tickets]] and [[features/issues|issues]] in real time rather than importing historical data, see the [[support-articles/snap-ins/slack-snap-in|Slack snap-in article]] instead.
 
 ## Supported objects
 
@@ -28,7 +29,7 @@ The following is a list of Slack objects and their corresponding DevRev equivale
 | Public Channel | Chat | ✅ |
 | Public Channel Messages/Threads | Comments | ✅ |
 | User Details | DevUser | ✅ |
-| Channel Members | Group Members | ✅ |
+| Channel Members | [[entities/group|Group]] Members | ✅ |
 
 ## Prerequisites
 
@@ -51,13 +52,13 @@ Establish an OAuth connection between Slack and DevRev before starting the impor
 
 ## Set up the import
 
-1. Go to [Settings > Integrations > Snap-ins](https://app.devrev.ai/?setting=snap-ins) and search for **Slack AirSync** under **All Snap-ins**.
+1. Go to [Settings > Integrations > Snap-ins](https://app.devrev.ai/?setting=snap-ins) and [[features/search|search]] for **Slack AirSync** under **All Snap-ins**.
 2. In the snap-in configuration modal, configure attachment import settings:
 
    * **Enable Extract attachments**: All files and attachments from Slack conversations are imported to DevRev.
-   * **Disable Extract attachments**: Only conversation messages are imported, with no files or attachments.
+   * **Disable Extract attachments**: Only [[entities/conversation|conversation]] messages are imported, with no files or attachments.
    > ⚠️ **Warning**: Attachment settings cannot be changed after the import begins. The import process starts immediately upon confirmation and cannot be re-run with different attachment settings without deleting the import and starting over. Ensure your configuration reflects what you want to import before proceeding.
-3. In the **My Settings** section of the configuration page, toggle **Enable** to **true**. This activates the AirSync data extraction for your user account and is required for the import to run. Save your changes.
+3. In the **My Settings** section of the configuration page, toggle **Enable** to **true**. This activates the AirSync data extraction for your user [[entities/account|account]] and is required for the import to run. Save your changes.
 4. Click **Install** to install the snap-in.
 5. Go to [Settings > Integrations > AirSync](https://app.devrev.ai/?setting=airsyncs) and select the Slack logo to begin configuring the import.
 6. Create a new connection to your Slack workspace or select an active existing connection. If prompted, choose the **Slack AirSync** option from the connection dropdown.
@@ -82,7 +83,7 @@ Access detailed reports of imported Slack conversations and subsequent syncs.
 
 **Delete import**
 
-Remove all imported Slack data from DevRev, including conversations, users, and groups.
+Remove all imported Slack data from DevRev, including conversations, users, and [[entities/group|groups]].
 
 **Edit connection**
 
@@ -135,7 +136,7 @@ To delete an import, go to [Settings > Integrations > AirSync](https://app.devre
 
 ## Troubleshooting
 
-* **Issue**: The connection dropdown shows both **Slack** and **Slack AirSync** and it is unclear which to select.
+* **[[entities/issue|Issue]]**: The connection dropdown shows both **Slack** and **Slack AirSync** and it is unclear which to select.
 
   **Solution**: Select **Slack AirSync**. The **Slack** option is for the real-time Slack snap-in integration, not for AirSync imports.
 * **Issue**: The import completes but no messages appear for certain channels.
@@ -152,4 +153,4 @@ To delete an import, go to [Settings > Integrations > AirSync](https://app.devre
 - [[glossary/airsync]]
 
 ## Source
-- DevRev support article [Slack AirSync](https://support.devrev.ai/en-US/devrev/article/FEt-OfgM) (ART-22936)
+- DevRev support [[entities/article|article]] [Slack AirSync](https://support.devrev.ai/en-US/devrev/article/FEt-OfgM) (ART-22936)

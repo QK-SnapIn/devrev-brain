@@ -11,31 +11,32 @@ wiki_match: entities/issue
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['entities/issue']
+summary: "To ease the transition from GitHub to DevRev, you can import and sync GitHub issues & Markdown files with DevRev."
 ---
 
 # GitHub Issues AirSync
 
-To ease the transition from GitHub to DevRev, you can import and sync GitHub issues & Markdown files with DevRev.
+To ease the transition from GitHub to DevRev, you can import and sync GitHub [[features/issues|issues]] & Markdown files with DevRev.
 
 ### Supported objects
 
 |  |  |  |  |
 | --- | --- | --- | --- |
 | GitHub Object | DevRev Object | Sync to DevRev | Sync to GitHub |
-| Issue | Issue | ✅ | ✅ |
+| [[entities/issue|Issue]] | Issue | ✅ | ✅ |
 | Comment on Issue | Comment on Issue | ✅ | ✅ |
 | Label on Issue | Tag on Issue | ✅ | ✅ |
 | Attachment on Issue | Attachment on Issue | ❌ | ❌ |
 | User | DevUser | ✅ | ❌ |
-| Project | Enhancement | ❌ | ❌ |
-| Markdown File | Article | ✅ | ❌ |
+| Project | [[entities/enhancement|Enhancement]] | ❌ | ❌ |
+| Markdown File | [[entities/article|Article]] | ✅ | ❌ |
 | Folder | Collection | ✅ | ❌ |
 
 ### Import from GitHub
 
-DevRev highly recommends creating a new dedicated GitHub account when setting up GitHub for 2-way sync. All issues and comments created in GitHub will be created using this account.
+DevRev highly recommends creating a new dedicated GitHub [[entities/account|account]] when setting up GitHub for 2-way sync. All issues and comments created in GitHub will be created using this account.
 
-1. Create a [GitHub PAT token classic](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) using the account that will be used to set up AirSync.
+1. Create a [GitHub PAT token classic](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) using the account that will be used to set up [[glossary/airsync|AirSync]].
 
    The minimum required permissions are "Repo" and "User".
 

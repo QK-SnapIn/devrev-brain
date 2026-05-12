@@ -11,19 +11,20 @@ wiki_match: entities/task
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['entities/task']
+summary: "This article is intended for workspace administrators and agent builders who configure agents through the Agent Studio UI."
 ---
 
 # Agent Studio task reference
 
 Agent Studio is in beta.
 
-This article is intended for workspace administrators and agent builders who configure agents through the Agent Studio UI.
+This [[entities/article|article]] is intended for workspace administrators and agent builders who configure [[features/agents|agents]] through the Agent Studio UI.
 
 ## Navigate to Agent Studio
 
 To open Agent Studio, go to [**Settings > Agent Studio**](https://app.devrev.ai/?setting=airdrop%2Fagent-studio).
 
-To open an existing agent, select it from the agent list on the Agent Studio landing page. The agent opens in the **Build** tab, where you can view and edit its configuration.
+To open an existing agent, select it from the agent list on the Agent Studio landing page. The agent opens in the **[[features/build|Build]]** tab, where you can view and edit its configuration.
 
 ## Create an agent
 
@@ -39,10 +40,10 @@ The agent is created in **Draft** state. A Draft agent is not live and does not 
 
 ## Configure knowledge sources
 
-Knowledge sources determine which DevRev data the agent can search to answer questions.
+Knowledge sources determine which DevRev data the agent can [[features/search|search]] to answer questions.
 
 1. Open your agent in the **Build** tab and find the **Knowledge** row in the **Capabilities** section.
-2. Click **+ Add**, browse or search for the object types you want, such as Article, Ticket, or Conversation, check the boxes next to each type, and click **Add** to confirm.
+2. Click **+ Add**, browse or search for the object types you want, such as Article, [[entities/ticket|Ticket]], or [[entities/conversation|Conversation]], check the boxes next to each type, and click **Add** to confirm.
 
 To remove a knowledge source, click the **×** on its chip in the Knowledge row.
 
@@ -55,7 +56,7 @@ To remove a knowledge source, click the **×** on its chip in the Knowledge row.
 
 ## Add and configure skills
 
-Skills give your agent the ability to perform actions, not just answer questions. The Agent Studio UI supports two skill types: built-in operations and workflows.
+Skills give your agent the ability to perform actions, not just answer questions. The Agent Studio UI supports two skill types: built-in operations and [[features/workflows|workflows]].
 
 ### Add a built-in operation
 
@@ -64,7 +65,7 @@ Skills give your agent the ability to perform actions, not just answer questions
 3. Fill in the required fields:
 
    * **Name**: A unique identifier using letters, numbers, and underscores only.
-   * **Description**: When the agent should use this skill (for example, "Use when the customer's issue cannot be resolved from the knowledge base").
+   * **Description**: When the agent should use this skill (for example, "Use when the customer's [[entities/issue|issue]] cannot be resolved from the [[features/knowledge-base|knowledge base]]").
 4. Configure input fields: toggle **Auto-fill** on for fields the agent should determine from conversation context, and set fixed values for fields that should always be the same.
 5. Optionally, under **Settings**, configure whether the skill should execute as the user and whether it requires human-in-the-loop approval.
 6. Click **Add** to attach the skill.
@@ -72,7 +73,7 @@ Skills give your agent the ability to perform actions, not just answer questions
 ### Add a workflow
 
 1. Open your agent in the **Build** tab and find the **Skills** row in the **Capabilities** section, then click **+ Add**.
-2. Select the **Workflows** tab and select the workflow you want to attach. If you don't see a suitable workflow, click **Create New Workflow** and confirm in the dialog that appears. A new browser tab opens with the workflow editor. Build your workflow, then return to Agent Studio and add it.
+2. Select the **Workflows** tab and select the workflow you want to attach. If you [[glossary/don|don]]'t see a suitable workflow, click **Create New Workflow** and confirm in the dialog that appears. A new browser tab opens with the workflow editor. Build your workflow, then return to Agent Studio and add it.
 3. The workflow is added immediately with no additional configuration needed.
 
 ### Remove a skill
@@ -122,7 +123,7 @@ Instructions are the detailed playbook that guides your agent's behavior.
 
 ## Best Practices
 
-* **Be specific about behavior:** When a customer reports a bug, ask them to describe the steps to reproduce it before searching for known issues.
+* **Be specific about behavior:** When a customer reports a bug, ask them to describe the steps to reproduce it before searching for known [[features/issues|issues]].
 * **Define escalation paths:** If the customer has been waiting more than 3 messages without resolution, offer to create a support ticket and assign it to the engineering team.
 * **Set tone and style:**  Always respond in a professional but friendly tone. Use the customer's name when available.
 * **Use** `@` **references:** You can reference specific knowledge sources, tools, or skills in your instructions using `@`. This creates a direct link between your guidance and the agent's capabilities.
@@ -242,7 +243,7 @@ After publishing, create a deployment workflow to connect your agent to a channe
 ### Deploy a customer-facing agent
 
 1. Click the **Configure** button in Agent Studio to auto-generate a workflow, or navigate to **Workflows** in DevRev to create one manually.
-2. Add a **Conversation Created** trigger node. This fires whenever a customer starts a new conversation (via Plug chat, email, or another channel). To filter by channel, add an if/else node immediately after the trigger.
+2. Add a **Conversation Created** trigger node. This fires whenever a customer starts a new conversation (via [[glossary/plug|Plug]] chat, email, or another channel). To filter by channel, add an if/else node immediately after the trigger.
 3. Add a **Talk to Agent** action node and connect it to the trigger.
 4. Configure the Talk to Agent node:
 
@@ -278,7 +279,7 @@ Restoring does not delete or modify the existing version history. It creates a n
 
 ## Monitor agent performance
 
-The **Observe** tab provides analytics and session history for your agent.
+The **Observe** tab provides [[features/analytics|analytics]] and session history for your agent.
 
 ### Enable analytics
 
@@ -290,7 +291,7 @@ Once enabled, the Analytics page displays a dashboard of performance metrics fil
 ### View session history
 
 1. Go to **Observe > Sessions**.
-2. The sessions table lists all conversations with columns for Trigger, Members, and Last Message. Use the filters at the top to narrow results by time range or trigger type.
+2. The sessions table lists all [[features/conversations-feature|conversations]] with columns for Trigger, Members, and Last Message. Use the filters at the top to narrow results by time range or trigger type.
 3. Click a session to view its full detail and execution trace.
 
 ---
@@ -309,7 +310,7 @@ Session traces show exactly how the agent processed a conversation.
    * **Guardrail checks**: Which guardrails were evaluated and whether they passed.
    * **Response time**: Duration of each step.
 
-Use traces to diagnose unexpected responses, verify that skills are invoked correctly, and identify opportunities to improve instructions or guardrails.
+Use traces to diagnose unexpected responses, verify that skills are invoked correctly, and identify [[entities/opportunity|opportunities]] to improve instructions or guardrails.
 
 ---
 

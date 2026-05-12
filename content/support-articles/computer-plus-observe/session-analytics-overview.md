@@ -11,11 +11,12 @@ wiki_match: features/analytics
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['features/analytics']
+summary: "Session analytics is an advanced tool for user experience and behavior analytics, designed to help businesses optimize their websites by providing in-depth insights into user interactions."
 ---
 
 # Session analytics Overview
 
-Session analytics is an advanced tool for user experience and behavior
+Session [[features/analytics|analytics]] is an advanced tool for user experience and behavior
 analytics, designed to help businesses optimize their websites by providing
 in-depth insights into user interactions. With session recordings, companies can
 capture and replay user actions, analyze click patterns, and visualize user
@@ -25,7 +26,7 @@ challenges.
 In addition to session replays, session analytics offers network and console log
 tracking, delivering detailed information on failed API calls, performance
 bottlenecks, and error messages. This detailed logging streamlines debugging and
-accelerates issue resolution.
+accelerates [[entities/issue|issue]] resolution.
 
 Session recordings and analytics are viewable in the
 [[support-articles/computer-plus-observe/computer-for-user-insights|Session analytics and session replays dashboards]]. A key feature is funnel analysis,
@@ -40,7 +41,7 @@ enhancing the user experience and overall website performance.
 
 If you are not on our session recording plan, contact our support team to enable it.
 
-1. Install the Plug SDK on your
+1. Install the [[glossary/plug|Plug]] SDK on your
    [website](https://developer.devrev.ai/sdks/web/installation) or
    [mobile app](https://developer.devrev.ai/sdks/mobile).
 2. For web applications, configure
@@ -67,4 +68,4 @@ For detailed information about event tracking, refer to
 - [[features/analytics]]
 
 ## Source
-- DevRev support article [Session analytics Overview](https://support.devrev.ai/en-US/devrev/article/izHP1lby) (ART-21841)
+- DevRev support [[entities/article|article]] [Session analytics Overview](https://support.devrev.ai/en-US/devrev/article/izHP1lby) (ART-21841)

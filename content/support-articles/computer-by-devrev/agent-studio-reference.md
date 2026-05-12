@@ -10,6 +10,7 @@ top_category: Computer by DevRev
 wiki_match: features/agents
 match_score: 0.387
 last_updated: 2026-05-11
+summary: "The list page displays all agents in your workspace as a card grid."
 ---
 
 # Agent Studio reference
@@ -20,7 +21,7 @@ Agent Studio is in beta.
 
 **Location:** [Settings > Agents](https://app.devrev.ai/?setting=agents)
 
-The list page displays all agents in your workspace as a card grid.
+The list page displays all [[features/agents|agents]] in your workspace as a card grid.
 
 ### Agent card
 
@@ -43,7 +44,7 @@ The list uses cursor-based pagination. Navigation controls appear at the bottom 
 
 ## Build tab
 
-**Location:** [Settings > Agents](https://app.devrev.ai/?setting=agents) > [Agent Name] > Build
+**Location:** [Settings > Agents](https://app.devrev.ai/?setting=agents) > [Agent Name] > [[features/build|Build]]
 
 The Build tab is where you configure all aspects of your agent.
 
@@ -58,19 +59,19 @@ The Capabilities section contains three configurable areas: Knowledge, Skills, a
 
 ### Knowledge
 
-Defines which DevRev object types the agent can search.
+Defines which DevRev object types the agent can [[features/search|search]].
 
 **Available object types:**
 
 | Category | Types |
 | --- | --- |
-| **Content** | Article, Question & Answer |
-| **Work items** | Ticket, Issue, Task, Enhancement, Incident |
+| **Content** | [[entities/article|Article]], Question & Answer |
+| **Work items** | [[entities/ticket|Ticket]], [[entities/issue|Issue]], [[entities/task|Task]], [[entities/enhancement|Enhancement]], [[glossary/incident|Incident]] |
 | **Product** | Product, Feature, Capability, Component |
-| **People** | Customer, User, Group |
-| **Organizations** | Account, Workspace |
-| **Conversations** | Conversation, Direct Message |
-| **Other** | Custom Object, Dashboard, Dataset, Meeting, Microservice, Opportunity, Tag, Widget, Linkable, Runnable, Vista, Service Account |
+| **People** | Customer, User, [[entities/group|Group]] |
+| **Organizations** | [[entities/account|Account]], Workspace |
+| **[[features/conversations-feature|Conversations]]** | [[entities/conversation|Conversation]], Direct Message |
+| **Other** | Custom Object, Dashboard, Dataset, [[entities/meeting|Meeting]], Microservice, [[glossary/opportunity|Opportunity]], Tag, Widget, Linkable, Runnable, [[glossary/vista|Vista]], Service Account |
 
 Each knowledge source appears as a chip showing the object type's icon and name. Click **×** to remove.
 
@@ -83,7 +84,7 @@ Defines the actions the agent can perform.
 | Type | Description | Configuration |
 | --- | --- | --- |
 | **Tools** | Built-in DevRev API actions | Requires name, description, and input field configuration |
-| **Workflows** | Custom automation workflows | Added directly with no additional configuration |
+| **[[features/workflows|Workflows]]** | Custom automation workflows | Added directly with no additional configuration |
 
 **Operation configuration fields:**
 
@@ -203,7 +204,7 @@ The Observe tab provides monitoring and analysis tools for agent performance and
 
 ### Analytics sub-tab
 
-The Analytics sub-tab displays a performance dashboard for the agent. The dashboard has three possible states:
+The [[features/analytics|Analytics]] sub-tab displays a performance dashboard for the agent. The dashboard has three possible states:
 
 * **Not enabled**: Shows "Metrics collection for this agent is not enabled" with an **Enable Evaluation** button.
 * **Enabling**: Shows a loading state while analytics is being set up.
@@ -334,7 +335,7 @@ Available actions on the detail page:
 | Type | Description | Audience | Available channels |
 | --- | --- | --- | --- |
 | **Internal** [Coming soon] | For employees and internal workflows | Internal teams | — |
-| **CX (External)** | For customer-facing interactions | End customers | Slack, WhatsApp, Plug Chat, Email |
+| **CX (External)** | For customer-facing interactions | End customers | Slack, WhatsApp, [[glossary/plug|Plug]] Chat, Email |
 
 Agent type is selected during creation and determines the agent's access level and available channels.
 

@@ -11,11 +11,12 @@ wiki_match: entities/ticket
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['entities/ticket']
+summary: "The Ticket approval workflow enables support agents to request approvals from stakeholders directly within support tickets."
 ---
 
 # Ticket approval workflow
 
-The Ticket approval workflow enables support agents to request approvals from stakeholders directly within support tickets.
+The [[entities/ticket|Ticket]] approval workflow enables support [[features/agents|agents]] to request approvals from stakeholders directly within support [[features/tickets|tickets]].
 
 For more information, refer to the [Ticket approval workflow snap-in](https://marketplace.devrev.ai/ticket-approval-workflow) on the DevRev marketplace.
 
@@ -35,4 +36,4 @@ On the ticket execute the `/request_approval` command with the parameter number 
 - [[entities/ticket]]
 
 ## Source
-- DevRev support article [Ticket approval workflow](https://support.devrev.ai/en-US/devrev/article/1QEA8_8Z) (ART-21969)
+- DevRev support [[entities/article|article]] [Ticket approval workflow](https://support.devrev.ai/en-US/devrev/article/1QEA8_8Z) (ART-21969)

@@ -11,13 +11,14 @@ wiki_match: features/customer-portal
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['features/customer-portal']
+summary: "The customer portal is an online platform that enables your customers to interact with your support team, create support tickets, track the progress of their requests, and engage in conversations related to their issues."
 ---
 
 # Customer portal setup and administration
 
-The customer portal is an online platform that enables your customers to interact with your support team, create support tickets, track the progress of their requests, and engage in conversations related to their issues. It serves as a centralized hub for managing customer support inquiries.
+The [[features/customer-portal|customer portal]] is an online platform that enables your customers to interact with your support team, create support [[features/tickets|tickets]], track the progress of their requests, and engage in [[features/conversations-feature|conversations]] related to their [[features/issues|issues]]. It serves as a centralized hub for managing customer support inquiries.
 
-The customer portal is available in both web and mobile formats (Android and iOS). It enables end users to access support articles, manage tickets, and interact with the support team.
+The customer portal is available in both web and mobile formats (Android and iOS). It enables end users to access support [[entities/article|articles]], manage tickets, and interact with the support team.
 
 ## Benefits
 
@@ -25,7 +26,7 @@ The customer portal is available in both web and mobile formats (Android and iOS
 
 Customers can access self-service options, track their tickets, and receive timely updates, leading to improved satisfaction.
 
-**Efficient ticket management**
+**Efficient [[entities/ticket|ticket]] management**
 
 The portal streamlines ticket creation, assignment, and tracking, ensuring faster resolution times.
 
@@ -41,13 +42,13 @@ Customer admins can access and manage tickets from their team, enabling seamless
 
 **Ticket creation, tracking, and team collaboration**
 
-Customers create tickets with relevant details such as issue description, priority, and category. To create a ticket, go to **+ Ticket**, enter a title and description, and click **Submit**. The ticket creation form supports custom fields and dependent fields, allowing admins to collect structured information tailored to your support workflows. Ticket tracking allows customers to monitor the progress of their requests and view updates in real time. Customer admins can access all tickets created by their team members, facilitating collaboration and knowledge sharing.
+Customers create tickets with relevant details such as [[entities/issue|issue]] description, priority, and category. To create a ticket, go to **+ Ticket**, enter a title and description, and click **Submit**. The ticket creation form supports custom fields and dependent fields, allowing admins to collect structured information tailored to your support [[features/workflows|workflows]]. Ticket tracking allows customers to monitor the progress of their requests and view updates in real time. Customer admins can access all tickets created by their team members, facilitating collaboration and knowledge sharing.
 
 **Conversations and messaging**
 
 Customers engage in threaded conversations with support representatives, providing additional information or seeking clarification regarding their tickets. Support teams respond to customer inquiries within the same thread, ensuring effective communication.
 
-**Article search**
+**[[entities/article|Article]] [[features/search|search]]**
 
 Customers can search across your published articles and self-serve on their queries, finding answers on their own instead of waiting for your support team. The customer portal supports both syntactic search (finds results based on keywords) and semantic search (finds results based on the meaning or context of the query).
 
@@ -109,12 +110,12 @@ If your organization enforces strict firewall or Content Security Policy rules, 
 
 Follow these steps to configure the portal for the first time:
 
-1. Create an account in [Accounts](https://app.devrev.ai/?vista=vista-def-accounts) to represent each customer organization.
+1. Create an [[entities/account|account]] in [Accounts](https://app.devrev.ai/?vista=vista-def-accounts) to represent each customer organization.
 2. Create contacts in [Contacts](https://app.devrev.ai/?vista=vista-def-contacts) and link each contact to the appropriate account.
 3. Configure portal settings in [Settings > Plug & Portal > Portal Settings](https://app.devrev.ai/?setting=portal-settings%2Fconfiguration), including the custom portal URL and branding.
 4. Optionally designate customer admins in [Settings > User management > Groups > Customer Admins](https://app.devrev.ai/?setting=groups%2Fgroup-default3).
-5. Publish knowledge base articles and configure their visibility settings so customers can self-serve.
-6. Test the portal by logging in as a verified customer to confirm ticket creation, article search, and conversation workflows function as expected.
+5. Publish [[features/knowledge-base|knowledge base]] articles and configure their visibility settings so customers can self-serve.
+6. Test the portal by logging in as a verified customer to confirm ticket creation, article search, and [[entities/conversation|conversation]] workflows function as expected.
 
 Customers log in on the portal by entering their registered email address and the OTP sent to that address.
 
@@ -150,7 +151,7 @@ To set up customer admins:
 The customer portal supports three login methods:
 
 1. **Email OTP (one-time password)**: Users enter their email, receive a one-time code, and enter it to log in.
-2. [[support-articles/computer-plus-support/federated-identity-provider-setup-for-the-customer-portal|**Federated identity**]]: Users log in through an external identity provider such as Okta, Azure AD, or Google Workspace using the SAML protocol.
+2. [[support-articles/computer-plus-support/federated-identity-provider-setup-for-the-customer-portal|**Federated identity**]]: Users log in through an external [[features/identity|identity]] provider such as Okta, Azure AD, or Google Workspace using the SAML protocol.
 3. [[support-articles/computer-plus-support/jwt-based-sso-for-the-customer-portal|**JWT-based authentication**]]: Users log in through a custom integration where your application generates a signed JWT token. This method requires SSO activation by contacting DevRev Support and obtaining an Application Access Token (AAT). Use it when your organization needs programmatic authentication but does not use a centralized identity provider that supports SAML.
 
 For detailed instructions on configuring identity providers, refer to [[support-articles/computer-plus-support/federated-identity-provider-setup-for-the-customer-portal|Identity provider setup]].
@@ -184,7 +185,7 @@ Feature enablement:
 * AI search on portal
 * PDF article export
 * Subscribe to article updates
-* Plug on portal: Enables the Plug widget directly on the customer portal, giving users access to in-portal chat and AI-assisted support without leaving the page.
+* [[glossary/plug|Plug]] on portal: Enables the [[features/plug-widget|Plug widget]] directly on the customer portal, giving users access to in-portal chat and AI-assisted support without leaving the page.
 
 ### Appearance self-serve settings
 
@@ -201,12 +202,12 @@ Go to [Settings > Plug & Portal > Portal Settings > Appearance](https://app.devr
 
 The following customizations require assistance from DevRev. To request any of these changes, create a ticket at [DevRev Support](https://support.devrev.ai).
 
-* **URL customization**: You can host the portal on a custom domain (for example, `support.yourcompany.com`) instead of the default DevRev-provided URL. Create a ticket specifying the desired custom URL. Ensure the domain is included in your allowlisted domains.
+* **URL [[features/customization|customization]]**: You can host the portal on a custom domain (for example, `support.yourcompany.com`) instead of the default DevRev-provided URL. Create a ticket specifying the desired custom URL. Ensure the domain is included in your allowlisted domains.
 * **CSS customization**: You can apply custom CSS to adjust portal styling beyond the built-in theme options, such as fonts, spacing, and component-level overrides. Create a ticket describing your requirements. The DevRev team works with you to scope what is achievable within the portal's CSS framework.
 
 ## Incident management tab
 
-The customer portal includes a tab that redirects users to the incident.io page for incident management. This tab provides direct access to incident management tools and resources, allowing users to view and track active incidents without leaving the portal experience.
+The customer portal includes a tab that redirects users to the [[glossary/incident|incident]].io page for [[features/incidents|incident management]]. This tab provides direct access to incident management tools and resources, allowing users to view and track active [[features/incidents|incidents]] without leaving the portal experience.
 
 ## Conversations and messaging
 

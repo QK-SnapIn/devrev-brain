@@ -10,11 +10,12 @@ top_category: Computer+ Support
 wiki_match: features/conversations
 match_score: 0.467
 last_updated: 2026-05-11
+summary: "Questions & Answers (Q&As) refer to a collection of commonly posed questions and their answers regarding a particular product, service, or topic."
 ---
 
 # Questions & Answers
 
-Questions & Answers (Q&As) refer to a collection of commonly posed questions and their answers regarding a particular product, service, or topic. The Q&A feature on DevRev works as an additional knowledge source for [[support-articles/computer-plus-support/computer-for-your-customers|Computer for Your Customers]] to answer customer queries in conversations to provide efficient customer support.
+Questions & Answers (Q&As) refer to a collection of commonly posed questions and their answers regarding a particular product, service, or topic. The Q&A feature on DevRev works as an additional knowledge source for [[support-articles/computer-plus-support/computer-for-your-customers|Computer for Your Customers]] to answer customer queries in [[features/conversations-feature|conversations]] to provide efficient customer support.
 
 Unlike knowledge [[support-articles/computer-plus-support/articles|articles]], Q&As are never quoted as sources to the end user.
 
@@ -24,14 +25,14 @@ Q&As can be created either manually or automatically from your customer conversa
 
 In the following cases, you may choose to create Q&As manually:
 
-* Website FAQs that you prefer not to display as articles but are crucial for Computer to effectively respond to customer inquiries.
-* Internal documentation that's not intended for public search but is valuable for enhancing response quality.
-* Details about bugs or issues in Q&As that shouldn't be publicly searchable in your knowledge base and are not relevant to all customers but are essential for Computer to address specific customer questions.
+* Website FAQs that you prefer not to display as [[entities/article|articles]] but are crucial for Computer to effectively respond to customer inquiries.
+* Internal documentation that's not intended for public [[features/search|search]] but is valuable for enhancing response quality.
+* Details about bugs or [[features/issues|issues]] in Q&As that shouldn't be publicly searchable in your [[features/knowledge-base|knowledge base]] and are not relevant to all customers but are essential for Computer to address specific customer questions.
 
 To create a Q&A, do the following:
 
 1. Go to [**Settings** > **Turing** > **Q&As**](https://app.devrev.ai/?setting=question-answers) and click **+ QA** in the top-right corner.
-2. Fill in the **Question** and **Answer** fields, and select the relevant **Part**.
+2. Fill in the **Question** and **Answer** fields, and select the relevant **[[entities/part|Part]]**.
 3. Set the appropriate **Status** and **Access level**. Set the status to *External* or *Public* if you want Computer to use it.
 4. Confirm by clicking **Create**.
 
@@ -41,7 +42,7 @@ To create a Q&A, do the following:
 
 Your customer conversations include a lot of knowledge, including some of the most accurate and current information. With the automated creation of Q&As, Computer learns from customer conversations in which a human answers a question that it previously could not answer.
 
-When a customer initiates a conversation seeking answers, Computer springs into action, drawing upon published Q&As and knowledge articles to provide a solution. If Computer falls short or the user prefers a more personalized touch, they opt to connect with a customer experience engineer and resolve the conversation. Computer doesn't just move on—it learns. It autonomously generates new Q&As based on the resolved conversation, marking them for review under the *Review Needed* status.
+When a customer initiates a [[entities/conversation|conversation]] seeking answers, Computer springs into action, drawing upon published Q&As and knowledge articles to provide a solution. If Computer falls short or the user prefers a more personalized touch, they opt to connect with a customer experience engineer and resolve the conversation. Computer doesn't just move on—it learns. It autonomously generates new Q&As based on the resolved conversation, marking them for review under the *Review Needed* status.
 
 A Q&A isn't created if it is similar to the existing Q&A to avoid duplication.
 
@@ -79,7 +80,7 @@ Search for a previously created Q&A on the DevRev app by pressing `cmd+K` on Mac
 * **Access Level**: Determine who can view and access the Q&A.
 
   + *Private / Internal / Restricted*: Not visible to external users, not used by the agent, and only searchable within the app.
-  + *External / Public*: Available for all, Computer employs these Q&As extensively, and they appear in search results both for app users and portal and Plug visitors.
+  + *External / Public*: Available for all, Computer employs these Q&As extensively, and they appear in search results both for app users and portal and [[glossary/plug|Plug]] visitors.
 
 ## Source
-- DevRev support article [Questions & Answers](https://support.devrev.ai/en-US/devrev/article/CJlxZ9G3) (ART-21865)
+- DevRev support [[entities/article|article]] [Questions & Answers](https://support.devrev.ai/en-US/devrev/article/CJlxZ9G3) (ART-21865)

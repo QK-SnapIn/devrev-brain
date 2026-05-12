@@ -11,16 +11,17 @@ wiki_match: features/identity
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['features/identity']
+summary: "Creating delightful customer journeys starts with having reliable, validated user identities at every step."
 ---
 
 # Descope identity validation
 
-Creating delightful customer journeys starts with having reliable, validated user identities at every step. The [Descope snap-in for DevRev](https://devrev.ai/marketplace/descope-identity-validation) provides user email validation through OTP authentication right within your Plug widget. Authenticating users in context without any redirects provides a native experience.
+Creating delightful customer journeys starts with having reliable, validated user identities at every step. The [Descope snap-in for DevRev](https://devrev.ai/marketplace/descope-identity-validation) provides user email validation through OTP authentication right within your [[features/plug-widget|Plug widget]]. Authenticating users in context without any redirects provides a native experience.
 
 This snap-in enables several use cases across teams such as:
 
 * Providing clean, accurate lead data for marketing teams
-* Routing qualified conversations to sales teams
+* Routing qualified [[features/conversations-feature|conversations]] to sales teams
 * Having consistent user identities across pre and post-signup processes
 
 Ensuring your users are who they say they are helps streamline operations, save
@@ -29,9 +30,9 @@ experience.
 
 ### User email validation
 
-Authenticate users with the “possession factor” of their email account with
+Authenticate users with the “possession factor” of their email [[entities/account|account]] with
 one-time password (OTP) validation. Request the user for their email and have
-them input the OTP within the Plug widget.
+them input the OTP within the [[glossary/plug|Plug]] widget.
 
 ## Make a new connection
 
@@ -62,7 +63,7 @@ them input the OTP within the Plug widget.
    * Customize the message that is shown to the user on successful verification
      of email.
    * You can trigger this either for all new conversations from an unverified
-     user or when Computer is unable to deflect a conversation.
+     user or when Computer is unable to deflect a [[entities/conversation|conversation]].
 
      + To activate the automation for every new conversation, toggle on **Send
        on Create**.
@@ -78,4 +79,4 @@ them input the OTP within the Plug widget.
 - [[features/identity]]
 
 ## Source
-- DevRev support article [Descope identity validation](https://support.devrev.ai/en-US/devrev/article/XrGz1dw4) (ART-21938)
+- DevRev support [[entities/article|article]] [Descope identity validation](https://support.devrev.ai/en-US/devrev/article/XrGz1dw4) (ART-21938)

@@ -10,6 +10,7 @@ top_category: Snap-ins
 wiki_match: features/commands
 match_score: 0.5
 last_updated: 2026-05-11
+summary: "Streamline your scheduling process and optimize customer engagement with DevRev\"s powerful Calendly snap-in."
 ---
 
 # Calendly
@@ -28,7 +29,7 @@ For the DevRev Calendly snap-in to work, you must have a Professional, Teams, or
 
 1. Go to [**Settings** > **Integrations** > **Snap-ins**](https://app.devrev.ai/?setting=snap-ins).
 2. Click **Explore Marketplace**.
-3. Search for **Calendly** and click **Install** next to the Calendly snap-in.
+3. [[features/search|Search]] for **Calendly** and click **Install** next to the Calendly snap-in.
 4. In DevRev app, setup the connection in **Settings** > **Snap-ins** > **Connections** on top.
 
    * Search and choose an existing connection or create a new one by clicking **+ Connection**.
@@ -45,4 +46,4 @@ For the DevRev Calendly snap-in to work, you must have a Professional, Teams, or
 2. Remove the snap-in.
 
 ## Source
-- DevRev support article [Calendly](https://support.devrev.ai/en-US/devrev/article/YCcMHZL_) (ART-21973)
+- DevRev support [[entities/article|article]] [Calendly](https://support.devrev.ai/en-US/devrev/article/YCcMHZL_) (ART-21973)

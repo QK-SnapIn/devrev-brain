@@ -11,11 +11,12 @@ wiki_match: glossary/airsync
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['glossary/airsync']
+summary: "The Zoom AirSync simplifies migration from Zoom to DevRev, supporting both one-time imports and ongoing syncs of meeting data, participants, recordings, and transcripts."
 ---
 
 # Zoom AirSync
 
-The Zoom AirSync simplifies migration from Zoom to DevRev, supporting both one-time imports and ongoing syncs of meeting data, participants, recordings, and transcripts.
+The Zoom [[glossary/airsync|AirSync]] simplifies migration from Zoom to DevRev, supporting both one-time imports and ongoing syncs of [[entities/meeting|meeting]] data, participants, recordings, and transcripts.
 
 ## Supported objects
 
@@ -27,26 +28,26 @@ The following is a list of Zoom objects and their corresponding DevRev equivalen
 | Meeting participant (external) | RevUser | ✅ |
 | Meeting | Meeting | ✅ |
 | Cloud recording | Attachment (on Meeting) | ✅ |
-| Meeting transcript | Article (KB) + Attachment | ✅ |
+| Meeting transcript | [[entities/article|Article]] (KB) + Attachment | ✅ |
 
-Each imported meeting is enriched with its host, participants, the recording URL, and when available a generated knowledge base article containing the transcript.
+Each imported meeting is enriched with its host, participants, the recording URL, and when available a generated [[features/knowledge-base|knowledge base]] article containing the transcript.
 
 ## Import from Zoom
 
 Follow these steps to install the Zoom AirSync snap-in:
 
-1. In the Snap-in Config Modal, search for **Zoom** under **All snap-ins**.
+1. In the Snap-in Config Modal, [[features/search|search]] for **Zoom** under **All snap-ins**.
 2. Click **Add** and **Install snap-in**.
 3. Go to **Settings > Integrations > AirSyncs** in the left-hand navigation.
 4. Click **AirSync** in the top-right corner and select **Zoom**.
-5. Create a new connection to your Zoom account or use an existing one. See Create a Zoom connection.
+5. Create a new connection to your Zoom [[entities/account|account]] or use an existing one. See Create a Zoom connection.
 6. Once the connection is established:
 
    1. In DevRev, go to **Settings > Integrations > AirSyncs**, then click **AirSync** in the top-right corner.
    2. Select **Zoom**.
    3. Select the connection you just created. Click **Next**.
-   4. On the next screen, confirm the Zoom account whose meetings, users, recordings, and transcripts will be imported.
-   5. Specify the DevRev part where the imported content should reside. This triggers a bulk import of the selected content.
+   4. On the next screen, confirm the Zoom account whose [[entities/meeting|meetings]], users, recordings, and transcripts will be imported.
+   5. Specify the DevRev [[entities/part|part]] where the imported content should reside. This triggers a bulk import of the selected content.
 
 DevRev automatically maps Zoom fields to corresponding DevRev fields (for example, meeting `topic` → title, `start_time` → scheduled date, `end_time` → ended date, `host_id` → created by / organizer, `join_url` → external URL). You may be prompted for manual mapping in some cases.
 
@@ -103,7 +104,7 @@ To perform a one-time sync to DevRev, follow these steps:
 2. Locate the previously imported Zoom account.
 3. Select **⋮ > Sync to DevRev**.
 
-A one-time sync may overwrite fields in previously imported meetings and articles, even if they were modified in DevRev.
+A one-time sync may overwrite fields in previously imported meetings and [[entities/article|articles]], even if they were modified in DevRev.
 
 The Zoom AirSync supports incremental syncs using `modified_since` on the meetings endpoint, so subsequent syncs only fetch meetings that have been created or updated since the last successful sync.
 
@@ -142,7 +143,7 @@ To delete an import and all the content it created, go to **Settings > Integrati
 * **Extraction-only.** The Zoom AirSync does not push changes from DevRev back to Zoom. Edits made in DevRev to imported meetings, articles, or users are not reflected in Zoom.
 * **Cloud recordings only.** Recordings stored locally on a participant's device are not accessible via the Zoom API and cannot be imported.
 * **Transcript availability.** Transcripts are only imported for meetings where cloud recording transcription was enabled and the transcript has finished processing in Zoom.
-* **Rate limits.** The Zoom API enforces per-account rate limits. The snap-in honors `Retry-After` headers on `429` responses with exponential backoff, so imports of large accounts may take longer during peak hours.
+* **Rate limits.** The Zoom API enforces per-account rate limits. The snap-in honors `Retry-After` headers on `429` responses with exponential backoff, so imports of large [[features/accounts|accounts]] may take longer during peak hours.
 
 ## Related wiki nodes
 - [[glossary/airsync]]

@@ -11,13 +11,14 @@ wiki_match: glossary/airsync
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['glossary/airsync']
+summary: "The Microsoft Fabric AirSync connector enables you to import structured table data from Microsoft Fabric Lakehouses into DevRev as custom objects."
 ---
 
 # MS Fabric AirSync
 
 # Microsoft Fabric
 
-The Microsoft Fabric AirSync connector enables you to import structured table data from Microsoft Fabric Lakehouses into DevRev as custom objects. This integration allows you to leverage your Fabric data for agentic work, analytics, and insights within DevRev.
+The Microsoft Fabric [[glossary/airsync|AirSync]] connector enables you to import structured table data from Microsoft Fabric Lakehouses into DevRev as custom objects. This integration allows you to leverage your Fabric data for agentic work, [[features/analytics|analytics]], and insights within DevRev.
 
 ### Supported objects
 
@@ -26,12 +27,12 @@ The Microsoft Fabric connector imports structured table data from your lakehouse
 ### Importing from Microsoft Fabric
 
 1. Log in to DevRev.
-2. Navigate to **[Settings > Integrations > Snap-ins](https://app.devrev.ai/?setting=snap-ins)**, search for **Microsoft Fabric** under **All Snap-ins**.
+2. Navigate to **[Settings > Integrations > Snap-ins](https://app.devrev.ai/?setting=snap-ins)**, [[features/search|search]] for **Microsoft Fabric** under **All Snap-ins**.
 3. Click **Add and Install Snap-in**.
 4. Navigate to **[Settings](https://app.devrev.ai/?setting=airsyncs)**[ > ](https://app.devrev.ai/?setting=airsyncs)**[Integrations](https://app.devrev.ai/?setting=airsyncs)**[ > ](https://app.devrev.ai/?setting=airsyncs)**[AirSyncs](https://app.devrev.ai/?setting=airsyncs)** in the left-navigation.
 5. Click **Airsync** in the top right corner and select **Microsoft Fabric**.
 6. Create a new connection to authenticate with your Microsoft Fabric workspace, or use an existing active connection if you already have one.
-7. Once the connection is established, select the lakehouse you want to import and specify the DevRev part to be used for any imported work. This initiates a bulk import of the selected sync.
+7. Once the connection is established, select the lakehouse you want to import and specify the DevRev [[entities/part|part]] to be used for any imported work. This initiates a bulk import of the selected sync.
 8. DevRev makes an effort to automatically map the structured table data from your lakehouse to custom objects in DevRev. However, you may be prompted to manually map certain fields if needed.
 
 ### Create Microsoft Fabric Connection
@@ -123,7 +124,7 @@ Create a table named `devrev_pk_fk_metadata` in your lakehouse with the followin
 | --- | --- | --- | --- | --- |
 | employees | FOREIGN_KEY | department_id | departments | department_id |
 | purchase_order_lines | FOREIGN_KEY | po_id | purchase_orders | po_id |
-| purchase_order_lines | FOREIGN_KEY | part_id | parts | part_id |
+| purchase_order_lines | FOREIGN_KEY | part_id | [[features/parts|parts]] | part_id |
 
 ### Important Rules
 
@@ -137,7 +138,7 @@ Create a table named `devrev_pk_fk_metadata` in your lakehouse with the followin
 ### Benefits of maintaining a metadata table
 
 - **Enhanced data visualization**: Proper relationships enable better data visualization and understanding of connections between tables
-- **Improved agent understanding**: DevRev's AI agents can better understand and navigate interconnected data when relationships are properly defined
+- **Improved agent understanding**: DevRev's [[features/agents|AI agents]] can better understand and navigate interconnected data when relationships are properly defined
 - **Better insights**: Well-structured relationships lead to more accurate analytics and insights
 - **Proper ID generation**: Primary keys are used for generating external IDs, ensuring data consistency
 - **Reference field mapping**: Foreign keys create reference fields in DevRev, enabling proper data linking
@@ -148,13 +149,13 @@ Create a table named `devrev_pk_fk_metadata` in your lakehouse with the followin
 
 After importing your Microsoft Fabric data into DevRev, you can:
 
-- **Enable agentic work**: Use DevRev's AI agents to query, analyze, and work with your Fabric data directly within DevRev
+- **Enable agentic work**: Use DevRev's AI [[features/agents|agents]] to query, analyze, and work with your Fabric data directly within DevRev
 - **Unified analytics**: Combine your Fabric business intelligence data with DevRev's customer and product data for comprehensive insights
-- **Cross-platform workflows**: Leverage your Fabric data in DevRev's customer support, product development, and business workflows
+- **Cross-platform [[features/workflows|workflows]]**: Leverage your Fabric data in DevRev's customer support, product development, and business workflows
 - **Data-driven decisions**: Make informed decisions by having all your data accessible in one unified platform
 
 ## Related wiki nodes
 - [[glossary/airsync]]
 
 ## Source
-- DevRev support article [MS Fabric AirSync](https://support.devrev.ai/en-US/devrev/article/GYJm4pCY) (ART-22480)
+- DevRev support [[entities/article|article]] [MS Fabric AirSync](https://support.devrev.ai/en-US/devrev/article/GYJm4pCY) (ART-22480)

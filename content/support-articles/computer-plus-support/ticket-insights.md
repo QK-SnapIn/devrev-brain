@@ -11,11 +11,12 @@ wiki_match: entities/ticket
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['entities/ticket']
+summary: "The number of tickets created within the date range that meet the other filtering criteria."
 ---
 
 # Ticket insights
 
-* **Tickets created**
+* **[[features/tickets|Tickets]] created**
 
   The number of tickets created within the date range that meet the other filtering criteria.
 * **Active tickets**
@@ -39,10 +40,10 @@ related: ['entities/ticket']
 * **Active blocker tickets**
 
   The number of tickets with severity Blocker that are in the Open or In Progress state.
-* **SLA compliance rate**
+* **[[features/slas|SLA]] compliance rate**
 
   The percentage of tickets where the SLA was met out of all tickets where the SLA was applied.
-* **Average CSAT score**
+* **Average [[glossary/csat|CSAT]] score**
 
   The average customer satisfaction score for tickets.
 * **Escalated tickets**
@@ -54,16 +55,16 @@ related: ['entities/ticket']
 * **Active tickets by customer**
 
   The number of Open or In Progress tickets grouped by customer.
-* **Active tickets by part**
+* **Active tickets by [[entities/part|part]]**
 
   The number of Open or In Progress tickets grouped by part.
 
 ## Ticket distribution
 
-* **Tickets linked to conversations**
+* **Tickets linked to [[features/conversations-feature|conversations]]**
 
   The percentage of tickets linked from conversations against standalone tickets.
-* **Tickets linked to issues**
+* **Tickets linked to [[features/issues|issues]]**
 
   The percentage of tickets linked to product issues.
 * **Active tickets by owner**
@@ -89,4 +90,4 @@ related: ['entities/ticket']
 - [[entities/ticket]]
 
 ## Source
-- DevRev support article [Ticket insights](https://support.devrev.ai/en-US/devrev/article/nrEGeywk) (ART-21910)
+- DevRev support [[entities/article|article]] [Ticket insights](https://support.devrev.ai/en-US/devrev/article/nrEGeywk) (ART-21910)

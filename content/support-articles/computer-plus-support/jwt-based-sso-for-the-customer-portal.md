@@ -11,11 +11,12 @@ wiki_match: features/customer-portal
 match_score: 0.85
 last_updated: 2026-05-11
 related: ['features/customer-portal']
+summary: "The customer portal supports three login methods: email OTP, JWT-based SSO, and federated SSO (SAML/OIDC via providers such as Okta or Azure AD)."
 ---
 
 # JWT-based SSO for the customer portal
 
-The customer portal supports three login methods: email OTP, JWT-based SSO, and federated SSO (SAML/OIDC via providers such as Okta or Azure AD). This article covers the **JWT-based SSO** implementation flow. For an overview of all login methods, see the [[support-articles/computer-plus-support/customer-portal-setup-and-administration|Customer Portal Overview]].
+The [[features/customer-portal|customer portal]] supports three login methods: email OTP, JWT-based SSO, and federated SSO (SAML/OIDC via providers such as Okta or Azure AD). This [[entities/article|article]] covers the **JWT-based SSO** implementation flow. For an overview of all login methods, see the [[support-articles/computer-plus-support/customer-portal-setup-and-administration|Customer Portal Overview]].
 
 ## Prerequisites
 
@@ -23,7 +24,7 @@ Before implementing JWT-based SSO, ensure the following are in place:
 
 1. **SSO activation**: Contact DevRev Support to enable JWT-based SSO for your customer portal. You must provide a valid redirect URL where customers are directed when they initiate login.
 2. **Application Access Token (AAT)**: Obtain an AAT for your workspace. The AAT authenticates your server's calls to the DevRev Auth Service.
-3. **Identity provider (IdP)**: Have an identity provider configured to authenticate your customers and return user traits (such as email and display name).
+3. **[[features/identity|Identity]] provider (IdP)**: Have an identity provider configured to authenticate your customers and return user traits (such as email and display name).
 
 ## Authentication flow
 
@@ -81,7 +82,7 @@ The response contains a `token` field with the one-time token to use in the call
 
 ## Automatic user provisioning
 
-When you exchange user traits for a one-time token, DevRev automatically provisions the customer if they do not already exist. A new customer record is created with the traits you provided, and the one-time token is generated for the new account. This just-in-time (JIT) provisioning eliminates the need to pre-create customer accounts.
+When you exchange user traits for a one-time token, DevRev automatically provisions the customer if they do not already exist. A new customer record is created with the traits you provided, and the one-time token is generated for the new [[entities/account|account]]. This just-in-time (JIT) provisioning eliminates the need to pre-create customer [[features/accounts|accounts]].
 
 ## One-time token security
 
@@ -97,7 +98,7 @@ The portal accepts the one-time token exactly once and exchanges it for an authe
 
 ## Troubleshooting
 
-* **Issue**: The customer sees a 403 error after being redirected to the portal.
+* **[[entities/issue|Issue]]**: The customer sees a 403 error after being redirected to the portal.
 
   **Solution**: Verify that your AAT is valid and has the correct scopes. Confirm the email address in the token request matches an allowed domain for your portal. If the token has already been exchanged, request a new one.
 * **Issue**: The one-time token is expired or invalid (`invalid_token` or `token_expired` error).
